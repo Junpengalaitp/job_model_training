@@ -26,6 +26,12 @@ Compatible with: spaCy v2.1.0+
 Last tested with: v2.1.0
 """
 from __future__ import unicode_literals, print_function
+import os.path
+
+from model_training.constants import LABELS
+
+my_path = os.path.abspath(os.path.dirname(__file__))
+path = os.path.join(my_path, "../job_model")
 
 import plac
 import random
@@ -33,7 +39,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.train_data import *
+from model_training.train_data_01 import *
 
 
 # # new entity label
@@ -69,7 +75,7 @@ from model_training.train_data import *
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model='en_core_web_lg', new_model_name="job_model", output_dir='F:\\alaitp\\job_model_training\\job_model', n_iter=100):
+def main(model=None, new_model_name="job_model", output_dir=path, n_iter=100):
     """Set up the pipeline and entity recognizer, and train the new entity."""
     random.seed(0)
     if model is not None:
@@ -112,7 +118,7 @@ def main(model='en_core_web_lg', new_model_name="job_model", output_dir='F:\\ala
             print("Losses", losses)
 
     # test the trained model
-    test_text = "Do you like JavaScript?"
+    test_text = "Do you like JavaScript? I like PHP"
     doc = nlp(test_text)
     print("Entities in '%s'" % test_text)
     for ent in doc.ents:
