@@ -13,6 +13,8 @@ os = 'OS'
 ap = 'APPROACH'
 pf = 'PLATFORM'
 
+LABELS = [pl, lf, cp, cs, pt, ds, dv, we, os, ap, pf]
+
 pl_list = ['JavaScript', 'HTML', 'CSS', 'PHP', 'ES6', 'Java', 'Kotlin', 'Python', 'Typescript', 'Ruby', 'HTML5']
 lf_list = ['React JS', 'React.js', 'React', 'Redux', 'EcmaScript', 'Immutable.js', 'Babel', 'Webpack', 'NPM', 'NGINX',
            'Laravel', 'Flask', 'django', 'scikit-learn', 'Ruby on Rails', 'Node.js', 'jQuery', 'Jenkins', 'Backbone',
@@ -23,9 +25,10 @@ pt_list = ['RESTful APIs', 'TCP/IP', 'UDP']
 ds_list = ['JSON', 'PostgreSQL', 'MongoDB']
 dv_list = ['front-end', 'Web Architect', 'architect', 'full stack', 'Android Developer', 'UI designs', 'UI', 'AI',
            'Full Stack Developer', 'QA testers', 'DevOps']
-we_list = ['5+ years of experience', '4 years of professional experience']
+we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience']
 os_list = ['Ubuntu', 'Android', 'Debian']
-ap_list = ['Agile', 'automated tests', 'Continuous Integration', 'Continuous Delivery', 'CI/CD', 'Scrum', 'XP']
+ap_list = ['Agile', 'automated tests', 'Continuous Integration', 'Continuous Delivery', 'CI/CD', 'Scrum', 'XP', 'automated testing',
+           ]
 pf_list = ['AWS', 'Docker', 'Amazon Web Services', 'Google Cloud Platform', 'GCP', 'Microsoft Azure']
 
 TRAIN_DATA = [
@@ -52,4 +55,11 @@ TRAIN_DATA = [
     (D9, {"entities": [(752, 767, ap), (1606, 1628, ap), (1631, 1650, ap), (1652, 1657, ap), (946, 952, dv),
                        (1397, 1403, dv), (2539, 2561, we), (2705, 2712, lf), (2714, 2721, lf), (2723, 2732, lf),
                        (2941, 2960, pf), (2962, 2965, pf), (2968, 2989, pf), (2991, 2994, pf), (2999, 3014, pf),
-                       (3063, 3069, pt), (3071, 3074, pt), (3076, 3083, cp), (3185, 3190, ap), (3192, 3194, ap),]})]
+                       (3063, 3069, pt), (3071, 3074, pt), (3076, 3083, cp), (3185, 3190, ap), (3192, 3194, ap)]}),
+    (D10, {"entities": [(1763, 1780, ap), (1781, 1803, ap), (1663, 1666, pl), (2542, 2565, we)]})]
+
+if __name__ == '__main__':
+    for data in TRAIN_DATA:
+        for entity in data[1]["entities"]:
+            # print(type(entity[0]), entity[1])
+            print(data[0][entity[0]: entity[1]] + ": " + entity[-1])
