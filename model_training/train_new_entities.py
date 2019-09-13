@@ -39,34 +39,15 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.train_data_01 import *
+from model_training.train_data_02 import *
 
 
-# # new entity label
-# LABEL = "ANIMAL"
-#
 # # training data
 # # Note: If you're using an existing model, make sure to mix in examples of
 # # other entity types that spaCy correctly recognized before. Otherwise, your
 # # model might learn the new type, but "forget" what it previously knew.
 # # https://explosion.ai/blog/pseudo-rehearsal-catastrophic-forgetting
-# TRAIN_DATA = [
-#     (
-#         "Horses are too tall and they pretend to care about your feelings",
-#         {"entities": [(0, 6, LABEL)]},
-#     ),
-#     ("Do they bite?", {"entities": []}),
-#     (
-#         "horses are too tall and they pretend to care about your feelings",
-#         {"entities": [(0, 6, LABEL)]},
-#     ),
-#     ("horses pretend to care about your feelings", {"entities": [(0, 6, LABEL)]}),
-#     (
-#         "they pretend to care about your feelings, those horses",
-#         {"entities": [(48, 54, LABEL)]},
-#     ),
-#     ("horses?", {"entities": [(0, 6, LABEL)]}),
-# ]
+
 
 
 @plac.annotations(
