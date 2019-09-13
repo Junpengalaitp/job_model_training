@@ -39,7 +39,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.train_data_02 import *
+from model_training.training_02.train_data_02 import *
 
 
 # # training data

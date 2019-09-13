@@ -1,5 +1,5 @@
 from model_training.constants import pl, lf, cp, cs, pt, ds, dv, we, os, ap, pf
-from model_training.job_desc_01 import *
+from model_training.training_01.job_desc_01 import *
 
 TRAIN_DATA = [
     (D1, {"entities": [(1399, 1407, lf), (1586, 1596, pl), (1608, 1611, cp), (1633, 1656, cp), (1684, 1692, lf),

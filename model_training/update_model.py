@@ -19,7 +19,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.train_data_02 import TRAIN_DATA
+from model_training.training_03.train_data_03 import TRAIN_DATA
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 path = os.path.join(my_path, "../job_model")
@@ -99,11 +99,3 @@ def main(model='job_model', output_dir=path, n_iter=200):
 
 if __name__ == "__main__":
     plac.call(main)
-
-    # Expected output:
-    # Entities [('Shaka Khan', 'PERSON')]
-    # Tokens [('Who', '', 2), ('is', '', 2), ('Shaka', 'PERSON', 3),
-    # ('Khan', 'PERSON', 1), ('?', '', 2)]
-    # Entities [('London', 'LOC'), ('Berlin', 'LOC')]
-    # Tokens [('I', '', 2), ('like', '', 2), ('London', 'LOC', 3),
-    # ('and', '', 2), ('Berlin', 'LOC', 3), ('.', '', 2)]
