@@ -35,10 +35,10 @@ if __name__ == '__main__':
         for entity in data[1]["entities"]:
             entity_type = entity[-1]
             entity_name = data[0][entity[0]: entity[1]]
-            print(entity_name + ": " + entity_type + data[0])
+            print(entity_name + ": " + entity_type)
             if entity_type not in ent_dict:
-                ent_dict[entity_type] = entity_name
+                ent_dict[entity_type] = [entity_name]
             else:
-                ent_dict[entity_type] += (', ' + entity_name)
-    for k, v in ent_dict.items():
-        print(k + ': ' + ent_dict[k])
+                ent_dict[entity_type].append(entity_name)
+    for k in ent_dict:
+        print(k, set(ent_dict[k]))
