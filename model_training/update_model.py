@@ -19,17 +19,18 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.training_05.train_data_05 import TRAIN_DATA
+from model_training.training_06.train_data_06 import TRAIN_DATA
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 path = os.path.join(my_path, "../job_model")
+
 
 @plac.annotations(
     model=("Model name. Defaults to blank 'en' model.", "option", "m", str),
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model='job_model', output_dir=path, n_iter=500):
+def main(model='job_model', output_dir=path, n_iter=1000):
     """Load the model, set up the pipeline and train the entity recognizer."""
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
