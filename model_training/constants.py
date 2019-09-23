@@ -60,7 +60,7 @@ os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', '
 
 ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integration', 'Continuous Delivery', 'CI/CD',
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
-           'Microservices', 'waterfall', 'ETL', 'JIRA']
+           'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'CircleCI']
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
            'Microsoft Azure', 'Solr', 'Microsoft Cognitive Services', 'OpenSLES', 'Gitlab', 'WebSphere', 'Xamarin',
