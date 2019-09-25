@@ -20,7 +20,7 @@ pl_list = ['JavaScript', 'Javascript', 'JS', 'TypeScript', 'CoffeeScript', 'HTML
 lf_list = ['React JS', 'React.js', 'react.js', 'React', 'Redux', 'EcmaScript', 'Immutable.js', 'Babel', 'Webpack', 'NPM',
            'NGINX', 'Laravel', 'Flask', 'django', 'scikit-learn', 'Ruby on Rails', 'Rails', 'Node.js', 'NodeJS', 'Node',
            'jQuery', 'JQuery', 'Koa', 'Drupal', 'Drush', "Behat", 'Symfony2 ', 'Matplotlib', 'OpenCV', 'Matplotlib,'
-           'Numpy', 'SciPy', 'pytest', 'Pytorch', 'Electron', 'Mobx',
+           'Numpy', 'SciPy', 'pytest', 'Pytorch', 'Electron', 'Mobx', 'Chef', 'Qt', 'Haml', 'Sass',
            'Jenkins', 'Backbone', 'backbone.js', 'jUnit', 'Mockito', 'Hamcrest', 'Dagger', 'Terraform', 'Ansible',
            'React Native', 'AngularJS', 'Angular', 'Jest', 'Karma', 'Protractor', 'Cypress', 'Vue.js', 'VUE', 'ASP.NET',
            'Apollo Client', 'WordPress', 'Elasticsearch', 'Selenium', 'machine learning', 'LAMP', 'MEAN', 'Next.js',
@@ -34,10 +34,11 @@ cs_list = ['data structure', 'algorithms', 'concurrency', 'object-oriented progr
            'concurrency', 'parallelism']
 
 pt_list = ['RESTful APIs', 'REST API', 'TCP/IP', 'UDP', 'browser APIs', 'HTTP', 'WebSockets', 'WebRTC', 'GraphQL', 'API',
-           'firewalls', 'Serverless', 'CORS', 'SSL', 'Paxos', 'WASAPI', 'CoreAudio', 'wasm']
+           'firewalls', 'Serverless', 'CORS', 'SSL', 'Paxos', 'WASAPI', 'CoreAudio', 'wasm', 'SFTP', 'SSH', 'TLS']
 
 ds_list = ['JSON', 'PostgreSQL', 'Postgres', 'MongoDB', 'mongodb', 'MySQL', 'mysql', 'ClustrixDB', 'Redis', 'redis', 'SQL',
-           'MariaDB', 'InnoDB', 'Kafka', 'Nomad, NoSQL', 'Dynamo', 'Phoenix', 'MS SQL', 'No SQL', 'Firebase', 'HBase']
+           'MariaDB', 'InnoDB', 'Kafka', 'Nomad, NoSQL', 'Dynamo', 'Phoenix', 'MS SQL', 'No SQL', 'Firebase', 'HBase',
+           'Memcached']
 
 dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Full Stack', 'full stack', 'Android Developer',
            'Android engineer', 'Game Developer', 'artificial intelligence', '3D Rendering',
@@ -64,4 +65,4 @@ ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integrat
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
            'Microsoft Azure', 'Solr', 'Microsoft Cognitive Services', 'OpenSLES', 'Gitlab', 'WebSphere', 'Xamarin',
-           'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity']
+           'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity', 'Terraform']
