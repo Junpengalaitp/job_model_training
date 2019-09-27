@@ -39,7 +39,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.training_02.train_data_02 import *
+from model_training.training_01.train_data_01 import *
 
 
 # # training data
@@ -56,7 +56,7 @@ from model_training.training_02.train_data_02 import *
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model=None, new_model_name="job_model", output_dir=path, n_iter=100):
+def main(model=None, new_model_name="job_model", output_dir=path, n_iter=500):
     """Set up the pipeline and entity recognizer, and train the new entity."""
     random.seed(0)
     if model is not None:
