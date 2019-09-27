@@ -12,20 +12,23 @@ pf = 'PLATFORM'
 
 LABELS = [pl, lf, cp, cs, pt, ds, dv, we, os, ap, pf]
 
-pl_list = ['JavaScript', 'Javascript', 'JS', 'TypeScript', 'CoffeeScript', 'HTML', 'CSS', 'CSS3', 'PHP', 'ES6', 'Java',
-           'java', 'Kotlin', 'kotlin', 'Go', 'go', 'bash', 'C++', 'C', 'c++', 'C#', 'c#', 'Scala', 'ES2015', 'SCSS'
+pl_list = ['JavaScript', 'Javascript', 'javascript', 'JS', 'TypeScript', 'CoffeeScript', 'HTML', 'CSS', 'CSS3', 'PHP', 'ES6', 'Java',
+           'java', 'Kotlin', 'kotlin', 'Go', 'go', 'bash', 'C++', 'C', 'c++', 'C#', 'c#', 'Scala', 'ES2015', 'SCSS',
            'Python', 'python', 'Ruby', 'HTML5', 'ES8', 'Golang', 'Rust', "rust", 'Objective C', 'objective-c', 'Obj-C',
-           'swift', 'Perl', 'Erlang', 'Jython',
-           'Elixir', 'F#', 'ES7']
+           'Swift', 'swift', 'Perl', 'Erlang', 'Jython', 'Elixir', 'F#', 'ES7', 'GraphQL', 'ES2015+']
+
 lf_list = ['React JS', 'React.js', 'react.js', 'React', 'Redux', 'EcmaScript', 'Immutable.js', 'Babel', 'Webpack', 'NPM',
-           'NGINX', 'Laravel', 'Flask', 'django', 'scikit-learn', 'Ruby on Rails', 'Rails', 'Node.js', 'NodeJS', 'Node',
+           'NGINX', 'Laravel', 'Flask', 'Django', 'django', 'scikit-learn', 'Ruby on Rails', 'Rails', 'Node.js', 'NodeJS',
+           'Node', 'Honeybadger', 'Apollo', 'Vue', 'Serverless',
            'jQuery', 'JQuery', 'Koa', 'Drupal', 'Drush', "Behat", 'Symfony2 ', 'Matplotlib', 'OpenCV', 'Matplotlib,'
-           'Numpy', 'SciPy', 'pytest', 'Pytorch', 'Electron', 'Mobx', 'Chef', 'Qt', 'Haml', 'Sass', 'AJAX', 'Bootstrap'
+           'Numpy', 'SciPy', 'pytest', 'Pytorch', 'Electron', 'Mobx', 'Chef', 'Qt', 'Haml', 'Sass', 'AJAX', 'Bootstrap',
            'Jenkins', 'Backbone', 'backbone.js', 'jUnit', 'Mockito', 'Hamcrest', 'Dagger', 'Terraform', 'Ansible',
            'React Native', 'AngularJS', 'Angular', 'Jest', 'Karma', 'Protractor', 'Cypress', 'Vue.js', 'VUE', 'ASP.NET',
-           'Apollo Client', 'WordPress', 'Elasticsearch', 'Selenium', 'machine learning', 'LAMP', 'MEAN', 'Next.js',
+           'Apollo Client', 'WordPress', 'ElasticSearch', 'Elasticsearch', 'Selenium', 'machine learning', 'LAMP', 'MEAN',
+           'Next.js',
            'Scrapy', 'Celery', 'RabbitMQ', 'Express', 'RESTify', 'Bootstrap', 'RiotJS', 'LESS', 'Spring', 'Spring boot',
-           'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN', 'Yarn', 'Gulp']
+           'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN', 'Yarn', 'Gulp',
+           'Ember']
 
 cp_list = ['DOM', 'JavaScript object model', 'routing', 'switching']
 
@@ -33,19 +36,22 @@ cs_list = ['data structure', 'algorithms', 'concurrency', 'object-oriented progr
            'Computer Science', "distributed systems", 'OOP', 'Cryptography', 'computability', 'computer architecture',
            'concurrency', 'parallelism']
 
-pt_list = ['RESTful APIs', 'REST API', 'TCP/IP', 'UDP', 'browser APIs', 'HTTP', 'WebSockets', 'WebRTC', 'GraphQL', 'API',
-           'firewalls', 'Serverless', 'CORS', 'SSL', 'Paxos', 'WASAPI', 'CoreAudio', 'wasm', 'SFTP', 'SSH', 'TLS']
+pt_list = ['RESTful APIs', 'REST API', 'REST APIs', 'RESTful', 'TCP/IP', 'UDP', 'browser APIs', 'HTTP', 'WebSockets',
+           'WebRTC', 'API', 'APIs', 'firewalls', 'Serverless', 'CORS', 'SSL', 'Paxos', 'WASAPI', 'CoreAudio', 'wasm',
+           'SFTP', 'SSH', 'TLS', 'FTP']
 
 ds_list = ['JSON', 'PostgreSQL', 'Postgres', 'MongoDB', 'mongodb', 'MySQL', 'mysql', 'ClustrixDB', 'Redis', 'redis', 'SQL',
            'MariaDB', 'InnoDB', 'Kafka', 'Nomad, NoSQL', 'Dynamo', 'Phoenix', 'MS SQL', 'No SQL', 'Firebase', 'HBase',
-           'Memcached']
+           'Memcached', 'relational database', 'Oracle',  'data warehouse', 'data marts', 'Kudu', 'HBase', 'HDFS']
 
 dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Full Stack', 'full stack', 'Android Developer',
-           'Android engineer', 'Game Developer', 'artificial intelligence', '3D Rendering',
+           'Android engineer', 'Game Developer', 'artificial intelligence', '3D Rendering', 'architects', 'design',
            'UI designs', 'UI', 'UX', 'AI', 'Rails Engineer', 'Product Managers', 'Designers', 'CTO', 'Web Developer',
            'Full Stack Developer', 'QA testers', 'DevOps', 'frontend stack', 'frontend UIs', 'product designers',
-           'Product Designers ', 'architect', 'Big Data', 'Data Engineering', 'Data Analytics', 'data warehouse', 'data marts',
-           'Kudu', 'HBase', 'HDFS', 'computer vision',
+           'Product Designers ', 'architect', 'Big Data', 'Data Engineering', 'Data Analytics', 'computer vision',
+           'Full-stack', 'backend', 'front end developer', 'QA', 'Project Management',
+           'Product Management', 'designers', 'back-end', 'Design', 'frontend', 'Scrum Masters', 'analysts', 'project manager',
+           'full-stack', 'developers', 'designer',
            'backend engineers', 'product designers', 'founder', 'CEO', 'QA engineer', 'big data', 'Front-end Engineer',
            'Full Stack Engineer', 'NLP']
 
@@ -55,16 +61,19 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '5 years professional development experience', '3+ years of WordPress development experience',
            '2-3 years of software developer experience', '5+ years of professional software development experience',
            '5+ years of industry experience', "3+ years of software engineering experience",
-           '5+ years previous experience', '3+ years of Drupal experience']
+           '5+ years previous experience', '3+ years of Drupal experience', '5+ years of directly applicable experience',
+           '20 years of experience', '5+ years of programming experience', "3-5 years' experience",
+           '3+ years in a software engineering or technical architect role',
+           '3+ years of Scrum Master experience']
 
 os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS']
 
 ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integration', 'Continuous Delivery', 'CI/CD',
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
-           'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'CircleCI', 'automated deployment', 'code-reviews',
-           'pair-programming']
+           'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'automated deployment', 'code-reviews',
+           'pair-programming', 'Jira', 'Lean', 'Git', 'microservices']
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
            'Microsoft Azure', 'Solr', 'Microsoft Cognitive Services', 'OpenSLES', 'Gitlab', 'WebSphere', 'Xamarin',
            'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity', 'Terraform',
-           'Slack', 'Trello', 'Ghost Inspector']
+           'Slack', 'Trello', 'Ghost Inspector', 'CircleCI', 'Google Docs', 'Google Hangouts', 'Azure', 'GitHub']
