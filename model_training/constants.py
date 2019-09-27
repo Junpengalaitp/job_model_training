@@ -20,12 +20,12 @@ pl_list = ['JavaScript', 'Javascript', 'JS', 'TypeScript', 'CoffeeScript', 'HTML
 lf_list = ['React JS', 'React.js', 'react.js', 'React', 'Redux', 'EcmaScript', 'Immutable.js', 'Babel', 'Webpack', 'NPM',
            'NGINX', 'Laravel', 'Flask', 'django', 'scikit-learn', 'Ruby on Rails', 'Rails', 'Node.js', 'NodeJS', 'Node',
            'jQuery', 'JQuery', 'Koa', 'Drupal', 'Drush', "Behat", 'Symfony2 ', 'Matplotlib', 'OpenCV', 'Matplotlib,'
-           'Numpy', 'SciPy', 'pytest', 'Pytorch', 'Electron', 'Mobx', 'Chef', 'Qt', 'Haml', 'Sass',
+           'Numpy', 'SciPy', 'pytest', 'Pytorch', 'Electron', 'Mobx', 'Chef', 'Qt', 'Haml', 'Sass', 'AJAX', 'Bootstrap'
            'Jenkins', 'Backbone', 'backbone.js', 'jUnit', 'Mockito', 'Hamcrest', 'Dagger', 'Terraform', 'Ansible',
            'React Native', 'AngularJS', 'Angular', 'Jest', 'Karma', 'Protractor', 'Cypress', 'Vue.js', 'VUE', 'ASP.NET',
            'Apollo Client', 'WordPress', 'Elasticsearch', 'Selenium', 'machine learning', 'LAMP', 'MEAN', 'Next.js',
            'Scrapy', 'Celery', 'RabbitMQ', 'Express', 'RESTify', 'Bootstrap', 'RiotJS', 'LESS', 'Spring', 'Spring boot',
-           'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN']
+           'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN', 'Yarn', 'Gulp']
 
 cp_list = ['DOM', 'JavaScript object model', 'routing', 'switching']
 
@@ -61,8 +61,10 @@ os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', '
 
 ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integration', 'Continuous Delivery', 'CI/CD',
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
-           'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'CircleCI']
+           'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'CircleCI', 'automated deployment', 'code-reviews',
+           'pair-programming']
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
            'Microsoft Azure', 'Solr', 'Microsoft Cognitive Services', 'OpenSLES', 'Gitlab', 'WebSphere', 'Xamarin',
-           'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity', 'Terraform']
+           'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity', 'Terraform',
+           'Slack', 'Trello', 'Ghost Inspector']
