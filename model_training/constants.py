@@ -13,7 +13,7 @@ pf = 'PLATFORM'
 LABELS = [pl, lf, cp, cs, pt, ds, dv, we, os, ap, pf]
 
 pl_list = ['JavaScript', 'Javascript', 'javascript', 'JS', 'TypeScript', 'CoffeeScript', 'HTML', 'CSS', 'CSS3', 'PHP',
-           'ES6', 'Java', 'ruby',
+           'ES6', 'Java', 'ruby', 'Typescript',
            'java', 'Kotlin', 'kotlin', 'Go', 'go', 'bash', 'C++', 'C', 'c++', 'C#', 'c#', 'Scala', 'ES2015', 'SCSS',
            'Python', 'python', 'Ruby', 'HTML5', 'ES8', 'Golang', 'Rust', "rust", 'Objective C', 'objective-c', 'Obj-C',
            'Swift', 'swift', 'Perl', 'Erlang', 'Jython', 'Elixir', 'F#', 'ES7', 'GraphQL', 'ES2015+', 'Bash Shell']
@@ -26,10 +26,10 @@ lf_list = ['React JS', 'React.js', 'react.js', 'React', 'Redux', 'EcmaScript', '
            'Jenkins', 'Backbone', 'backbone.js', 'jUnit', 'Mockito', 'Hamcrest', 'Dagger', 'Terraform', 'Ansible',
            'React Native', 'AngularJS', 'Angular', 'Jest', 'Karma', 'Protractor', 'Cypress', 'Vue.js', 'VUE', 'ASP.NET',
            'Apollo Client', 'WordPress', 'ElasticSearch', 'Elasticsearch', 'Selenium', 'machine learning', 'LAMP', 'MEAN',
-           'Next.js', 'torch', 'SASS', 'redux', 'npm', 'wordpress', 'Jquery', 'big data', 'webpack', 'babel',
+           'Next.js', 'torch', 'SASS', 'redux', 'npm', 'wordpress', 'Jquery', 'big data', 'webpack', 'babel', 'react',
            'Scrapy', 'Celery', 'RabbitMQ', 'Express', 'RESTify', 'Bootstrap', 'RiotJS', 'LESS', 'Spring', 'Spring boot',
            'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN', 'Yarn', 'Gulp',
-           'Ember']
+           'Ember', 'pytorch', 'Flux']
 
 cp_list = ['DOM', 'JavaScript object model', 'routing', 'switching', 'MVC', 'MVVM']
 
@@ -56,7 +56,8 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'Product Management', 'designers', 'back-end', 'Design', 'frontend', 'Scrum Masters', 'analysts', 'project manager',
            'full-stack', 'developers', 'designer', 'Architect', 'audio', 'front-end development', 'QA engineers',
            'backend engineers', 'product designers', 'founder', 'CEO', 'QA engineer', 'big data', 'Front-end Engineer',
-           'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer', 'Frontend Developers']
+           'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer', 'Frontend Developers',
+           'back-end developers', 'Web']
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
            '2+ years of client-side Javascript experience', '5+ years experience ', '1+ years experience',
@@ -72,7 +73,7 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '5+ years of PHP experience', '3+ years audio programming experience', "2+ years' experience",
            '5+ years of software development experience', '3-5 years of relevant work experience',
            '7+ years in the software development industryExperience ', '5 years professional development experience',
-           '5+ years of applicable experience']
+           '5+ years of applicable experience', '3+ years of experience']
 
 os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS']
 
@@ -80,7 +81,7 @@ ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integrat
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
            'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'automated deployment', 'code-reviews',
            'pair-programming', 'Jira', 'Lean', 'Git', 'microservices', 'CI', 'refactoring', 'Unit tests',
-           'microservice',
+           'microservice', 'continuous integration',
            ]
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
