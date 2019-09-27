@@ -56,14 +56,14 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'Product Management', 'designers', 'back-end', 'Design', 'frontend', 'Scrum Masters', 'analysts', 'project manager',
            'full-stack', 'developers', 'designer', 'Architect', 'audio', 'front-end development', 'QA engineers',
            'backend engineers', 'product designers', 'founder', 'CEO', 'QA engineer', 'big data', 'Front-end Engineer',
-           'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer']
+           'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer', 'Frontend Developers']
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
            '2+ years of client-side Javascript experience', '5+ years experience ', '1+ years experience',
            '2 years of professional experience', '2+ years requirement', "2+ years' experience"
            '5 years professional development experience', '3+ years of WordPress development experience',
            '2-3 years of software developer experience', '5+ years of professional software development experience',
-           '5+ years of industry experience', "3+ years of software engineering experience",
+           '5+ years of industry experience', "3+ years of software engineering experience", '5+ years experience',
            '5+ years previous experience', '3+ years of Drupal experience', '5+ years of directly applicable experience',
            '20 years of experience', '5+ years of programming experience', "3-5 years' experience",
            '3+ years in a software engineering or technical architect role', '3+ years of Unity experience',
@@ -71,7 +71,8 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '5 years of relevant software development experience', '3-6 years relevant experience',
            '5+ years of PHP experience', '3+ years audio programming experience', "2+ years' experience",
            '5+ years of software development experience', '3-5 years of relevant work experience',
-           '7+ years in the software development industryExperience ', '5 years professional development experience']
+           '7+ years in the software development industryExperience ', '5 years professional development experience',
+           '5+ years of applicable experience']
 
 os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS']
 
