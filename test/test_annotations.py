@@ -1,6 +1,6 @@
 import unittest
 from model_training.constants import *
-from model_training.training_06.train_data_06 import TRAIN_DATA
+from model_training.training_05.train_data_05 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
@@ -49,8 +49,8 @@ class TestAnnotations(unittest.TestCase):
     def test_DATA_STORAGE(self):
         print(set(self.ent_dict['DATA_STORAGE']))
         for word in set(self.ent_dict['DATA_STORAGE']):
-            if word not in ds_list not in list:
-                print('testing word: ', word)
+            if word not in ds_list:
+                print('testing word not in list: ', word)
             self.assertTrue(word in ds_list)
 
     def test_DIVISION(self):

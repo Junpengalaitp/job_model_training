@@ -63,5 +63,3 @@ if __name__ == '__main__':
                 ent_dict[entity_type] = [entity_name]
             else:
                 ent_dict[entity_type].append(entity_name)
-    for k in ent_dict:
-        print(k, set(ent_dict[k]))
