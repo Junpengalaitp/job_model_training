@@ -11,7 +11,7 @@ TRAIN_DATA = [
                        (1141, 1163, ap), (1049, 1052, pt), (1108, 1113, ap), (1116, 1121, ap), (1198, 1213, cs)]}),
     (D3, {'entities': [(179, 181, pl), (306, 308, pl), (183, 187, lf), (313, 317, lf), (191, 194, pl), (337, 350, ap)]}),
     (D4, {'entities': [(25, 44, dv), (525, 544, dv), (870, 873, pf), (1459, 1462, pf), (2246, 2249, pf), (887, 893, pf),
-                       (895, 903, ds), (905, 911, pf), (1001, 1007, pf), (1529, 1535, pl), (2580, 2586, pl), (913, 917, pl),
+                       (895, 903, ds), (905, 911, pl), (1001, 1007, pl), (1529, 1535, pl), (2580, 2586, pl), (913, 917, pl),
                        (1060, 1064, pl), (2002, 2006, pl), (919, 932, lf), (1066, 1074, lf), (1119, 1130, dv), (1174, 1183, dv),
                        (1537, 1540, ds), (2606, 2609, ds), (913, 917, pl), (1060, 1064, pl), (2002, 2006, pl)]}),
     (D5, {'entities': [(136, 145, lf), (445, 454, lf), (1252, 1261, lf), (1876, 1885, lf), (2412, 2421, lf), (5685, 5694, lf),
@@ -34,10 +34,8 @@ if __name__ == '__main__':
         for entity in data[1]["entities"]:
             entity_type = entity[-1]
             entity_name = data[0][entity[0]: entity[1]]
-            print(entity_name + ": " + entity_type)
+            print(entity_name + ": " + entity_type + ' ' + str(entity[0]) + ': ' + str(entity[1]))
             if entity_type not in ent_dict:
                 ent_dict[entity_type] = [entity_name]
             else:
                 ent_dict[entity_type].append(entity_name)
-    for k in ent_dict:
-        print(k, set(ent_dict[k]))
