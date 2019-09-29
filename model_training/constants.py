@@ -57,7 +57,7 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'full-stack', 'developers', 'designer', 'Architect', 'audio', 'front-end development', 'QA engineers',
            'backend engineers', 'product designers', 'founder', 'CEO', 'QA engineer', 'big data', 'Front-end Engineer',
            'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer', 'Frontend Developers',
-           'back-end developers', 'Web']
+           'back-end developers', 'Web', 'senior software engineer', 'Sr. Software Engineer', 'back end', 'front end',]
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
            '2+ years of client-side Javascript experience', '5+ years experience ', '1+ years experience',
@@ -73,15 +73,18 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '5+ years of PHP experience', '3+ years audio programming experience', "2+ years' experience",
            '5+ years of software development experience', '3-5 years of relevant work experience',
            '7+ years in the software development industryExperience ', '5 years professional development experience',
-           '5+ years of applicable experience', '3+ years of experience']
+           '5+ years of applicable experience', '3+ years of experience', '2 years of Ruby on Rails Experience',
+           '3+ years of professional experience', '10+ years of professional engineering experience',
+           '3 years of Ruby on Rails Experience', '5 years of it being Ruby on Rails',
+           ]
 
 os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS']
 
 ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integration', 'Continuous Delivery', 'CI/CD',
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
-           'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'automated deployment', 'code-reviews',
+           'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'automated deployment', 'code-reviews', 'SCRUM',
            'pair-programming', 'Jira', 'Lean', 'Git', 'microservices', 'CI', 'refactoring', 'Unit tests',
-           'microservice', 'continuous integration',
+           'microservice', 'continuous integration', 'Git-Flow', 'unit testing', 'continuous delivery',
            ]
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',

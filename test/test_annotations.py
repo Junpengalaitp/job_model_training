@@ -1,6 +1,6 @@
 import unittest
 from model_training.constants import *
-from model_training.training_07.train_data_07 import TRAIN_DATA
+from model_training.training_01.train_data_01 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
@@ -8,14 +8,31 @@ class TestAnnotations(unittest.TestCase):
     def setUp(self) -> None:
         super().setUp()
         self.ent_dict = {}
+        self.ent_index_list = []
         for data in TRAIN_DATA:
             for entity in data[1]["entities"]:
                 entity_type = entity[-1]
                 entity_name = data[0][entity[0]: entity[1]]
+
                 if entity_type not in self.ent_dict:
                     self.ent_dict[entity_type] = [entity_name]
                 else:
                     self.ent_dict[entity_type].append(entity_name)
+
+    def test_overlapping_indices(self):
+        for data in TRAIN_DATA:
+            ent_index_list = []
+            for entity in data[1]["entities"]:
+                ent_index_list.append((entity[0], entity[1]))
+                ent_index_list = sorted(ent_index_list, key=lambda interval: interval[0])
+                interval, l = ent_index_list[0], len(ent_index_list)
+                for i in range(1, l):
+                    interval2 = ent_index_list[i]
+                    if interval2[0] < interval[-1]:
+                        print(interval2, interval)
+                        self.assertTrue(interval2[0] > interval[-1])
+                    else:
+                        interval = interval2
 
     def test_PROGRAMMING_LANGUAGE(self):
         print(set(self.ent_dict['PROGRAMMING_LANGUAGE']))
@@ -47,11 +64,12 @@ class TestAnnotations(unittest.TestCase):
             self.assertTrue(word in pt_list)
 
     def test_DATA_STORAGE(self):
-        print(set(self.ent_dict['DATA_STORAGE']))
-        for word in set(self.ent_dict['DATA_STORAGE']):
-            if word not in ds_list:
-                print('testing word not in list: ', word)
-            self.assertTrue(word in ds_list)
+        if 'DATA_STORAGE' in self.ent_dict:
+            print(set(self.ent_dict['DATA_STORAGE']))
+            for word in set(self.ent_dict['DATA_STORAGE']):
+                if word not in ds_list:
+                    print('testing word not in list: ', word)
+                self.assertTrue(word in ds_list)
 
     def test_DIVISION(self):
         print(set(self.ent_dict['DIVISION']))
