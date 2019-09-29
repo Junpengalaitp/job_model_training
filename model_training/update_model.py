@@ -19,7 +19,12 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.training_07.train_data_07 import TRAIN_DATA
+from model_training.training_02.train_data_02 import TRAIN_DATA as TRAIN_DATA_01
+from model_training.training_03.train_data_03 import TRAIN_DATA as TRAIN_DATA_02
+from model_training.training_04.train_data_04 import TRAIN_DATA as TRAIN_DATA_03
+from model_training.training_05.train_data_05 import TRAIN_DATA as TRAIN_DATA_04
+from model_training.training_06.train_data_06 import TRAIN_DATA as TRAIN_DATA_05
+from model_training.training_07.train_data_07 import TRAIN_DATA as TRAIN_DATA_06
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 path = os.path.join(my_path, "../job_model")
@@ -30,7 +35,7 @@ path = os.path.join(my_path, "../job_model")
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model='job_model', output_dir=path, n_iter=1000):
+def main(model='job_model', output_dir=path, n_iter=800, train_data=None):
     """Load the model, set up the pipeline and train the entity recognizer."""
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
@@ -49,7 +54,7 @@ def main(model='job_model', output_dir=path, n_iter=1000):
         ner = nlp.get_pipe("ner")
 
     # add labels
-    for _, annotations in TRAIN_DATA:
+    for _, annotations in train_data:
         for ent in annotations.get("entities"):
             ner.add_label(ent[2])
 
@@ -61,10 +66,10 @@ def main(model='job_model', output_dir=path, n_iter=1000):
         if model is None:
             nlp.begin_training()
         for itn in range(n_iter):
-            random.shuffle(TRAIN_DATA)
+            random.shuffle(train_data)
             losses = {}
             # batch up the examples using spaCy's minibatch
-            batches = minibatch(TRAIN_DATA, size=compounding(4.0, 32.0, 1.001))
+            batches = minibatch(train_data, size=compounding(4.0, 32.0, 1.001))
             for batch in batches:
                 texts, annotations = zip(*batch)
                 nlp.update(
@@ -76,7 +81,7 @@ def main(model='job_model', output_dir=path, n_iter=1000):
             print("Losses", losses)
 
     # test the trained model
-    for text, _ in TRAIN_DATA:
+    for text, _ in train_data:
         doc = nlp(text)
         print("Entities", [(ent.text, ent.label_) for ent in doc.ents])
         print("Tokens", [(t.text, t.ent_type_, t.ent_iob) for t in doc])
@@ -92,11 +97,13 @@ def main(model='job_model', output_dir=path, n_iter=1000):
         # test the saved model
         print("Loading from", output_dir)
         nlp2 = spacy.load(output_dir)
-        for text, _ in TRAIN_DATA:
+        for text, _ in train_data:
             doc = nlp2(text)
             print("Entities", [(ent.text, ent.label_) for ent in doc.ents])
             print("Tokens", [(t.text, t.ent_type_, t.ent_iob) for t in doc])
 
 
 if __name__ == "__main__":
-    plac.call(main)
+    train_data_list = [TRAIN_DATA_01, TRAIN_DATA_02, TRAIN_DATA_03, TRAIN_DATA_04, TRAIN_DATA_05, TRAIN_DATA_06]
+    for TRAIN_DATA in train_data_list:
+        main(train_data=TRAIN_DATA)

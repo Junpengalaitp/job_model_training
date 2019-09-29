@@ -49,7 +49,6 @@ from model_training.training_01.train_data_01 import *
 # # https://explosion.ai/blog/pseudo-rehearsal-catastrophic-forgetting
 
 
-
 @plac.annotations(
     model=("Model name. Defaults to blank 'en' model.", "option", "m", str),
     new_model_name=("New model name for model meta.", "option", "nm", str),
