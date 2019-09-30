@@ -19,12 +19,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.training_02.train_data_02 import TRAIN_DATA as TRAIN_DATA_01
-from model_training.training_03.train_data_03 import TRAIN_DATA as TRAIN_DATA_02
-from model_training.training_04.train_data_04 import TRAIN_DATA as TRAIN_DATA_03
-from model_training.training_05.train_data_05 import TRAIN_DATA as TRAIN_DATA_04
-from model_training.training_06.train_data_06 import TRAIN_DATA as TRAIN_DATA_05
-from model_training.training_07.train_data_07 import TRAIN_DATA as TRAIN_DATA_06
+from model_training.training_08.train_data_08 import TRAIN_DATA
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 path = os.path.join(my_path, "../job_model")
@@ -104,6 +99,6 @@ def main(model='job_model', output_dir=path, n_iter=800, train_data=None):
 
 
 if __name__ == "__main__":
-    train_data_list = [TRAIN_DATA_01, TRAIN_DATA_02, TRAIN_DATA_03, TRAIN_DATA_04, TRAIN_DATA_05, TRAIN_DATA_06]
+    train_data_list = [TRAIN_DATA]
     for TRAIN_DATA in train_data_list:
         main(train_data=TRAIN_DATA)
