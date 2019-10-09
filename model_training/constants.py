@@ -59,7 +59,8 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer', 'Frontend Developers',
            'back-end developers', 'Web', 'senior software engineer', 'Sr. Software Engineer', 'back end', 'front end',
            'Data Developer/Engineer', 'Senior Software Engineer', 'web developer', 'Senior Engineer', 'Senior Front End Engineer',
-           'FRONT END WEB DEVELOPER', 'business analysts', 'Back End Developers', 'Back End Development',
+           'FRONT END WEB DEVELOPER', 'business analysts', 'Back End Developers', 'Back End Development', 'software consultant',
+
            ]
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
@@ -81,7 +82,8 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '3 years of Ruby on Rails Experience', '5 years of it being Ruby on Rails', '4+ years programming experience',
            '3 years of relevant data development and technology experience', '8+ years programming experience',
            '3+ years of Ruby on Rails experience', '5+ years of professional Front End Development experience',
-           "7+ years of Application Development with experience defining development guidelines"
+           "7+ years of Application Development with experience defining development guidelines",
+           "3+ Years of software development experience", "2+ Years of professional Ruby on Rails development experience",
            ]
 
 os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS', 'Unix']
@@ -91,7 +93,7 @@ ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integrat
            'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'automated deployment', 'code-reviews', 'SCRUM',
            'pair-programming', 'Jira', 'Lean', 'Git', 'microservices', 'CI', 'refactoring', 'Unit tests', 'gitflow',
            'microservice', 'continuous integration', 'Git-Flow', 'unit testing', 'continuous delivery', 'responsive design',
-           'test-driven development',
+           'test-driven development', 'sprint', 'sprints'
            ]
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
