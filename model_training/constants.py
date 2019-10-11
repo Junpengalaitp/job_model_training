@@ -29,7 +29,8 @@ lf_list = ['React JS', 'React.js', 'react.js', 'React', 'Redux', 'EcmaScript', '
            'Next.js', 'torch', 'SASS', 'redux', 'npm', 'wordpress', 'Jquery', 'big data', 'webpack', 'babel', 'react',
            'Scrapy', 'Celery', 'RabbitMQ', 'Express', 'RESTify', 'Bootstrap', 'RiotJS', 'LESS', 'Spring', 'Spring boot',
            'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN', 'Yarn', 'Gulp',
-           'Ember', 'pytorch', 'Flux', 'Backbone.js', 'teaspoon', 'Axios', 'Hibernate', 'Puppet']
+           'Ember', 'pytorch', 'Flux', 'Backbone.js', 'teaspoon', 'Axios', 'Hibernate', 'Puppet', 'serverless',
+           'Jupyter notebooks']
 
 cp_list = ['DOM', 'JavaScript object model', 'routing', 'switching', 'MVC', 'MVVM', 'Routing', 'Scheduling']
 
@@ -44,7 +45,8 @@ pt_list = ['RESTful APIs', 'REST API', 'REST APIs', 'RESTful', 'TCP/IP', 'UDP', 
 ds_list = ['JSON', 'PostgreSQL', 'Postgres', 'MongoDB', 'mongodb', 'MySQL', 'mysql', 'ClustrixDB', 'Redis', 'redis', 'SQL',
            'MariaDB', 'InnoDB', 'Kafka', 'Nomad, NoSQL', 'Dynamo', 'Phoenix', 'MS SQL', 'No SQL', 'Firebase', 'HBase',
            'Memcached', 'relational database', 'Oracle',  'data warehouse', 'data marts', 'Kudu', 'HBase', 'HDFS',
-           'MSSQL', 'NOSQL', 'NoSQL', 'relational database systems', 'Cassandra', 'Volt']
+           'MSSQL', 'NOSQL', 'NoSQL', 'relational database systems', 'Cassandra', 'Volt', 'relational databases',
+           'data warehouses']
 
 dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Full Stack', 'full stack', 'Android Developer',
            'Android engineer', 'Game Developer', 'artificial intelligence', '3D Rendering', 'architects', 'design', 'PM',
@@ -56,12 +58,12 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'Product Management', 'designers', 'back-end', 'Design', 'frontend', 'Scrum Masters', 'analysts', 'project manager',
            'full-stack', 'developers', 'designer', 'Architect', 'audio', 'front-end development', 'QA engineers',
            'backend engineers', 'product designers', 'founder', 'CEO', 'QA engineer', 'big data', 'Front-end Engineer',
-           'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer', 'Frontend Developers',
+           'Full Stack Engineer', 'NLP', 'Full Stack Engineers', 'full stack engineer', 'Frontend Developers', 'SRE',
            'back-end developers', 'Web', 'senior software engineer', 'Sr. Software Engineer', 'back end', 'front end',
            'Data Developer/Engineer', 'Senior Software Engineer', 'web developer', 'Senior Engineer', 'Senior Front End Engineer',
            'FRONT END WEB DEVELOPER', 'business analysts', 'Back End Developers', 'Back End Development', 'software consultant',
-           'UX Engineer', 'Software Developer', "1 to 2 years’ experience"
-
+           'UX Engineer', 'Software Developer', 'Senior DevOps Engineer', 'Data Engineer', 'UI/UX', 'software engineer',
+           'Front-End Developer', 'software developer'
            ]
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
@@ -73,7 +75,7 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '5+ years previous experience', '3+ years of Drupal experience', '5+ years of directly applicable experience',
            '20 years of experience', '5+ years of programming experience', "3-5 years' experience",
            '3+ years in a software engineering or technical architect role', '3+ years of Unity experience',
-           '3+ years of Scrum Master experience', 'Significant macOS experience (+5 years)',
+           '3+ years of Scrum Master experience', 'Significant macOS experience (+5 years)', 'worked for 5+ years',
            '5 years of relevant software development experience', '3-6 years relevant experience',
            '5+ years of PHP experience', '3+ years audio programming experience', "2+ years' experience",
            '5+ years of software development experience', '3-5 years of relevant work experience',
@@ -83,24 +85,27 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '3 years of Ruby on Rails Experience', '5 years of it being Ruby on Rails', '4+ years programming experience',
            '3 years of relevant data development and technology experience', '8+ years programming experience',
            '3+ years of Ruby on Rails experience', '5+ years of professional Front End Development experience',
-           "7+ years of Application Development with experience defining development guidelines",
+           "7+ years of Application Development with experience defining development guidelines", "1 to 2 years’ experience",
            "3+ Years of software development experience", "2+ Years of professional Ruby on Rails development experience",
            "3 to 5 years’ experience with DBMS", '3 to 5 years related work experience', "3 to 5 years working knowledge",
-           "2 years related work experience",
+           "2 years related work experience", '7+ years of progressive work experience', '2+ years of DevOps leadership experience',
+           "5+ years experience", '5+ years of professional experience', '2+ years of experience'
            ]
 
-os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS', 'Unix']
+os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS', 'Unix',
+           'windows', 'OS X']
 
 ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integration', 'Continuous Delivery', 'CI/CD',
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
            'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'automated deployment', 'code-reviews', 'SCRUM',
            'pair-programming', 'Jira', 'Lean', 'Git', 'microservices', 'CI', 'refactoring', 'Unit tests', 'gitflow',
            'microservice', 'continuous integration', 'Git-Flow', 'unit testing', 'continuous delivery', 'responsive design',
-           'test-driven development', 'sprint', 'sprints', 'Kanban',
+           'test-driven development', 'sprint', 'sprints', 'Kanban', 'GIT'
            ]
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
            'Microsoft Azure', 'Solr', 'Microsoft Cognitive Services', 'OpenSLES', 'Gitlab', 'WebSphere', 'Xamarin',
            'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity', 'Terraform',
            'Slack', 'Trello', 'Ghost Inspector', 'CircleCI', 'Google Docs', 'Google Hangouts', 'Azure', 'GitHub',
-           'ERP', 'Kafka', 'GCE', 'Confluence', 'Zoom',]
+           'ERP', 'Kafka', 'GCE', 'Confluence', 'Zoom', 'GitLab', 'Consul', 'Packer', 'Nagios', 'PagerDuty',
+           'New Relic', 'Grafana', 'Kibana']
