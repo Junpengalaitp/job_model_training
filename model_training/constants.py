@@ -29,8 +29,8 @@ lf_list = ['React JS', 'React.js', 'react.js', 'React', 'Redux', 'EcmaScript', '
            'Next.js', 'torch', 'SASS', 'redux', 'npm', 'wordpress', 'Jquery', 'big data', 'webpack', 'babel', 'react',
            'Scrapy', 'Celery', 'RabbitMQ', 'Express', 'RESTify', 'Bootstrap', 'RiotJS', 'LESS', 'Spring', 'Spring boot',
            'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN', 'Yarn', 'Gulp',
-           'Ember', 'pytorch', 'Flux', 'Backbone.js', 'teaspoon', 'Axios', 'Hibernate', 'Puppet', 'serverless',
-           'Jupyter notebooks']
+           'Ember', 'pytorch', 'Flux', 'Backbone.js', 'teaspoon', 'Axios', 'Hibernate', 'Puppet', 'serverless', 'pandas',
+           'Jupyter notebooks', 'MyBatis', 'Jetty', 'gradle', 'grunt', 'JAXB', 'iText', 'Machine Learning']
 
 cp_list = ['DOM', 'JavaScript object model', 'routing', 'switching', 'MVC', 'MVVM', 'Routing', 'Scheduling']
 
@@ -63,7 +63,8 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'Data Developer/Engineer', 'Senior Software Engineer', 'web developer', 'Senior Engineer', 'Senior Front End Engineer',
            'FRONT END WEB DEVELOPER', 'business analysts', 'Back End Developers', 'Back End Development', 'software consultant',
            'UX Engineer', 'Software Developer', 'Senior DevOps Engineer', 'Data Engineer', 'UI/UX', 'software engineer',
-           'Front-End Developer', 'software developer'
+           'Front-End Developer', 'software developer', 'Data Analyst', 'Full Stack Software Engineers', 'security',
+           'Scrum master', 'SOLID', 'DDD', 'DRY', 'KISS'
            ]
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
@@ -100,7 +101,8 @@ ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integrat
            'Microservices', 'waterfall', 'ETL', 'JIRA', 'Capistrano', 'automated deployment', 'code-reviews', 'SCRUM',
            'pair-programming', 'Jira', 'Lean', 'Git', 'microservices', 'CI', 'refactoring', 'Unit tests', 'gitflow',
            'microservice', 'continuous integration', 'Git-Flow', 'unit testing', 'continuous delivery', 'responsive design',
-           'test-driven development', 'sprint', 'sprints', 'Kanban', 'GIT'
+           'test-driven development', 'sprint', 'sprints', 'Kanban', 'GIT', 'RDS', 'DMS', 'S3', 'EC2', 'CloudWatch',
+           'CloudSearch'
            ]
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
@@ -108,4 +110,4 @@ pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud P
            'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity', 'Terraform',
            'Slack', 'Trello', 'Ghost Inspector', 'CircleCI', 'Google Docs', 'Google Hangouts', 'Azure', 'GitHub',
            'ERP', 'Kafka', 'GCE', 'Confluence', 'Zoom', 'GitLab', 'Consul', 'Packer', 'Nagios', 'PagerDuty',
-           'New Relic', 'Grafana', 'Kibana']
+           'New Relic', 'Grafana', 'Kibana', 'github', 'Aspose']

@@ -12,5 +12,3 @@ D10 = "Job description Location: Remote Are you a U.S. resident looking for a vi
 if __name__ == '__main__':
     print(len(D1))
 
-
-
