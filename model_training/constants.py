@@ -43,13 +43,13 @@ cs_list = ['data structure', 'algorithms', 'concurrency', 'object-oriented progr
 
 pt_list = ['RESTful APIs', 'REST API', 'REST APIs', 'RESTful', 'TCP/IP', 'UDP', 'browser APIs', 'HTTP', 'WebSockets',
            'WebRTC', 'API', 'APIs', 'firewalls', 'Serverless', 'CORS', 'SSL', 'Paxos', 'WASAPI', 'CoreAudio', 'wasm',
-           'SFTP', 'SSH', 'TLS', 'FTP', 'REST']
+           'SFTP', 'SSH', 'TLS', 'FTP', 'REST', 'SOAP', 'Ethernet']
 
 ds_list = ['JSON', 'PostgreSQL', 'Postgres', 'MongoDB', 'mongodb', 'MySQL', 'mysql', 'ClustrixDB', 'Redis', 'redis', 'SQL',
            'MariaDB', 'InnoDB', 'Kafka', 'Nomad, NoSQL', 'Dynamo', 'Phoenix', 'MS SQL', 'No SQL', 'Firebase', 'HBase',
            'Memcached', 'relational database', 'Oracle',  'data warehouse', 'data marts', 'Kudu', 'HBase', 'HDFS',
            'MSSQL', 'NOSQL', 'NoSQL', 'relational database systems', 'Cassandra', 'Volt', 'relational databases',
-           'data warehouses', 'SQL Server', 'Postgresql']
+           'data warehouses', 'SQL Server', 'Postgresql', 'non-relational database']
 
 dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Full Stack', 'full stack', 'Android Developer',
            'Android engineer', 'Game Developer', 'artificial intelligence', '3D Rendering', 'architects', 'design', 'PM',
@@ -70,8 +70,9 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'Scrum master', 'SOLID', 'DDD', 'DRY', 'KISS', 'Frontend developers', 'SaaS', 'Sr. DevOps Engineer', 'Developers',
            'developer', 'Ruby on Rails developer', 'front-end developers', 'Machine Learning Engineer', 'natural language processing',
            'Quality Engineering Manager', 'software engineering', 'performance', 'devops', 'QA specialists', 'Mobile', 'mobile',
-           'Backend Software Engineer', 'quality engineering'
-
+           'Backend Software Engineer', 'quality engineering', 'PHP-Developer', 'PHP Developer', 'WordPress developers',
+           'mobile engineer', 'Site Reliability Engineer', 'data analytics', 'Software Support Engineer', 'troubleshoot',
+           'Frontend',
            ]
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
@@ -98,11 +99,11 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            "3 to 5 years’ experience with DBMS", '3 to 5 years related work experience', "3 to 5 years working knowledge",
            "2 years related work experience", '7+ years of progressive work experience', '2+ years of DevOps leadership experience',
            "5+ years experience", '5+ years of professional experience', '2+ years of experience', "3-5+ years work experience",
-           '3 years of relevant experience'
+           '3 years of relevant experience', '2 years experience in PHP'
            ]
 
 os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS', 'Unix',
-           'windows', 'OS X']
+           'windows', 'OS X', 'Windows Server']
 
 ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integration', 'Continuous Delivery', 'CI/CD',
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
@@ -110,7 +111,8 @@ ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integrat
            'pair-programming', 'Jira', 'Lean', 'Git', 'microservices', 'CI', 'refactoring', 'Unit tests', 'gitflow',
            'microservice', 'continuous integration', 'Git-Flow', 'unit testing', 'continuous delivery', 'responsive design',
            'test-driven development', 'sprint', 'sprints', 'Kanban', 'GIT', 'RDS', 'DMS', 'S3', 'EC2', 'CloudWatch',
-           'CloudSearch', 'Continuous integration', 'object oriented analysis', 'SOLID', 'DRY', 'DDD', 'KISS', 'code reviews'
+           'CloudSearch', 'Continuous integration', 'object oriented analysis', 'SOLID', 'DRY', 'DDD', 'KISS', 'code reviews',
+           'version control', 'SVN', 'SOAP', 'Troubleshooting', 'Windows Server'
            ]
 
 pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
@@ -119,4 +121,5 @@ pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud P
            'Slack', 'Trello', 'Ghost Inspector', 'CircleCI', 'Google Docs', 'Google Hangouts', 'Azure', 'GitHub',
            'ERP', 'Kafka', 'GCE', 'Confluence', 'Zoom', 'GitLab', 'Consul', 'Packer', 'Nagios', 'PagerDuty', 'Bitbucket',
            'New Relic', 'Grafana', 'Kibana', 'github', 'Aspose', 'GOOGLE CLOUD', 'Octopus', 'TeamCity', 'VSTS',
-           'SolarWinds', 'RDS', 'DMS', 'S3', 'EC2', 'CloudWatch', 'CloudSearch', 'Ceros', 'cloud services', 'Flutter']
+           'SolarWinds', 'RDS', 'DMS', 'S3', 'EC2', 'CloudWatch', 'CloudSearch', 'Ceros', 'cloud services', 'Flutter',
+           'Wireshark', 'tcpdump', 'TCPView', 'Process Explorer', 'Sysinternals']

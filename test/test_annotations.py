@@ -1,6 +1,6 @@
 import unittest
 from model_training.constants import *
-from model_training.training_10.train_data_10 import TRAIN_DATA
+from model_training.training_11.train_data_11 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
