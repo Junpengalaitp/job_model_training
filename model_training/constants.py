@@ -13,7 +13,7 @@ pf = 'PLATFORM'
 LABELS = [pl, lf, cp, cs, pt, ds, dv, we, os, ap, pf]
 
 pl_list = ['JavaScript', 'Javascript', 'javascript', 'JS', 'TypeScript', 'CoffeeScript', 'HTML', 'CSS', 'CSS3', 'PHP',
-           'ES6', 'Java', 'ruby', 'Typescript', 'XML', 'Bash',
+           'ES6', 'Java', 'ruby', 'Typescript', 'XML', 'Bash', 'PHP7', 'C++14',
            'java', 'Kotlin', 'kotlin', 'Go', 'go', 'bash', 'C++', 'C', 'c++', 'C#', 'c#', 'Scala', 'ES2015', 'SCSS',
            'Python', 'python', 'Ruby', 'HTML5', 'ES8', 'Golang', 'Rust', "rust", 'Objective C', 'objective-c', 'Obj-C',
            'Swift', 'swift', 'Perl', 'Erlang', 'Jython', 'Elixir', 'F#', 'ES7', 'GraphQL', 'ES2015+', 'Bash Shell']
@@ -31,7 +31,8 @@ lf_list = ['React JS', 'React.js', 'react.js', 'React', 'Redux', 'EcmaScript', '
            'Gradle', 'Maven', 'Magento', 'Odoo', 'Oboe', 'Sqoop', 'Hadoop', 'Spark', 'Hive', 'YARN', 'Yarn', 'Gulp',
            'Ember', 'pytorch', 'Flux', 'Backbone.js', 'teaspoon', 'Axios', 'Hibernate', 'Puppet', 'serverless', 'pandas',
            'Jupyter notebooks', 'MyBatis', 'Jetty', 'gradle', 'grunt', 'JAXB', 'iText', 'Machine Learning', 'WebAPI',
-           'Hangfire', 'Rspec', 'capybara', 'Capybara', 'Teaspoon', 'Jasmine', 'PyTorch', 'Flair', 'SpaCy', 'Keras']
+           'Hangfire', 'Rspec', 'capybara', 'Capybara', 'Teaspoon', 'Jasmine', 'PyTorch', 'Flair', 'SpaCy', 'Keras',
+           'Less', 'ReactNative', 'yarn', 'ReactJS', 'node', 'Laravel 5', 'SAFe', 'HTCondor']
 
 cp_list = ['DOM', 'JavaScript object model', 'routing', 'switching', 'MVC', 'MVVM', 'Routing', 'Scheduling',
            'development lifecycles']
@@ -39,17 +40,18 @@ cp_list = ['DOM', 'JavaScript object model', 'routing', 'switching', 'MVC', 'MVV
 cs_list = ['data structure', 'algorithms', 'concurrency', 'object-oriented programming', 'design patterns',
            'Computer Science', "distributed systems", 'OOP', 'Cryptography', 'computability', 'computer architecture',
            'concurrency', 'parallelism', 'Mathematics', 'Statistics', 'text classification', 'named-entity recognition',
-           'NER', 'chunking', 'convolutional neural network', 'CNN', 'transfer learning']
+           'NER', 'chunking', 'convolutional neural network', 'CNN', 'transfer learning', 'computer science']
 
 pt_list = ['RESTful APIs', 'REST API', 'REST APIs', 'RESTful', 'TCP/IP', 'UDP', 'browser APIs', 'HTTP', 'WebSockets',
            'WebRTC', 'API', 'APIs', 'firewalls', 'Serverless', 'CORS', 'SSL', 'Paxos', 'WASAPI', 'CoreAudio', 'wasm',
-           'SFTP', 'SSH', 'TLS', 'FTP', 'REST', 'SOAP', 'Ethernet']
+           'SFTP', 'SSH', 'TLS', 'FTP', 'REST', 'SOAP', 'Ethernet', 'BGP', 'VPN', 'DNS']
 
 ds_list = ['JSON', 'PostgreSQL', 'Postgres', 'MongoDB', 'mongodb', 'MySQL', 'mysql', 'ClustrixDB', 'Redis', 'redis', 'SQL',
            'MariaDB', 'InnoDB', 'Kafka', 'Nomad, NoSQL', 'Dynamo', 'Phoenix', 'MS SQL', 'No SQL', 'Firebase', 'HBase',
            'Memcached', 'relational database', 'Oracle',  'data warehouse', 'data marts', 'Kudu', 'HBase', 'HDFS',
            'MSSQL', 'NOSQL', 'NoSQL', 'relational database systems', 'Cassandra', 'Volt', 'relational databases',
-           'data warehouses', 'SQL Server', 'Postgresql', 'non-relational database']
+           'data warehouses', 'SQL Server', 'Postgresql', 'non-relational database', 'Varnish', 'Presto', 'DNS',
+           'PrestoDB']
 
 dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Full Stack', 'full stack', 'Android Developer',
            'Android engineer', 'Game Developer', 'artificial intelligence', '3D Rendering', 'architects', 'design', 'PM',
@@ -72,7 +74,8 @@ dv_list = ['front-end', 'frontend engineers', 'Web Architect', 'architect', 'Ful
            'Quality Engineering Manager', 'software engineering', 'performance', 'devops', 'QA specialists', 'Mobile', 'mobile',
            'Backend Software Engineer', 'quality engineering', 'PHP-Developer', 'PHP Developer', 'WordPress developers',
            'mobile engineer', 'Site Reliability Engineer', 'data analytics', 'Software Support Engineer', 'troubleshoot',
-           'Frontend',
+           'Frontend', 'ReactJS Developer', 'Senior developers', 'Desktop engineers', 'Software Engineer', 'DevOps Engineer',
+           'Software Engineers', 'product engineers'
            ]
 
 we_list = ['5+ years of experience', '4 years of professional experience', '2-5 years of experience', '2+ years focused on',
@@ -90,7 +93,7 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            '5+ years of software development experience', '3-5 years of relevant work experience', '4 years experience',
            '7+ years in the software development industryExperience ', '5 years professional development experience',
            '5+ years of applicable experience', '3+ years of experience', '2 years of Ruby on Rails Experience',
-           '3+ years of professional experience', '10+ years of professional engineering experience',
+           '3+ years of professional experience', '10+ years of professional engineering experience', '1+ years using',
            '3 years of Ruby on Rails Experience', '5 years of it being Ruby on Rails', '4+ years programming experience',
            '3 years of relevant data development and technology experience', '8+ years programming experience',
            '3+ years of Ruby on Rails experience', '5+ years of professional Front End Development experience',
@@ -99,11 +102,14 @@ we_list = ['5+ years of experience', '4 years of professional experience', '2-5 
            "3 to 5 years’ experience with DBMS", '3 to 5 years related work experience', "3 to 5 years working knowledge",
            "2 years related work experience", '7+ years of progressive work experience', '2+ years of DevOps leadership experience',
            "5+ years experience", '5+ years of professional experience', '2+ years of experience', "3-5+ years work experience",
-           '3 years of relevant experience', '2 years experience in PHP'
+           '3 years of relevant experience', 'Professional experience (hands-on) with ReactJS Framework for 2+ years',
+           "3+ years' experience", '2 years experience in PHP', 'Prior experience (at least 3 years)', 'one year experience',
+           '3-5 years of experience', 'two years’ experience', '3+ years of DevOps and/or Operations experience',
+           '1+ years of production environment experience', '2 years experience developing software'
            ]
 
 os_list = ['Ubuntu', 'Android', 'Debian', 'iOS', 'Windows', 'Linux', 'CentOS', 'Redhat', 'RHEL', 'macOS', 'Unix',
-           'windows', 'OS X', 'Windows Server']
+           'windows', 'OS X', 'Windows Server', 'shell', 'linux']
 
 ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integration', 'Continuous Delivery', 'CI/CD',
            'Scrum', 'scrum', 'XP', 'automated testing', 'Agile', 'agile', 'git', 'automation', 'TDD', 'object-oriented design',
@@ -112,14 +118,15 @@ ap_list = ['Agile', 'automated tests', 'automated testing', 'Continuous Integrat
            'microservice', 'continuous integration', 'Git-Flow', 'unit testing', 'continuous delivery', 'responsive design',
            'test-driven development', 'sprint', 'sprints', 'Kanban', 'GIT', 'RDS', 'DMS', 'S3', 'EC2', 'CloudWatch',
            'CloudSearch', 'Continuous integration', 'object oriented analysis', 'SOLID', 'DRY', 'DDD', 'KISS', 'code reviews',
-           'version control', 'SVN', 'SOAP', 'Troubleshooting', 'Windows Server'
+           'version control', 'SVN', 'SOAP', 'Troubleshooting', 'Unit testing', 'unit tests', 'automated configuration'
            ]
 
-pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP',
+pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud Platform', 'Google Cloud', 'GCP', 'IAM',
            'Microsoft Azure', 'Solr', 'Microsoft Cognitive Services', 'OpenSLES', 'Gitlab', 'WebSphere', 'Xamarin',
            'Heroku', 'Google Analytics', 'OpenStack', 'VMware', 'Github', 'Chrome plugins', 'Unity', 'Terraform',
-           'Slack', 'Trello', 'Ghost Inspector', 'CircleCI', 'Google Docs', 'Google Hangouts', 'Azure', 'GitHub',
+           'Slack', 'Trello', 'Ghost Inspector', 'CircleCI', 'Google Docs', 'Google Hangouts', 'Azure', 'GitHub', 'docker',
            'ERP', 'Kafka', 'GCE', 'Confluence', 'Zoom', 'GitLab', 'Consul', 'Packer', 'Nagios', 'PagerDuty', 'Bitbucket',
            'New Relic', 'Grafana', 'Kibana', 'github', 'Aspose', 'GOOGLE CLOUD', 'Octopus', 'TeamCity', 'VSTS',
            'SolarWinds', 'RDS', 'DMS', 'S3', 'EC2', 'CloudWatch', 'CloudSearch', 'Ceros', 'cloud services', 'Flutter',
-           'Wireshark', 'tcpdump', 'TCPView', 'Process Explorer', 'Sysinternals']
+           'Wireshark', 'tcpdump', 'TCPView', 'Process Explorer', 'Sysinternals', 'Figma', 'Sketch', 'inVision',
+           'Vagrant', 'Grunt', 'Bower', 'ElastiCache', 'SQS', 'ECS', 'Marathon', 'Mesos', 'kubernetes']
