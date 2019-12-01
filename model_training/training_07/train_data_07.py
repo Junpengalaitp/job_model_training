@@ -1,4 +1,4 @@
-from model_training.constants import pl, lf, cs, pt, ds, dv, we, os, ap, pf, cp
+from model_training_algo.constants import pl, lf, cs, pt, ds, dv, we, os_, ap, pf, cp
 from model_training.training_07.job_desc_07 import *
 
 TRAIN_DATA = [
@@ -16,7 +16,7 @@ TRAIN_DATA = [
                         (4289, 4297, ds), (3774, 3781, pl), (3790, 3800, pl), (2928, 2935, lf), (3859, 3866, lf),
                         (3894, 3899, lf), (1621, 1628, dv), (2274, 2281, dv), (3867, 3874, dv), (2325, 2333, dv),
                         (3900, 3908, dv), (2803, 2807, pt), (2890, 2894, pt), (4101, 4105, pt), (1023, 1026, pt),
-                        (4207, 4210, pt), (4468, 4473, os), (4475, 4479, pt), (3292, 3305, ap)]}),
+                        (4207, 4210, pt), (4468, 4473, os_), (4475, 4479, pt), (3292, 3305, ap)]}),
 
      (D3, {'entities': [(456, 461, ap), (749, 754, ap), (1006, 1011, ap), (2184, 2189, ap), (2274, 2279, ap), (2484, 2489, ap),
                         (2512, 2517, ap), (2675, 2680, ap), (2860, 2865, ap), (2946, 2951, ap), (3165, 3170, ap), (3499, 3504, ap),

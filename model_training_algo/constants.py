@@ -1,4 +1,5 @@
 pl = "PROGRAMMING_LANGUAGE"
+ol = "OTHER_LANGUAGE"
 lf = "LIBRARY_OR_FRAMEWORK"
 cp = "CONCEPT"
 cs = "COMPUTER_SCIENCE"
@@ -6,11 +7,17 @@ pt = "PROTOCOL"
 ds = "DATA_STORAGE"
 dv = "DIVISION"
 we = "WORK_EXPERIENCE"
-os = 'OS'
-ap = 'APPROACH'
-pf = 'PLATFORM'
+os_ = "OS"
+ap = "APPROACH"
+pf = "PLATFORM"
+ps = "POSITION"
+fd = "FIELD"
+ge = "GENERAL"
+tl = "TOOL"
+at = "ARCHITECT"
 
-LABELS = [pl, lf, cp, cs, pt, ds, dv, we, os, ap, pf]
+
+LABELS = [pl, lf, cp, cs, pt, ds, dv, we, os_, ap, pf, ps, fd, ge, tl, at, ol]
 
 pl_list = ['JavaScript', 'Javascript', 'javascript', 'JS', 'TypeScript', 'CoffeeScript', 'HTML', 'CSS', 'CSS3', 'PHP',
            'ES6', 'Java', 'ruby', 'Typescript', 'XML', 'Bash', 'PHP7', 'C++14',
@@ -130,3 +137,5 @@ pf_list = ['AWS', 'Docker', 'Kubernetes', 'Amazon Web Services', 'Google Cloud P
            'SolarWinds', 'RDS', 'DMS', 'S3', 'EC2', 'CloudWatch', 'CloudSearch', 'Ceros', 'cloud services', 'Flutter',
            'Wireshark', 'tcpdump', 'TCPView', 'Process Explorer', 'Sysinternals', 'Figma', 'Sketch', 'inVision',
            'Vagrant', 'Grunt', 'Bower', 'ElastiCache', 'SQS', 'ECS', 'Marathon', 'Mesos', 'kubernetes']
+
+

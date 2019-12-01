@@ -1,5 +1,5 @@
 import unittest
-from model_training.constants import *
+from model_training_algo.constants import *
 from model_training.training_11.train_data_11 import TRAIN_DATA
 
 

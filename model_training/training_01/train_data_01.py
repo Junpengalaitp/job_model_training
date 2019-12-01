@@ -1,4 +1,4 @@
-from model_training.constants import pl, lf, cp, cs, pt, ds, dv, we, os, ap, pf
+from model_training_algo.constants import pl, lf, cp, cs, pt, ds, dv, we, os_, ap, pf
 from model_training.training_01.job_desc_01 import *
 
 TRAIN_DATA = [
@@ -13,9 +13,9 @@ TRAIN_DATA = [
     (D3, {"entities": [(543, 560, dv), (625, 642, dv), (1299, 1316, dv), (1999, 2016, dv), (1529, 1539, dv),
                        (1744, 1746, dv), (2393, 2397, pl), (2424, 2430, pl), (2702, 2707, lf), (2709, 2716, lf),
                        (2722, 2730, lf), (2822, 2828, lf), (2302, 2324, we), ]}),
-    (D4, {"entities": [(51, 70, dv), (626, 632, pl), (1238, 1244, pl), (1898, 1904, os), (570, 576, os), (1765, 1771,
-                                                                                                          os),
-                       (1905, 1911, os), (933, 935, dv)]}),
+    (D4, {"entities": [(51, 70, dv), (626, 632, pl), (1238, 1244, pl), (1898, 1904, os_), (570, 576, os_), (1765, 1771,
+                                                                                                            os_),
+                       (1905, 1911, os_), (933, 935, dv)]}),
     (D5, {"entities": [(998, 1000, dv), (1200, 1202, dv), (1367, 1369, dv), (2517, 2523, pl), (2527, 2533, lf),
                        (2535, 2547, lf), (2549, 2556, lf), (2557, 2567, pl), (2569, 2574, lf), (2575, 2585, ds)]}),
     (D6, {"entities": [(843, 877, we), (375, 379, pl), (805, 809, pl), (814, 827, lf), (719, 724, ap)]}),
