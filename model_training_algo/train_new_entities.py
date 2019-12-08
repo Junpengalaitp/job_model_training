@@ -63,7 +63,7 @@ def main(model=None, new_model_name="job_model", output_dir=path, n_iter=1000):
             print("Losses", losses)
 
     # test the trained model
-    test_text = "Do you like JavaScript? I like PHP"
+    test_text = "Do you like JavaScript? I like HTML"
     doc = nlp(test_text)
     print("Entities in '%s'" % test_text)
     for ent in doc.ents:
