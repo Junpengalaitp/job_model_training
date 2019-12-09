@@ -1,15 +1,16 @@
 import re
 
 from model_training_algo.constants import pl, lb, cs, pt, ds, dv, we, os_, ap, pf, ps, ge, tl, at, ol, sf, pd, fw, sv, \
-    ql
+    ql, of
 from model_training_v2.training_01.job_desc_01 import _2923a7d6b1cf9df5993253768bb05ada370ce5e55d1772acf94bbcd41fac2e85 as D1, \
-    _e513f83c20942b5ecaa3a1247c154892802845c5eb3161201f4c0394d419a427 as D2
+    _e513f83c20942b5ecaa3a1247c154892802845c5eb3161201f4c0394d419a427 as D2, \
+    _c213b25d1182cce917971584991d1aef747d677967eb2dfc490ad45543554d1a as D3
 
 TRAIN_DATA = [
     (D1, {
         "entities": [(17, 41, ps), (318, 328, pl), (346, 352, pl), (354, 360, pl), (405, 410, ds), (440, 443, pf),
                      (881, 884, pf), (365, 369, pl), (450, 458, pf), (476, 485, pf), (470, 474, ds), (487, 495, dv),
-                     (552, 559, ap), (516, 540, ql), (561, 566, lb), (568, 571, tl), (573, 577, lb), (671, 678, ap),
+                     (552, 559, ap), (516, 540, ql), (561, 566, fw), (568, 571, tl), (573, 577, lb), (671, 678, ap),
                      (680, 685, ds), (707, 720, lb), (754, 766, at), (768, 775, ol), (873, 876, pf), (817, 825, dv),
                      (853, 867, pf), (983, 993, ap), (895, 901, pf), (906, 928, ap), (943, 952, ap), (954, 963, ap),
                      (1030, 1046, ps), (1156, 1163, dv), (1595, 1602, dv), (2433, 2440, dv), (1328, 1338, ap),
@@ -33,7 +34,19 @@ TRAIN_DATA = [
                      (4719, 4735, ap), (4770, 4773, at), (4813, 4833, ap), (4843, 4862, ap), (5001, 5004, pf), (5025, 5031, pf),
                      (5042, 5048, tl), (5050, 5055, tl), (5057, 5061, fw), (5063, 5068, lb), (5070, 5076, tl), (5078, 5091, tl),
                      (5093, 5108, tl), (3412, 3425, ql), (3397, 3410, ql), ]}),
-    # (D3, {"entities": []}),
+    (D3, {"entities": [(74, 82, pd), (89, 94, ap), (161, 168, ap), (170, 183, ap), (185, 195, ap),
+                       (197, 208, ap), (234, 241, ap), (2015, 2022, ap), (381, 390, ap), (418, 421, pt), (895, 899, pt),
+                       (1722, 1725, pt), (666, 715, we), (746, 750, ol), (751, 754, pl), (1864, 1867, pl),
+                       (758, 761, ol), (778, 785, fw), (787, 792, fw), (794, 801, lb), (803, 807, ol), (823, 835, pd),
+                       (856, 860, pt), (923, 927, pt), (909, 913, ds), (919, 922, ol), (946, 953, ap), (970, 979, ds),
+                       (981, 988, ds), (990, 993, sv), (1080, 1094, ap), (1110, 1117, ap), (1159, 1165, pf), (1238, 1258, ge),
+                       (1291, 1301, sf), (1302, 1309, ap), (1477, 1484, ge), (1311, 1325, ap), (1331, 1339, sf),
+                       (1397, 1406, ge), (1384, 1395, ge), (1408, 1418, ge), (1558, 1570, ap), (1575, 1586, ap),
+                       (1613, 1620, fw), (1622, 1627, fw), (1629, 1641, pf), (1643, 1651, fw),
+                       (1665, 1672, fw), (1788, 1804, ql), (1806, 1814, ql), (1833, 1841, ql), (1842, 1857, pd),
+                       (2151, 2179, of), (2069, 2074, tl), (2079, 2084, tl), (2096, 2107, of),
+
+                       ]}),
     # (D4, {"entities": []}),
     # (D5, {"entities": []}),
     # (D7, {"entities": []}),
@@ -43,10 +56,10 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "JAXB"
+    word = "Mocha"
 
     from model_training_algo.constants import CONSTANTS_DICT
-    start_index = [m.start() for m in re.finditer(word, D2)]
+    start_index = [m.start() for m in re.finditer(word, D1)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"
@@ -56,15 +69,15 @@ if __name__ == '__main__':
                 break
         print('(' + index + ', ' + _type + ')', end=', ')
 
-    ent_dict = {}
-    for data in TRAIN_DATA:
-        for entity in data[1]["entities"]:
-            entity_type = entity[-1]
-            entity_name = data[0][entity[0]: entity[1]]
-            print(entity_name + ": " + entity_type)
-            if entity_type not in ent_dict:
-                ent_dict[entity_type] = [entity_name]
-            else:
-                ent_dict[entity_type].append(entity_name)
-    for k in ent_dict:
-        print(k + ':', set(ent_dict[k]))
+    # ent_dict = {}
+    # for data in TRAIN_DATA:
+    #     for entity in data[1]["entities"]:
+    #         entity_type = entity[-1]
+    #         entity_name = data[0][entity[0]: entity[1]]
+    #         print(entity_name + ": " + entity_type)
+    #         if entity_type not in ent_dict:
+    #             ent_dict[entity_type] = [entity_name]
+    #         else:
+    #             ent_dict[entity_type].append(entity_name)
+    # for k in ent_dict:
+    #     print(k + ':', set(ent_dict[k]))
