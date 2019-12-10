@@ -1,12 +1,13 @@
 import re
 
 from model_training_algo.constants import pl, lb, cs, pt, ds, dv, we, os_, ap, pf, ps, ge, tl, at, ol, sf, pd, fw, sv, \
-    ql, of
+    ql, of, tm
 from model_training_v2.training_01.job_desc_01 import \
     _2923a7d6b1cf9df5993253768bb05ada370ce5e55d1772acf94bbcd41fac2e85 as D1, \
     _e513f83c20942b5ecaa3a1247c154892802845c5eb3161201f4c0394d419a427 as D2, \
     _c213b25d1182cce917971584991d1aef747d677967eb2dfc490ad45543554d1a as D3, \
-    _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4
+    _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4, \
+    _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5
 
 TRAIN_DATA = [
     (D1, {
@@ -63,7 +64,14 @@ TRAIN_DATA = [
                        (1031, 1043, dv), (1135, 1159, of), (1207, 1228, of), (1576, 1586, sf), (1717, 1725, ge),
                        (1727, 1737, ge), (1871, 1881, ge), (2000, 2013, ge), (2060, 2074, ge), (2079, 2092, ge),
                        (2094, 2110, ge), ]}),
-    # (D5, {"entities": []}),
+    (D5, {"entities": [(73, 87, pd), (788, 802, pd), (244, 263, we), (289, 298, dv), (0, 6, pl), (494, 500, pl),
+                       (518, 525, lb), (530, 536, lb), (553, 556, pf), (557, 579, pd), (593, 601, pf), (603, 609, pf),
+                       (611, 619, pf), (621, 623, pf), (683, 695, pf), (803, 807, pt), (824, 830, sv), (835, 842, lb),
+                       (849, 865, pd), (882, 889, tl), (894, 900, pl), (1018, 1025, ol), (969, 980, ap), (1152, 1170, ap),
+                       (1107, 1117, cs), (1137, 1147, cs), (1257, 1262, ql), (1264, 1270, ql),
+                       (1282, 1297, ql), (1303, 1314, sf), (1352, 1382, ge), (1753, 1766, sf), (1812, 1825, tm),
+                       (1826, 1842, tm), (1874, 1883, of), (1985, 2010, of), (1960, 1980, of),
+                       ]}),
     # (D7, {"entities": []}),
     # (D8, {"entities": []}),
     # (D9, {"entities": []}),
@@ -71,11 +79,11 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "Customer Focused"
+    word = "diverse perspectives"
 
     from model_training_algo.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D4)]
+    start_index = [m.start() for m in re.finditer(word, D5)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"
