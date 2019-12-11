@@ -7,7 +7,8 @@ from model_training_v2.training_01.job_desc_01 import \
     _e513f83c20942b5ecaa3a1247c154892802845c5eb3161201f4c0394d419a427 as D2, \
     _c213b25d1182cce917971584991d1aef747d677967eb2dfc490ad45543554d1a as D3, \
     _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4, \
-    _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5
+    _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5, \
+    _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6
 
 TRAIN_DATA = [
     (D1, {
@@ -72,6 +73,13 @@ TRAIN_DATA = [
                        (1282, 1297, ql), (1303, 1314, sf), (1352, 1382, ge), (1753, 1766, sf), (1812, 1825, tm),
                        (1826, 1842, tm), (1874, 1883, of), (1985, 2010, of), (1960, 1980, of),
                        ]}),
+    (D6, {"entities": [(269, 281, ge), (337, 351, pd), (395, 417, sf), (423, 435, ge), (954, 966, ge), (440, 451, ge),
+                       (537, 542, ge), (544, 552, ge), (554, 565, ge), (887, 890, pl), (921, 924, pl), (2812, 2815, pl),
+                       (1005, 1014, tl), (1059, 1068, tl), (1143, 1146, pl), (1173, 1178, lb), (1192, 1196, sv),
+                       (1230, 1237, tl), (1277, 1297, ge), (1524, 1540, pd), (1900, 1909, ap), (1911, 1918, ap),
+                       (1940, 1951, ap), (2003, 2008, ap), (2059, 2064, ap), (2212, 2232, sf),
+                       (2311, 2322, sf), (3249, 3255, of), (3281, 3295, of), (3308, 3325, of), (3757, 3774, of),
+                       (3361, 3373, of), (3378, 3399, of), (3840, 3857, of)]}),
     # (D7, {"entities": []}),
     # (D8, {"entities": []}),
     # (D9, {"entities": []}),
@@ -79,11 +87,11 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "diverse perspectives"
+    word = "webpack"
 
     from model_training_algo.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D5)]
+    start_index = [m.start() for m in re.finditer(word, D6)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"
@@ -93,15 +101,15 @@ if __name__ == '__main__':
                 break
         print('(' + index + ', ' + _type + ')', end=', ')
 
-    ent_dict = {}
-    for data in TRAIN_DATA:
-        for entity in data[1]["entities"]:
-            entity_type = entity[-1]
-            entity_name = data[0][entity[0]: entity[1]]
-            print(entity_name + ": " + entity_type)
-            if entity_type not in ent_dict:
-                ent_dict[entity_type] = [entity_name]
-            else:
-                ent_dict[entity_type].append(entity_name)
-    for k in ent_dict:
-        print(k + ':', set(ent_dict[k]))
+    # ent_dict = {}
+    # for data in TRAIN_DATA:
+    #     for entity in data[1]["entities"]:
+    #         entity_type = entity[-1]
+    #         entity_name = data[0][entity[0]: entity[1]]
+    #         print(entity_name + ": " + entity_type)
+    #         if entity_type not in ent_dict:
+    #             ent_dict[entity_type] = [entity_name]
+    #         else:
+    #             ent_dict[entity_type].append(entity_name)
+    # for k in ent_dict:
+    #     print(k + ':', set(ent_dict[k]))
