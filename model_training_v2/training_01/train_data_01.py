@@ -8,7 +8,8 @@ from model_training_v2.training_01.job_desc_01 import \
     _c213b25d1182cce917971584991d1aef747d677967eb2dfc490ad45543554d1a as D3, \
     _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4, \
     _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5, \
-    _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6
+    _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6, \
+    _516a36ab2091b8e70b7c6f638f1830cd0cf49a5e1d4ea93fc6c8b4840d678010 as D7
 
 TRAIN_DATA = [
     (D1, {
@@ -80,18 +81,27 @@ TRAIN_DATA = [
                        (1940, 1951, ap), (2003, 2008, ap), (2059, 2064, ap), (2212, 2232, sf),
                        (2311, 2322, sf), (3249, 3255, of), (3281, 3295, of), (3308, 3325, of), (3757, 3774, of),
                        (3361, 3373, of), (3378, 3399, of), (3840, 3857, of)]}),
-    # (D7, {"entities": []}),
+    (D7, {"entities": [(56, 61, pd), (955, 969, dv), (1201, 1207, pl), (2331, 2337, pl), (2358, 2365, pl),
+                       (1253, 1260, pl), (2382, 2389, pl), (1262, 1266, pl), (2374, 2378, pl), (1268, 1269, pl),
+                       (1275, 1278, pl), (1366, 1376, ds), (2554, 2564, ds), (1378, 1383, ds), (2544, 2549, ds),
+                       (1385, 1392, ds), (1394, 1402, pf), (2534, 2542, pf), (1408, 1413, ds),
+                       (1484, 1492, ds), (1506, 1519, dv), (1546, 1555, ap), (2822, 2831, ap), (1567, 1574, ap),
+                       (1580, 1591, ap), (1647, 1651, pt), (1625, 1641, pd), (1596, 1610, pd), (1676, 1692, tm),
+                       (1737, 1745, dv), (1749, 1763, dv), (1771, 1786, dv), (1847, 1858, sf), (1867, 1873, ap),
+                       (1973, 1993, ap), (2014, 2026, ap), (2118, 2124, sf), (2898, 2907, sf), (2912, 2920, sf),
+                       (2948, 2955, ge), (2960, 2970, ge), (2399, 2402, pl), (2659, 2668, at), (2670, 2675, ds),
+                       (1474, 1479, ds), (2188, 2198, ge), (2733, 2743, ge), (2706, 2726, sf), ]}),
     # (D8, {"entities": []}),
     # (D9, {"entities": []}),
     # (D10, {"entities": []})
 ]
 
 if __name__ == '__main__':
-    word = "webpack"
+    word = "communication skills"
 
     from model_training_algo.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D6)]
+    start_index = [m.start() for m in re.finditer(word, D7)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"
