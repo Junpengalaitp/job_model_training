@@ -1,3 +1,4 @@
+import os
 import re
 
 from model_training_algo.constants import pl, lb, cs, pt, ds, dv, we, os_, ap, pf, ps, ge, tl, at, ol, sf, pd, fw, sv, \
@@ -9,7 +10,8 @@ from model_training_v2.training_01.job_desc_01 import \
     _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4, \
     _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5, \
     _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6, \
-    _516a36ab2091b8e70b7c6f638f1830cd0cf49a5e1d4ea93fc6c8b4840d678010 as D7
+    _516a36ab2091b8e70b7c6f638f1830cd0cf49a5e1d4ea93fc6c8b4840d678010 as D7, \
+    _1dd6b08b6221b5ebebcf086304b3f2c846eae4a71d833d26d53b250955de811a as D8
 
 TRAIN_DATA = [
     (D1, {
@@ -91,17 +93,24 @@ TRAIN_DATA = [
                        (1973, 1993, ap), (2014, 2026, ap), (2118, 2124, sf), (2898, 2907, sf), (2912, 2920, sf),
                        (2948, 2955, ge), (2960, 2970, ge), (2399, 2402, pl), (2659, 2668, at), (2670, 2675, ds),
                        (1474, 1479, ds), (2188, 2198, ge), (2733, 2743, ge), (2706, 2726, sf), ]}),
-    # (D8, {"entities": []}),
+    (D8, {"entities": [(30, 45, tm), (47, 56, tm), (449, 459, ge), (573, 591, of), (593, 609, of), (638, 645, ge),
+                       (650, 665, ge), (976, 981, lb), (983, 995, fw), (1004, 1014, pl), (1041, 1044, os_),
+                       (1049, 1056, os_), (1122, 1135, ql), (1137, 1145, ql), (1147, 1156, ql), (1226, 1237, pd),
+                       (1278, 1285, ge), (1491, 1497, pd), (1523, 1530, pd),
+                       (1396, 1401, pd), (1945, 1960, of), (2069, 2080, pd), (2128, 2142, of), (2337, 2347, tm),
+                       (115, 121, tm), (160, 166, tm), (1194, 1200, tm), (2349, 2355, tm),
+                       (2382, 2391, ge), (2650, 2659, ge), (2873, 2882, ge), (2393, 2402, ge),
+                       (2416, 2429, ge), (2431, 2442, sf), (2212, 2221, sf), ]}),
     # (D9, {"entities": []}),
     # (D10, {"entities": []})
 ]
 
 if __name__ == '__main__':
-    word = "communication skills"
+    word = "coworking"
 
     from model_training_algo.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D7)]
+    start_index = [m.start() for m in re.finditer(word, D8)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"
