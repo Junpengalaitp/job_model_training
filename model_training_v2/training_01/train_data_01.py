@@ -12,7 +12,8 @@ from model_training_v2.training_01.job_desc_01 import \
     _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6, \
     _516a36ab2091b8e70b7c6f638f1830cd0cf49a5e1d4ea93fc6c8b4840d678010 as D7, \
     _1dd6b08b6221b5ebebcf086304b3f2c846eae4a71d833d26d53b250955de811a as D8, \
-    _ec4eec423b2b46859324e6f8df6bc44f635d51415a224fc13b36b9eacdf5c223 as D9
+    _ec4eec423b2b46859324e6f8df6bc44f635d51415a224fc13b36b9eacdf5c223 as D9, \
+    _ab44ba20db20d123646df89f89464e37995859d5cbf49b825b86ef32de354dc9 as D10
 
 TRAIN_DATA = [
     (D1, {
@@ -112,16 +113,25 @@ TRAIN_DATA = [
                        (1694, 1703, pd), (1727, 1733, pd), (1759, 1766, pd), (2181, 2196, of), (2305, 2316, pd),
                        (2364, 2378, of), (2448, 2457, sf), (2573, 2583, tm), (115, 121, tm), (160, 166, tm),
                        (1430, 1436, tm), (2585, 2591, tm), (2618, 2627, ge), (2886, 2895, ge), (3109, 3118, ge),
-                       (2629, 2638, ge), (2652, 2665, ge), (2667, 2678, sf) ]}),
-    # (D10, {"entities": []})
+                       (2629, 2638, ge), (2652, 2665, ge), (2667, 2678, sf)]}),
+    (D10, {"entities": [(9, 17, ge), (144, 152, tm), (19, 27, ge), (29, 40, ge), (132, 142, tm), (406, 421, ps),
+                        (485, 493, pd), (2098, 2106, pd), (586, 594, ap), (574, 581, ap), (853, 867, tm), (973, 983, ge),
+                        (988, 999, ge), (1060, 1069, ge), (340, 350, ql), (4870, 4880, ql), (1071, 1089, sf),
+                        (1141, 1148, ge), (1150, 1159, ql), (1165, 1182, ge), (1217, 1224, ge), (3437, 3444, ge),
+                        (1494, 1507, sf), (1812, 1825, ge), (2163, 2181, at), (2211, 2220, tl), (5003, 5012, tl),
+                        (2297, 2305, at), (2369, 2376, ap), (2420, 2425, ol), (2427, 2431, ol), (2433, 2443, pl),
+                        (2485, 2495, pl), (2444, 2450, lb), (2456, 2459, pl), (2516, 2523, fw), (2527, 2532, lb),
+                        (2557, 2572, ap), (2590, 2593, tl), (2623, 2654, we), (2916, 2921, dv), (2985, 2994, tl),
+                        (3470, 3491, of), (3493, 3497, of), (3524, 3540, of), (3542, 3555, of),
+                        (3561, 3576, of), (3857, 3874, of), (4660, 4666, tl), (4671, 4677, tl), ]})
 ]
 
 if __name__ == '__main__':
-    word = "energized"
+    word = "PayPal"
 
     from model_training_algo.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D9)]
+    start_index = [m.start() for m in re.finditer(word, D10)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"
