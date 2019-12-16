@@ -1,7 +1,8 @@
 import unittest
 from collections import defaultdict
 
-from model_training_algo.constants import *
+from constants.constants import *
+from constants.technical_term import pl_collection, ol_collection, lb_collection
 from model_training_v2.training_01.train_data_01 import TRAIN_DATA
 
 
@@ -35,6 +36,7 @@ class TestAnnotations(unittest.TestCase):
 
     def test_PROGRAMMING_LANGUAGE(self):
         print(set(self.ent_dict['PROGRAMMING_LANGUAGE']))
+        pl_list = [pl for pls in pl_collection.values() for pl in pls]
         for word in set(self.ent_dict['PROGRAMMING_LANGUAGE']):
             if word not in pl_list:
                 print('the testing word not in list: ', word)
@@ -42,6 +44,7 @@ class TestAnnotations(unittest.TestCase):
 
     def test_OTHER_LANGUAGE(self):
         print(set(self.ent_dict['OTHER_LANGUAGE']))
+        ol_list = [ol for ols in ol_collection.values() for ol in ols]
         for word in set(self.ent_dict['OTHER_LANGUAGE']):
             if word not in ol_list:
                 print('the testing word not in list: ', word)
@@ -49,6 +52,7 @@ class TestAnnotations(unittest.TestCase):
 
     def test_LIBRARY(self):
         print(set(self.ent_dict['LIBRARY']))
+        lb_list = [lb for lbs in lb_collection.values() for lb in lbs]
         for word in set(self.ent_dict['LIBRARY']):
             if word not in lb_list:
                 print('the testing word not in list: ', word)

@@ -1,5 +1,4 @@
 from __future__ import unicode_literals, print_function
-import os
 import random
 from pathlib import Path
 
@@ -7,7 +6,7 @@ import plac
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training_algo.constants import LABELS
+from constants.constants import LABELS
 from model_training_v2.training_01.train_data_01 import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

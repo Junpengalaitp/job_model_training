@@ -1,8 +1,6 @@
-import os
 import re
 
-from model_training_algo.constants import pl, lb, cs, pt, ds, dv, we, os_, ap, pf, ps, ge, tl, at, ol, sf, pd, fw, sv, \
-    ql, of, tm
+from constants.category import pl, ol, lb, fw, cs, pt, ds, dv, we, os_, sv, ap, pf, ps, ge, sf, tl, at, pd, ql, of, tm
 from model_training_v2.training_01.job_desc_01 import \
     _2923a7d6b1cf9df5993253768bb05ada370ce5e55d1772acf94bbcd41fac2e85 as D1, \
     _e513f83c20942b5ecaa3a1247c154892802845c5eb3161201f4c0394d419a427 as D2, \
@@ -129,7 +127,7 @@ TRAIN_DATA = [
 if __name__ == '__main__':
     word = "PayPal"
 
-    from model_training_algo.constants import CONSTANTS_DICT
+    from constants.constants import CONSTANTS_DICT
 
     start_index = [m.start() for m in re.finditer(word, D10)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]

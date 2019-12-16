@@ -1,4 +1,4 @@
-from model_training_algo.constants import pl, lb, cs, pt, ds, dv, we, os_, ap, pf
+from constants.category import pl, lb, cs, pt, ds, dv, we, os_, ap, pf
 from model_training.training_03.job_desc_03 import *
 
 TRAIN_DATA = [
