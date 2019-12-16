@@ -228,7 +228,6 @@ dv_collection = {
     "Big Data": ("Big Data", "Big data"),
     "Computer Vision": ("Computer Vision", "computer vision"),
     "3D Animation": ("3D Animation", "3D animation"),
-    "Natural Language Processing": ("Natural Language Processing", "NLP", "natural language processing"),
     "Data Analytics": ("Data Analytics", "data analytics"),
 }
 ps_collection = {
@@ -284,4 +283,48 @@ ps_collection = {
     "Software Support Engineer": ("Software Support Engineer", "Software Support Engineers"),
     "CEO": ("CEO",),
     "CTO": ("CTO", "cto"),
+}
+cs_collection = {
+    "Computer Science": ("Computer Science", "computer science"),
+    "Data Structure": ("Data Structure", "data structure"),
+    "Algorithms": ("Algorithms", "algorithms"),
+    "Mathematics": ("Mathematics", "mathematics"),
+    "Statistics": ("Statistics", "statistics"),
+    "Concurrency": ("Concurrency", "concurrency"),
+    "Parallelism": ("Parallelism", "parallelism"),
+    "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP"),
+    "Design Patterns": ("Design Patterns", "design patterns"),
+    "Asynchronous": ("Asynchronous", "asynchronous"),
+    "Cryptography": ("Cryptography", "cryptography"),
+    "Computability": ("Computability", "computability"),
+    "Computer Architecture": ("Computer Architecture", "computer architecture"),
+    "Chunking": ("Chunking", "chunking"),
+    "Ethernet": ("Ethernet", ),
+    "DNS": ("DNS", ),
+    "VPN": ("VPN", )
+}
+ai_collection = {
+    "Machine Learning": ("Machine Learning", "Machine learning"),
+    "Deep Learning": ("Deep Learning", "Deep learning"),
+    "NLP": ("NLP", "Natural Language Processing", "natural language processing"),
+    "Text Classification": ("Text Classification", "text classification"),
+    "NER": ("NER", "named-entity recognition"),
+    "CNN": ("CNN", "convolutional neural network"),
+    "Transfer Learning": ("Transfer Learning", "transfer learning"),
+}
+pt_collection = {
+    "TCP/IP": ("TCP/IP",),
+    "UDP": ("UDP", ),
+    "HTTP": ("HTTP", "http"),
+    "WebSocket": ("WebSocket", "WebSockets"),
+    "API": ("API", "APIs"),
+    "CORS": ("CORS", ),
+    "SSL": ("SSL", ),
+    "SSH": ("SSH", ),
+    "Paxos": ("Paxos", ),
+    "FTP": ("FTP", ),
+    "SFTP": ("SFTP", ),
+    "TLS": ("TLS", ),
+    "SOAP": ("SOAP", ),
+    "BGP": ("BGP", ),
 }

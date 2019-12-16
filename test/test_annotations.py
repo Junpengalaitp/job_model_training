@@ -16,7 +16,6 @@ class TestAnnotations(unittest.TestCase):
             for entity in data[1]["entities"]:
                 entity_type = entity[-1]
                 entity_name = data[0][entity[0]: entity[1]]
-
                 self.ent_dict[entity_type].append(entity_name)
 
     def test_overlapping_indices(self):

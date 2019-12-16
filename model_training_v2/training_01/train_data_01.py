@@ -125,11 +125,11 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "PayPal"
+    word = "Senior Backend Developer"
 
     from constants.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D10)]
+    start_index = [m.start() for m in re.finditer(word, D1)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"

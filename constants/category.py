@@ -3,6 +3,7 @@ ol = "OTHER_LANGUAGE"  # non-programming language, e.g. 'CSS', 'HTML'
 lb = "LIBRARY"  # library, e.g. React, Bootstrap
 fw = "FRAMEWORK"  # framework e.g. Spring, Django
 cs = "COMPUTER_SCIENCE"  # computer science, low level knowledge
+ai = "AI"  # Machine Learning, Deep Learning
 pt = "PROTOCOL"  # e.g 'HTTP', 'CORS'
 ds = "DATA_STORAGE"  # databases, MySQL, MongoDB
 dt = "DATA_TRANSMISSION"  # JSON, RabbitMQ, Kafka
