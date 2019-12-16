@@ -51,7 +51,8 @@ lb_collection = {
     "Spring": ("Spring", "spring"),
     "Spring Boot": ("Spring Boot", "Spring boot"),
     "Bootstrap": ("Bootstrap", "bootstrap"),
-    "Elasticsearch": ("Elasticsearch", "elasticsearch")
+    "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch"),
+    "iText": ("iText", )
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -64,7 +65,11 @@ fw_collection = {
     "PHPUnit": ("PHPUnit", "PHPunit"),
     # "Ember": ("Ember", "ember")
     "Mocha": ("Mocha", "mocha"),
-    "Flutter": ("Flutter", "flutter")
+    "Flutter": ("Flutter", "flutter"),
+    "MyBatis": ("MyBatis", "mybatis"),
+    "Cypress": ("Cypress", "Cypress.io"),
+    "Selenium": ("Selenium", "selenium"),
+    "JAXB": ("JAXB", )
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -85,7 +90,10 @@ ds_collection = {
     "Apache HBase": ("Apache HBase", "HBase"),
     "Apache Cassandra": ("Apache Cassandra", "Cassandra"),
     "Firebase": ("Firebase", "firebase"),
-    "Presto": ("Presto", "PrestoDB")
+    "Firestore": ("Firestore", "firestore"),
+    "Presto": ("Presto", "PrestoDB"),
+    "RTDB": ("RTDB", ),
+    "Varnish": ("Varnish", )
 }
 dt_collection = {
     "JSON": ("JSON", "json"),
@@ -127,7 +135,9 @@ tl_collection = {
     "Skype": ("Skype", "skype"),
     "Photoshop": ("Photoshop", "photoshop"),
     "PayPal": ("PayPal", "paypal"),
-    "Stripe": ("Stripe", "stripe")
+    "Stripe": ("Stripe", "stripe"),
+    "Pivotal Tracker": ("Pivotal Tracker", "pivotal tracker"),
+    "AVA": ("AVA",)
 }
 at_collection = {
     "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
@@ -150,6 +160,11 @@ ap_collection = {
     "CI/CD": ("CI/CD", ),
     "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
     "automated testing": ("automated testing", "'automated tests"),
+    "E2E testing": ("E2E testing", "End-to-End testing"),
+    "continuous testing": ("continuous testing", "Continuous testing"),
+    "Unit testing": ("Unit testing", "unit testing"),
+    "automated configuration": ("automated configuration", "Automated configuration"),
+    "build automation": ("build automation", "Build automation"),
     "object-oriented design": ("object-oriented design", ),
     "Waterfall model": ("Waterfall", "waterfall"),
     "pair-programming": ("pair-programming", "Pair-programming"),
@@ -176,12 +191,7 @@ se_collection = {
     "version control": ("version control", "VCS"),
     "source control": ("source control", "Source control"),
     "Troubleshooting": ("Troubleshooting", "troubleshooting"),
-    "Unit testing": ("Unit testing", "unit testing"),
-    "automated configuration": ("automated configuration", "Automated configuration"),
-    "continuous testing": ("continuous testing", "Continuous testing"),
-    "build automation": ("build automation", "Build automation"),
     "monitoring": ("monitoring", "Monitoring"),
-    "sentiment analysis": ("sentiment analysis", "Sentiment analysis"),
     "maintenance": ("maintenance", "Maintenance"),
     "support": ("support", "Support"),
     "merging": ("merging", "Merging"),
@@ -210,7 +220,10 @@ pf_collection = {
     "AWS Pipeline": ("AWS Pipeline", "AWS pipeline"),
     "EC2": ("EC2", "ec2"),
     "RDS": ("RDS", "AWS RDS"),
-
+    "BrowserStack": ("BrowserStack", "browserstack"),
+    "Google APIs": ("Google APIs", ),
+    "Athena": ("Athena", ),
+    "Ionic": ("Ionic", )
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development"),
@@ -221,6 +234,7 @@ dv_collection = {
     "QA": ("QA", ),
     "Product Management": ("Product Management", "product management"),
     "UI": ("UI", "UIs", "UI designs"),
+    "UX": ("UX", "UXs"),
     "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design"),
     "Design": ("Design", "design"),
     "AI": ("AI", "artificial intelligence"),
@@ -308,6 +322,7 @@ ai_collection = {
     "Deep Learning": ("Deep Learning", "Deep learning"),
     "NLP": ("NLP", "Natural Language Processing", "natural language processing"),
     "Text Classification": ("Text Classification", "text classification"),
+    "Sentiment Analysis": ("Sentiment Analysis", "sentiment analysis", "Sentiment analysis"),
     "NER": ("NER", "named-entity recognition"),
     "CNN": ("CNN", "convolutional neural network"),
     "Transfer Learning": ("Transfer Learning", "transfer learning"),
