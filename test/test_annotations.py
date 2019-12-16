@@ -84,12 +84,35 @@ class TestAnnotations(unittest.TestCase):
                     print('the testing word not in list: ', word)
                 self.assertTrue(word in ds_list)
 
+    def test_COMPUTER_SCIENCE(self):
+        if 'COMPUTER_SCIENCE' in self.ent_dict:
+            print(set(self.ent_dict['COMPUTER_SCIENCE']))
+            for word in set(self.ent_dict['COMPUTER_SCIENCE']):
+                if word not in cs_list:
+                    print('the testing word not in list: ', word)
+                self.assertTrue(word in cs_list)
+
+    def test_AI(self):
+        if 'AI' in self.ent_dict:
+            print(set(self.ent_dict['AI']))
+            for word in set(self.ent_dict['AI']):
+                if word not in ai_list:
+                    print('the testing word not in list: ', word)
+                self.assertTrue(word in ai_list)
+
     def test_DIVISION(self):
         print(set(self.ent_dict['DIVISION']))
         for word in set(self.ent_dict['DIVISION']):
             if word not in dv_list:
                 print('the testing word not in list: ', word)
             self.assertTrue(word in dv_list)
+
+    def test_POSITION(self):
+        print(set(self.ent_dict['POSITION']))
+        for word in set(self.ent_dict['POSITION']):
+            if word not in ps_list:
+                print('the testing word not in list: ', word)
+            self.assertTrue(word in ps_list)
 
     def test_WORK_EXPERIENCE(self):
         print(set(self.ent_dict['WORK_EXPERIENCE']))
@@ -111,6 +134,13 @@ class TestAnnotations(unittest.TestCase):
             if word not in ap_list:
                 print('the testing word not in list: ', word)
             self.assertTrue(word in ap_list)
+
+    def test_SOFTWARE_ENGINEERING(self):
+        print(set(self.ent_dict['SOFTWARE_ENGINEERING']))
+        for word in set(self.ent_dict['SOFTWARE_ENGINEERING']):
+            if word not in se_list:
+                print('the testing word not in list: ', word)
+            self.assertTrue(word in se_list)
 
     def test_PLATFORM(self):
         print(set(self.ent_dict['PLATFORM']))
