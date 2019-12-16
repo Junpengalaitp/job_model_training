@@ -2,7 +2,8 @@ import unittest
 from collections import defaultdict
 
 from constants.constants import *
-from constants.technical_term import pl_collection, ol_collection, lb_collection
+from constants.general_term import we_list, ge_list, sf_list
+from constants.technical_term import pl_collection, ol_collection, lb_collection, pd_list
 from model_training_v2.training_01.train_data_01 import TRAIN_DATA
 
 
