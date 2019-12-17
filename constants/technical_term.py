@@ -58,6 +58,7 @@ fw_collection = {
     "Flask": ("Flask", "flask"),
     "Django": ("Django", "django"),
     "Angular": ("Angular", "AngularJS"),
+    "Ruby on Rails": ("Ruby on Rails", "Rails"),
     "Laravel": ("Laravel", "Laravel 5"),
     "Vue": ("Vue", "VueJS"),
     "ASP.NET": ("ASP.NET", ".NET"),
@@ -236,7 +237,7 @@ pf_collection = {
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development"),
-    "Back-end": ("Back-end", "Backend", "backend"),
+    "Back-end": ("Back-end", "Backend", "backend", "back-end"),
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
     "Software Engineering": ("Software Engineering", "software engineering"),
     "Security": ("Security", "security"),
@@ -258,7 +259,7 @@ ps_collection = {
     "Front-end Developer": ("Front-end Developer", "front-End Developer", "front end developer", "Frontend Developers",
                             "front-end developers", "FRONT END WEB DEVELOPER"),
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer"),
-    "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers"),
+    "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer"),
     "Full Stack Engineer": ("Full Stack Engineer", "full stack engineer", "Full Stack Software Engineers"),
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer"),
     "Software Developer": ("Software Developer", "software developer"),
@@ -275,7 +276,7 @@ ps_collection = {
     "Data Analyst": ("Data Analyst", "Data Analysts"),
     "Product Manager": ("Product Manager", "product manager", "product managers", "PM"),
     "Project Manager": ("Project Manager", "project manager"),
-    "Ruby on Rails Developer": ("Ruby on Rails Developer", "Ruby on Rails developer"),
+    "Ruby on Rails Developer": ("Ruby on Rails Developer", "Ruby on Rails developer", "Rails developer"),
     "Rails Engineer": ("Rails Engineer", "Rails Engineers"),
     "Product Designer": ("Product Designer", "Product Designers", "product designers"),
     "Designer": ("Designer", "Designers", "designers", "designer"),
@@ -357,8 +358,9 @@ pt_collection = {
 pd_list = ("SaaS", "banking", "web application", "single-page application", "web apps", "web services", "enterprise applications",
            "enterprise class applications", "social network", "data-oriented products", "web applications", "web technology",
            "web technologies", "media", "analysis engines", "data pipelines", "open source", "crypto", "fitness", "Games",
-           "video games", "education", "websites", "Mobile")
+           "video games", "education", "websites", "Mobile", "cloud-based", "cutting-edge",
+           "textile", "digital printing")
 
 ql_list = ("technical best practises", "easy to understand", "high-quality code", "well-designed", "reliable code",
            "high-performance", "scalable", "clean", "modern", "testable", "well-documented", "well designed", "efficient",
-           "seamlessly")
+           "seamlessly", "flexible", "robust")
