@@ -60,7 +60,7 @@ fw_collection = {
     "Angular": ("Angular", "AngularJS"),
     "Ruby on Rails": ("Ruby on Rails", "Rails"),
     "Laravel": ("Laravel", "Laravel 5"),
-    "Vue": ("Vue", "VueJS"),
+    "Vue.js": ("Vue.js", "VueJS", "Vue"),
     "ASP.NET": ("ASP.NET", ".NET"),
     "React Native": ("React Native", "React native"),
     "PHPUnit": ("PHPUnit", "PHPunit"),
@@ -164,7 +164,7 @@ ap_collection = {
     "automated testing": ("automated testing", "'automated tests"),
     "E2E testing": ("E2E testing", "End-to-End testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
-    "Unit testing": ("Unit testing", "unit testing", "Unit Testing"),
+    "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests"),
     "automated configuration": ("automated configuration", "Automated configuration"),
     "build automation": ("build automation", "Build automation"),
     "object-oriented design": ("object-oriented design", ),
@@ -188,8 +188,10 @@ se_collection = {
     "debugging": ("debugging", "Debugging"),
     "scaling": ("scaling", "scaling"),
     "testing": ("testing", "Testing"),
+    "planning": ("planning", "plan"),
     "designing": ("designing", "Designing"),
-    "maintaining": ("maintaining", "Maintaining"),
+    "developing": ("developing", "develop"),
+    "maintaining": ("maintaining", "Maintaining", "maintain"),
     "optimisation": ("optimisation", "optimisations", "optimize"),
     "performance optimization": ("performance optimization", ),
     "performance improvement": ("performance improvement", "performance improvements"),
@@ -252,6 +254,7 @@ dv_collection = {
     "Big Data": ("Big Data", "Big data"),
     "Computer Vision": ("Computer Vision", "computer vision"),
     "3D Animation": ("3D Animation", "3D animation"),
+    "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
 }
 ps_collection = {
@@ -358,8 +361,8 @@ pt_collection = {
 pd_list = ("SaaS", "banking", "web application", "single-page application", "web apps", "web services", "enterprise applications",
            "enterprise class applications", "social network", "data-oriented products", "web applications", "web technology",
            "web technologies", "media", "analysis engines", "data pipelines", "open source", "crypto", "fitness", "Games",
-           "video games", "education", "websites", "Mobile", "cloud-based", "cutting-edge",
-           "textile", "digital printing")
+           "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge",
+           "textile", "digital printing", "great customer experience")
 
 ql_list = ("technical best practises", "easy to understand", "high-quality code", "well-designed", "reliable code",
            "high-performance", "scalable", "clean", "modern", "testable", "well-documented", "well designed", "efficient",

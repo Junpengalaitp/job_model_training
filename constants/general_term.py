@@ -1,5 +1,5 @@
 tm_list = ("feature-based", "cross-functional", "high-performing", "on-demand", "high-scale", "remote", "fast-paced",
-           "wear many hats")
+           "wear many hats", "close-knit", "supportive", "tight-knit", "distributed team")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",
@@ -8,7 +8,7 @@ we_list = ('5+ years of experience', '4 years of professional experience', '2-5 
            '5 years professional development experience', '3+ years of WordPress development experience',
            '2-3 years of software developer experience', '5+ years of professional software development experience',
            '5+ years of industry experience', "3+ years of software engineering experience", '5+ years experience',
-           '5+ years previous experience', '3+ years of Drupal experience',
+           '5+ years previous experience', '3+ years of Drupal experience', "Has least three years of experience",
            '5+ years of directly applicable experience', "5+ years experience",
            '20 years of experience', '5+ years of programming experience', "3-5 years' experience",
            '3+ years in a software engineering or technical architect role', '3+ years of Unity experience',
@@ -46,12 +46,14 @@ ge_list = ("strategic and creative thinker", "translate user needs", "English", 
            "deliver technical requirements", "well-rounded", "professional", "smart", "creative", "resourceful",
            "willingness to learn", "Passion", "enthusiasm", "commitment", "respect", "positive energy", "Proactive",
            "motivated", "proactive", "energized", "compassionate", "imagination", "effective", "curious",
-           "solution-oriented", "on time", "hyper focused")
+           "solution-oriented", "on time", "hyper focused", "do the hard work", "pivot quickly", "adapting to change",
+           "continuously learning", "productivity", "think outside of the box")
 
 sf_list = ('mentorship', "mentor", "mentoring", 'discussion', 'technical leadership', 'team leadership', "leadership",
            "coordinate", "training", "coaching", "team-player", "coworking", "clear communicator", "collaborative",
-           "communication skills", "Communicate", "collaboration", "interface with clients", "soft skills",
-           "constructive feedback", 'responsible', "active communicator", "collaborate", "responsible", "nurture and grow")
+           "communication skills", "Communicate", "collaboration", "interface with clients", "soft skills", "accountability",
+           "constructive feedback", 'responsible', "active communicator", "collaborate", "responsible", "nurture and grow",
+           "communication")
 
 of_list = ("competitive compensation", "Competitive compensation", "working from home", "flexible schedule",
            "work from home from anywhere", "telecommute", "2 weeks paid vacation", "ownership", "401(k)", "401K",
@@ -59,4 +61,5 @@ of_list = ("competitive compensation", "Competitive compensation", "working from
            "monthly allowance", "no set hours", "do not limit vacation", "equal opportunity", "motivated to learn",
            "Work from anywhere", "energizing community", "$2,500 per year", "gym membership", "freedom",
            "work with big brands", "6 weeks paid vacation", "health/dental insurance", "inspiration days",
-           "paid holidays", "competitive pay", "equal opportunity")
+           "paid holidays", "competitive pay", "equal opportunity", "fostering talent", "Flexible vacation",
+           "work from anywhere", "solid benefits", "equity")
