@@ -84,6 +84,14 @@ class TestAnnotations(unittest.TestCase):
                     print('the testing word not in list: ', word)
                 self.assertTrue(word in ds_list)
 
+    def test_DATA_TRANSMISSION(self):
+        if 'DATA_TRANSMISSION' in self.ent_dict:
+            print(set(self.ent_dict['DATA_TRANSMISSION']))
+            for word in set(self.ent_dict['DATA_TRANSMISSION']):
+                if word not in dt_list:
+                    print('the testing word not in list: ', word)
+                self.assertTrue(word in dt_list)
+
     def test_COMPUTER_SCIENCE(self):
         if 'COMPUTER_SCIENCE' in self.ent_dict:
             print(set(self.ent_dict['COMPUTER_SCIENCE']))

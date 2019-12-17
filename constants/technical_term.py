@@ -63,13 +63,14 @@ fw_collection = {
     "ASP.NET": ("ASP.NET", ".NET"),
     "React Native": ("React Native", "React native"),
     "PHPUnit": ("PHPUnit", "PHPunit"),
-    # "Ember": ("Ember", "ember")
+    "Ember.js": ("Ember.js", "Ember", "ember"),
     "Mocha": ("Mocha", "mocha"),
     "Flutter": ("Flutter", "flutter"),
     "MyBatis": ("MyBatis", "mybatis"),
     "Cypress": ("Cypress", "Cypress.io"),
     "Selenium": ("Selenium", "selenium"),
-    "JAXB": ("JAXB", )
+    "JAXB": ("JAXB", ),
+    "Jest": ("Jest", "jest")
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -162,7 +163,7 @@ ap_collection = {
     "automated testing": ("automated testing", "'automated tests"),
     "E2E testing": ("E2E testing", "End-to-End testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
-    "Unit testing": ("Unit testing", "unit testing"),
+    "Unit testing": ("Unit testing", "unit testing", "Unit Testing"),
     "automated configuration": ("automated configuration", "Automated configuration"),
     "build automation": ("build automation", "Build automation"),
     "object-oriented design": ("object-oriented design", ),
@@ -176,7 +177,9 @@ ap_collection = {
 }
 se_collection = {
     "logging": ("logging", "Logging"),
-    "code-review": ("code-review", "code-reviews"),
+    "profiling": ("profiling", "Profiling"),
+    "integration": ("integration", "integrations", "integrate"),
+    "code-review": ("code-review", "code-reviews", "code reviews"),
     "refactoring": ("refactoring", "Refactoring"),
     "documentation": ("documentation", "Documentation"),
     "database migrations": ("database migrations", "Database migrations"),
@@ -185,6 +188,8 @@ se_collection = {
     "scaling": ("scaling", "scaling"),
     "testing": ("testing", "Testing"),
     "designing": ("designing", "Designing"),
+    "maintaining": ("maintaining", "Maintaining"),
+    "optimisation": ("optimisation", "optimisations", "optimize"),
     "performance optimization": ("performance optimization", ),
     "performance improvement": ("performance improvement", "performance improvements"),
     "deployment": ("deployment", "deployments"),
@@ -199,7 +204,11 @@ se_collection = {
     "architecture review": ("architecture review", "architecture reviews"),
     "Code optimization": ("Code optimization", "Code optimization"),
     "enhance": ("enhance", "enhancing"),
-    "implementation": ("implementation", "Implementation")
+    "implementation": ("implementation", "Implementation"),
+    "client-side routing": ("client-side routing", ),
+    "dynamic code loading": ("dynamic code loading", ),
+    "branching": ("branching", ),
+    "code branching": ("code branching", )
 }
 pf_collection = {
     "AWS": ("AWS", "aws", "Amazon Web Services"),
@@ -235,7 +244,7 @@ dv_collection = {
     "Product Management": ("Product Management", "product management"),
     "UI": ("UI", "UIs", "UI designs"),
     "UX": ("UX", "UXs"),
-    "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design"),
+    "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design", "UX/UI"),
     "Design": ("Design", "design"),
     "AI": ("AI", "artificial intelligence"),
     "DevOps": ("DevOps", "Devops", "devops"),
@@ -264,12 +273,12 @@ ps_collection = {
     "Data Developer": ("Data Developer", "Data Developers"),
     "Data Scientist": ("Data Scientist", "data scientist"),
     "Data Analyst": ("Data Analyst", "Data Analysts"),
-    "Product Manager": ("Product Manager", "product manager", "PM"),
+    "Product Manager": ("Product Manager", "product manager", "product managers", "PM"),
     "Project Manager": ("Project Manager", "project manager"),
     "Ruby on Rails Developer": ("Ruby on Rails Developer", "Ruby on Rails developer"),
     "Rails Engineer": ("Rails Engineer", "Rails Engineers"),
     "Product Designer": ("Product Designer", "Product Designers", "product designers"),
-    "Designer": ("Designer", "Designers", "designers"),
+    "Designer": ("Designer", "Designers", "designers", "designer"),
     "UI/UX Designer": ("UI/UX Designer", "UI/UX designer"),
     "UX Engineer": ("UX Engineer", "UX Engineers"),
     "QA Tester": ("QA Tester", "QA tester"),
@@ -295,6 +304,7 @@ ps_collection = {
     "Senior DevOps Engineer": ("Senior DevOps Engineer", "Sr. DevOps Engineer"),
     "Quality Engineering Manager": ("Quality Engineering Manager", "Quality Engineering Managers"),
     "Software Support Engineer": ("Software Support Engineer", "Software Support Engineers"),
+    "Technical Leader": ("Technical Leader", "technical leader"),
     "CEO": ("CEO",),
     "CTO": ("CTO", "cto"),
 }
