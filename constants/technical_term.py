@@ -164,7 +164,7 @@ ap_collection = {
     "automated testing": ("automated testing", "'automated tests"),
     "E2E testing": ("E2E testing", "End-to-End testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
-    "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests"),
+    "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests"),
     "automated configuration": ("automated configuration", "Automated configuration"),
     "build automation": ("build automation", "Build automation"),
     "object-oriented design": ("object-oriented design", ),
@@ -175,6 +175,7 @@ ap_collection = {
     "DRY": ("DRY", ),
     "DDD": ("DDD", ),
     "KISS": ("KISS", ),
+    "technical principles": ("technical principles", )
 }
 se_collection = {
     "logging": ("logging", "Logging"),
@@ -204,6 +205,7 @@ se_collection = {
     "support": ("support", "Support"),
     "merging": ("merging", "Merging"),
     "message queueing": ("message queueing", "Message queueing"),
+    "architecture": ("architecture", ),
     "architecture review": ("architecture review", "architecture reviews"),
     "Code optimization": ("Code optimization", "Code optimization"),
     "enhance": ("enhance", "enhancing"),
@@ -211,7 +213,9 @@ se_collection = {
     "client-side routing": ("client-side routing", ),
     "dynamic code loading": ("dynamic code loading", ),
     "branching": ("branching", ),
-    "code branching": ("code branching", )
+    "code branching": ("code branching", ),
+    "fixing bugs": ("fixing bugs", ),
+    "quality improvements": ("quality improvements", )
 }
 pf_collection = {
     "AWS": ("AWS", "aws", "Amazon Web Services"),
@@ -264,7 +268,7 @@ ps_collection = {
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer"),
     "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer"),
     "Full Stack Engineer": ("Full Stack Engineer", "full stack engineer", "Full Stack Software Engineers"),
-    "Full Stack Developer": ("Full Stack Developer", "full stack software developer"),
+    "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers"),
     "Software Developer": ("Software Developer", "software developer"),
     "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer"),
     "Architect": ("Architect", "architect", "architects"),
@@ -279,8 +283,6 @@ ps_collection = {
     "Data Analyst": ("Data Analyst", "Data Analysts"),
     "Product Manager": ("Product Manager", "product manager", "product managers", "PM"),
     "Project Manager": ("Project Manager", "project manager"),
-    "Ruby on Rails Developer": ("Ruby on Rails Developer", "Ruby on Rails developer", "Rails developer"),
-    "Rails Engineer": ("Rails Engineer", "Rails Engineers"),
     "Product Designer": ("Product Designer", "Product Designers", "product designers"),
     "Designer": ("Designer", "Designers", "designers", "designer"),
     "UI/UX Designer": ("UI/UX Designer", "UI/UX designer"),
@@ -309,6 +311,9 @@ ps_collection = {
     "Quality Engineering Manager": ("Quality Engineering Manager", "Quality Engineering Managers"),
     "Software Support Engineer": ("Software Support Engineer", "Software Support Engineers"),
     "Technical Leader": ("Technical Leader", "technical leader"),
+    ".NET developer": (".NET developer", ),
+    "Ruby on Rails Developer": ("Ruby on Rails Developer", "Ruby on Rails developer", "Rails developer"),
+    "Rails Engineer": ("Rails Engineer", "Rails Engineers"),
     "CEO": ("CEO",),
     "CTO": ("CTO", "cto"),
 }
@@ -332,7 +337,7 @@ cs_collection = {
     "VPN": ("VPN", )
 }
 ai_collection = {
-    "Machine Learning": ("Machine Learning", "Machine learning"),
+    "Machine Learning": ("Machine Learning", "Machine learning", "machine learning"),
     "Deep Learning": ("Deep Learning", "Deep learning"),
     "NLP": ("NLP", "Natural Language Processing", "natural language processing"),
     "Text Classification": ("Text Classification", "text classification"),
@@ -340,6 +345,8 @@ ai_collection = {
     "NER": ("NER", "named-entity recognition"),
     "CNN": ("CNN", "convolutional neural network"),
     "Transfer Learning": ("Transfer Learning", "transfer learning"),
+    "artificial general intelligence": ("artificial general intelligence",),
+    "AI Ethics": ("AI Ethics", )
 }
 pt_collection = {
     "TCP/IP": ("TCP/IP",),
@@ -362,8 +369,8 @@ pd_list = ("SaaS", "banking", "web application", "single-page application", "web
            "enterprise class applications", "social network", "data-oriented products", "web applications", "web technology",
            "web technologies", "media", "analysis engines", "data pipelines", "open source", "crypto", "fitness", "Games",
            "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge",
-           "textile", "digital printing", "great customer experience")
+           "textile", "digital printing", "great customer experience", "non-profit", "Small and Medium Scale Systems")
 
 ql_list = ("technical best practises", "easy to understand", "high-quality code", "well-designed", "reliable code",
            "high-performance", "scalable", "clean", "modern", "testable", "well-documented", "well designed", "efficient",
-           "seamlessly", "flexible", "robust")
+           "seamlessly", "flexible", "robust", "High Performance")

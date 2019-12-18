@@ -30,12 +30,12 @@ we_list = ('5+ years of experience', '4 years of professional experience', '2-5 
            "3 to 5 years’ experience with DBMS", '3 to 5 years related work experience',
            "3 to 5 years working knowledge", "5-7 years full stack experience",
            "2 years related work experience", '7+ years of progressive work experience',
-           '2+ years of DevOps leadership experience',
+           '2+ years of DevOps leadership experience', "2+ Years",
            "5+ years experience", '5+ years of professional experience', '2+ years of experience',
-           "3-5+ years work experience",
+           "3-5+ years work experience", "5+ Years of Real-World Development Experience",
            '3 years of relevant experience', 'Professional experience (hands-on) with ReactJS Framework for 2+ years',
            "3+ years' experience", '2 years experience in PHP', 'Prior experience (at least 3 years)',
-           'one year experience',
+           'one year experience', "2+ Years with", "2+ Years of Real-World",
            '3-5 years of experience', 'two years’ experience', '3+ years of DevOps and/or Operations experience',
            '1+ years of production environment experience', '2 years experience developing software')
 
@@ -47,13 +47,13 @@ ge_list = ("strategic and creative thinker", "translate user needs", "English", 
            "willingness to learn", "Passion", "enthusiasm", "commitment", "respect", "positive energy", "Proactive",
            "motivated", "proactive", "energized", "compassionate", "imagination", "effective", "curious",
            "solution-oriented", "on time", "hyper focused", "do the hard work", "pivot quickly", "adapting to change",
-           "continuously learning", "productivity", "think outside of the box")
+           "continuously learning", "productivity", "think outside of the box", "autonomously")
 
 sf_list = ('mentorship', "mentor", "mentoring", 'discussion', 'technical leadership', 'team leadership', "leadership",
            "coordinate", "training", "coaching", "team-player", "coworking", "clear communicator", "collaborative",
            "communication skills", "Communicate", "collaboration", "interface with clients", "soft skills", "accountability",
            "constructive feedback", 'responsible', "active communicator", "collaborate", "responsible", "nurture and grow",
-           "communication")
+           "communication", "Communication Skills")
 
 of_list = ("competitive compensation", "Competitive compensation", "working from home", "flexible schedule",
            "work from home from anywhere", "telecommute", "2 weeks paid vacation", "ownership", "401(k)", "401K",
@@ -62,4 +62,5 @@ of_list = ("competitive compensation", "Competitive compensation", "working from
            "Work from anywhere", "energizing community", "$2,500 per year", "gym membership", "freedom",
            "work with big brands", "6 weeks paid vacation", "health/dental insurance", "inspiration days",
            "paid holidays", "competitive pay", "equal opportunity", "fostering talent", "Flexible vacation",
-           "work from anywhere", "solid benefits", "equity")
+           "work from anywhere", "solid benefits", "equity", "six-month contract", "option to continue", "30 Hours a Week",
+           "high degree of ownership", "operate autonomously")

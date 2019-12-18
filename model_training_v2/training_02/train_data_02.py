@@ -3,8 +3,8 @@ import re
 from constants.category import pl, ol, lb, fw, cs, pt, ds, dv, we, os_, sv, ap, pf, ps, ge, sf, tl, at, pd, ql, of, tm, \
     se, dt, ai
 from model_training_v2.training_02.job_desc_02 import \
-    _45f21e8cc59d13ba57e5ad2f0366fac7093672f223b8e7c119b45e16d4dc0f6c as D1
-    # _e513f83c20942b5ecaa3a1247c154892802845c5eb3161201f4c0394d419a427 as D2, \
+    _45f21e8cc59d13ba57e5ad2f0366fac7093672f223b8e7c119b45e16d4dc0f6c as D1, \
+    _696f54ea324f765d42525299d7bca0765be6aca0ec16fa84d01585cfec12bb9c as D2
     # _c213b25d1182cce917971584991d1aef747d677967eb2dfc490ad45543554d1a as D3, \
     # _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4, \
     # _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5, \
@@ -26,15 +26,22 @@ TRAIN_DATA = [
                        (1968, 1980, ge), (1982, 1996, sf), (2002, 2015, sf), (2070, 2094, ge), (2129, 2137, se),
                        (2152, 2162, tm), (2140, 2150, tm), (2279, 2295, of), (2327, 2344, of), (2453, 2469, tm),
                        (2479, 2497, of), (2532, 2547, of), (2569, 2575, of), (2788, 2794, pf), ]}),
-    # (D2, {"entities": []}),
+    (D2, {"entities": [(28, 49, ps), (59, 61, pl), (1355, 1357, pl), (62, 66, fw), (144, 158, ps), (684, 688, fw),
+                       (99, 105, tm), (269, 287, of), (297, 315, of), (496, 506, pd), (731, 747, ai), (634, 665, ai),
+                       (1061, 1076, of), (1176, 1196, sf), (1211, 1218, ge), (1241, 1271, pd), (1304, 1349, we),
+                       (1405, 1418, we), (1419, 1428, fw), (1431, 1438, fw), (1451, 1457, dv), (1462, 1464, dv),
+                       (1506, 1516, ap), (1530, 1552, we), (1553, 1559, pl), (1560, 1568, we), (1569, 1585, ai),
+                       (1656, 1672, ai), (1639, 1655, ql), (1703, 1712, ai), (1789, 1800, se), (1802, 1813, se),
+                       (1832, 1852, se), (1858, 1868, se), (1928, 1952, of), (2010, 2030, of), (2064, 2084, ap),
+                       (2089, 2101, se), ]}),
 ]
 
 if __name__ == '__main__':
-    word = "Github"
+    word = "architecture"
 
     from constants.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D1)]
+    start_index = [m.start() for m in re.finditer(word, D2)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"
