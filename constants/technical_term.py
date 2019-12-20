@@ -368,7 +368,7 @@ pt_collection = {
 pd_list = ("SaaS", "banking", "web application", "single-page application", "web apps", "web services", "enterprise applications",
            "enterprise class applications", "social network", "data-oriented products", "web applications", "web technology",
            "web technologies", "media", "analysis engines", "data pipelines", "open source", "crypto", "fitness", "Games",
-           "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge",
+           "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge", "billing software"
            "textile", "digital printing", "great customer experience", "non-profit", "Small and Medium Scale Systems")
 
 ql_list = ("technical best practises", "easy to understand", "high-quality code", "well-designed", "reliable code",

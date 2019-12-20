@@ -1,5 +1,5 @@
 tm_list = ("feature-based", "cross-functional", "high-performing", "on-demand", "high-scale", "remote", "fast-paced",
-           "wear many hats", "close-knit", "supportive", "tight-knit", "distributed team")
+           "wear many hats", "close-knit", "supportive", "tight-knit", "distributed team", "bootstrapped startup")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",

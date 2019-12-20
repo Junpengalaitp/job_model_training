@@ -4,8 +4,8 @@ from constants.category import pl, ol, lb, fw, cs, pt, ds, dv, we, os_, sv, ap, 
     se, dt, ai
 from model_training_v2.training_02.job_desc_02 import \
     _45f21e8cc59d13ba57e5ad2f0366fac7093672f223b8e7c119b45e16d4dc0f6c as D1, \
-    _696f54ea324f765d42525299d7bca0765be6aca0ec16fa84d01585cfec12bb9c as D2
-    # _c213b25d1182cce917971584991d1aef747d677967eb2dfc490ad45543554d1a as D3, \
+    _696f54ea324f765d42525299d7bca0765be6aca0ec16fa84d01585cfec12bb9c as D2, \
+    _3311541b9f01452f59eaee98039f4a82140e1b41d75da6dfd90f7ffc55051b24 as D3
     # _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4, \
     # _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5, \
     # _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6, \
@@ -34,14 +34,15 @@ TRAIN_DATA = [
                        (1656, 1672, ai), (1639, 1655, ql), (1703, 1712, ai), (1789, 1800, se), (1802, 1813, se),
                        (1832, 1852, se), (1858, 1868, se), (1928, 1952, of), (2010, 2030, of), (2064, 2084, ap),
                        (2089, 2101, se), ]}),
+    (D3, {"entities": [(265, 285, tm), (424, 448, ps), ]})
 ]
 
 if __name__ == '__main__':
-    word = "architecture"
+    word = "Senior Software Engineer"
 
     from constants.constants import CONSTANTS_DICT
 
-    start_index = [m.start() for m in re.finditer(word, D2)]
+    start_index = [m.start() for m in re.finditer(word, D3)]
     full_index = [str(i) + ', ' + str(i + len(word)) for i in start_index]
     for index in full_index:
         _type = "None"

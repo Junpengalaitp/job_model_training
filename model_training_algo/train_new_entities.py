@@ -39,7 +39,7 @@ def main(model=None, new_model_name="job_model", output_dir=path, n_iter=1000):
     else:
         ner = nlp.get_pipe("ner")
 
-    # ner.add_label(LABEL)  # add new entity label to entity recognizer
+    # ner.add_label(LABEL) # add new entity label to entity recognizer
     for label in LABELS:
         ner.add_label(label)
     # Adding extraneous labels shouldn't mess anything up
