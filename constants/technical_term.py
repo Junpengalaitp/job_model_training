@@ -32,9 +32,10 @@ ol_collection = {
     "XML": ("XML", "xml"),
     "Bash": ("Bash", "bash", "Bash Shell"),
     "SCSS": ("SCSS", "scss"),
-    "SASS": ("SASS", "sass"),
+    "SASS": ("SASS", "sass", "Sass"),
     "GraphQL": ("GraphQL", "graphQL"),
-    "SQL": ("SQL", "sql")
+    "SQL": ("SQL", "sql"),
+    "Jinja": ("Jinja", "Jinja2")
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
@@ -114,6 +115,7 @@ os_collection = {
     "Redhat": ("Redhat", "redhat"),
     "macOS": ("macOS", "MacOS", "OS X"),
     "Unix": ("Unix", "unix"),
+    "virtual machines": ("virtual machines",)
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx"),
@@ -139,7 +141,12 @@ tl_collection = {
     "PayPal": ("PayPal", "paypal"),
     "Stripe": ("Stripe", "stripe"),
     "Pivotal Tracker": ("Pivotal Tracker", "pivotal tracker"),
-    "AVA": ("AVA",)
+    "AVA": ("AVA",),
+    "Terraform": ("Terraform", "terraform"),
+    "Ansible": ("Ansible", "ansible",),
+    "Matillion": ("Matillion", "matillion"),
+    "Bugzilla": ("Bugzilla", "bugzilla"),
+    "JIRA": ("JIRA",),
 }
 at_collection = {
     "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
@@ -161,7 +168,8 @@ ap_collection = {
     "Sprint": ("Sprint", "sprint"),
     "CI/CD": ("CI/CD", ),
     "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
-    "automated testing": ("automated testing", "'automated tests"),
+    "automated testing": ("automated testing", "automated tests"),
+    "test automation": ("test automation", "Test automation"),
     "E2E testing": ("E2E testing", "End-to-End testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
     "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests"),
@@ -175,7 +183,10 @@ ap_collection = {
     "DRY": ("DRY", ),
     "DDD": ("DDD", ),
     "KISS": ("KISS", ),
-    "technical principles": ("technical principles", )
+    "technical principles": ("technical principles", ),
+    "development techniques": ("development techniques",),
+    "auto-scaling": ("auto-scaling", ),
+    "regression test": ("regression test", "Regression Test"),
 }
 se_collection = {
     "logging": ("logging", "Logging"),
@@ -215,9 +226,18 @@ se_collection = {
     "branching": ("branching", ),
     "code branching": ("code branching", ),
     "fixing bugs": ("fixing bugs", ),
-    "quality improvements": ("quality improvements", )
+    "quality improvements": ("quality improvements", ),
+    "tech debt balance": ("tech debt balance", ),
+    "engineering standards": ("engineering standards", ),
+    "performance issues": ("performance issues", ),
+    "troubleshoot complex issues": ("troubleshoot complex issues", ),
+    "roadmap priorities": ("roadmap priorities",),
+    "functional requirements": ("functional requirements", ),
+    "design specifications": ("design specifications",),
+    "issue-tracking": ("issue-tracking",),
 }
 pf_collection = {
+    "Cloud Platforms": ("Cloud Platforms",),
     "AWS": ("AWS", "aws", "Amazon Web Services"),
     "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD"),
     "Azure": ("Azure", "Microsoft Azure", "azure"),
@@ -239,7 +259,9 @@ pf_collection = {
     "BrowserStack": ("BrowserStack", "browserstack"),
     "Google APIs": ("Google APIs", ),
     "Athena": ("Athena", ),
-    "Ionic": ("Ionic", )
+    "Ionic": ("Ionic", ),
+    "Snowflake": ("Snowflake", "snowflake"),
+    "Looker": ("Looker", "looker"),
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development"),
@@ -349,6 +371,9 @@ ai_collection = {
     "AI Ethics": ("AI Ethics", )
 }
 pt_collection = {
+    "Messaging Protocols": ("Messaging Protocols", "messaging protocols", ),
+    "Protocol Buffers": ("Protocol Buffers", "protocol buffers"),
+    "TCP": ("TCP", "tcp"),
     "TCP/IP": ("TCP/IP",),
     "UDP": ("UDP", ),
     "HTTP": ("HTTP", "http"),
@@ -368,9 +393,11 @@ pt_collection = {
 pd_list = ("SaaS", "banking", "web application", "single-page application", "web apps", "web services", "enterprise applications",
            "enterprise class applications", "social network", "data-oriented products", "web applications", "web technology",
            "web technologies", "media", "analysis engines", "data pipelines", "open source", "crypto", "fitness", "Games",
-           "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge", "billing software"
-           "textile", "digital printing", "great customer experience", "non-profit", "Small and Medium Scale Systems")
+           "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge", "billing software",
+           "textile", "digital printing", "great customer experience", "non-profit", "Small and Medium Scale Systems",
+           "repeat orders", "recurring billing software", "end user customer experiences", "cryptocurrency", "bitcoin",
+           "financial sector", "financial markets", "trading")
 
-ql_list = ("technical best practises", "easy to understand", "high-quality code", "well-designed", "reliable code",
-           "high-performance", "scalable", "clean", "modern", "testable", "well-documented", "well designed", "efficient",
+ql_list = ("technical best practises", "scalability", "high-quality code", "testability", "reliable code",
+           "high-performance", "supportability", "maintainability", "modern", "testable", "well-documented", "well designed", "efficient",
            "seamlessly", "flexible", "robust", "High Performance")

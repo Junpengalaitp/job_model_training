@@ -1,4 +1,5 @@
 import re
+from collections import defaultdict
 
 import en_core_web_lg
 
@@ -21,3 +22,14 @@ def get_noun_list(text):
     nlp = en_core_web_lg.load()
     doc = nlp(text)
     return [token.text for token in doc if token.pos_ == 'NOUN']
+
+
+def print_entities(TRAIN_DATA):
+    ent_dict = defaultdict(list)
+    for data in TRAIN_DATA:
+        for entity in data[1]["entities"]:
+            entity_type = entity[-1]
+            entity_name = data[0][entity[0]: entity[1]]
+            ent_dict[entity_type].append(entity_name)
+    for key in ent_dict:
+        print(key + ':', set(ent_dict[key]))

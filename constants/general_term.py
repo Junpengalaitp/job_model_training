@@ -1,5 +1,5 @@
-tm_list = ("feature-based", "cross-functional teams", "cross-functional project team", "high-performing", "on-demand", "high-scale", "remote", "fast-paced",
-           "wear many hats", "close-knit", "supportive", "tight-knit", "distributed team", "bootstrapped startup")
+tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team",
+           "bootstrapped startup", "boot-strapped start-up", "fast paced environments", "diverse group")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",
@@ -26,11 +26,11 @@ we_list = ('5+ years of experience', '4 years of professional experience', '2-5 
            "7+ years of Application Development with experience defining development guidelines",
            "1 to 2 years’ experience", "Minimum of 4 years of web app building experience",
            "3+ Years of software development experience", "3+ years of experience",
-           "2+ Years of professional Ruby on Rails development experience",
+           "2+ Years of professional Ruby on Rails development experience", "3+ years QA experience",
            "3 to 5 years’ experience with DBMS", '3 to 5 years related work experience',
            "3 to 5 years working knowledge", "5-7 years full stack experience",
            "2 years related work experience", '7+ years of progressive work experience',
-           '2+ years of DevOps leadership experience', "2+ Years",
+           '2+ years of DevOps leadership experience', "2+ Years", "7+ years of relevant development experience",
            "5+ years experience", '5+ years of professional experience', '2+ years of experience',
            "3-5+ years work experience", "5+ Years of Real-World Development Experience",
            '3 years of relevant experience', 'Professional experience (hands-on) with ReactJS Framework for 2+ years',
@@ -45,7 +45,7 @@ ge_list = ("strategic and creative thinker", "translate user needs", "English", 
            "empathetic", "Autonomous", "self-starters", "self-ownership", "team-oriented", "Customer Focused",
            "deliver technical requirements", "well-rounded", "professional", "smart", "creative", "resourceful",
            "willingness to learn", "Passion", "enthusiasm", "commitment", "respect", "positive energy", "Proactive",
-           "motivated", "proactive", "energized", "compassionate", "imagination", "effective", "curious",
+           "motivated", "proactive", "energized", "compassionate", "imagination", "effective", "curious", "empathy",
            "solution-oriented", "on time", "hyper focused", "do the hard work", "pivot quickly", "adapting to change",
            "continuously learning", "productivity", "think outside of the box", "autonomously")
 
@@ -53,7 +53,7 @@ sf_list = ('mentorship', "mentor", "mentoring", 'discussion', 'technical leaders
            "coordinate", "training", "coaching", "team-player", "coworking", "clear communicator", "collaborative",
            "communication skills", "Communicate", "collaboration", "interface with clients", "soft skills", "accountability",
            "constructive feedback", 'responsible', "active communicator", "collaborate", "responsible", "nurture and grow",
-           "communication", "Communication Skills")
+           "communication", "Communication Skills", "team player")
 
 of_list = ("competitive compensation", "Competitive compensation", "working from home", "flexible schedule",
            "work from home from anywhere", "telecommute", "2 weeks paid vacation", "ownership", "401(k)", "401K",
