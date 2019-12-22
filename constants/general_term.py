@@ -1,5 +1,6 @@
 tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team",
-           "bootstrapped startup", "boot-strapped start-up", "fast paced environments", "diverse group")
+           "bootstrapped startup", "boot-strapped start-up", "fast paced environments", "diverse group",
+           "startup", "fast-paced environment", "small and talented team", "remote team", "remote teams")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",
@@ -28,7 +29,7 @@ we_list = ('5+ years of experience', '4 years of professional experience', '2-5 
            "3+ Years of software development experience", "3+ years of experience",
            "2+ Years of professional Ruby on Rails development experience", "3+ years QA experience",
            "3 to 5 years’ experience with DBMS", '3 to 5 years related work experience',
-           "3 to 5 years working knowledge", "5-7 years full stack experience",
+           "3 to 5 years working knowledge", "5-7 years full stack experience", "3-8+ years",
            "2 years related work experience", '7+ years of progressive work experience',
            '2+ years of DevOps leadership experience', "2+ Years", "7+ years of relevant development experience",
            "5+ years experience", '5+ years of professional experience', '2+ years of experience',
@@ -45,22 +46,26 @@ ge_list = ("strategic and creative thinker", "translate user needs", "English", 
            "empathetic", "Autonomous", "self-starters", "self-ownership", "team-oriented", "Customer Focused",
            "deliver technical requirements", "well-rounded", "professional", "smart", "creative", "resourceful",
            "willingness to learn", "Passion", "enthusiasm", "commitment", "respect", "positive energy", "Proactive",
-           "motivated", "proactive", "energized", "compassionate", "imagination", "effective", "curious", "empathy",
-           "solution-oriented", "on time", "hyper focused", "do the hard work", "pivot quickly", "adapting to change",
+           "imagination",  "empathy", "adapting to change", "do the hard work",
            "continuously learning", "productivity", "think outside of the box", "autonomously")
 
 sf_list = ('mentorship', "mentor", "mentoring", 'discussion', 'technical leadership', 'team leadership', "leadership",
            "coordinate", "training", "coaching", "team-player", "coworking", "clear communicator", "collaborative",
            "communication skills", "Communicate", "collaboration", "interface with clients", "soft skills", "accountability",
            "constructive feedback", 'responsible', "active communicator", "collaborate", "responsible", "nurture and grow",
-           "communication", "Communication Skills", "team player")
+           "communication", "Communication Skills", "team player", "interpersonal skills")
 
 of_list = ("competitive compensation", "Competitive compensation", "working from home", "flexible schedule",
            "work from home from anywhere", "telecommute", "2 weeks paid vacation", "ownership", "401(k)", "401K",
            "fostering personal growth", "diverse perspectives", "competitive salaries", "profit sharing", "grow and explore",
            "monthly allowance", "no set hours", "do not limit vacation", "equal opportunity", "motivated to learn",
-           "Work from anywhere", "energizing community", "$2,500 per year", "gym membership", "freedom",
+           "Work from anywhere", "energizing community", "$2,500 per year", "gym membership", "freedom", "€65k-90k",
            "work with big brands", "6 weeks paid vacation", "health/dental insurance", "inspiration days",
            "paid holidays", "competitive pay", "equal opportunity", "fostering talent", "Flexible vacation",
            "work from anywhere", "solid benefits", "equity", "six-month contract", "option to continue", "30 Hours a Week",
-           "high degree of ownership", "operate autonomously")
+           "high degree of ownership", "operate autonomously", "work from wherever we'd prefer", "Flexible working hours",
+           "health, dental and vision insurance", "Flexible vacation policy", "paid holidays", "sick leave",
+           "parental leave", "Fitness", "home office credits", "stock options", "Growth and leadership opportunities",
+           "independent contractor", "work-life balance", "continuous learning", "Work-Life balance",
+           "Flexible schedule and location", "paid vacation", "paid time off", "paid maternity leave",
+           "paid paternity/adoption leave", "Education stipend", "monthly budget")

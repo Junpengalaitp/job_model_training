@@ -24,7 +24,8 @@ pl_collection = {
     "Jython": ("Jython", "jython"),
     "Clojure": ("Clojure", "clojure"),
     "Lua": ("Lua", "lua"),
-    "DSLs": ("DSLs", )
+    "DSLs": ("DSLs", ),
+
 }
 ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
@@ -52,12 +53,15 @@ lb_collection = {
     "Spring": ("Spring", "spring"),
     "Spring Boot": ("Spring Boot", "Spring boot"),
     "Bootstrap": ("Bootstrap", "bootstrap"),
+    "React-Bootstrap": ("React-Bootstrap", "React-bootstrap"),
     "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch"),
-    "iText": ("iText", )
+    "iText": ("iText", ),
+    "Dask": ("Dask",)
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
     "Django": ("Django", "django"),
+    "Django Rest Framework": ("Django Rest Framework", "DRF"),
     "Angular": ("Angular", "AngularJS"),
     "Ruby on Rails": ("Ruby on Rails", "Rails"),
     "Laravel": ("Laravel", "Laravel 5"),
@@ -72,7 +76,10 @@ fw_collection = {
     "Cypress": ("Cypress", "Cypress.io"),
     "Selenium": ("Selenium", "selenium"),
     "JAXB": ("JAXB", ),
-    "Jest": ("Jest", "jest")
+    "Jest": ("Jest", "jest"),
+    "Apache Spark": ("Apache Spark", "Spark"),
+    "WatchKit": ("WatchKit",),
+    "XCTest": ("XCTest",)
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -147,10 +154,12 @@ tl_collection = {
     "Matillion": ("Matillion", "matillion"),
     "Bugzilla": ("Bugzilla", "bugzilla"),
     "JIRA": ("JIRA",),
+    "AppKit": ("AppKit",)
 }
 at_collection = {
     "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
-    "microservices": ("microservices", "Microservices", "Microservice"),
+    "microservices": ("microservices", "Microservices", "Microservice", "microservice"),
+    "message-based communication": ("message-based communication",),
     "serverless": ("serverless", "Serverless"),
     "distributed systems": ("distributed systems", "Distributed systems"),
     "Zookeeper": ("Zookeeper", "zookeeper"),
@@ -187,6 +196,8 @@ ap_collection = {
     "development techniques": ("development techniques",),
     "auto-scaling": ("auto-scaling", ),
     "regression test": ("regression test", "Regression Test"),
+    "testing principles": ("testing principles",),
+    "UITests": ("UITests",)
 }
 se_collection = {
     "logging": ("logging", "Logging"),
@@ -205,7 +216,7 @@ se_collection = {
     "developing": ("developing", "develop"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "optimisation": ("optimisation", "optimisations", "optimize"),
-    "performance optimization": ("performance optimization", ),
+    "performance optimization": ("performance optimization", "performance optimisation"),
     "performance improvement": ("performance improvement", "performance improvements"),
     "deployment": ("deployment", "deployments"),
     "version control": ("version control", "VCS"),
@@ -228,6 +239,7 @@ se_collection = {
     "fixing bugs": ("fixing bugs", ),
     "quality improvements": ("quality improvements", ),
     "tech debt balance": ("tech debt balance", ),
+    "Tech Debt": ("Tech Debt", "tech debt"),
     "engineering standards": ("engineering standards", ),
     "performance issues": ("performance issues", ),
     "troubleshoot complex issues": ("troubleshoot complex issues", ),
@@ -235,6 +247,12 @@ se_collection = {
     "functional requirements": ("functional requirements", ),
     "design specifications": ("design specifications",),
     "issue-tracking": ("issue-tracking",),
+    "Authentication": ("Authentication", "authentication"),
+    "Internationalisation": ("Internationalisation", "internationalisation"),
+    "stream processing": ("stream processing",),
+    "data processing": ("data processing",),
+    "automated processes": ("automated processes",),
+    "rapid iteration": ("rapid iteration",)
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms",),
@@ -242,7 +260,7 @@ pf_collection = {
     "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD"),
     "Azure": ("Azure", "Microsoft Azure", "azure"),
     "Heroku": ("Heroku", "heroku"),
-    "Github": ("Github", "github"),
+    "GitHub": ("GitHub", "github", "Github"),
     "GitLab": ("GitLab", "gitLab"),
     "Docker": ("Docker", "docker"),
     "Kubernetes": ("Kubernetes", "kubernetes"),
@@ -262,9 +280,10 @@ pf_collection = {
     "Ionic": ("Ionic", ),
     "Snowflake": ("Snowflake", "snowflake"),
     "Looker": ("Looker", "looker"),
+    "Apache Arrow": ("Apache Arrow",),
 }
 dv_collection = {
-    "Front-end": ("Front-end", "frontend", "front-end development"),
+    "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
     "Back-end": ("Back-end", "Backend", "backend", "back-end"),
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
     "Software Engineering": ("Software Engineering", "software engineering"),
@@ -282,14 +301,15 @@ dv_collection = {
     "3D Animation": ("3D Animation", "3D animation"),
     "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
+    "Data Science": ("Data Science", "data science", "Data science")
 }
 ps_collection = {
-    "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers"),
+    "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers"),
     "Front-end Developer": ("Front-end Developer", "front-End Developer", "front end developer", "Frontend Developers",
                             "front-end developers", "FRONT END WEB DEVELOPER"),
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer"),
     "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer"),
-    "Full Stack Engineer": ("Full Stack Engineer", "full stack engineer", "Full Stack Software Engineers"),
+    "Full Stack Engineer": ("Full Stack Engineer", "Full-Stack Engineer", "full stack engineer", "Full Stack Software Engineers"),
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers"),
     "Software Developer": ("Software Developer", "software developer"),
     "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer"),
@@ -338,6 +358,10 @@ ps_collection = {
     "Rails Engineer": ("Rails Engineer", "Rails Engineers"),
     "CEO": ("CEO",),
     "CTO": ("CTO", "cto"),
+    "CFO": ("CFO", "cfo"),
+    "Director of Engineering": ("Director of Engineering", ),
+    "Senior Python Engineer": ("Senior Python Engineer", ),
+    "iOS Developer": ("iOS Developer",)
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science"),
@@ -345,7 +369,7 @@ cs_collection = {
     "Algorithms": ("Algorithms", "algorithms"),
     "Mathematics": ("Mathematics", "mathematics"),
     "Statistics": ("Statistics", "statistics"),
-    "Concurrency": ("Concurrency", "concurrency"),
+    "Concurrency": ("Concurrency", "concurrency", "concurrent programming"),
     "Parallelism": ("Parallelism", "parallelism"),
     "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP"),
     "Design Patterns": ("Design Patterns", "design patterns"),
@@ -390,14 +414,18 @@ pt_collection = {
     "BGP": ("BGP", ),
 }
 
-pd_list = ("SaaS", "banking", "web application", "single-page application", "web apps", "web services", "enterprise applications",
+pd_list = ("SaaS", "banking", "web application", "single-page application", "web-app", "web apps", "web services", "enterprise applications",
            "enterprise class applications", "social network", "data-oriented products", "web applications", "web technology",
            "web technologies", "media", "analysis engines", "data pipelines", "open source", "crypto", "fitness", "Games",
            "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge", "billing software",
            "textile", "digital printing", "great customer experience", "non-profit", "Small and Medium Scale Systems",
            "repeat orders", "recurring billing software", "end user customer experiences", "cryptocurrency", "bitcoin",
-           "financial sector", "financial markets", "trading")
+           "financial sector", "financial markets", "trading", "chatbots and messaging", "bots", "ecommerce", "shopping",
+           "conversational marketing automation platform", "conversational commerce", "plugins and features",
+           "scalable products and features", "sports betting platform", "automation", "commercial platform",
+           "open-source", "FinTech", "productivity tools", "large-scale systems", "third party technologies")
 
 ql_list = ("technical best practises", "scalability", "high-quality code", "testability", "reliable code",
-           "high-performance", "supportability", "maintainability", "modern", "testable", "well-documented", "well designed", "efficient",
-           "seamlessly", "flexible", "robust", "High Performance")
+           "high-performance", "supportability", "maintainability", "modularity", "high performance code",
+           "seamlessly", "flexible", "robust", "High Performance", "performance", "reliability",
+           "data integrity")
