@@ -19,7 +19,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training.training_11.train_data_11 import TRAIN_DATA
+from model_training_v2.training_02.train_data_02 import TRAIN_DATA
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 path = os.path.join(my_path, "../job_model")
@@ -30,7 +30,7 @@ path = os.path.join(my_path, "../job_model")
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model='job_model', output_dir=path, n_iter=1000, train_data=None):
+def main(model='job_model', output_dir=path, n_iter=800, train_data=None):
     """Load the model, set up the pipeline and train the entity recognizer."""
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
@@ -70,7 +70,7 @@ def main(model='job_model', output_dir=path, n_iter=1000, train_data=None):
                 nlp.update(
                     texts,  # batch of texts
                     annotations,  # batch of annotations
-                    drop=0.5,  # dropout - make it harder to memorise data
+                    drop=0.35,  # dropout - make it harder to memorise data
                     losses=losses,
                 )
             print("Losses", losses)
