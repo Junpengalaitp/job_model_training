@@ -23,3 +23,4 @@ pd = "PRODUCT"  # product to build
 ql = "QUALITY"  # code/software quality e.g. easy-to-understand, testable
 of = "OFFER"  # salary, benefits
 tm = "TEAM"  # team description/culture
+cp = "COMPANY"  # company type e.g. startup, FinTech

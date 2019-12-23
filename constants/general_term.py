@@ -1,6 +1,10 @@
 tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team",
-           "bootstrapped startup", "boot-strapped start-up", "fast paced environments", "diverse group",
-           "startup", "fast-paced environment", "small and talented team", "remote team", "remote teams")
+           "fast paced environments", "diverse group",
+           "fast-paced environment", "small and talented team", "remote team", "remote teams")
+
+cp_list = ("FinTech", "banking", "media", "non-profit", "ecommerce", "financial sector", "financial markets", "trading",
+           "education", "bootstrapped startup", "boot-strapped start-up", "startup", "crypto", "Games", "social network",
+           "fitness")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",

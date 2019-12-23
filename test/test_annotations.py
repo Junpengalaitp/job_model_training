@@ -193,6 +193,22 @@ class TestAnnotations(unittest.TestCase):
                 print('testing word: ', word)
             self.assertTrue(word in tl_list)
 
+    def test_TEAM(self):
+        if 'TEAM' in self.ent_dict:
+            print(set(self.ent_dict['TEAM']))
+            for word in set(self.ent_dict['TEAM']):
+                if word not in tm_list:
+                    print('the testing word not in list: ', word)
+                self.assertTrue(word in tm_list)
+
+    def test_(self):
+        if 'COMPANY' in self.ent_dict:
+            print(set(self.ent_dict['COMPANY']))
+            for word in set(self.ent_dict['COMPANY']):
+                if word not in cp_list:
+                    print('the testing word not in list: ', word)
+                self.assertTrue(word in cp_list)
+
 
 if __name__ == '__main__':
     unittest.main()

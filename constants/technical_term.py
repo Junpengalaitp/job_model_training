@@ -414,16 +414,16 @@ pt_collection = {
     "BGP": ("BGP", ),
 }
 
-pd_list = ("SaaS", "banking", "web application", "single-page application", "web-app", "web apps", "web services", "enterprise applications",
-           "enterprise class applications", "social network", "data-oriented products", "web applications", "web technology",
-           "web technologies", "media", "analysis engines", "data pipelines", "open source", "crypto", "fitness", "Games",
-           "video games", "education", "website", "websites", "Mobile", "cloud-based", "cutting-edge", "billing software",
-           "textile", "digital printing", "great customer experience", "non-profit", "Small and Medium Scale Systems",
+pd_list = ("SaaS", "web application", "single-page application", "web-app", "web apps", "web services",
+           "enterprise applications", "enterprise class applications", "data-oriented products",
+           "web applications", "web technology", "web technologies", "analysis engines", "data pipelines", "open source",
+           "video games", "website", "websites", "Mobile", "cloud-based", "cutting-edge", "billing software",
+           "textile", "digital printing", "great customer experience", "Small and Medium Scale Systems",
            "repeat orders", "recurring billing software", "end user customer experiences", "cryptocurrency", "bitcoin",
-           "financial sector", "financial markets", "trading", "chatbots and messaging", "bots", "ecommerce", "shopping",
+           "chatbots and messaging", "bots", "shopping",
            "conversational marketing automation platform", "conversational commerce", "plugins and features",
            "scalable products and features", "sports betting platform", "automation", "commercial platform",
-           "open-source", "FinTech", "productivity tools", "large-scale systems", "third party technologies")
+           "open-source", "productivity tools", "large-scale systems", "third party technologies")
 
 ql_list = ("technical best practises", "scalability", "high-quality code", "testability", "reliable code",
            "high-performance", "supportability", "maintainability", "modularity", "high performance code",
