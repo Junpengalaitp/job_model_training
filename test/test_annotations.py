@@ -201,7 +201,7 @@ class TestAnnotations(unittest.TestCase):
                     print('the testing word not in list: ', word)
                 self.assertTrue(word in tm_list)
 
-    def test_(self):
+    def test_COMPANY(self):
         if 'COMPANY' in self.ent_dict:
             print(set(self.ent_dict['COMPANY']))
             for word in set(self.ent_dict['COMPANY']):
