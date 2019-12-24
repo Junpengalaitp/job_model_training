@@ -25,7 +25,6 @@ pl_collection = {
     "Clojure": ("Clojure", "clojure"),
     "Lua": ("Lua", "lua"),
     "DSLs": ("DSLs", ),
-
 }
 ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
@@ -153,8 +152,13 @@ tl_collection = {
     "Ansible": ("Ansible", "ansible",),
     "Matillion": ("Matillion", "matillion"),
     "Bugzilla": ("Bugzilla", "bugzilla"),
-    "JIRA": ("JIRA",),
-    "AppKit": ("AppKit",)
+    "JIRA": ("JIRA", "Jira"),
+    "AppKit": ("AppKit",),
+    "Crashlytics": ("Crashlytics",),
+    "Bitrise": ("Bitrise",),
+    "Fastlane": ("Fastlane",),
+    "Zeplin": ("Zeplin",),
+    "Wireframes": ("Wireframes",)
 }
 at_collection = {
     "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
@@ -164,6 +168,7 @@ at_collection = {
     "distributed systems": ("distributed systems", "Distributed systems"),
     "Zookeeper": ("Zookeeper", "zookeeper"),
     "MVC": ("MVC", "mvc"),
+    "MVVM": ("MVVM",),
     "cloud architecture": ("cloud architecture", "Cloud architecture")
 }
 ap_collection = {
@@ -175,7 +180,7 @@ ap_collection = {
     "Continuous Integration": ("Continuous Integration", "CI", "Continuous integration"),
     "Continuous Delivery": ("Continuous Delivery", "CD", "continuous delivery"),
     "Sprint": ("Sprint", "sprint"),
-    "CI/CD": ("CI/CD", ),
+    "CI/CD": ("CI/CD", "CD/CI"),
     "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
     "automated testing": ("automated testing", "automated tests"),
     "test automation": ("test automation", "Test automation"),
@@ -200,6 +205,7 @@ ap_collection = {
     "UITests": ("UITests",)
 }
 se_collection = {
+    "Design Patterns": ("Design Patterns", "design patterns"),
     "logging": ("logging", "Logging"),
     "profiling": ("profiling", "Profiling"),
     "integration": ("integration", "integrations", "integrate"),
@@ -301,7 +307,7 @@ dv_collection = {
     "3D Animation": ("3D Animation", "3D animation"),
     "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
-    "Data Science": ("Data Science", "data science", "Data science")
+    "Data Science": ("Data Science", "data science", "Data science"),
 }
 ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers"),
@@ -361,7 +367,8 @@ ps_collection = {
     "CFO": ("CFO", "cfo"),
     "Director of Engineering": ("Director of Engineering", ),
     "Senior Python Engineer": ("Senior Python Engineer", ),
-    "iOS Developer": ("iOS Developer",)
+    "iOS Developer": ("iOS Developer", "iOS developer", "iOS developers"),
+    "code reviewers": ("code reviewers",),
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science"),
@@ -372,7 +379,6 @@ cs_collection = {
     "Concurrency": ("Concurrency", "concurrency", "concurrent programming"),
     "Parallelism": ("Parallelism", "parallelism"),
     "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP"),
-    "Design Patterns": ("Design Patterns", "design patterns"),
     "Asynchronous": ("Asynchronous", "asynchronous"),
     "Cryptography": ("Cryptography", "cryptography"),
     "Computability": ("Computability", "computability"),
@@ -380,7 +386,8 @@ cs_collection = {
     "Chunking": ("Chunking", "chunking"),
     "Ethernet": ("Ethernet", ),
     "DNS": ("DNS", ),
-    "VPN": ("VPN", )
+    "VPN": ("VPN", ),
+    "Networking": ("Networking",),
 }
 ai_collection = {
     "Machine Learning": ("Machine Learning", "Machine learning", "machine learning"),
@@ -412,6 +419,7 @@ pt_collection = {
     "TLS": ("TLS", ),
     "SOAP": ("SOAP", ),
     "BGP": ("BGP", ),
+    "Contentful": ("Contentful",)
 }
 
 pd_list = ("SaaS", "web application", "single-page application", "web-app", "web apps", "web services",
@@ -427,4 +435,5 @@ pd_list = ("SaaS", "web application", "single-page application", "web-app", "web
 
 ql_list = ("technical best practises", "scalability", "high-quality code", "testability", "reliable code",
            "high-performance", "supportability", "maintainability", "modularity", "high performance code",
-           "High Performance", "performance", "reliability", "data integrity", "high performance")
+           "High Performance", "performance", "reliability", "data integrity", "high performance", "code quality",
+           "high quality")

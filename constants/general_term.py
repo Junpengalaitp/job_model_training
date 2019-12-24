@@ -1,10 +1,10 @@
 tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team",
            "fast paced environments", "diverse group", "fast-paced environment", "small and talented team",
-           "remote team", "remote teams")
+           "remote team", "remote teams", "talented team", "tech enthusiasts")
 
 cp_list = ("FinTech", "banking", "media", "non-profit", "ecommerce", "financial sector", "financial markets", "trading",
            "education", "bootstrapped startup", "boot-strapped start-up", "startup", "crypto", "Games", "social network",
-           "fitness", "textile", "digital printing", "bitcoin", "cryptocurrency", "small businesses",
+           "fitness", "textile", "digital printing", "bitcoin", "cryptocurrency", "small businesses", "small organization",
            "independent businesses")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
@@ -51,26 +51,29 @@ ge_list = ("strategic and creative thinker", "translate user needs", "English", 
            "empathetic", "Autonomous", "self-starters", "self-ownership", "team-oriented", "Customer Focused",
            "deliver technical requirements", "well-rounded", "professional", "smart", "creative", "resourceful",
            "willingness to learn", "Passion", "enthusiasm", "commitment", "respect", "positive energy", "Proactive",
-           "imagination",  "empathy", "adapting to change", "do the hard work",
-           "continuously learning", "productivity", "think outside of the box", "autonomously")
+           "imagination",  "empathy", "adapting to change", "do the hard work", "attention to details",
+           "continuously learning", "productivity", "think outside of the box", "autonomously",
+           "customer-focused thinking", "self-motivation")
 
 sf_list = ('mentorship', "mentor", "mentoring", 'discussion', 'technical leadership', 'team leadership', "leadership",
            "coordinate", "training", "coaching", "team-player", "coworking", "clear communicator", "collaborative",
            "communication skills", "Communicate", "collaboration", "interface with clients", "soft skills", "accountability",
            "constructive feedback", 'responsible', "active communicator", "collaborate", "responsible", "nurture and grow",
-           "communication", "Communication Skills", "team player", "interpersonal skills")
+           "communication", "Communication Skills", "team player", "interpersonal skills", "communicating effectively",
+           "strong communications skills")
 
 of_list = ("competitive compensation", "Competitive compensation", "working from home", "flexible schedule",
            "work from home from anywhere", "telecommute", "2 weeks paid vacation", "ownership", "401(k)", "401K",
            "fostering personal growth", "diverse perspectives", "competitive salaries", "profit sharing", "grow and explore",
-           "monthly allowance", "no set hours", "do not limit vacation", "equal opportunity", "motivated to learn",
+           "monthly allowance", "no set hours", "do not limit vacation", "equal opportunity", "healthcare",
            "Work from anywhere", "energizing community", "$2,500 per year", "gym membership", "freedom", "€65k-90k",
-           "work with big brands", "6 weeks paid vacation", "health/dental insurance", "inspiration days",
+           "work with big brands", "6 weeks paid vacation", "health/dental insurance", "inspiration days", "dental",
            "paid holidays", "competitive pay", "equal opportunity", "fostering talent", "Flexible vacation",
            "work from anywhere", "solid benefits", "equity", "six-month contract", "option to continue", "30 Hours a Week",
            "high degree of ownership", "operate autonomously", "work from wherever we'd prefer", "Flexible working hours",
            "health, dental and vision insurance", "Flexible vacation policy", "paid holidays", "sick leave",
            "parental leave", "Fitness", "home office credits", "stock options", "Growth and leadership opportunities",
-           "independent contractor", "work-life balance", "continuous learning", "Work-Life balance",
+           "independent contractor", "work-life balance", "continuous learning", "Work-Life balance", "30-35€ /h",
            "Flexible schedule and location", "paid vacation", "paid time off", "paid maternity leave",
-           "paid paternity/adoption leave", "Education stipend", "monthly budget")
+           "paid paternity/adoption leave", "Education stipend", "monthly budget", "flexibility", "fun work environment",
+           "10h - 40h work week", "12-month contract", "40€ /h")
