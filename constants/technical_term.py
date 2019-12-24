@@ -181,7 +181,7 @@ ap_collection = {
     "test automation": ("test automation", "Test automation"),
     "E2E testing": ("E2E testing", "End-to-End testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
-    "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests"),
+    "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test"),
     "automated configuration": ("automated configuration", "Automated configuration"),
     "build automation": ("build automation", "Build automation"),
     "object-oriented design": ("object-oriented design", ),
@@ -284,7 +284,7 @@ pf_collection = {
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
-    "Back-end": ("Back-end", "Backend", "backend", "back-end"),
+    "Back-end": ("Back-end", "Backend", "backend", "back-end", "backends"),
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
     "Software Engineering": ("Software Engineering", "software engineering"),
     "Security": ("Security", "security"),
@@ -417,15 +417,14 @@ pt_collection = {
 pd_list = ("SaaS", "web application", "single-page application", "web-app", "web apps", "web services",
            "enterprise applications", "enterprise class applications", "data-oriented products",
            "web applications", "web technology", "web technologies", "analysis engines", "data pipelines", "open source",
-           "video games", "website", "websites", "Mobile", "cloud-based", "billing software",
-           "great customer experience", "Small and Medium Scale Systems",
+           "video games", "website", "websites", "Mobile", "mobile", "mobile platform", "billing software",
+           "great customer experience", "Small and Medium Scale Systems", "mobile applications",
            "repeat orders", "recurring billing software", "end user customer experiences", "cryptocurrency", "bitcoin",
-           "chatbots and messaging", "bots", "shopping",
+           "chatbots and messaging", "bots", "shopping", "desktop", "mobile app", "awesome customer service",
            "conversational marketing automation platform", "conversational commerce", "plugins and features",
            "scalable products and features", "sports betting platform", "automation", "commercial platform",
            "open-source", "productivity tools", "large-scale systems", "third party technologies")
 
 ql_list = ("technical best practises", "scalability", "high-quality code", "testability", "reliable code",
            "high-performance", "supportability", "maintainability", "modularity", "high performance code",
-           "seamlessly", "flexible", "robust", "High Performance", "performance", "reliability",
-           "data integrity")
+           "High Performance", "performance", "reliability", "data integrity", "high performance")

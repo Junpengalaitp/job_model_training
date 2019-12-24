@@ -4,7 +4,8 @@ tm_list = ("cross-functional teams", "cross-functional project team", "feature t
 
 cp_list = ("FinTech", "banking", "media", "non-profit", "ecommerce", "financial sector", "financial markets", "trading",
            "education", "bootstrapped startup", "boot-strapped start-up", "startup", "crypto", "Games", "social network",
-           "fitness", "textile", "digital printing", "bitcoin", "cryptocurrency")
+           "fitness", "textile", "digital printing", "bitcoin", "cryptocurrency", "small businesses",
+           "independent businesses")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",
