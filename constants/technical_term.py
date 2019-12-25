@@ -25,6 +25,7 @@ pl_collection = {
     "Clojure": ("Clojure", "clojure"),
     "Lua": ("Lua", "lua"),
     "DSLs": ("DSLs", ),
+    "VB.NET": ("VB.NET",)
 }
 ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
@@ -78,7 +79,8 @@ fw_collection = {
     "Jest": ("Jest", "jest"),
     "Apache Spark": ("Apache Spark", "Spark"),
     "WatchKit": ("WatchKit",),
-    "XCTest": ("XCTest",)
+    "XCTest": ("XCTest",),
+    "Web Forms": ("Web Forms", "WebForms",)
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -102,7 +104,8 @@ ds_collection = {
     "Firestore": ("Firestore", "firestore"),
     "Presto": ("Presto", "PrestoDB"),
     "RTDB": ("RTDB", ),
-    "Varnish": ("Varnish", )
+    "Varnish": ("Varnish", ),
+    "SQL Server": ("SQL Server",),
 }
 dt_collection = {
     "JSON": ("JSON", "json"),
@@ -263,7 +266,7 @@ se_collection = {
     "internationalization": ("internationalization",),
     "software engineering": ("software engineering",),
     "software development life cycle": ("software development life cycle",),
-
+    "Legacy System": ("Legacy System", "legacy system")
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms",),
@@ -292,6 +295,7 @@ pf_collection = {
     "Snowflake": ("Snowflake", "snowflake"),
     "Looker": ("Looker", "looker"),
     "Apache Arrow": ("Apache Arrow",),
+    "Xamarin": ("Xamarin",)
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -374,7 +378,7 @@ ps_collection = {
     "Senior Python Engineer": ("Senior Python Engineer", ),
     "iOS Developer": ("iOS Developer", "iOS developer", "iOS developers"),
     "code reviewers": ("code reviewers",),
-    "junior developers": ("junior developers",)
+    "junior developers": ("junior developers", "Jr. Software Developer", "entry-level software developer")
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science"),
@@ -438,7 +442,7 @@ pd_list = ("SaaS", "web application", "single-page application", "web-app", "web
            "conversational marketing automation platform", "conversational commerce", "plugins and features",
            "scalable products and features", "sports betting platform", "automation", "commercial platform",
            "open-source", "productivity tools", "large-scale systems", "third party technologies",
-           "mobile applications")
+           "mobile applications", "web", "Web")
 
 ql_list = ("technical best practises", "best practices", "scalability", "high-quality code", "testability", "reliable code",
            "high-performance", "supportability", "maintainability", "modularity", "high performance code",

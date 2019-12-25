@@ -1,11 +1,13 @@
 tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team",
            "fast paced environments", "diverse group", "fast-paced environment", "small and talented team",
-           "remote team", "remote teams", "talented team", "tech enthusiasts", "Remote work environment")
+           "remote team", "remote teams", "talented team", "tech enthusiasts", "Remote work environment",
+           "tight knit team", "team-oriented environment")
 
 cp_list = ("FinTech", "banking", "media", "non-profit", "ecommerce", "financial sector", "financial markets", "trading",
            "education", "bootstrapped startup", "boot-strapped start-up", "startup", "crypto", "Games", "social network",
            "fitness", "textile", "digital printing", "bitcoin", "cryptocurrency", "small businesses", "small organization",
-           "independent businesses", "consumer energy services", "energy markets", "consumer energy consumption")
+           "independent businesses", "consumer energy services", "energy markets", "consumer energy consumption",
+           "rental industry")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",
@@ -49,11 +51,11 @@ ge_list = ("strategic and creative thinker", "translate user needs", "English", 
            "problem-solving skills", "fixing issues", "intelligent", "hard-working", "passionate", "evaluating",
            "dream big", "work ethic", "forward thinking", "energetic", "hardworking", "knowledgeable", "positive",
            "empathetic", "Autonomous", "self-starters", "self-ownership", "team-oriented", "Customer Focused",
-           "deliver technical requirements", "well-rounded", "professional", "smart", "creative", "resourceful",
-           "willingness to learn", "Passion", "enthusiasm", "commitment", "respect", "positive energy", "Proactive",
+           "deliver technical requirements", "passion for learning",
+           "willingness to learn", "Passion", "enthusiasm", "commitment", "respect", "positive energy",
            "imagination",  "empathy", "adapting to change", "do the hard work", "attention to details",
-           "continuously learning", "productivity", "think outside of the box", "autonomously",
-           "customer-focused thinking", "self-motivation", "critical thinking")
+           "continuously learning", "productivity", "think outside of the box",
+           "customer-focused thinking", "self-motivation", "critical thinking", "self-directed learner")
 
 sf_list = ('mentorship', "mentor", "mentoring", 'discussion', 'technical leadership', 'team leadership', "leadership",
            "coordinate", "training", "coaching", "team-player", "coworking", "clear communicator", "collaborative",
