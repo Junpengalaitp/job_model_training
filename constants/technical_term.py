@@ -209,7 +209,7 @@ se_collection = {
     "logging": ("logging", "Logging"),
     "profiling": ("profiling", "Profiling"),
     "integration": ("integration", "integrations", "integrate"),
-    "code-review": ("code-review", "code-reviews", "code reviews"),
+    "code-review": ("code-review", "code-reviews", "code reviews", "code review"),
     "refactoring": ("refactoring", "Refactoring"),
     "documentation": ("documentation", "Documentation"),
     "database migrations": ("database migrations", "Database migrations"),
@@ -222,7 +222,7 @@ se_collection = {
     "developing": ("developing", "develop"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "optimisation": ("optimisation", "optimisations", "optimize"),
-    "performance optimization": ("performance optimization", "performance optimisation"),
+    "performance optimization": ("performance optimization", "performance optimisation", "Performance Optimization"),
     "performance improvement": ("performance improvement", "performance improvements"),
     "deployment": ("deployment", "deployments"),
     "version control": ("version control", "VCS"),
@@ -258,7 +258,12 @@ se_collection = {
     "stream processing": ("stream processing",),
     "data processing": ("data processing",),
     "automated processes": ("automated processes",),
-    "rapid iteration": ("rapid iteration",)
+    "rapid iteration": ("rapid iteration",),
+    "performance analysis": ("performance analysis",),
+    "internationalization": ("internationalization",),
+    "software engineering": ("software engineering",),
+    "software development life cycle": ("software development life cycle",),
+
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms",),
@@ -290,9 +295,8 @@ pf_collection = {
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
-    "Back-end": ("Back-end", "Backend", "backend", "back-end", "backends"),
+    "Back-end": ("Back-end", "Backend", "backend", "back-end", "backends", "back end"),
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
-    "Software Engineering": ("Software Engineering", "software engineering"),
     "Security": ("Security", "security"),
     "QA": ("QA", ),
     "Product Management": ("Product Management", "product management"),
@@ -310,7 +314,8 @@ dv_collection = {
     "Data Science": ("Data Science", "data science", "Data science"),
 }
 ps_collection = {
-    "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers"),
+    "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
+                           "Front-End Engineer"),
     "Front-end Developer": ("Front-end Developer", "front-End Developer", "front end developer", "Frontend Developers",
                             "front-end developers", "FRONT END WEB DEVELOPER"),
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer"),
@@ -352,7 +357,7 @@ ps_collection = {
     "Senior Back-end Engineer": ("Senior Back-end Engineer", "Senior Backend Engineer", "Senior Backend Engineers"),
     "Senior Front-end Developer": ("Senior Front-end Developer", "Senior Frontend Developer", "Senior Frontend Developers"),
     "Senior Front-end Engineer": ("Senior Front-end Engineer", "Senior Frontend Engineer", "Senior Frontend Engineers",
-                                  "Senior Front End Engineer"),
+                                  "Senior Front End Engineer", "Senior Front-End Engineer"),
     "Senior Developer": ("Senior Developer", "Senior Developers", "Senior developers"),
     "Senior Software Engineer": ("Senior Software Engineer", "senior software engineer", "Sr. Software Engineer"),
     "Senior DevOps Engineer": ("Senior DevOps Engineer", "Sr. DevOps Engineer"),
@@ -369,6 +374,7 @@ ps_collection = {
     "Senior Python Engineer": ("Senior Python Engineer", ),
     "iOS Developer": ("iOS Developer", "iOS developer", "iOS developers"),
     "code reviewers": ("code reviewers",),
+    "junior developers": ("junior developers",)
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science"),
@@ -426,14 +432,15 @@ pd_list = ("SaaS", "web application", "single-page application", "web-app", "web
            "enterprise applications", "enterprise class applications", "data-oriented products",
            "web applications", "web technology", "web technologies", "analysis engines", "data pipelines", "open source",
            "video games", "website", "websites", "Mobile", "mobile", "mobile platform", "billing software",
-           "great customer experience", "Small and Medium Scale Systems", "mobile applications",
+           "great customer experience", "Small and Medium Scale Systems", "mobile applications", "web development",
            "repeat orders", "recurring billing software", "end user customer experiences", "cryptocurrency", "bitcoin",
            "chatbots and messaging", "bots", "shopping", "desktop", "mobile app", "awesome customer service",
            "conversational marketing automation platform", "conversational commerce", "plugins and features",
            "scalable products and features", "sports betting platform", "automation", "commercial platform",
-           "open-source", "productivity tools", "large-scale systems", "third party technologies")
+           "open-source", "productivity tools", "large-scale systems", "third party technologies",
+           "mobile applications")
 
-ql_list = ("technical best practises", "scalability", "high-quality code", "testability", "reliable code",
+ql_list = ("technical best practises", "best practices", "scalability", "high-quality code", "testability", "reliable code",
            "high-performance", "supportability", "maintainability", "modularity", "high performance code",
            "High Performance", "performance", "reliability", "data integrity", "high performance", "code quality",
-           "high quality")
+           "high quality", "speed", "consistency", "accessibility", "coding standards")
