@@ -1,7 +1,10 @@
 pl_collection = {
     "JavaScript": ("JavaScript", "Javascript", "javascript", "JS"),
-    "ECMAScript": ("ECMAScript", "ecmascript", "ES2015", "ES2016", "ES2017", "ES2018", "ES5", "ES6", "ES7", "ES8"),
+    "ECMAScript": ("ECMAScript", "ecmascript", "ES2015", "ES2016", "ES2017", "ES2018", "ES5", "ES6", "ES7", "ES8",
+                   "EcmaScript"),
     "TypeScript": ("TypeScript", "Typescript", "typescript"),
+    "CoffeeScript": ("CoffeeScript", "Coffeescript"),
+    "Babel": ("Babel",),
     "Java": ("Java", "java", "Java8", "Java11"),
     "Python": ("Python", "python"),
     "Ruby": ("Ruby", "ruby"),
@@ -36,7 +39,8 @@ ol_collection = {
     "SASS": ("SASS", "sass", "Sass"),
     "GraphQL": ("GraphQL", "graphQL"),
     "SQL": ("SQL", "sql"),
-    "Jinja": ("Jinja", "Jinja2")
+    "Jinja": ("Jinja", "Jinja2"),
+    "DOM": ("DOM",),
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
@@ -56,7 +60,8 @@ lb_collection = {
     "React-Bootstrap": ("React-Bootstrap", "React-bootstrap"),
     "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch"),
     "iText": ("iText", ),
-    "Dask": ("Dask",)
+    "Dask": ("Dask",),
+    "Immutable.js": ("Immutable.js",)
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -80,7 +85,8 @@ fw_collection = {
     "Apache Spark": ("Apache Spark", "Spark"),
     "WatchKit": ("WatchKit",),
     "XCTest": ("XCTest",),
-    "Web Forms": ("Web Forms", "WebForms",)
+    "Web Forms": ("Web Forms", "WebForms",),
+    "Express.js": ("Express.js", "Express")
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -135,11 +141,15 @@ sv_collection = {
 tl_collection = {
     "Jenkins": ("Jenkins", "jenkins"),
     "Gradle": ("Gradle", "gradle"),
+    "npm": ("npm", "NPM"),
     "Maven": ("Maven", "maven"),
+    "RubyGems": ("RubyGems", "rubygems"),
     "Git": ("Git", "git"),
     "Grunt": ("Grunt", "grunt"),
     "Slack": ("Slack", "slack"),
     "WordPress": ("WordPress", "wordpress"),
+    "Jetpack": ("Jetpack",),
+    "WooCommerce": ("WooCommerce",),
     "webpack": ("webpack", "Webpack"),
     "Aspose": ("Aspose", "Aspose API"),
     "debugger": ("Debugger", "debugger"),
@@ -161,7 +171,8 @@ tl_collection = {
     "Bitrise": ("Bitrise",),
     "Fastlane": ("Fastlane",),
     "Zeplin": ("Zeplin",),
-    "Wireframes": ("Wireframes",)
+    "Wireframes": ("Wireframes",),
+    "Trello": ("Trello", ),
 }
 at_collection = {
     "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
@@ -172,7 +183,8 @@ at_collection = {
     "Zookeeper": ("Zookeeper", "zookeeper"),
     "MVC": ("MVC", "mvc"),
     "MVVM": ("MVVM",),
-    "cloud architecture": ("cloud architecture", "Cloud architecture")
+    "cloud architecture": ("cloud architecture", "Cloud architecture"),
+    "Flux": ("Flux", )
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -266,7 +278,8 @@ se_collection = {
     "internationalization": ("internationalization",),
     "software engineering": ("software engineering",),
     "software development life cycle": ("software development life cycle",),
-    "Legacy System": ("Legacy System", "legacy system")
+    "Legacy System": ("Legacy System", "legacy system"),
+    "Load Balancing": ("Load Balancing", "Load balancing",)
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms",),
@@ -324,7 +337,8 @@ ps_collection = {
                             "front-end developers", "FRONT END WEB DEVELOPER"),
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer"),
     "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer"),
-    "Full Stack Engineer": ("Full Stack Engineer", "Full-Stack Engineer", "full stack engineer", "Full Stack Software Engineers"),
+    "Full Stack Engineer": ("Full Stack Engineer", "Full-Stack Engineer", "full stack engineer", "full-stack engineer",
+                            "Full Stack Software Engineers"),
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers"),
     "Software Developer": ("Software Developer", "software developer"),
     "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer"),
@@ -397,7 +411,13 @@ cs_collection = {
     "Ethernet": ("Ethernet", ),
     "DNS": ("DNS", ),
     "VPN": ("VPN", ),
-    "Networking": ("Networking",),
+    "Networking": ("Networking", "networking"),
+    "Network": ("Network", "networks", "network"),
+    "Routing": ("Routing", "routing"),
+    "routers": ("routers",),
+    "switches": ("switches",),
+    "PoP": ("PoP", "POP"),
+    "Virtual LAN": ("Virtual LAN", "VLANs")
 }
 ai_collection = {
     "Machine Learning": ("Machine Learning", "Machine learning", "machine learning"),
@@ -416,8 +436,10 @@ pt_collection = {
     "Protocol Buffers": ("Protocol Buffers", "protocol buffers"),
     "TCP": ("TCP", "tcp"),
     "TCP/IP": ("TCP/IP",),
+    "IP": ("IP",),
     "UDP": ("UDP", ),
     "HTTP": ("HTTP", "http"),
+    "HTTPs": ("HTTPs",),
     "WebSocket": ("WebSocket", "WebSockets"),
     "API": ("API", "APIs"),
     "CORS": ("CORS", ),
@@ -429,7 +451,16 @@ pt_collection = {
     "TLS": ("TLS", ),
     "SOAP": ("SOAP", ),
     "BGP": ("BGP", ),
-    "Contentful": ("Contentful",)
+    "Contentful": ("Contentful",),
+    "DHCP": ("DHCP",),
+    "VRRP": ("VRRP",),
+    "VLANs": ("VLANs",),
+    "IGP": ("IGP",),
+    "ECMP": ("ECMP",),
+    "OSPF": ("OSPF",),
+    "MPLS": ("MPLS",),
+    "RSVP": ("RSVP",),
+    "LDP": ("LDP",),
 }
 
 pd_list = ("SaaS", "web application", "single-page application", "web-app", "web apps", "web services",
@@ -442,9 +473,9 @@ pd_list = ("SaaS", "web application", "single-page application", "web-app", "web
            "conversational marketing automation platform", "conversational commerce", "plugins and features",
            "scalable products and features", "sports betting platform", "automation", "commercial platform",
            "open-source", "productivity tools", "large-scale systems", "third party technologies",
-           "mobile applications", "web", "Web")
+           "mobile applications", "web", "Web", "high traffic applications", "Open source", "network infrastructure")
 
 ql_list = ("technical best practises", "best practices", "scalability", "high-quality code", "testability", "reliable code",
            "high-performance", "supportability", "maintainability", "modularity", "high performance code",
            "High Performance", "performance", "reliability", "data integrity", "high performance", "code quality",
-           "high quality", "speed", "consistency", "accessibility", "coding standards")
+           "high quality", "speed", "consistency", "accessibility", "coding standards", "High Availability")

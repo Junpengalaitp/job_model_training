@@ -1,7 +1,8 @@
-tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team",
+tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team", "talented team",
            "fast paced environments", "diverse group", "fast-paced environment", "small and talented team",
            "remote team", "remote teams", "talented team", "tech enthusiasts", "Remote work environment",
-           "tight knit team", "team-oriented environment")
+           "tight knit team", "team-oriented environment", "cross-functional teams", "fully remote team",
+           "Fully remote work")
 
 cp_list = ("FinTech", "banking", "media", "non-profit", "ecommerce", "financial sector", "financial markets", "trading",
            "education", "bootstrapped startup", "boot-strapped start-up", "startup", "crypto", "Games", "social network",
@@ -78,4 +79,5 @@ of_list = ("competitive compensation", "Competitive compensation", "working from
            "independent contractor", "work-life balance", "continuous learning", "Work-Life balance", "30-35€ /h",
            "Flexible schedule and location", "paid vacation", "paid time off", "paid maternity leave",
            "paid paternity/adoption leave", "Education stipend", "monthly budget", "flexibility", "fun work environment",
-           "10h - 40h work week", "12-month contract", "40€ /h", "work-from-anywhere", "work-life balance")
+           "10h - 40h work week", "12-month contract", "40€ /h", "work-from-anywhere", "work-life balance",
+           "Competitive salary")
