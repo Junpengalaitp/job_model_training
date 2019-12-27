@@ -61,7 +61,11 @@ lb_collection = {
     "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch"),
     "iText": ("iText", ),
     "Dask": ("Dask",),
-    "Immutable.js": ("Immutable.js",)
+    "Immutable.js": ("Immutable.js",),
+    "RxJS": ("RxJS",),
+    "Stanford CoreNLP": ("Stanford CoreNLP",),
+    "OpenNLP": ("OpenNLP",),
+    "NLTK": ("NLTK",)
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -86,7 +90,8 @@ fw_collection = {
     "WatchKit": ("WatchKit",),
     "XCTest": ("XCTest",),
     "Web Forms": ("Web Forms", "WebForms",),
-    "Express.js": ("Express.js", "Express")
+    "Express.js": ("Express.js", "Express"),
+    "Hadoop": ("Hadoop", "hadoop"),
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -136,7 +141,8 @@ sv_collection = {
     "Nginx": ("Nginx", "nginx"),
     "Node.js": ("Node.js", "node.js", "NodeJS", "Node", "node"),
     "Jetty": ("Jetty", "jetty"),
-    "CDN": ("CDN", "cdn")
+    "CDN": ("CDN", "cdn"),
+    "clusters": ("clusters",)
 }
 tl_collection = {
     "Jenkins": ("Jenkins", "jenkins"),
@@ -173,6 +179,7 @@ tl_collection = {
     "Zeplin": ("Zeplin",),
     "Wireframes": ("Wireframes",),
     "Trello": ("Trello", ),
+    "DeepDive": ("DeepDive",)
 }
 at_collection = {
     "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
@@ -194,7 +201,7 @@ ap_collection = {
     "GitFlow": ("GitFlow", "Gitflow", "gitflow"),
     "Continuous Integration": ("Continuous Integration", "CI", "Continuous integration"),
     "Continuous Delivery": ("Continuous Delivery", "CD", "continuous delivery"),
-    "Sprint": ("Sprint", "sprint"),
+    "Sprint": ("Sprint", "sprint", "sprints"),
     "CI/CD": ("CI/CD", "CD/CI"),
     "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
     "automated testing": ("automated testing", "automated tests"),
@@ -279,7 +286,10 @@ se_collection = {
     "software engineering": ("software engineering",),
     "software development life cycle": ("software development life cycle",),
     "Legacy System": ("Legacy System", "legacy system"),
-    "Load Balancing": ("Load Balancing", "Load balancing",)
+    "Load Balancing": ("Load Balancing", "Load balancing",),
+    "design mockups": ("design mockups",),
+    "technical feasibility": ("technical feasibility",),
+    "design concepts": ("design concepts",)
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms",),
@@ -308,7 +318,8 @@ pf_collection = {
     "Snowflake": ("Snowflake", "snowflake"),
     "Looker": ("Looker", "looker"),
     "Apache Arrow": ("Apache Arrow",),
-    "Xamarin": ("Xamarin",)
+    "Xamarin": ("Xamarin",),
+    "Amazon Turk": ("Amazon Turk",),
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -321,20 +332,21 @@ dv_collection = {
     "UX": ("UX", "UXs"),
     "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design", "UX/UI"),
     "Design": ("Design", "design"),
-    "AI": ("AI", "artificial intelligence"),
-    "DevOps": ("DevOps", "Devops", "devops"),
+    "DevOps": ("DevOps", "Devops", "devops", "dev ops"),
     "Big Data": ("Big Data", "Big data"),
     "Computer Vision": ("Computer Vision", "computer vision"),
     "3D Animation": ("3D Animation", "3D animation"),
     "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
     "Data Science": ("Data Science", "data science", "Data science"),
+    "site reliability": ("site reliability",),
+    "Data Infrastructure": ("Data Infrastructure", "data infrastructure")
 }
 ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
                            "Front-End Engineer"),
     "Front-end Developer": ("Front-end Developer", "front-End Developer", "front end developer", "Frontend Developers",
-                            "front-end developers", "FRONT END WEB DEVELOPER"),
+                            "front-end developers", "FRONT END WEB DEVELOPER", "Front End Developer"),
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer"),
     "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer"),
     "Full Stack Engineer": ("Full Stack Engineer", "Full-Stack Engineer", "full stack engineer", "full-stack engineer",
@@ -420,6 +432,7 @@ cs_collection = {
     "Virtual LAN": ("Virtual LAN", "VLANs")
 }
 ai_collection = {
+    "AI": ("AI", "artificial intelligence"),
     "Machine Learning": ("Machine Learning", "Machine learning", "machine learning"),
     "Deep Learning": ("Deep Learning", "Deep learning"),
     "NLP": ("NLP", "Natural Language Processing", "natural language processing"),
@@ -429,7 +442,9 @@ ai_collection = {
     "CNN": ("CNN", "convolutional neural network"),
     "Transfer Learning": ("Transfer Learning", "transfer learning"),
     "artificial general intelligence": ("artificial general intelligence",),
-    "AI Ethics": ("AI Ethics", )
+    "AI Ethics": ("AI Ethics", ),
+    "training": ("training",),
+    "labelling": ("labelling",),
 }
 pt_collection = {
     "Messaging Protocols": ("Messaging Protocols", "messaging protocols", ),
@@ -473,9 +488,11 @@ pd_list = ("SaaS", "web application", "single-page application", "web-app", "web
            "conversational marketing automation platform", "conversational commerce", "plugins and features",
            "scalable products and features", "sports betting platform", "automation", "commercial platform",
            "open-source", "productivity tools", "large-scale systems", "third party technologies",
-           "mobile applications", "web", "Web", "high traffic applications", "Open source", "network infrastructure")
+           "mobile applications", "web", "Web", "high traffic applications", "Open source", "network infrastructure",
+           "large-scale data")
 
 ql_list = ("technical best practises", "best practices", "scalability", "high-quality code", "testability", "reliable code",
-           "high-performance", "supportability", "maintainability", "modularity", "high performance code",
+           "high-performance", "supportability", "maintainability", "modularity", "high performance code", "ambiguity",
            "High Performance", "performance", "reliability", "data integrity", "high performance", "code quality",
-           "high quality", "speed", "consistency", "accessibility", "coding standards", "High Availability")
+           "high quality", "speed", "consistency", "accessibility", "coding standards", "High Availability",
+           "reusable code", "maximum speed")

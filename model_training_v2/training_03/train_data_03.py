@@ -81,7 +81,7 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "LDP"
+    word = "AI"
 
     print_entities(TRAIN_DATA)
 
