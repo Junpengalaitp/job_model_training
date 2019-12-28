@@ -19,7 +19,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training_v2.training_03.train_data_03 import TRAIN_DATA
+from model_training_v2.training_04.train_data_04 import TRAIN_DATA
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 path = os.path.join(my_path, "../job_model")

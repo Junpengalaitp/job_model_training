@@ -140,14 +140,14 @@ os_collection = {
     "Redhat": ("Redhat", "redhat"),
     "macOS": ("macOS", "MacOS", "OS X"),
     "Unix": ("Unix", "unix"),
-    "virtual machines": ("virtual machines",)
+    "virtual machine": ("virtual machine", "virtual machines")
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx"),
     "Node.js": ("Node.js", "node.js", "NodeJS", "Node", "node"),
     "Jetty": ("Jetty", "jetty"),
     "CDN": ("CDN", "cdn"),
-    "clusters": ("clusters",)
+    "cluster": ("cluster", "clusters")
 }
 tl_collection = {
     "Jenkins": ("Jenkins", "jenkins"),
@@ -510,22 +510,51 @@ pt_collection = {
     "LDP": ("LDP",),
 }
 
-pd_list = ("SaaS", "web application", "single-page application", "web-app", "web apps", "web services",
-           "enterprise applications", "enterprise class applications", "data-oriented products",
-           "web applications", "web technology", "web technologies", "analysis engines", "data pipelines", "open source",
-           "video games", "website", "websites", "Mobile", "mobile", "mobile platform", "billing software",
-           "great customer experience", "Small and Medium Scale Systems", "mobile applications", "web development",
-           "repeat orders", "recurring billing software", "end user customer experiences", "cryptocurrency", "bitcoin",
-           "chatbots and messaging", "bots", "shopping", "desktop", "mobile app", "awesome customer service",
-           "conversational marketing automation platform", "conversational commerce", "plugins and features",
-           "scalable products and features", "sports betting platform", "automation", "commercial platform",
-           "open-source", "productivity tools", "large-scale systems", "third party technologies",
-           "mobile applications", "web", "Web", "high traffic applications", "Open source", "network infrastructure",
-           "large-scale data", "large datasets")
+pd_collection = {
+    "Web application": ("Web application", "web application", "web applications", "web-app", "web apps", "web services",
+                        "web technology", "web technologies", "website", "websites", "web", "Web",),
+    "Software as a service": ("Software as a service", "SaaS", "SAAS"),
+    "Enterprise Applications": ("Enterprise Applications", "enterprise applications", "enterprise class applications",),
+    "Open-source software": ("Open-source software", "open source", "open-source", "Open source"),
+    "Mobile app": ("Mobile app", "Mobile", "mobile", "mobile platform", "mobile applications", "mobile app"),
+    "Desktop Application": ("Desktop Application", "desktop"),
+    "Small and Medium Scale Systems": ("Small and Medium Scale Systems",),
+    "large-scale systems": ("large-scale systems",),
+    "third party technologies": ("third party technologies",),
+    "large-scale data": ("large-scale data",),
+    "large datasets": ("large datasets",),
+    "high traffic applications": ("high traffic applications",),
+    "network infrastructure": ("network infrastructure",),
+    "productivity tools": ("productivity tools",),
+    "analysis engines": ("analysis engines",),
+    "data pipelines": ("data pipelines",),
+    "automation": ("automation",)
+}
 
-ql_list = ("technical best practises", "best practices", "scalability", "high-quality code", "testability", "reliable code",
-           "high-performance", "supportability", "maintainability", "modularity", "high performance code", "ambiguity",
-           "High Performance", "performance", "reliability", "data integrity", "high performance", "code quality",
-           "high quality", "speed", "consistency", "accessibility", "coding standards", "High Availability",
-           "reusable code", "maximum speed", "maintainable systems", "system performance", "cross-browser compatibility",
-           "cross-device compatibility", "efficient processes", "high-quality software")
+ql_collection = {
+    "Technical Best Practices": ("Technical Best Practices", "technical best practises", "best practices", ),
+    "Coding Standards": ("Coding Standards", "coding standards"),
+    "Scalability": ("Scalability", "scalability", ),
+    "Testability": ("Testability", "testability"),
+    "high-quality code": ("high-quality code",),
+    "reliability": ("reliability", "reliable code",),
+    "High Performance": ("High Performance", "high-performance", "high performance code", "performance"),
+    "Supportability": ("Supportability", "supportability"),
+    "Maintainability": ("Maintainability", "maintainability"),
+    "Modularity": ("Modularity", "modularity"),
+    "Ambiguity": ("Ambiguity", "ambiguity"),
+    "Data Integrity": ("Data Integrity", "data integrity"),
+    "Code Quality": ("Code Quality", "code quality"),
+    "high quality": ("high quality",),
+    "speed": ("speed", "maximum speed"),
+    "Consistency": ("Consistency", "consistency"),
+    "Accessibility": ("Accessibility", "accessibility"),
+    "High Availability": ("High Availability", ),
+    "reusable code": ("reusable code", ),
+    "maintainable systems": ("maintainable systems",),
+    "system performance": ("system performance",),
+    "cross-browser compatibility": ("cross-browser compatibility",),
+    "cross-device compatibility": ("cross-device compatibility",),
+    "efficient processes": ("efficient processes",),
+    "high-quality software": ("high-quality software",)
+}
