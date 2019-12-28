@@ -34,7 +34,7 @@ ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
     "CSS": ("CSS", "css", "CSS3"),
     "XML": ("XML", "xml"),
-    "Bash": ("Bash", "bash", "Bash Shell"),
+    "Bash": ("Bash", "bash", "Bash Shell", "BASH"),
     "SCSS": ("SCSS", "scss"),
     "SASS": ("SASS", "sass", "Sass"),
     "GraphQL": ("GraphQL", "graphQL"),
@@ -58,6 +58,7 @@ lb_collection = {
     "Spring Boot": ("Spring Boot", "Spring boot"),
     "Bootstrap": ("Bootstrap", "bootstrap"),
     "React-Bootstrap": ("React-Bootstrap", "React-bootstrap"),
+    "Material UI": ("Material UI", ),
     "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch"),
     "iText": ("iText", ),
     "Dask": ("Dask",),
@@ -65,20 +66,24 @@ lb_collection = {
     "RxJS": ("RxJS",),
     "Stanford CoreNLP": ("Stanford CoreNLP",),
     "OpenNLP": ("OpenNLP",),
-    "NLTK": ("NLTK",)
+    "NLTK": ("NLTK",),
+    "EventMachine": ("EventMachine",),
+    "Socket.IO": ("Socket.IO",),
+    "Axios": ("Axios",)
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
     "Django": ("Django", "django"),
     "Django Rest Framework": ("Django Rest Framework", "DRF"),
     "Angular": ("Angular", "AngularJS"),
-    "Ruby on Rails": ("Ruby on Rails", "Rails"),
+    "Ruby on Rails": ("Ruby on Rails", "Rails", "RoR"),
     "Laravel": ("Laravel", "Laravel 5"),
     "Vue.js": ("Vue.js", "VueJS", "Vue"),
+    "Vuetify": ("Vuetify", ),
     "ASP.NET": ("ASP.NET", ".NET"),
     "React Native": ("React Native", "React native"),
     "PHPUnit": ("PHPUnit", "PHPunit"),
-    "Ember.js": ("Ember.js", "Ember", "ember"),
+    "Ember.js": ("Ember.js", "Ember", "ember", "EmberJs"),
     "Mocha": ("Mocha", "mocha"),
     "Flutter": ("Flutter", "flutter"),
     "MyBatis": ("MyBatis", "mybatis"),
@@ -97,7 +102,7 @@ ds_collection = {
     "relational database": ("relational database", "Relational database"),
     "non-relational database": ("non-relational database", "Non-relational database"),
     "NoSQL": ("NoSQL", "nosql"),
-    "MySQL": ("MySQL", "mysql"),
+    "MySQL": ("MySQL", "mysql", "Mysql"),
     "InnoDB": ("InnoDB", "innodb"),
     "PostgreSQL": ("PostgreSQL", "Postgresql", "Postgres"),
     "MariaDB": ("MariaDB", "Mariadb"),
@@ -151,6 +156,7 @@ tl_collection = {
     "Maven": ("Maven", "maven"),
     "RubyGems": ("RubyGems", "rubygems"),
     "Git": ("Git", "git"),
+    "Subversion": ("Subversion",),
     "Grunt": ("Grunt", "grunt"),
     "Slack": ("Slack", "slack"),
     "WordPress": ("WordPress", "wordpress"),
@@ -179,7 +185,9 @@ tl_collection = {
     "Zeplin": ("Zeplin",),
     "Wireframes": ("Wireframes",),
     "Trello": ("Trello", ),
-    "DeepDive": ("DeepDive",)
+    "DeepDive": ("DeepDive",),
+    "Google Hangouts": ("Google Hangouts",),
+    "Saltstack": ("Saltstack",),
 }
 at_collection = {
     "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
@@ -191,7 +199,8 @@ at_collection = {
     "MVC": ("MVC", "mvc"),
     "MVVM": ("MVVM",),
     "cloud architecture": ("cloud architecture", "Cloud architecture"),
-    "Flux": ("Flux", )
+    "Flux": ("Flux", ),
+    "LAMP": ("LAMP",)
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -201,6 +210,7 @@ ap_collection = {
     "GitFlow": ("GitFlow", "Gitflow", "gitflow"),
     "Continuous Integration": ("Continuous Integration", "CI", "Continuous integration"),
     "Continuous Delivery": ("Continuous Delivery", "CD", "continuous delivery"),
+    "Continuous Deployment": ("Continuous Deployment", ),
     "Sprint": ("Sprint", "sprint", "sprints"),
     "CI/CD": ("CI/CD", "CD/CI"),
     "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
@@ -209,7 +219,9 @@ ap_collection = {
     "E2E testing": ("E2E testing", "End-to-End testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
     "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test"),
-    "automated configuration": ("automated configuration", "Automated configuration"),
+    "Integration Testing": ("Integration Testing",),
+    "Automated Configuration": ("Automated Configuration", "Automated configuration"),
+    "Automatic Backups": ("Automatic Backups", ),
     "build automation": ("build automation", "Build automation"),
     "object-oriented design": ("object-oriented design", ),
     "Waterfall model": ("Waterfall", "waterfall"),
@@ -224,13 +236,14 @@ ap_collection = {
     "auto-scaling": ("auto-scaling", ),
     "regression test": ("regression test", "Regression Test"),
     "testing principles": ("testing principles",),
-    "UITests": ("UITests",)
+    "UITests": ("UITests",),
+    "software reliability analyses": ("software reliability analyses", )
 }
 se_collection = {
     "Design Patterns": ("Design Patterns", "design patterns"),
     "logging": ("logging", "Logging"),
     "profiling": ("profiling", "Profiling"),
-    "integration": ("integration", "integrations", "integrate"),
+    "integration": ("integration", "integrations", "integrate", ),
     "code-review": ("code-review", "code-reviews", "code reviews", "code review"),
     "refactoring": ("refactoring", "Refactoring"),
     "documentation": ("documentation", "Documentation"),
@@ -241,6 +254,7 @@ se_collection = {
     "testing": ("testing", "Testing"),
     "planning": ("planning", "plan"),
     "designing": ("designing", "Designing"),
+    "Modular Design": ("Modular Design", "modular design"),
     "developing": ("developing", "develop"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "optimisation": ("optimisation", "optimisations", "optimize"),
@@ -248,7 +262,8 @@ se_collection = {
     "performance improvement": ("performance improvement", "performance improvements"),
     "deployment": ("deployment", "deployments"),
     "version control": ("version control", "VCS"),
-    "source control": ("source control", "Source control"),
+    "Source Control": ("Source Control", "Source control", "source control", "Source Code Control"),
+    "Source Code Management": ("Source Code Management",),
     "Troubleshooting": ("Troubleshooting", "troubleshooting"),
     "monitoring": ("monitoring", "Monitoring"),
     "maintenance": ("maintenance", "Maintenance"),
@@ -289,10 +304,14 @@ se_collection = {
     "Load Balancing": ("Load Balancing", "Load balancing",),
     "design mockups": ("design mockups",),
     "technical feasibility": ("technical feasibility",),
-    "design concepts": ("design concepts",)
+    "design concepts": ("design concepts",),
+    "Performance Tweaking": ("Performance Tweaking", "performance tweaking"),
+    "Infrastructure Design": ("Infrastructure Design", "infrastructure design"),
+    "Data Modelling": ("Data Modelling", "data modelling"),
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms",),
+    "cloud-based systems": ("cloud-based systems", "cloud-based systems"),
     "AWS": ("AWS", "aws", "Amazon Web Services"),
     "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD"),
     "Azure": ("Azure", "Microsoft Azure", "azure"),
@@ -302,7 +321,7 @@ pf_collection = {
     "Docker": ("Docker", "docker"),
     "Kubernetes": ("Kubernetes", "kubernetes"),
     "Unity": ("Unity", "unity"),
-    "cloud services": ("cloud services", "Cloud services"),
+    "cloud services": ("cloud services", "Cloud services", "Cloud Servers"),
     "Bitbucket": ("Bitbucket", "bitbucket"),
     "Apache Solr": ("Apache Solr", "Solr"),
     "Amazon Redshift": ("Amazon Redshift", "Amazon redshift", "Redshift"),
@@ -320,6 +339,12 @@ pf_collection = {
     "Apache Arrow": ("Apache Arrow",),
     "Xamarin": ("Xamarin",),
     "Amazon Turk": ("Amazon Turk",),
+    "VPC": ("VPC",),
+    "Route53": ("Route53",),
+    "Lambda": ("Lambda",),
+    "CloudFront": ("CloudFront", "Cloudfront"),
+    "SNS": ("SNS",),
+    "AWS Elastic Beansalk": ("AWS Elastic Beansalk", "Elastic Beansalk",)
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -340,7 +365,8 @@ dv_collection = {
     "Data Analytics": ("Data Analytics", "data analytics"),
     "Data Science": ("Data Science", "data science", "Data science"),
     "site reliability": ("site reliability",),
-    "Data Infrastructure": ("Data Infrastructure", "data infrastructure")
+    "Data Infrastructure": ("Data Infrastructure", "data infrastructure"),
+    "Infrastructure Engineering": ("Infrastructure Engineering", "infrastructure engineering"),
 }
 ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
@@ -348,7 +374,8 @@ ps_collection = {
     "Front-end Developer": ("Front-end Developer", "front-End Developer", "front end developer", "Frontend Developers",
                             "front-end developers", "FRONT END WEB DEVELOPER", "Front End Developer"),
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer"),
-    "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer"),
+    "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer",
+                           "back-end developer"),
     "Full Stack Engineer": ("Full Stack Engineer", "Full-Stack Engineer", "full stack engineer", "full-stack engineer",
                             "Full Stack Software Engineers"),
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers"),
@@ -404,7 +431,10 @@ ps_collection = {
     "Senior Python Engineer": ("Senior Python Engineer", ),
     "iOS Developer": ("iOS Developer", "iOS developer", "iOS developers"),
     "code reviewers": ("code reviewers",),
-    "junior developers": ("junior developers", "Jr. Software Developer", "entry-level software developer")
+    "junior developers": ("junior developers", "Jr. Software Developer", "entry-level software developer"),
+    "Machine Learning Engineers": ("Machine Learning Engineers", "Machine learning engineers"),
+    "Lead Developer": ("Lead Developer",),
+    "Director of Operations": ("Director of Operations",)
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science"),
@@ -429,7 +459,8 @@ cs_collection = {
     "routers": ("routers",),
     "switches": ("switches",),
     "PoP": ("PoP", "POP"),
-    "Virtual LAN": ("Virtual LAN", "VLANs")
+    "Virtual LAN": ("Virtual LAN", "VLANs"),
+    "Computational Complexity": ("Computational Complexity", "computational complexity")
 }
 ai_collection = {
     "AI": ("AI", "artificial intelligence"),
@@ -445,6 +476,7 @@ ai_collection = {
     "AI Ethics": ("AI Ethics", ),
     "training": ("training",),
     "labelling": ("labelling",),
+    "Bayesian Forecasting Models": ("Bayesian Forecasting Models", "Bayesian forecasting models"),
 }
 pt_collection = {
     "Messaging Protocols": ("Messaging Protocols", "messaging protocols", ),
@@ -489,10 +521,11 @@ pd_list = ("SaaS", "web application", "single-page application", "web-app", "web
            "scalable products and features", "sports betting platform", "automation", "commercial platform",
            "open-source", "productivity tools", "large-scale systems", "third party technologies",
            "mobile applications", "web", "Web", "high traffic applications", "Open source", "network infrastructure",
-           "large-scale data")
+           "large-scale data", "large datasets")
 
 ql_list = ("technical best practises", "best practices", "scalability", "high-quality code", "testability", "reliable code",
            "high-performance", "supportability", "maintainability", "modularity", "high performance code", "ambiguity",
            "High Performance", "performance", "reliability", "data integrity", "high performance", "code quality",
            "high quality", "speed", "consistency", "accessibility", "coding standards", "High Availability",
-           "reusable code", "maximum speed")
+           "reusable code", "maximum speed", "maintainable systems", "system performance", "cross-browser compatibility",
+           "cross-device compatibility", "efficient processes", "high-quality software")

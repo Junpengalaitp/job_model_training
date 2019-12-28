@@ -1,15 +1,17 @@
 tm_list = ("cross-functional teams", "cross-functional project team", "feature team", "distributed team", "talented team",
            "fast paced environments", "diverse group", "fast-paced environment", "small and talented team",
            "remote team", "remote teams", "talented team", "tech enthusiasts", "Remote work environment",
-           "tight knit team", "team-oriented environment", "cross-functional teams", "fully remote team",
-           "Fully remote work", "remote-first team", "stable workplace", "stability", "Remote-first culture")
+           "tight knit team", "team-oriented environment", "cross-functional teams", "fully remote team", "Results driven",
+           "Fully remote work", "remote-first team", "stable workplace", "stability", "Remote-first culture",
+           "cross-functional product-oriented squads", "diverse work culture", "highly-skilled team", "Remote work")
 
 cp_list = ("FinTech", "banking", "media", "non-profit", "ecommerce", "financial sector", "financial markets", "trading",
            "education", "bootstrapped startup", "boot-strapped start-up", "startup", "crypto", "Games", "social network",
            "fitness", "textile", "digital printing", "bitcoin", "cryptocurrency", "small businesses", "small organization",
            "independent businesses", "consumer energy services", "energy markets", "consumer energy consumption",
            "rental industry", "startups", "large enterprises", "transportation", "energy", "email marketing",
-           "profitable company", "medical data")
+           "profitable company", "medical data", "e-learning", "billing services", "e-commerce", "online commerce",
+           "solar power", "solar", "Solar technology")
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",
@@ -58,14 +60,14 @@ ge_list = ("strategic and creative thinker", "translate user needs", "English", 
            "imagination",  "empathy", "adapting to change", "do the hard work", "attention to details",
            "continuously learning", "productivity", "think outside of the box", "Problem-solving mindset",
            "customer-focused thinking", "self-motivation", "critical thinking", "self-directed learner",
-           "attention to detail",)
+           "attention to detail", "problem solver", "problem-solving capabilities")
 
 sf_list = ('mentorship', "mentor", "mentoring", 'discussion', 'technical leadership', 'team leadership', "leadership",
            "coordinate", "training", "coaching", "team-player", "coworking", "clear communicator", "collaborative",
            "communication skills", "Communicate", "collaboration", "interface with clients", "soft skills", "accountability",
            "constructive feedback", 'responsible', "active communicator", "collaborate", "responsible", "nurture and grow",
            "communication", "Communication Skills", "team player", "interpersonal skills", "communicating effectively",
-           "strong communications skills", "presentation")
+           "strong communications skills", "presentation", "Communication skills", "excellent communicator")
 
 of_list = ("competitive compensation", "Competitive compensation", "working from home", "flexible schedule",
            "work from home from anywhere", "telecommute", "2 weeks paid vacation", "ownership", "401(k)", "401K",
@@ -82,4 +84,5 @@ of_list = ("competitive compensation", "Competitive compensation", "working from
            "Flexible schedule and location", "paid vacation", "paid time off", "paid maternity leave",
            "paid paternity/adoption leave", "Education stipend", "monthly budget", "flexibility", "fun work environment",
            "10h - 40h work week", "12-month contract", "40€ /h", "work-from-anywhere", "work-life balance",
-           "Competitive salary")
+           "Competitive salary", "Health insurance", "12-week paid leave", "Generous vacation policy", "company holidays",
+           "development stipend", "great salary pack", "excellent communication", "health insurance", "Paid Holiday")
