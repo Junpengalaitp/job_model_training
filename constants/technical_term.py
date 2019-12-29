@@ -4,13 +4,13 @@ pl_collection = {
                    "EcmaScript"),
     "TypeScript": ("TypeScript", "Typescript", "typescript"),
     "CoffeeScript": ("CoffeeScript", "Coffeescript"),
-    "Babel": ("Babel",),
+    "Babel": ("Babel", "babel"),
     "Java": ("Java", "java", "Java8", "Java11"),
     "Python": ("Python", "python"),
     "Ruby": ("Ruby", "ruby"),
     "PHP": ("PHP", "php", "PHP7"),
     "C": ("C", "c"),
-    "C++": ("C++", "c++"),
+    "C++": ("C++", "c++", "cpp"),
     "C#": ("C#", "c#"),
     "Objective-C": ("Objective-C", "Objective C", "objective-c", "Obj-C"),
     "Swift": ("Swift", "swift"),
@@ -28,7 +28,7 @@ pl_collection = {
     "Clojure": ("Clojure", "clojure"),
     "Lua": ("Lua", "lua"),
     "DSLs": ("DSLs", ),
-    "VB.NET": ("VB.NET",)
+    "VB.NET": ("VB.NET", "vb.net")
 }
 ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
