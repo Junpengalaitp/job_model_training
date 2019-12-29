@@ -83,7 +83,7 @@ sf_collection = {
     "interpersonal skills": ("interpersonal skills",),
     "mentorship": ("mentorship", "mentor", "mentoring"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
-    "training": ("training", "coaching"),
+    "coaching": ("coaching",),
     "team-player": ("team-player", "team player"),
     "collaboration": ("collaboration",),
     "constructive feedback": ("constructive feedback",),

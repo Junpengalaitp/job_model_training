@@ -104,7 +104,7 @@ ds_collection = {
     "NoSQL": ("NoSQL", "nosql"),
     "MySQL": ("MySQL", "mysql", "Mysql"),
     "InnoDB": ("InnoDB", "innodb"),
-    "PostgreSQL": ("PostgreSQL", "Postgresql", "Postgres"),
+    "PostgreSQL": ("PostgreSQL", "Postgresql", "Postgres", "postgresql"),
     "MariaDB": ("MariaDB", "Mariadb"),
     "Oracle": ("Oracle", "oracle"),
     "ClustrixDB": ("ClustrixDB", "clustrixdb"),
@@ -190,7 +190,8 @@ tl_collection = {
     "Saltstack": ("Saltstack",),
 }
 at_collection = {
-    "Representational state transfer": ("RESTful APIs", "REST API", "REST APIs", "RESTful", "REST"),
+    "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
+             "Representational state transfer"),
     "microservices": ("microservices", "Microservices", "Microservice", "microservice"),
     "message-based communication": ("message-based communication",),
     "serverless": ("serverless", "Serverless"),
@@ -312,7 +313,7 @@ se_collection = {
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms",),
     "cloud-based systems": ("cloud-based systems", "cloud-based systems"),
-    "AWS": ("AWS", "aws", "Amazon Web Services"),
+    "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services"),
     "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD"),
     "Azure": ("Azure", "Microsoft Azure", "azure"),
     "Heroku": ("Heroku", "heroku"),
@@ -416,7 +417,8 @@ ps_collection = {
     "Senior Front-end Engineer": ("Senior Front-end Engineer", "Senior Frontend Engineer", "Senior Frontend Engineers",
                                   "Senior Front End Engineer", "Senior Front-End Engineer"),
     "Senior Developer": ("Senior Developer", "Senior Developers", "Senior developers"),
-    "Senior Software Engineer": ("Senior Software Engineer", "senior software engineer", "Sr. Software Engineer"),
+    "Senior Software Engineer": ("Senior Software Engineer", "senior software engineer", "Sr. Software Engineer",
+                                 "Senior Engineer"),
     "Senior DevOps Engineer": ("Senior DevOps Engineer", "Sr. DevOps Engineer"),
     "Quality Engineering Manager": ("Quality Engineering Manager", "Quality Engineering Managers"),
     "Software Support Engineer": ("Software Support Engineer", "Software Support Engineers"),
