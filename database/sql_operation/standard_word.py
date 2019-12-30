@@ -25,8 +25,24 @@ def update_stand_words(standard_word, other_words):
     logger.info(f"update success, standard_word: {standard_word}, other_words: {other_words}")
 
 
+def delete_stand_word(standard_word):
+    query = f"""
+                    DELETE FROM standard_words 
+                    WHERE standard_word = '{standard_word}'
+                 """
+    conn.execute(query)
+    logger.info(f"delete success, standard_word: {standard_word}")
+
+
 def select_standard_words(standard_word):
     query = f"""
                 SELECT * FROM standard_words WHERE standard_word = '{standard_word}'
+             """
+    return pd.read_sql_query(query, conn)
+
+
+def select_all_standard_words():
+    query = f"""
+                SELECT * FROM standard_words
              """
     return pd.read_sql_query(query, conn)

@@ -1,5 +1,6 @@
 from constants.constants import CATEGORY_MAP
-from database.sql_operation.standard_word import insert_standard_words, update_stand_words, select_standard_words
+from database.sql_operation.standard_word import insert_standard_words, update_stand_words, select_standard_words, \
+    select_all_standard_words, delete_stand_word
 
 
 def store_standard_words(collection: dict, category: str):
@@ -15,6 +16,20 @@ def store_standard_words(collection: dict, category: str):
 def store_all_categories():
     for category, collection in CATEGORY_MAP.items():
         store_standard_words(collection, category)
+    delete_standard_words()
+
+
+def delete_standard_words():
+    df = select_all_standard_words()
+    standard_words = []
+    for category, collection in CATEGORY_MAP.items():
+        for standard_word in collection.keys():
+            standard_words.append(standard_word)
+    for standard_word in df['standard_word']:
+        if standard_word in standard_words:
+            standard_words.remove(standard_word)
+    for word in standard_words:
+        delete_stand_word(word)
 
 
 if __name__ == '__main__':
