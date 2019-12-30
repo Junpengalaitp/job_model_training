@@ -28,7 +28,8 @@ pl_collection = {
     "Clojure": ("Clojure", "clojure"),
     "Lua": ("Lua", "lua"),
     "DSLs": ("DSLs", "dsls"),
-    "VB.NET": ("VB.NET", "vb.net")
+    "VB.NET": ("VB.NET", "vb.net"),
+    "R": ("R", "r"),
 }
 ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
@@ -70,6 +71,7 @@ lb_collection = {
     "EventMachine": ("EventMachine", "eventMachine",),
     "Socket.IO": ("Socket.IO", "socket.IO",),
     "Axios": ("Axios", "axios"),
+    "Leaflet.js": ("Leaflet.js", "leaflet.js")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -98,6 +100,7 @@ fw_collection = {
     "Express.js": ("Express.js", "Express"),
     "Hadoop": ("Hadoop", "hadoop"),
     "Ext.js": ("Ext.js", "Extjs", "ExtJS"),
+    "Foundation": ("Foundation", )
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -145,7 +148,7 @@ os_collection = {
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx"),
-    "Node.js": ("Node.js", "node.js", "NodeJS", "Node", "node", "Nodejs"),
+    "Node.js": ("Node.js", "node.js", "NodeJS", "Node", "node", "Nodejs", "Node.JS"),
     "Jetty": ("Jetty", "jetty"),
     "CDN": ("CDN", "cdn"),
     "cluster": ("cluster", "clusters")
@@ -189,6 +192,9 @@ tl_collection = {
     "DeepDive": ("DeepDive", "Deepdive",),
     "Google Hangouts": ("Google Hangouts", "Google hangouts",),
     "Saltstack": ("Saltstack", "saltstack",),
+    "Codeship": ("Codeship", "codeship"),
+    "Mapbox": ("Mapbox", "mapbox"),
+    "ESRI": ("ESRI", "esri")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -202,7 +208,9 @@ at_collection = {
     "MVVM": ("MVVM", "mvvm"),
     "cloud architecture": ("cloud architecture", "Cloud architecture"),
     "Flux": ("Flux", "flux", ),
-    "LAMP": ("LAMP", "Lamp")
+    "LAMP": ("LAMP", "Lamp"),
+    "Middleware": ("Middleware", "middleware"),
+    "architecture diagrams": ("architecture diagrams",)
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -310,13 +318,14 @@ se_collection = {
     "Performance Tweaking": ("Performance Tweaking", "performance tweaking"),
     "Infrastructure Design": ("Infrastructure Design", "infrastructure design"),
     "Data Modelling": ("Data Modelling", "data modelling"),
+    "User Experience": ("User Experience", "User Experiences",),
 }
 pf_collection = {
-    "Cloud Platforms": ("Cloud Platforms", "Cloud platforms",),
+    "Cloud Platforms": ("Cloud Platforms", "Cloud platforms"),
     "cloud-based systems": ("cloud-based systems", "cloud-based systems"),
     "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services"),
-    "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD"),
-    "Azure": ("Azure", "Microsoft Azure", "azure"),
+    "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud"),
+    "Azure": ("Azure", "Microsoft Azure", "azure", ),
     "Heroku": ("Heroku", "heroku"),
     "DigitalOcean": ("DigitalOcean", "Digitalocean"),
     "GitHub": ("GitHub", "github", "Github"),
@@ -324,7 +333,7 @@ pf_collection = {
     "Docker": ("Docker", "docker"),
     "Kubernetes": ("Kubernetes", "kubernetes"),
     "Unity": ("Unity", "unity"),
-    "cloud services": ("cloud services", "Cloud services", "Cloud Servers"),
+    "cloud services": ("cloud services", "Cloud services", "Cloud Servers", "cloud"),
     "Bitbucket": ("Bitbucket", "bitbucket"),
     "Apache Solr": ("Apache Solr", "Solr"),
     "Amazon Redshift": ("Amazon Redshift", "Amazon redshift", "Redshift"),
@@ -394,9 +403,9 @@ ps_collection = {
     "Game Developer": ("Game Developer", "Game developer"),
     "Data Engineer": ("Data Engineer", "Data Engineers", "data engineer"),
     "Data Developer": ("Data Developer", "Data Developers"),
-    "Data Scientist": ("Data Scientist", "data scientist"),
+    "Data Scientist": ("Data Scientist", "data scientist", "data scientists"),
     "Data Analyst": ("Data Analyst", "Data Analysts"),
-    "Product Manager": ("Product Manager", "product manager", "product managers", "PM"),
+    "Product Manager": ("Product Manager", "product manager", "product managers", "PM", "Product Managers"),
     "Project Manager": ("Project Manager", "project manager"),
     "Product Designer": ("Product Designer", "Product Designers", "product designers"),
     "Designer": ("Designer", "Designers", "designers", "designer"),
@@ -441,10 +450,11 @@ ps_collection = {
     "Junior Engineers": ("junior engineers", "junior engineers"),
     "Machine Learning Engineers": ("Machine Learning Engineers", "Machine learning engineers"),
     "Lead Developer": ("Lead Developer", "lead developer",),
-    "Director of Operations": ("Director of Operations", "director of operations")
+    "Director of Operations": ("Director of Operations", "director of operations"),
+    "Senior Systems Developer": ("Senior Systems Developer", "Senior Systems Developers")
 }
 cs_collection = {
-    "Computer Science": ("Computer Science", "computer science"),
+    "Computer Science": ("Computer Science", "computer science", ),
     "Data Structure": ("Data Structure", "data structure"),
     "Algorithms": ("Algorithms", "algorithms"),
     "Mathematics": ("Mathematics", "mathematics"),
@@ -515,11 +525,12 @@ pt_collection = {
     "MPLS": ("MPLS", "mpls"),
     "RSVP": ("RSVP", "rsvp"),
     "LDP": ("LDP", "ldp"),
+    "APN": ("APN", "apn")
 }
 
 pd_collection = {
     "Web application": ("Web application", "web application", "web applications", "web-app", "web apps", "web services",
-                        "web technology", "web technologies", "website", "websites", "web", "Web",),
+                        "web technology", "web technologies", "website", "websites", "web", "Web", "web-technology"),
     "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology"),
     "Enterprise Applications": ("Enterprise Applications", "enterprise applications", "enterprise class applications",),
     "Open-source software": ("Open-source software", "open source", "open-source", "Open source"),
@@ -535,7 +546,9 @@ pd_collection = {
     "productivity tools": ("productivity tools", "Productivity tools",),
     "analysis engines": ("analysis engines", "Analysis engines",),
     "data pipelines": ("data pipelines", "Data pipelines"),
-    "automation": ("automation", "Automation")
+    "automation": ("automation", "Automation"),
+    "data driven application": ("data driven application", "data driven applications"),
+    "profitable project": ("profitable project", "profitable projects")
 }
 
 ql_collection = {
