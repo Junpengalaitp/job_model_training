@@ -377,7 +377,6 @@ dv_collection = {
     "Design": ("Design", "design"),
     "DevOps": ("DevOps", "Devops", "devops", "dev ops"),
     "Big Data": ("Big Data", "Big data"),
-    "Computer Vision": ("Computer Vision", "computer vision"),
     "3D Animation": ("3D Animation", "3D animation"),
     "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
