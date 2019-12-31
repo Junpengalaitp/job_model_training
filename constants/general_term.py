@@ -121,11 +121,14 @@ of_collection = {
     "Equal Opportunity": ("Equal Opportunity", "equal opportunity"),
     "equity": ("equity", "Equity", "profit sharing", "stock options", "Stock options"),
     "diverse perspectives": ("diverse perspectives",),
-    "Money": ("$2,500 per year", "40€ /h", "€65k-90k"),
+    "Money": ("$2,500 per year", "40€ /h", "€65k-90k", "$70k - 100k", "$80k - 100k", "$100k - 135k", "$100k - 150k",
+              "$95k - 145k", "€55k - 104k", "$105k - 110k"),
     "gym membership": ("gym membership",),
     "six-month contract": ("six-month contract",),
     "high degree of ownership": ("high degree of ownership",),
-    "option to continue": ("option to continue",)
+    "option to continue": ("option to continue",),
+    "Paid relocation": ("Paid relocation", "paid relocation"),
+
 }
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',

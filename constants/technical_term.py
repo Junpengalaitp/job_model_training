@@ -35,17 +35,19 @@ ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
     "CSS": ("CSS", "css", "CSS3"),
     "XML": ("XML", "xml"),
-    "Bash": ("Bash", "bash", "Bash Shell", "BASH"),
+    "Bash": ("Bash", "bash", "Bash Shell", "BASH", "shell"),
     "SCSS": ("SCSS", "scss"),
     "SASS": ("SASS", "sass", "Sass"),
     "GraphQL": ("GraphQL", "graphQL"),
     "SQL": ("SQL", "sql"),
     "Jinja": ("Jinja", "Jinja2"),
     "DOM": ("DOM", "dom"),
+    "PowerShell": ("PowerShell", "powershell")
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
     "Redux": ("Redux", "redux"),
+    "React-Redux": ("React-Redux", "react-redux"),
     "jQuery": ("jQuery", "jquery", "JQuery", "Jquery"),
     "Pandas": ("Pandas", "pandas"),
     "Numpy": ("Numpy", "numpy"),
@@ -71,18 +73,19 @@ lb_collection = {
     "EventMachine": ("EventMachine", "eventMachine",),
     "Socket.IO": ("Socket.IO", "socket.IO",),
     "Axios": ("Axios", "axios"),
-    "Leaflet.js": ("Leaflet.js", "leaflet.js")
+    "Leaflet.js": ("Leaflet.js", "leaflet.js"),
+    "leaflet-google.js": ("leaflet-google.js", "leaflet-google", "leaflet google")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
     "Django": ("Django", "django"),
     "Django Rest Framework": ("Django Rest Framework", "DRF"),
-    "Angular": ("Angular", "AngularJS", "Angular.js" "angular"),
+    "Angular": ("Angular", "AngularJS", "Angular.js", "angular", ),
     "Ruby on Rails": ("Ruby on Rails", "Rails", "RoR"),
     "Laravel": ("Laravel", "Laravel 5"),
     "Vue.js": ("Vue.js", "VueJS", "Vue"),
     "Vuetify": ("Vuetify", "vuetify",),
-    "ASP.NET": ("ASP.NET", ".NET"),
+    "ASP.NET": ("ASP.NET", ".NET", ".net", ".Net"),
     "React Native": ("React Native", "React native"),
     "PHPUnit": ("PHPUnit", "PHPunit"),
     "Ember.js": ("Ember.js", "Ember", "ember", "EmberJs", "ember.js"),
@@ -100,7 +103,9 @@ fw_collection = {
     "Express.js": ("Express.js", "Express"),
     "Hadoop": ("Hadoop", "hadoop"),
     "Ext.js": ("Ext.js", "Extjs", "ExtJS"),
-    "Foundation": ("Foundation", )
+    "Foundation": ("Foundation", ),
+    "Drupal": ("Drupal", "drupal", "drupal-8"),
+    "knockout": ("knockout", "knockout.js", "KnockoutJS")
 }
 ds_collection = {
     "relational database": ("relational database", "Relational database"),
@@ -123,15 +128,14 @@ ds_collection = {
     "Firebase": ("Firebase", "firebase"),
     "Firestore": ("Firestore", "firestore"),
     "Presto": ("Presto", "PrestoDB"),
-    "RTDB": ("RTDB", ),
-    "Varnish": ("Varnish", ),
-    "SQL Server": ("SQL Server",),
+    "RTDB": ("RTDB", "rtdb"),
+    "Varnish": ("Varnish", "VARNISH"),
+    "SQL Server": ("SQL Server", "sql-server"),
 }
 dt_collection = {
     "JSON": ("JSON", "json"),
     "RabbitMQ": ("RabbitMQ", "rabbitMQ"),
     "Kafka": ("Kafka", "kafka"),
-
 }
 os_collection = {
     "Linux": ("Linux", "linux"),
@@ -194,7 +198,8 @@ tl_collection = {
     "Saltstack": ("Saltstack", "saltstack",),
     "Codeship": ("Codeship", "codeship"),
     "Mapbox": ("Mapbox", "mapbox"),
-    "ESRI": ("ESRI", "esri")
+    "ESRI": ("ESRI", "esri"),
+    "Visual Studio": ("Visual Studio", "Visual studio", "visual-studio-2019", "visual-studio-2017", "visual-studio")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -202,7 +207,7 @@ at_collection = {
     "microservices": ("microservices", "Microservices", "Microservice", "microservice"),
     "message-based communication": ("message-based communication",),
     "serverless": ("serverless", "Serverless"),
-    "distributed systems": ("distributed systems", "Distributed systems"),
+    "distributed systems": ("distributed systems", "Distributed systems", "distributed-system"),
     "Zookeeper": ("Zookeeper", "zookeeper"),
     "MVC": ("MVC", "mvc"),
     "MVVM": ("MVVM", "mvvm"),
@@ -324,7 +329,7 @@ pf_collection = {
     "Cloud Platforms": ("Cloud Platforms", "Cloud platforms"),
     "cloud-based systems": ("cloud-based systems", "cloud-based systems"),
     "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services"),
-    "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud"),
+    "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud", "google-cloud-platform"),
     "Azure": ("Azure", "Microsoft Azure", "azure", ),
     "Heroku": ("Heroku", "heroku"),
     "DigitalOcean": ("DigitalOcean", "Digitalocean"),
@@ -356,7 +361,8 @@ pf_collection = {
     "Lambda": ("Lambda", "lambda"),
     "CloudFront": ("CloudFront", "Cloudfront"),
     "SNS": ("SNS", "sns"),
-    "AWS Elastic Beansalk": ("AWS Elastic Beansalk", "Elastic Beansalk",)
+    "AWS Elastic Beansalk": ("AWS Elastic Beansalk", "Elastic Beansalk",),
+    "AWS API Gateway": ("AWS API Gateway", "aws-api-gateway")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -379,6 +385,8 @@ dv_collection = {
     "site reliability": ("site reliability", "Site Reliability",),
     "Data Infrastructure": ("Data Infrastructure", "data infrastructure"),
     "Infrastructure Engineering": ("Infrastructure Engineering", "infrastructure engineering"),
+    "automation": ("automation", "Automation"),
+    "cloud-security": ("cloud-security", "Cloud Platform Security", "Cloud Platform security")
 }
 ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
@@ -395,7 +403,8 @@ ps_collection = {
                              "Full Stack Developers", "full-stack developers", "Full Stack developer"),
     "Software Developer": ("Software Developer", "software developer"),
     "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer"),
-    "Architect": ("Architect", "architect", "architects"),
+    "Software Architect": ("Software Architect", "Architect", "architect", "architects", ),
+    "Senior Software Architect": ("Senior Software Architect", "Senior Software Architects"),
     "Web Developer": ("Web Developer", "web developer"),
     "DevOps Engineer": ("DevOps Engineer", "DevOps Engineers", "DevOps engineers"),
     "Android Developer": ("Android Developer", "Android Developers"),
@@ -406,7 +415,7 @@ ps_collection = {
     "Data Scientist": ("Data Scientist", "data scientist", "data scientists"),
     "Data Analyst": ("Data Analyst", "Data Analysts"),
     "Product Manager": ("Product Manager", "product manager", "product managers", "PM", "Product Managers"),
-    "Project Manager": ("Project Manager", "project manager"),
+    "Project Manager": ("Project Manager", "project manager", "Technical Project Manager"),
     "Product Designer": ("Product Designer", "Product Designers", "product designers"),
     "Designer": ("Designer", "Designers", "designers", "designer"),
     "UI/UX Designer": ("UI/UX Designer", "UI/UX designer"),
@@ -449,9 +458,13 @@ ps_collection = {
     "Junior Developers": ("Junior Developers", "junior developers", "Jr. Software Developer", "entry-level software developer"),
     "Junior Engineers": ("junior engineers", "junior engineers"),
     "Machine Learning Engineers": ("Machine Learning Engineers", "Machine learning engineers"),
-    "Lead Developer": ("Lead Developer", "lead developer",),
+    "Lead Developer": ("Lead Developer", "lead developer", "Lead Application Developer"),
     "Director of Operations": ("Director of Operations", "director of operations"),
-    "Senior Systems Developer": ("Senior Systems Developer", "Senior Systems Developers")
+    "Senior Systems Developer": ("Senior Systems Developer", "Senior Systems Developers"),
+    "Drupal Developer": ("Drupal Developer", "Drupal Developers"),
+    "Professional Services Consultant": ("Professional Services Consultant", "Professional Services Consultants"),
+    "Lead DevOps Engineer": ("Lead DevOps Engineer", "Lead DevOps engineer", ),
+    "System Administrator": ("System Administrator", "system administrator", "sysadmin")
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science", ),
@@ -494,6 +507,7 @@ ai_collection = {
     "model training": ("model training", "training", ),
     "labelling": ("labelling", "Labelling"),
     "Bayesian Forecasting Models": ("Bayesian Forecasting Models", "Bayesian forecasting models"),
+    "computer vision": ("computer vision", "computer-vision", )
 }
 pt_collection = {
     "Messaging Protocols": ("Messaging Protocols", "messaging protocols", ),
@@ -505,7 +519,7 @@ pt_collection = {
     "HTTP": ("HTTP", "http"),
     "HTTPs": ("HTTPs", "https"),
     "WebSocket": ("WebSocket", "WebSockets"),
-    "API": ("API", "APIs"),
+    "API": ("API", "APIs", "api"),
     "CORS": ("CORS", "cors"),
     "SSL": ("SSL", "ssl"),
     "SSH": ("SSH", "ssh"),
@@ -530,7 +544,9 @@ pt_collection = {
 
 pd_collection = {
     "Web application": ("Web application", "web application", "web applications", "web-app", "web apps", "web services",
-                        "web technology", "web technologies", "website", "websites", "web", "Web", "web-technology"),
+                        "web technology", "web technologies", "website", "websites", "web", "Web", "web-technology",
+                        "web-services"),
+    "single-page application": ("single-page application", "single-page-application", "single page application", "SPA"),
     "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology"),
     "Enterprise Applications": ("Enterprise Applications", "enterprise applications", "enterprise class applications",),
     "Open-source software": ("Open-source software", "open source", "open-source", "Open source"),
@@ -546,7 +562,6 @@ pd_collection = {
     "productivity tools": ("productivity tools", "Productivity tools",),
     "analysis engines": ("analysis engines", "Analysis engines",),
     "data pipelines": ("data pipelines", "Data pipelines"),
-    "automation": ("automation", "Automation"),
     "data driven application": ("data driven application", "data driven applications"),
     "profitable project": ("profitable project", "profitable projects")
 }

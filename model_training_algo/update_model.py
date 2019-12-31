@@ -12,6 +12,7 @@ Last tested with: v2.1.0
 from __future__ import unicode_literals, print_function
 
 import os
+import sys
 
 import plac
 import random
@@ -19,10 +20,12 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training_v2.training_04.train_data_04 import TRAIN_DATA
+from model_training_v2.training_05.train_data_05 import TRAIN_DATA
 
-my_path = os.path.abspath(os.path.dirname(__file__))
-path = os.path.join(my_path, "../job_model")
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+model_path = os.path.join(BASE_DIR, "job_model")
 
 
 @plac.annotations(
@@ -30,7 +33,7 @@ path = os.path.join(my_path, "../job_model")
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model='job_model', output_dir=path, n_iter=800, train_data=None):
+def main(model='job_model', output_dir=model_path, n_iter=800, train_data=None):
     """Load the model, set up the pipeline and train the entity recognizer."""
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
@@ -61,6 +64,7 @@ def main(model='job_model', output_dir=path, n_iter=800, train_data=None):
         if model is None:
             nlp.begin_training()
         for itn in range(n_iter):
+            iteration = 1
             random.shuffle(train_data)
             losses = {}
             # batch up the examples using spaCy's minibatch
@@ -73,7 +77,8 @@ def main(model='job_model', output_dir=path, n_iter=800, train_data=None):
                     drop=0.35,  # dropout - make it harder to memorise data
                     losses=losses,
                 )
-            print("Losses", losses)
+            print(f"iteration: {iter}, Losses:", losses)
+            iteration += 1
 
     # test the trained model
     for text, _ in train_data:
