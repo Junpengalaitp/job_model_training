@@ -21,14 +21,12 @@ def store_all_categories():
 
 def delete_standard_words():
     df = select_all_standard_words()
-    standard_words = []
+    all_standard_words = []
     for category, collection in CATEGORY_MAP.items():
         for standard_word in collection.keys():
-            standard_words.append(standard_word)
-    for standard_word in df['standard_word']:
-        if standard_word in standard_words:
-            standard_words.remove(standard_word)
-    for word in standard_words:
+            all_standard_words.append(standard_word)
+    unwanted_standard_words = set(df['standard_word'].tolist()) - set(all_standard_words)
+    for word in unwanted_standard_words:
         delete_stand_word(word)
 
 

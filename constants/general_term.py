@@ -123,7 +123,7 @@ of_collection = {
     "diverse perspectives": ("diverse perspectives",),
     "Money": ("$2,500 per year", "40€ /h", "€65k-90k", "$70k - 100k", "$80k - 100k", "$100k - 135k", "$100k - 150k",
               "$95k - 145k", "€55k - 104k", "$105k - 110k"),
-    "gym membership": ("gym membership",),
+    "gym membership": ("gym membership", "Gym membership"),
     "six-month contract": ("six-month contract",),
     "high degree of ownership": ("high degree of ownership",),
     "option to continue": ("option to continue",),
