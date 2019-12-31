@@ -2,21 +2,21 @@ import unittest
 from collections import defaultdict
 
 from constants.constants import *
-from model_training_v2.training_05.train_data_05 import TRAIN_DATA
+from model_training_v2.training_01.train_data_01 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
 
     def setUp(self) -> None:
         super().setUp()
-        self.ent_dict = defaultdict(list)
+        self.ent_dict = defaultdict(defaultdict)
         self.ent_index_list = []
-        for data in TRAIN_DATA:
-            for entity in data[1]["entities"]:
+        for i in range(len(TRAIN_DATA)):
+            for entity in TRAIN_DATA[i][1]["entities"]:
                 entity_type = entity[-1]
-                entity_name = data[0][entity[0]: entity[1]]
-
-                self.ent_dict[entity_type].append(entity_name)
+                entity_name = TRAIN_DATA[i][0][entity[0]: entity[1]]
+                entity_index = str(i) + ': ' + str(entity[0]) + ', ' + str(entity[1])
+                self.ent_dict[entity_type][entity_index] = entity_name
 
     def test_overlapping_indices(self):
         for data in TRAIN_DATA:
@@ -34,180 +34,211 @@ class TestAnnotations(unittest.TestCase):
                         interval = interval2
 
     def test_PROGRAMMING_LANGUAGE(self):
-        print(set(self.ent_dict['PROGRAMMING_LANGUAGE']))
-        for word in set(self.ent_dict['PROGRAMMING_LANGUAGE']):
-            if word not in pl_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in pl_list)
+        if 'PROGRAMMING_LANGUAGE' in self.ent_dict:
+            words = set(self.ent_dict['PROGRAMMING_LANGUAGE'].values())
+            print(words)
+            for index, word in self.ent_dict['PROGRAMMING_LANGUAGE'].items():
+                if word not in pl_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in pl_list for word in words]))
 
     def test_OTHER_LANGUAGE(self):
-        print(set(self.ent_dict['OTHER_LANGUAGE']))
-        for word in set(self.ent_dict['OTHER_LANGUAGE']):
-            if word not in ol_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in ol_list)
+        if 'OTHER_LANGUAGE' in self.ent_dict:
+            words = set(self.ent_dict['OTHER_LANGUAGE'].values())
+            print(words)
+            for index, word in self.ent_dict['OTHER_LANGUAGE'].items():
+                if word not in ol_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in ol_list for word in words]))
 
     def test_LIBRARY(self):
-        print(set(self.ent_dict['LIBRARY']))
-        for word in set(self.ent_dict['LIBRARY']):
-            if word not in lb_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in lb_list)
+        if 'LIBRARY' in self.ent_dict:
+            words = set(self.ent_dict['LIBRARY'].values())
+            print(words)
+            for index, word in self.ent_dict['LIBRARY'].items():
+                if word not in lb_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in lb_list for word in words]))
 
     def test_FRAMEWORK(self):
-        print(set(self.ent_dict['FRAMEWORK']))
-        for word in set(self.ent_dict['FRAMEWORK']):
-            if word not in fw_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in fw_list)
+        if 'FRAMEWORK' in self.ent_dict:
+            words = set(self.ent_dict['FRAMEWORK'].values())
+            print(words)
+            for index, word in self.ent_dict['FRAMEWORK'].items():
+                if word not in fw_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in fw_list for word in words]))
 
     def test_ARCHITECT(self):
         if 'CONCEPT' in self.ent_dict:
-            print(set(self.ent_dict['ARCHITECT']))
-            for word in set(self.ent_dict['ARCHITECT']):
-                if word not in at_list:
-                    print('the testing word not in list: ', word)
-                self.assertTrue(word in at_list)
+            words = set(self.ent_dict['CONCEPT'].values())
+            print(words)
+            for index, word in self.ent_dict['CONCEPT'].items():
+                if word not in cp_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in cp_list for word in words]))
 
     def test_PROTOCOL(self):
-        print(set(self.ent_dict['PROTOCOL']))
-        for word in set(self.ent_dict['PROTOCOL']):
-            if word not in pt_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in pt_list)
+        if 'PROTOCOL' in self.ent_dict:
+            words = set(self.ent_dict['PROTOCOL'].values())
+            print(words)
+            for index, word in self.ent_dict['PROTOCOL'].items():
+                if word not in pt_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in pt_list for word in words]))
 
     def test_DATA_STORAGE(self):
         if 'DATA_STORAGE' in self.ent_dict:
-            print(set(self.ent_dict['DATA_STORAGE']))
-            for word in set(self.ent_dict['DATA_STORAGE']):
+            words = set(self.ent_dict['DATA_STORAGE'].values())
+            print(words)
+            for index, word in self.ent_dict['DATA_STORAGE'].items():
                 if word not in ds_list:
-                    print('the testing word not in list: ', word)
-                self.assertTrue(word in ds_list)
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in ds_list for word in words]))
 
     def test_DATA_TRANSMISSION(self):
         if 'DATA_TRANSMISSION' in self.ent_dict:
-            print(set(self.ent_dict['DATA_TRANSMISSION']))
-            for word in set(self.ent_dict['DATA_TRANSMISSION']):
+            words = set(self.ent_dict['DATA_TRANSMISSION'].values())
+            print(words)
+            for index, word in self.ent_dict['DATA_TRANSMISSION'].items():
                 if word not in dt_list:
-                    print('the testing word not in list: ', word)
-                self.assertTrue(word in dt_list)
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in dt_list for word in words]))
 
     def test_COMPUTER_SCIENCE(self):
         if 'COMPUTER_SCIENCE' in self.ent_dict:
-            print(set(self.ent_dict['COMPUTER_SCIENCE']))
-            for word in set(self.ent_dict['COMPUTER_SCIENCE']):
+            words = set(self.ent_dict['COMPUTER_SCIENCE'].values())
+            print(words)
+            for index, word in self.ent_dict['COMPUTER_SCIENCE'].items():
                 if word not in cs_list:
-                    print('the testing word not in list: ', word)
-                self.assertTrue(word in cs_list)
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in cs_list for word in words]))
 
     def test_AI(self):
         if 'AI' in self.ent_dict:
-            print(set(self.ent_dict['AI']))
-            for word in set(self.ent_dict['AI']):
+            words = set(self.ent_dict['AI'].values())
+            print(words)
+            for index, word in self.ent_dict['AI'].items():
                 if word not in ai_list:
-                    print('the testing word not in list: ', word)
-                self.assertTrue(word in ai_list)
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in ai_list for word in words]))
 
     def test_DIVISION(self):
-        print(set(self.ent_dict['DIVISION']))
-        for word in set(self.ent_dict['DIVISION']):
-            if word not in dv_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in dv_list)
+        if 'DIVISION' in self.ent_dict:
+            words = set(self.ent_dict['DIVISION'].values())
+            print(words)
+            for index, word in self.ent_dict['DIVISION'].items():
+                if word not in dv_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in dv_list for word in words]))
 
     def test_POSITION(self):
-        print(set(self.ent_dict['POSITION']))
-        for word in set(self.ent_dict['POSITION']):
-            if word not in ps_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in ps_list)
-
-    # @unittest.skip
-    # def test_WORK_EXPERIENCE(self):
-    #     print(set(self.ent_dict['WORK_EXPERIENCE']))
-    #     for word in set(self.ent_dict['WORK_EXPERIENCE']):
-    #         if word not in we_list:
-    #             print('the testing word not in list: ', word)
-    #         self.assertTrue(word in we_list)
+        if 'POSITION' in self.ent_dict:
+            words = set(self.ent_dict['POSITION'].values())
+            print(words)
+            for index, word in self.ent_dict['POSITION'].items():
+                if word not in ps_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in ps_list for word in words]))
 
     def test_OS(self):
-        print(set(self.ent_dict['OS']))
-        for word in set(self.ent_dict['OS']):
-            if word not in os_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in os_list)
+        if 'OS' in self.ent_dict:
+            words = set(self.ent_dict['OS'].values())
+            print(words)
+            for index, word in self.ent_dict['OS'].items():
+                if word not in os_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in os_list for word in words]))
 
     def test_APPROACH(self):
-        print(set(self.ent_dict['APPROACH']))
-        for word in set(self.ent_dict['APPROACH']):
-            if word not in ap_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in ap_list)
+        if 'APPROACH' in self.ent_dict:
+            words = set(self.ent_dict['APPROACH'].values())
+            print(words)
+            for index, word in self.ent_dict['APPROACH'].items():
+                if word not in ap_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in ap_list for word in words]))
 
     def test_SOFTWARE_ENGINEERING(self):
-        print(set(self.ent_dict['SOFTWARE_ENGINEERING']))
-        for word in set(self.ent_dict['SOFTWARE_ENGINEERING']):
-            if word not in se_list:
-                print('the testing word not in list: ', word)
-            self.assertTrue(word in se_list)
+        if 'SOFTWARE_ENGINEERING' in self.ent_dict:
+            words = set(self.ent_dict['SOFTWARE_ENGINEERING'].values())
+            print(words)
+            for index, word in self.ent_dict['SOFTWARE_ENGINEERING'].items():
+                if word not in se_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in se_list for word in words]))
 
     def test_PLATFORM(self):
-        print(set(self.ent_dict['PLATFORM']))
-        for word in set(self.ent_dict['PLATFORM']):
-            if word not in pf_list:
-                print('testing word: ', word)
-            self.assertTrue(word in pf_list)
+        if 'PLATFORM' in self.ent_dict:
+            words = set(self.ent_dict['PLATFORM'].values())
+            print(words)
+            for index, word in self.ent_dict['PLATFORM'].items():
+                if word not in pf_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in pf_list for word in words]))
 
     def test_SOFT_SKILL(self):
-        print(set(self.ent_dict['SOFT_SKILL']))
-        for word in set(self.ent_dict['SOFT_SKILL']):
-            if word not in sf_list:
-                print('testing word: ', word)
-            self.assertTrue(word in sf_list)
+        if 'SOFT_SKILL' in self.ent_dict:
+            words = set(self.ent_dict['SOFT_SKILL'].values())
+            print(words)
+            for index, word in self.ent_dict['SOFT_SKILL'].items():
+                if word not in sf_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in sf_list for word in words]))
 
     def test_GENERAL(self):
-        print(set(self.ent_dict['GENERAL']))
-        for word in set(self.ent_dict['GENERAL']):
-            if word not in ge_list:
-                print('testing word: ', word)
-            self.assertTrue(word in ge_list)
+        if 'GENERAL' in self.ent_dict:
+            words = set(self.ent_dict['GENERAL'].values())
+            print(words)
+            for index, word in self.ent_dict['GENERAL'].items():
+                if word not in ge_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in ge_list for word in words]))
 
     def test_PRODUCT(self):
-        print(set(self.ent_dict['PRODUCT']))
-        for word in set(self.ent_dict['PRODUCT']):
-            if word not in pd_list:
-                print('testing word: ', word)
-            self.assertTrue(word in pd_list)
+        if 'PRODUCT' in self.ent_dict:
+            words = set(self.ent_dict['PRODUCT'].values())
+            print(words)
+            for index, word in self.ent_dict['PRODUCT'].items():
+                if word not in pd_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in pd_list for word in words]))
 
     def test_SERVER(self):
-        print(set(self.ent_dict['SERVER']))
-        for word in set(self.ent_dict['SERVER']):
-            if word not in sv_list:
-                print('testing word: ', word)
-            self.assertTrue(word in sv_list)
+        if 'SERVER' in self.ent_dict:
+            words = set(self.ent_dict['SERVER'].values())
+            print(words)
+            for index, word in self.ent_dict['SERVER'].items():
+                if word not in sv_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in sv_list for word in words]))
 
     def test_TOOL(self):
-        print(set(self.ent_dict['TOOL']))
-        for word in set(self.ent_dict['TOOL']):
-            if word not in tl_list:
-                print('testing word: ', word)
-            self.assertTrue(word in tl_list)
+        if 'TOOL' in self.ent_dict:
+            words = set(self.ent_dict['TOOL'].values())
+            print(words)
+            for index, word in self.ent_dict['TOOL'].items():
+                if word not in tl_list:
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in tl_list for word in words]))
 
     def test_TEAM(self):
         if 'TEAM' in self.ent_dict:
-            print(set(self.ent_dict['TEAM']))
-            for word in set(self.ent_dict['TEAM']):
+            words = set(self.ent_dict['TEAM'].values())
+            print(words)
+            for index, word in self.ent_dict['TEAM'].items():
                 if word not in tm_list:
-                    print('the testing word not in list: ', word)
-                self.assertTrue(word in tm_list)
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in tm_list for word in words]))
 
     def test_COMPANY(self):
         if 'COMPANY' in self.ent_dict:
-            print(set(self.ent_dict['COMPANY']))
-            for word in set(self.ent_dict['COMPANY']):
+            words = set(self.ent_dict['COMPANY'].values())
+            print(words)
+            for index, word in self.ent_dict['COMPANY'].items():
                 if word not in cp_list:
-                    print('the testing word not in list: ', word)
-                self.assertTrue(word in cp_list)
+                    print(f'the testing word not in list: {index, word}')
+            self.assertTrue(all([word in cp_list for word in words]))
 
 
 if __name__ == '__main__':

@@ -119,7 +119,7 @@ of_collection = {
     "insurance": ("insurance", "health/dental insurance", "health, dental and vision insurance", "Health insurance",
                   "health insurance", "healthcare"),
     "Equal Opportunity": ("Equal Opportunity", "equal opportunity"),
-    "equity": ("equity", "Equity", "profit sharing", "stock options", "Stock options"),
+    "Equity": ("Equity", "profit sharing", "stock options", "Stock options", "equity", ),
     "diverse perspectives": ("diverse perspectives",),
     "Money": ("$2,500 per year", "40€ /h", "€65k-90k", "$70k - 100k", "$80k - 100k", "$100k - 135k", "$100k - 150k",
               "$95k - 145k", "€55k - 104k", "$105k - 110k"),
@@ -128,7 +128,6 @@ of_collection = {
     "high degree of ownership": ("high degree of ownership",),
     "option to continue": ("option to continue",),
     "Paid relocation": ("Paid relocation", "paid relocation"),
-
 }
 
 we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',

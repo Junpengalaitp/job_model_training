@@ -9,8 +9,8 @@ def store_standard_words(collection: dict, category: str):
         other_words = ','.join(other_words)
         if df.empty:
             insert_standard_words(standard_word, other_words, category)
-        elif df['other_words'][0] != other_words:
-            update_stand_words(standard_word, other_words)
+        elif df['other_words'][0] != other_words or df['category'][0] != category:
+            update_stand_words(standard_word, other_words, category)
 
 
 def store_all_categories():

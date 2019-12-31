@@ -81,7 +81,7 @@ fw_collection = {
     "Django": ("Django", "django"),
     "Django Rest Framework": ("Django Rest Framework", "DRF"),
     "Angular": ("Angular", "AngularJS", "Angular.js", "angular", ),
-    "Ruby on Rails": ("Ruby on Rails", "Rails", "RoR"),
+    "Ruby on Rails": ("Ruby on Rails", "Rails", "RoR", "ruby-on-rails"),
     "Laravel": ("Laravel", "Laravel 5"),
     "Vue.js": ("Vue.js", "VueJS", "Vue"),
     "Vuetify": ("Vuetify", "vuetify",),
@@ -108,9 +108,9 @@ fw_collection = {
     "knockout": ("knockout", "knockout.js", "KnockoutJS")
 }
 ds_collection = {
-    "relational database": ("relational database", "Relational database"),
-    "non-relational database": ("non-relational database", "Non-relational database"),
-    "NoSQL": ("NoSQL", "nosql"),
+    "Relational Database": ("Relational Database", "relational database", "Relational database"),
+    "Non-relational Database": ("Non-relational Database", "non-relational database", "Non-relational database"),
+    "NoSQL": ("NoSQL", "nosql", "NoSql"),
     "MySQL": ("MySQL", "mysql", "Mysql"),
     "InnoDB": ("InnoDB", "innodb"),
     "PostgreSQL": ("PostgreSQL", "Postgresql", "Postgres", "postgresql"),
@@ -136,6 +136,7 @@ dt_collection = {
     "JSON": ("JSON", "json"),
     "RabbitMQ": ("RabbitMQ", "rabbitMQ"),
     "Kafka": ("Kafka", "kafka"),
+    "Data Pipeline": ("Data Pipeline", "data pipelines", "Data pipelines"),
 }
 os_collection = {
     "Linux": ("Linux", "linux"),
@@ -148,14 +149,14 @@ os_collection = {
     "Redhat": ("Redhat", "redhat"),
     "macOS": ("macOS", "MacOS", "OS X"),
     "Unix": ("Unix", "unix"),
-    "virtual machine": ("virtual machine", "virtual machines", "VM")
+    "Virtual Machine": ("Virtual Machine", "virtual machine", "virtual machines", "VM")
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx"),
     "Node.js": ("Node.js", "node.js", "NodeJS", "Node", "node", "Nodejs", "Node.JS"),
     "Jetty": ("Jetty", "jetty"),
     "CDN": ("CDN", "cdn"),
-    "cluster": ("cluster", "clusters")
+    "Cluster": ("Cluster", "cluster", "clusters")
 }
 tl_collection = {
     "Jenkins": ("Jenkins", "jenkins"),
@@ -199,7 +200,8 @@ tl_collection = {
     "Codeship": ("Codeship", "codeship"),
     "Mapbox": ("Mapbox", "mapbox"),
     "ESRI": ("ESRI", "esri"),
-    "Visual Studio": ("Visual Studio", "Visual studio", "visual-studio-2019", "visual-studio-2017", "visual-studio")
+    "Visual Studio": ("Visual Studio", "Visual studio", "visual-studio-2019", "visual-studio-2017", "visual-studio"),
+    "productivity tools": ("productivity tools", "Productivity tools",),
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -215,7 +217,9 @@ at_collection = {
     "Flux": ("Flux", "flux", ),
     "LAMP": ("LAMP", "Lamp"),
     "Middleware": ("Middleware", "middleware"),
-    "architecture diagrams": ("architecture diagrams",)
+    "Architecture": ("Architecture", "architecture"),
+    "architecture diagrams": ("architecture diagrams",),
+    "architecture review": ("architecture review", "architecture reviews"),
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -243,6 +247,7 @@ ap_collection = {
     "Waterfall model": ("Waterfall", "waterfall"),
     "pair-programming": ("pair-programming", "Pair-programming"),
     "peer review": ("peer review", "peer reviews", ),
+    "code-review": ("code-review", "code-reviews", "code reviews", "code review"),
     "SOLID": ("SOLID", "SOLID principle", ),
     "DRY": ("DRY", "DRY principle"),
     "DDD": ("DDD", "DDD principle"),
@@ -260,7 +265,6 @@ se_collection = {
     "logging": ("logging", "Logging"),
     "profiling": ("profiling", "Profiling"),
     "integration": ("integration", "integrations", "integrate", ),
-    "code-review": ("code-review", "code-reviews", "code reviews", "code review"),
     "refactoring": ("refactoring", "Refactoring"),
     "documentation": ("documentation", "Documentation"),
     "database migrations": ("database migrations", "Database migrations"),
@@ -273,21 +277,19 @@ se_collection = {
     "Modular Design": ("Modular Design", "modular design"),
     "developing": ("developing", "develop"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
+    "performance analysis": ("performance analysis", "Performance analysis",),
     "optimisation": ("optimisation", "optimisations", "optimize"),
-    "performance optimization": ("performance optimization", "performance optimisation", "Performance Optimization"),
-    "performance improvement": ("performance improvement", "performance improvements"),
-    "deployment": ("deployment", "deployments"),
-    "version control": ("version control", "VCS"),
-    "Source Control": ("Source Control", "Source control", "source control", "Source Code Control"),
-    "Source Code Management": ("Source Code Management",),
+    "performance optimization": ("performance optimization", "performance optimisation", "Performance Optimization",
+                                 "performance improvement", "performance improvements"),
+    "Deployment": ("Deployment", "deployment", "deployments"),
+    "Version Control": ("Version Control", "version control", "VCS", "Source Control", "Source control",
+                        "source control", "Source Code Control", "Source Code Management",),
     "Troubleshooting": ("Troubleshooting", "troubleshooting"),
     "monitoring": ("monitoring", "Monitoring"),
     "maintenance": ("maintenance", "Maintenance"),
     "support": ("support", "Support"),
     "merging": ("merging", "Merging"),
     "message queueing": ("message queueing", "Message queueing"),
-    "architecture": ("architecture", ),
-    "architecture review": ("architecture review", "architecture reviews"),
     "Code optimization": ("Code optimization", "Code optimization"),
     "enhance": ("enhance", "enhancing"),
     "implementation": ("implementation", "Implementation"),
@@ -306,16 +308,13 @@ se_collection = {
     "design specifications": ("design specifications", "Design specifications"),
     "issue-tracking": ("issue-tracking", "Issue-tracking",),
     "Authentication": ("Authentication", "authentication"),
-    "Internationalisation": ("Internationalisation", "internationalisation"),
+    "Internationalisation": ("Internationalisation", "internationalisation", "internationalization", "Internationalization",),
     "stream processing": ("stream processing", "Stream processing",),
     "data processing": ("data processing", "Data processing",),
     "automated processes": ("automated processes", "Automated processes",),
     "rapid iteration": ("rapid iteration", "Rapid iteration",),
-    "performance analysis": ("performance analysis", "Performance analysis",),
-    "internationalization": ("internationalization", "Internationalization",),
     "software engineering": ("software engineering", "Software engineering",),
     "software development life cycle": ("software development life cycle", "Software development life cycle",),
-    "Legacy System": ("Legacy System", "legacy system"),
     "Load Balancing": ("Load Balancing", "Load balancing",),
     "design mockups": ("design mockups", "Design mockups",),
     "technical feasibility": ("technical feasibility", "Technical feasibility",),
@@ -376,15 +375,16 @@ dv_collection = {
     "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design", "UX/UI"),
     "Design": ("Design", "design"),
     "DevOps": ("DevOps", "Devops", "devops", "dev ops"),
-    "Big Data": ("Big Data", "Big data"),
+    "Big Data": ("Big Data", "Big data", "large-scale data", "Large-scale data", "large datasets", "Large datasets"),
     "3D Animation": ("3D Animation", "3D animation"),
     "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
     "Data Science": ("Data Science", "data science", "Data science"),
-    "site reliability": ("site reliability", "Site Reliability",),
+    "Site Reliability": ("Site Reliability", "site reliability", ),
     "Data Infrastructure": ("Data Infrastructure", "data infrastructure"),
+    "Network Infrastructure": ("Network Infrastructure", "network infrastructure", "Network infrastructure",),
     "Infrastructure Engineering": ("Infrastructure Engineering", "infrastructure engineering"),
-    "automation": ("automation", "Automation"),
+    "Automation": ("Automation", "automation",),
     "cloud-security": ("cloud-security", "Cloud Platform Security", "Cloud Platform security")
 }
 ps_collection = {
@@ -444,7 +444,7 @@ ps_collection = {
     "Quality Engineering Manager": ("Quality Engineering Manager", "Quality Engineering Managers"),
     "Software Support Engineer": ("Software Support Engineer", "Software Support Engineers"),
     "Technical Leader": ("Technical Leader", "technical leader"),
-    ".NET developer": (".NET developer", ),
+    ".NET Developer": (".NET Developer", ".NET developer", ),
     "Ruby on Rails Developer": ("Ruby on Rails Developer", "Ruby on Rails developer", "Rails developer"),
     "Rails Engineer": ("Rails Engineer", "Rails Engineers"),
     "CEO": ("CEO", "ceo"),
@@ -552,17 +552,13 @@ pd_collection = {
     "Mobile app": ("Mobile app", "Mobile", "mobile", "mobile platform", "mobile applications", "mobile app"),
     "Desktop Application": ("Desktop Application", "desktop", "Desktop"),
     "Small and Medium Scale Systems": ("Small and Medium Scale Systems", "Small and medium scale systems",),
-    "large-scale systems": ("large-scale systems", "Large-scale systems"),
+    "Large-scale systems": ("Large-scale systems", "large-scale systems", ),
     "third party technologies": ("third party technologies", "Third party technologies"),
-    "large-scale data": ("large-scale data", "Large-scale data",),
-    "large datasets": ("large datasets", "Large datasets"),
     "high traffic applications": ("high traffic applications", "High traffic applications",),
-    "network infrastructure": ("network infrastructure", "Network infrastructure",),
-    "productivity tools": ("productivity tools", "Productivity tools",),
-    "analysis engines": ("analysis engines", "Analysis engines",),
-    "data pipelines": ("data pipelines", "Data pipelines"),
+    "Analysis Engines": ("Analysis Engines", "analysis engines", "Analysis engines",),
     "data driven application": ("data driven application", "data driven applications"),
-    "profitable project": ("profitable project", "profitable projects")
+    "profitable project": ("profitable project", "profitable projects"),
+    "Legacy System": ("Legacy System", "legacy system"),
 }
 
 ql_collection = {
@@ -571,7 +567,7 @@ ql_collection = {
     "Scalability": ("Scalability", "scalability", ),
     "Testability": ("Testability", "testability"),
     "high-quality code": ("high-quality code",),
-    "reliability": ("reliability", "reliable code",),
+    "Reliability": ("Reliability", "reliability", "reliable code",),
     "High Performance": ("High Performance", "high-performance", "high performance code", "performance"),
     "Supportability": ("Supportability", "supportability"),
     "Maintainability": ("Maintainability", "maintainability"),
@@ -579,7 +575,7 @@ ql_collection = {
     "Ambiguity": ("Ambiguity", "ambiguity"),
     "Data Integrity": ("Data Integrity", "data integrity"),
     "Code Quality": ("Code Quality", "code quality"),
-    "high quality": ("high quality", "High quality",),
+    "High Quality": ("High Quality", "high quality", "High quality",),
     "speed": ("speed", "maximum speed"),
     "Consistency": ("Consistency", "consistency"),
     "Accessibility": ("Accessibility", "accessibility"),
