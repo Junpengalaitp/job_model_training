@@ -2,7 +2,7 @@ import unittest
 from collections import defaultdict
 
 from constants.constants import *
-from model_training_data.training_data.train_data_06 import TRAIN_DATA
+from model_training_data.training_data.train_data_01 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
@@ -20,18 +20,26 @@ class TestAnnotations(unittest.TestCase):
 
     def test_overlapping_indices(self):
         for data in TRAIN_DATA:
+            entity_indices = data[1]["entities"]
+            index_list = []
             ent_index_list = []
-            for entity in data[1]["entities"]:
-                ent_index_list.append((entity[0], entity[1]))
+            for entity in entity_indices:
+                start_index, end_index = entity[0], entity[1]
+                ent_index_list.append((start_index, end_index))
                 ent_index_list = sorted(ent_index_list, key=lambda interval: interval[0])
                 interval, l = ent_index_list[0], len(ent_index_list)
                 for i in range(1, l):
                     interval2 = ent_index_list[i]
                     if interval2[0] < interval[-1]:
                         print(interval2, interval)
-                        self.assertTrue(interval2[0] > interval[-1])
                     else:
                         interval = interval2
+
+            for ent_index in ent_index_list:
+                index_list.append(ent_index[0])
+                index_list.append(ent_index[1])
+            self.assertTrue(all(index_list[i] < index_list[i+1] for i in range(len(index_list)-1)))
+
 
     def base_category_test(self, category: str, word_list: list):
         if category in self.ent_dict:
