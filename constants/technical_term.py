@@ -105,7 +105,8 @@ fw_collection = {
     "Ext.js": ("Ext.js", "Extjs", "ExtJS"),
     "Foundation": ("Foundation", ),
     "Drupal": ("Drupal", "drupal", "drupal-8"),
-    "knockout": ("knockout", "knockout.js", "KnockoutJS")
+    "knockout": ("knockout", "knockout.js", "KnockoutJS"),
+    "Pyramid": ("Pyramid", "pyramid")
 }
 ds_collection = {
     "Relational Database": ("Relational Database", "relational database", "Relational database"),
@@ -206,7 +207,8 @@ tl_collection = {
     "Visual Studio": ("Visual Studio", "Visual studio", "visual-studio-2019", "visual-studio-2017", "visual-studio"),
     "productivity tools": ("productivity tools", "Productivity tools",),
     "Vagrant": ("Vagrant", "vagrant"),
-    "Puppet": ("Puppet", "puppet")
+    "Puppet": ("Puppet", "puppet"),
+    "Marionette": ("Marionette", "marionette")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -316,7 +318,8 @@ se_collection = {
     "Authentication": ("Authentication", "authentication"),
     "Internationalisation": ("Internationalisation", "internationalisation", "internationalization", "Internationalization",),
     "stream processing": ("stream processing", "Stream processing",),
-    "data processing": ("data processing", "Data processing",),
+    "Data Processing": ("Data Processing", "Data processing", "data processing",),
+    "Data Model": ("Data Model", "data model", "data model"),
     "automated processes": ("automated processes", "Automated processes",),
     "rapid iteration": ("rapid iteration", "Rapid iteration",),
     "software engineering": ("software engineering", "Software engineering",),
@@ -408,7 +411,8 @@ ps_collection = {
     "Full Stack Engineer": ("Full Stack Engineer", "Full-Stack Engineer", "full stack engineer", "full-stack engineer",
                             "Full Stack Software Engineers"),
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers",
-                             "Full Stack Developers", "full-stack developers", "Full Stack developer"),
+                             "Full Stack Developers", "full-stack developers", "Full Stack developer",
+                             "Full Stack Web Developers"),
     "Software Developer": ("Software Developer", "software developer"),
     "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer", "software engineers"),
     "Software Architect": ("Software Architect", "Architect", "architect", "architects", ),
@@ -485,7 +489,8 @@ cs_collection = {
     "Statistics": ("Statistics", "statistics"),
     "Concurrency": ("Concurrency", "concurrency", "concurrent programming"),
     "Parallelism": ("Parallelism", "parallelism"),
-    "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP"),
+    "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP",
+                                    "object-oriented view"),
     "Asynchronous": ("Asynchronous", "asynchronous"),
     "Cryptography": ("Cryptography", "cryptography"),
     "Computability": ("Computability", "computability"),
@@ -551,15 +556,16 @@ pt_collection = {
     "RSVP": ("RSVP", "rsvp"),
     "LDP": ("LDP", "ldp"),
     "APN": ("APN", "apn"),
-    "SNMP": ("SNMP", "snmp")
+    "SNMP": ("SNMP", "snmp"),
+    "Modbus": ("Modbus", "modbus")
 }
 
 pd_collection = {
     "Web Application": ("Web Application", "Web application", "web application", "web applications", "web-app",
                         "web technology", "web technologies", "website", "websites", "web", "Web", "web-technology",
-                        "web-services", "web apps", "web services",),
+                        "web-services", "web apps", "web services", "webapp"),
     "Single-page Application": ("Single-page Application", "single-page application", "single-page-application",
-                                "single page application", "SPA"),
+                                "single page application", "SPA", "single-page web application"),
     "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology"),
     "Enterprise Applications": ("Enterprise Applications", "enterprise applications", "enterprise class applications",),
     "Open-source Software": ("Open-source Software", "Open-source software", "open source", "open-source", "Open source"),

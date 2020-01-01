@@ -93,7 +93,8 @@ sf_collection = {
     "soft skills": ("soft skills", "Soft skills",),
     "Communication Skills": ("Communication Skills", "Communication skills", "excellent communicator",
                              "strong communications skills", "communication skills", "communication",
-                             "communicating effectively", "clear communicator", "active communicator"),
+                             "communicating effectively", "clear communicator", "active communicator",
+                             "Communication"),
     "interpersonal skills": ("interpersonal skills",),
     "mentorship": ("mentorship", "mentor", "mentoring"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
@@ -140,8 +141,9 @@ of_collection = {
     "high degree of ownership": ("high degree of ownership",),
     "option to continue": ("option to continue",),
     "Paid relocation": ("Paid relocation", "paid relocation"),
-    "Learning opportunities": ("Learning opportunities", "learning opportunities"),
-    "Health Benefits": ("Health Benefits", "Health benefits")
+    "Learning opportunities": ("Learning opportunities", "learning opportunities", "opportunities to learn"),
+    "Health Benefits": ("Health Benefits", "Health benefits"),
+    "Contractor": ("Contractor", "Contractors")
 }
 
 we_collection = {
