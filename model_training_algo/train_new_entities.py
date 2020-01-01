@@ -9,7 +9,7 @@ import spacy
 from spacy.util import minibatch, compounding
 
 from constants.constants import LABELS
-from model_training_v2.training_01.train_data_01 import *
+from model_training_data.training_data.train_data_01 import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path = os.path.join(BASE_DIR, "job_model")

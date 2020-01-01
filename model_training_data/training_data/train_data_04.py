@@ -1,7 +1,7 @@
 from constants.category import pl, ol, lb, fw, cs, pt, ds, dv, we, os_, sv, ap, pf, ps, ge, sf, tl, at, pd, ql, of, tm, \
-    se, dt, ai, cp
+    se, ai, cp
 from model_training_algo.entity_finder import print_entities, entity_finder
-from model_training_v2.training_04.job_desc_04 import \
+from model_training_data.training_text.job_desc_04 import \
     _c6f44693fae1e286a76031c7b39223963a709aa5769e4a4e7ac72481111a1357 as D1, \
     _aa17369586948f3637b7dda8a9db905133c9123bccb70bc781a804e8849c0081 as D2, \
     _bf4a694f7eef157a4208469309d91388cd253e7f93b3c747150e1f696575f99f as D3, \

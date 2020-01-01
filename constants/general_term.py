@@ -152,7 +152,7 @@ we_collection = {
     "Industry experience": ("Industry experience", "industry experience"),
     "Coding experience": ("Coding experience", "coding experience"),
     "Full years experience": ("Full years experience", "full years experience"),
-    "Related experience": ("Related experience", "related experience")
+    "Related experience": ("Related experience", "related experience", "relevant experience")
 }
 
 # we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
