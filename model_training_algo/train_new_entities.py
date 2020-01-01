@@ -12,7 +12,7 @@ from constants.constants import LABELS
 from model_training_v2.training_01.train_data_01 import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-path = os.path.join(BASE_DIR, "alaitp_model")
+path = os.path.join(BASE_DIR, "job_model")
 
 
 @plac.annotations(
@@ -21,7 +21,7 @@ path = os.path.join(BASE_DIR, "alaitp_model")
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model="en_core_web_lg", new_model_name="alaitp_model", output_dir=path, n_iter=500):
+def main(model="en_core_web_lg", new_model_name="job_model", output_dir=path, n_iter=300):
     """Set up the pipeline and entity recognizer, and train the new entity."""
     random.seed(0)
     if model is not None:
@@ -61,7 +61,7 @@ def main(model="en_core_web_lg", new_model_name="alaitp_model", output_dir=path,
             losses = {}
             for batch in batches:
                 texts, annotations = zip(*batch)
-                nlp.update(texts, annotations, sgd=optimizer, drop=0.2, losses=losses)
+                nlp.update(texts, annotations, sgd=optimizer, drop=0.35, losses=losses)
             print(f"iteration: {itn}, Losses: ", losses)
 
     # test the trained model
