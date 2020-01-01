@@ -149,7 +149,8 @@ os_collection = {
     "Redhat": ("Redhat", "redhat"),
     "macOS": ("macOS", "MacOS", "OS X"),
     "Unix": ("Unix", "unix"),
-    "Virtual Machine": ("Virtual Machine", "virtual machine", "virtual machines", "VM")
+    "Virtual Machine": ("Virtual Machine", "virtual machine", "virtual machines", "VM"),
+    "LXC": ("LXC", "lxc")
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx"),
@@ -202,6 +203,8 @@ tl_collection = {
     "ESRI": ("ESRI", "esri"),
     "Visual Studio": ("Visual Studio", "Visual studio", "visual-studio-2019", "visual-studio-2017", "visual-studio"),
     "productivity tools": ("productivity tools", "Productivity tools",),
+    "Vagrant": ("Vagrant", "vagrant"),
+    "Puppet": ("Puppet", "puppet")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -361,7 +364,8 @@ pf_collection = {
     "Amazon CloudFront": ("Amazon CloudFront", "CloudFront", "Cloudfront"),
     "Amazon SNS": ("Amazon SNS", "SNS", "sns"),
     "AWS Elastic Beansalk": ("AWS Elastic Beansalk", "Elastic Beansalk",),
-    "AWS API Gateway": ("AWS API Gateway", "aws-api-gateway")
+    "AWS API Gateway": ("AWS API Gateway", "aws-api-gateway"),
+    "Packer": ("Packer", "packer")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -559,7 +563,7 @@ pd_collection = {
     "Small and Medium Scale Systems": ("Small and Medium Scale Systems", "Small and medium scale systems",),
     "Large-scale systems": ("Large-scale systems", "large-scale systems", ),
     "third party technologies": ("third party technologies", "Third party technologies", "third-party checkout",
-                                 "third-party APIs"),
+                                 "third-party APIs", "third-party billing services"),
     "high traffic applications": ("high traffic applications", "High traffic applications",),
     "Analysis Engines": ("Analysis Engines", "analysis engines", "Analysis engines",),
     "data driven application": ("data driven application", "data driven applications", "data-oriented products"),

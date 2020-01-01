@@ -2,7 +2,7 @@ import unittest
 from collections import defaultdict
 
 from constants.constants import *
-from model_training_v2.training_03.train_data_03 import TRAIN_DATA
+from model_training_v2.training_04.train_data_04 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
