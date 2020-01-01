@@ -69,7 +69,7 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "relevant experience"
+    word = "Launching"
 
     print_entities(TRAIN_DATA)
 

@@ -209,20 +209,21 @@ tl_collection = {
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
              "Representational state transfer"),
-    "microservices": ("microservices", "Microservices", "Microservice", "microservice"),
-    "message-based communication": ("message-based communication",),
-    "serverless": ("serverless", "Serverless"),
-    "distributed systems": ("distributed systems", "Distributed systems", "distributed-system"),
+    "Microservices": ("Microservices", "microservices", "Microservice", "microservice"),
+    "Message-based communication": ("Message-based communication", "message-based communication",),
+    "Serverless": ("Serverless", "serverless", ),
+    "Distributed Systems": ("Distributed Systems", "distributed systems", "Distributed systems", "distributed-system"),
+    "Distributed Databases": ("Distributed Databases", "distributed databases", "distributed databases"),
     "Zookeeper": ("Zookeeper", "zookeeper"),
     "MVC": ("MVC", "mvc"),
     "MVVM": ("MVVM", "mvvm"),
-    "cloud architecture": ("cloud architecture", "Cloud architecture"),
+    "Cloud Architecture": ("Cloud Architecture", "cloud architecture", "Cloud architecture"),
     "Flux": ("Flux", "flux", ),
     "LAMP": ("LAMP", "Lamp"),
     "Middleware": ("Middleware", "middleware"),
     "Architecture": ("Architecture", "architecture"),
-    "architecture diagrams": ("architecture diagrams",),
-    "architecture review": ("architecture review", "architecture reviews"),
+    "Architecture Diagrams": ("Architecture Diagrams", "architecture diagrams",),
+    "Architecture Review": ("Architecture Review", "architecture review", "architecture reviews"),
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -261,7 +262,11 @@ ap_collection = {
     "regression test": ("regression test", "Regression Test"),
     "testing principles": ("testing principles", "Testing principles",),
     "UITests": ("UITests", "UItests",),
-    "software reliability analyses": ("software reliability analyses", "Software reliability analyses")
+    "software reliability analyses": ("software reliability analyses", "Software reliability analyses"),
+    "Technical Best Practices": ("Technical Best Practices", "technical best practises", "best practices", ),
+    "Coding Standards": ("Coding Standards", "coding standards"),
+    "Engineering Standards": ("Engineering Standards", "Engineering standards", "engineering standards"),
+    "Development Standards": ("Development Standards", "development standards"),
 }
 se_collection = {
     "Design Patterns": ("Design Patterns", "design patterns"),
@@ -278,7 +283,7 @@ se_collection = {
     "planning": ("planning", "plan"),
     "designing": ("designing", "Designing"),
     "Modular Design": ("Modular Design", "modular design"),
-    "developing": ("developing", "develop"),
+    "Developing": ("Developing", "developing", "develop"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "performance analysis": ("performance analysis", "Performance analysis",),
     "optimisation": ("optimisation", "optimisations", "optimize"),
@@ -303,7 +308,6 @@ se_collection = {
     "quality improvements": ("quality improvements", "Quality improvements"),
     "tech debt balance": ("tech debt balance", "Tech debt balance"),
     "Tech Debt": ("Tech Debt", "tech debt"),
-    "engineering standards": ("engineering standards", "Engineering standards"),
     "performance issues": ("performance issues", "Performance issues", ),
     "troubleshoot complex issues": ("troubleshoot complex issues", "Troubleshoot complex issues", ),
     "roadmap priorities": ("roadmap priorities", "Roadmap priorities",),
@@ -365,7 +369,8 @@ pf_collection = {
     "Amazon SNS": ("Amazon SNS", "SNS", "sns"),
     "AWS Elastic Beansalk": ("AWS Elastic Beansalk", "Elastic Beansalk",),
     "AWS API Gateway": ("AWS API Gateway", "aws-api-gateway"),
-    "Packer": ("Packer", "packer")
+    "Packer": ("Packer", "packer"),
+    "OpenShift": ("OpenShift", "Openshift")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -406,7 +411,7 @@ ps_collection = {
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers",
                              "Full Stack Developers", "full-stack developers", "Full Stack developer"),
     "Software Developer": ("Software Developer", "software developer"),
-    "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer"),
+    "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer", "software engineers"),
     "Software Architect": ("Software Architect", "Architect", "architect", "architects", ),
     "Senior Software Architect": ("Senior Software Architect", "Senior Software Architects"),
     "Web Developer": ("Web Developer", "web developer"),
@@ -500,7 +505,7 @@ cs_collection = {
     "Computational Complexity": ("Computational Complexity", "computational complexity")
 }
 ai_collection = {
-    "AI": ("AI", "artificial intelligence"),
+    "AI": ("AI", "Artificial Intelligence", "artificial intelligence"),
     "Machine Learning": ("Machine Learning", "Machine learning", "machine learning", "machine-learning"),
     "Deep Learning": ("Deep Learning", "Deep learning"),
     "NLP": ("NLP", "Natural Language Processing", "natural language processing"),
@@ -514,7 +519,7 @@ ai_collection = {
     "model training": ("model training", "training", ),
     "labelling": ("labelling", "Labelling"),
     "Bayesian Forecasting Models": ("Bayesian Forecasting Models", "Bayesian forecasting models"),
-    "computer vision": ("computer vision", "computer-vision", )
+    "Computer Vision": ("Computer Vision", "computer vision", "computer-vision", "computer vision technology")
 }
 pt_collection = {
     "Messaging Protocols": ("Messaging Protocols", "messaging protocols", ),
@@ -573,8 +578,6 @@ pd_collection = {
 }
 
 ql_collection = {
-    "Technical Best Practices": ("Technical Best Practices", "technical best practises", "best practices", ),
-    "Coding Standards": ("Coding Standards", "coding standards"),
     "Scalability": ("Scalability", "scalability", ),
     "Testability": ("Testability", "testability"),
     "high-quality code": ("high-quality code",),
@@ -597,5 +600,7 @@ ql_collection = {
     "cross-browser compatibility": ("cross-browser compatibility", "Cross-browser compatibility",),
     "cross-device compatibility": ("cross-device compatibility", "Cross-device compatibility",),
     "efficient processes": ("efficient processes", "Efficient processes",),
-    "high-quality software": ("high-quality software", "High-quality software")
+    "high-quality software": ("high-quality software", "High-quality software"),
+    "Scalable development workflow": ("Scalable development workflow", "scalable development workflow"),
+    "Scalable Backend Systems": ("Scalable Backend Systems", "scalable backend systems")
 }

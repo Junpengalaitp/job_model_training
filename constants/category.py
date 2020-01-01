@@ -24,3 +24,8 @@ ql = "QUALITY"  # code/software quality e.g. easy-to-understand, testable
 of = "OFFER"  # salary, benefits
 tm = "TEAM"  # team description/culture
 cp = "COMPANY"  # company type e.g. startup, FinTech
+
+category_map = {pl: "pl", ol: "ol", lb: "lb", fw: "fw", cs: "cs", ai: "ai", pt: "pt", ds: "ds", dt: "dt", dv: "dv",
+                ps: "ps", we: "we", os_: "os", sv: "sv", ap: "ap", se: "se", pf: "pf", ge: "ge", sf: "sf", tl: "tl",
+                at: "at", pd: "pd", ql: "ql", of: "of", tm: "tm", cp: "cp",
+                }

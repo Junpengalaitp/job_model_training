@@ -10,7 +10,7 @@ tm_collection = {
     "talented team": ("talented team",),
     "tech enthusiasts": ("tech enthusiasts",),
     "Remote work": ("Remote work environment", "Remote work", "remote work environment", "remote-friendly environment",
-                    "remote-first team"),
+                    "remote-first team", "remote-work environment"),
     "tight-knit team": ("tight-knit team", "tight knit team", "tight-knit engineering team",),
     "team-oriented environment": ("team-oriented environment",),
     "fully remote team": ("fully remote team",),
@@ -26,7 +26,8 @@ tm_collection = {
     "Creative Team": ("Creative Team", "Creative team"),
     "Operations Team": ("Operations Team", "Operations team"),
     "Development Team": ("Development Team", "Development team"),
-    "Client Services Team": ("Client Services Team", "Client Services team")
+    "Client Services Team": ("Client Services Team", "Client Services team"),
+    "Engineering Team": ("Engineering Team", "engineering team")
 }
 
 cp_collection = {
@@ -104,7 +105,8 @@ sf_collection = {
     "co-working": ("co-working", "coworking"),
     "interface with clients": ("interface with clients", "Interface with clients",),
     "Discussion": ("Discussion", "discussion"),
-    "Presentation": ("Presentation", "presentation")
+    "Presentation": ("Presentation", "presentation"),
+    "Leadership": ("Leadership", "leadership")
 }
 
 of_collection = {
@@ -129,7 +131,7 @@ of_collection = {
     "insurance": ("insurance", "health/dental insurance", "health, dental and vision insurance", "Health insurance",
                   "health insurance", "healthcare"),
     "Equal Opportunity": ("Equal Opportunity", "equal opportunity"),
-    "Equity": ("Equity", "profit sharing", "stock options", "Stock options", "equity", ),
+    "Equity": ("Equity", "profit sharing", "stock options", "Stock options", "equity", "Competitive equity"),
     "diverse perspectives": ("diverse perspectives",),
     "Money": ("$2,500 per year", "40€ /h", "€65k-90k", "$70k - 100k", "$80k - 100k", "$100k - 135k", "$100k - 150k",
               "$95k - 145k", "€55k - 104k", "$105k - 110k"),
@@ -138,6 +140,8 @@ of_collection = {
     "high degree of ownership": ("high degree of ownership",),
     "option to continue": ("option to continue",),
     "Paid relocation": ("Paid relocation", "paid relocation"),
+    "Learning opportunities": ("Learning opportunities", "learning opportunities"),
+    "Health Benefits": ("Health Benefits", "Health benefits")
 }
 
 we_collection = {
@@ -154,41 +158,3 @@ we_collection = {
     "Full years experience": ("Full years experience", "full years experience"),
     "Related experience": ("Related experience", "related experience", "relevant experience")
 }
-
-# we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',
-#            '2+ years focused on', "a few years of experience", "3-5 years of full-stack experience",
-#            '2+ years of client-side Javascript experience', '5+ years experience ', '1+ years experience',
-#            '2 years of professional experience', '2+ years requirement', "2+ years' experience", '3+ years experience',
-#            '5 years professional development experience', '3+ years of WordPress development experience',
-#            '2-3 years of software developer experience', '5+ years of professional software development experience',
-#            '5+ years of industry experience', "3+ years of software engineering experience", '5+ years experience',
-#            '5+ years previous experience', '3+ years of Drupal experience', "Has least three years of experience",
-#            '5+ years of directly applicable experience', "5+ years experience",
-#            '20 years of experience', '5+ years of programming experience', "3-5 years' experience",
-#            '3+ years in a software engineering or technical architect role', '3+ years of Unity experience',
-#            '3+ years of Scrum Master experience', 'Significant macOS experience (+5 years)', 'worked for 5+ years',
-#            '5 years of relevant software development experience', '3-6 years relevant experience',
-#            '5+ years of PHP experience', '3+ years audio programming experience', "2+ years' experience",
-#            '5+ years of software development experience', '3-5 years of relevant work experience', '4 years experience',
-#            '7+ years in the software development industryExperience ', '5 years professional development experience',
-#            '5+ years of applicable experience', '3+ years of experience', '2 years of Ruby on Rails Experience',
-#            '3+ years of professional experience', '10+ years of professional engineering experience', '1+ years using',
-#            '3 years of Ruby on Rails Experience', '5 years of it being Ruby on Rails',
-#            '4+ years programming experience', "at least two years software development experience",
-#            '3 years of relevant data development and technology experience', '8+ years programming experience',
-#            '3+ years of Ruby on Rails experience', '5+ years of professional Front End Development experience',
-#            "7+ years of Application Development with experience defining development guidelines",
-#            "1 to 2 years’ experience", "Minimum of 4 years of web app building experience",
-#            "3+ Years of software development experience", "3+ years of experience",
-#            "2+ Years of professional Ruby on Rails development experience", "3+ years QA experience",
-#            "3 to 5 years’ experience with DBMS", '3 to 5 years related work experience',
-#            "3 to 5 years working knowledge", "5-7 years full stack experience", "3-8+ years",
-#            "2 years related work experience", '7+ years of progressive work experience',
-#            '2+ years of DevOps leadership experience', "2+ Years", "7+ years of relevant development experience",
-#            "5+ years experience", '5+ years of professional experience', '2+ years of experience',
-#            "3-5+ years work experience", "5+ Years of Real-World Development Experience",
-#            '3 years of relevant experience', 'Professional experience (hands-on) with ReactJS Framework for 2+ years',
-#            "3+ years' experience", '2 years experience in PHP', 'Prior experience (at least 3 years)',
-#            'one year experience', "2+ Years with", "2+ Years of Real-World",
-#            '3-5 years of experience', 'two years’ experience', '3+ years of DevOps and/or Operations experience',
-#            '1+ years of production environment experience', '2 years experience developing software')
