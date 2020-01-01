@@ -84,7 +84,8 @@ ge_collection = {
     "passionate individual": ("passionate individual", "passionate individuals"),
     "Respect": ("Respect", "respect"),
     "Imagination": ("Imagination", "imagination"),
-    "Enthusiasm": ("Enthusiasm", "enthusiasm")
+    "Enthusiasm": ("Enthusiasm", "enthusiasm"),
+    "Self-motivation": ("Self-motivation", "self-motivation"),
 }
 
 sf_collection = {
@@ -102,7 +103,8 @@ sf_collection = {
     "accountability": ("accountability", "Accountability",),
     "co-working": ("co-working", "coworking"),
     "interface with clients": ("interface with clients", "Interface with clients",),
-    "Discussion": ("Discussion", "discussion")
+    "Discussion": ("Discussion", "discussion"),
+    "Presentation": ("Presentation", "presentation")
 }
 
 of_collection = {
@@ -146,7 +148,11 @@ we_collection = {
     "Software Development Experience": ("Software Development Experience", "Development Experience", "development experience",
                                         "software development experience",),
     "QA Experience": ("QA Experience", "QA experience"),
-    "Professional Experience": ("Professional Experience", "professional experience")
+    "Professional Experience": ("Professional Experience", "professional experience"),
+    "Industry experience": ("Industry experience", "industry experience"),
+    "Coding experience": ("Coding experience", "coding experience"),
+    "Full years experience": ("Full years experience", "full years experience"),
+    "Related experience": ("Related experience", "related experience")
 }
 
 # we_list = ('5+ years of experience', '4 years of professional experience', '2-5 years of experience',

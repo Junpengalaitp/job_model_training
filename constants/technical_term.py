@@ -383,6 +383,7 @@ dv_collection = {
     "Site Reliability": ("Site Reliability", "site reliability", ),
     "Data Infrastructure": ("Data Infrastructure", "data infrastructure"),
     "Network Infrastructure": ("Network Infrastructure", "network infrastructure", "Network infrastructure",),
+    "Large-scale network": ("Large-scale network", "large-scale network"),
     "Infrastructure Engineering": ("Infrastructure Engineering", "infrastructure engineering"),
     "Automation": ("Automation", "automation",),
     "cloud-security": ("cloud-security", "Cloud Platform Security", "Cloud Platform security")
@@ -464,7 +465,9 @@ ps_collection = {
     "Drupal Developer": ("Drupal Developer", "Drupal Developers"),
     "Professional Services Consultant": ("Professional Services Consultant", "Professional Services Consultants"),
     "Lead DevOps Engineer": ("Lead DevOps Engineer", "Lead DevOps engineer", ),
-    "System Administrator": ("System Administrator", "system administrator", "sysadmin")
+    "System Administrator": ("System Administrator", "system administrator", "sysadmin"),
+    "Team Lead": ("Team Lead", "Team lead"),
+    "Project Lead": ("Project Lead", "Project lead")
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science", ),
@@ -539,7 +542,8 @@ pt_collection = {
     "MPLS": ("MPLS", "mpls"),
     "RSVP": ("RSVP", "rsvp"),
     "LDP": ("LDP", "ldp"),
-    "APN": ("APN", "apn")
+    "APN": ("APN", "apn"),
+    "SNMP": ("SNMP", "snmp")
 }
 
 pd_collection = {

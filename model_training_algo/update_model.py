@@ -33,7 +33,7 @@ model_path = os.path.join(BASE_DIR, "job_model")
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model='job_model', output_dir=model_path, n_iter=300, train_data=None):
+def main(model='job_model', output_dir=model_path, n_iter=350, train_data=None):
     """Load the model, set up the pipeline and train the entity recognizer."""
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
