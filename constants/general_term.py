@@ -22,7 +22,10 @@ tm_collection = {
     "highly-skilled team": ("highly-skilled team",),
     "energizing community": ("energizing community",),
     "dynamic team": ("dynamic team", "dynamic teams"),
-    "gelled team": ("gelled team", "gelled teams")
+    "gelled team": ("gelled team", "gelled teams"),
+    "Creative Team": ("Creative Team", "Creative team"),
+    "Operations Team": ("Operations Team", "Operations team"),
+    "Development Team": ("Development Team", "Development team")
 }
 
 cp_collection = {
@@ -77,14 +80,17 @@ ge_collection = {
     "commitment": ("commitment", "Commitment",),
     "Self-starter": ("Self-starter", "self-starters", "self-starter"),
     "self-ownership": ("self-ownership", "self ownership", ),
-    "passionate individual": ("passionate individual", "passionate individuals")
+    "passionate individual": ("passionate individual", "passionate individuals"),
+    "Respect": ("Respect", "respect"),
+    "Imagination": ("Imagination", "imagination"),
+    "Enthusiasm": ("Enthusiasm", "enthusiasm")
 }
 
 sf_collection = {
     "soft skills": ("soft skills", "Soft skills",),
     "Communication Skills": ("Communication Skills", "Communication skills", "excellent communicator",
                              "strong communications skills", "communication skills", "communication",
-                             "communicating effectively", "clear communicator"),
+                             "communicating effectively", "clear communicator", "active communicator"),
     "interpersonal skills": ("interpersonal skills",),
     "mentorship": ("mentorship", "mentor", "mentoring"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
@@ -95,6 +101,7 @@ sf_collection = {
     "accountability": ("accountability", "Accountability",),
     "co-working": ("co-working", "coworking"),
     "interface with clients": ("interface with clients", "Interface with clients",),
+    "Discussion": ("Discussion", "discussion")
 }
 
 of_collection = {

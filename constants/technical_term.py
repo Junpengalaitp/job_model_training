@@ -553,12 +553,13 @@ pd_collection = {
     "Desktop Application": ("Desktop Application", "desktop", "Desktop"),
     "Small and Medium Scale Systems": ("Small and Medium Scale Systems", "Small and medium scale systems",),
     "Large-scale systems": ("Large-scale systems", "large-scale systems", ),
-    "third party technologies": ("third party technologies", "Third party technologies"),
+    "third party technologies": ("third party technologies", "Third party technologies", "third-party checkout"),
     "high traffic applications": ("high traffic applications", "High traffic applications",),
     "Analysis Engines": ("Analysis Engines", "analysis engines", "Analysis engines",),
-    "data driven application": ("data driven application", "data driven applications"),
+    "data driven application": ("data driven application", "data driven applications", "data-oriented products"),
     "profitable project": ("profitable project", "profitable projects"),
     "Legacy System": ("Legacy System", "legacy system"),
+    "Video Games": ("Video Games", "video games")
 }
 
 ql_collection = {

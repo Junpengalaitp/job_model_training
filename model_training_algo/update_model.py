@@ -64,7 +64,6 @@ def main(model='job_model', output_dir=model_path, n_iter=800, train_data=None):
         if model is None:
             nlp.begin_training()
         for itn in range(n_iter):
-            iteration = 1
             random.shuffle(train_data)
             losses = {}
             # batch up the examples using spaCy's minibatch
@@ -77,8 +76,7 @@ def main(model='job_model', output_dir=model_path, n_iter=800, train_data=None):
                     drop=0.35,  # dropout - make it harder to memorise data
                     losses=losses,
                 )
-            print(f"iteration: {iter}, Losses:", losses)
-            iteration += 1
+            print(f"iteration: {itn}, Losses: ", losses)
 
     # test the trained model
     for text, _ in train_data:
