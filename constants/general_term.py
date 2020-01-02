@@ -89,6 +89,7 @@ ge_collection = {
     "Imagination": ("Imagination", "imagination"),
     "Enthusiasm": ("Enthusiasm", "enthusiasm"),
     "Self-motivation": ("Self-motivation", "self-motivation"),
+    "Self-management": ("Self-management", "self-management")
 }
 
 sf_collection = {
@@ -96,9 +97,9 @@ sf_collection = {
     "Communication Skills": ("Communication Skills", "Communication skills", "excellent communicator",
                              "strong communications skills", "communication skills", "communication",
                              "communicating effectively", "clear communicator", "active communicator",
-                             "Communication", "good communicator"),
+                             "Communication", "good communicator", "good communication"),
     "interpersonal skills": ("interpersonal skills",),
-    "mentorship": ("mentorship", "mentor", "mentoring"),
+    "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
     "coaching": ("coaching", "Coaching",),
     "team-player": ("team-player", "team player"),
@@ -109,7 +110,8 @@ sf_collection = {
     "interface with clients": ("interface with clients", "Interface with clients",),
     "Discussion": ("Discussion", "discussion"),
     "Presentation": ("Presentation", "presentation"),
-    "Leadership": ("Leadership", "leadership")
+    "Leadership": ("Leadership", "leadership"),
+    "Responsibility": ("Responsibility", "responsibility")
 }
 
 of_collection = {

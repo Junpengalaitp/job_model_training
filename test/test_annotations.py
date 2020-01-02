@@ -19,6 +19,7 @@ class TestAnnotations(unittest.TestCase):
                 self.ent_dict[entity_type][entity_index] = entity_name
 
     def test_overlapping_indices(self):
+        overlapping_index = set()
         for data in TRAIN_DATA:
             entity_indices = data[1]["entities"]
             index_list = []
@@ -31,13 +32,14 @@ class TestAnnotations(unittest.TestCase):
                 for i in range(1, l):
                     interval2 = ent_index_list[i]
                     if interval2[0] < interval[-1]:
-                        print(interval2, interval)
+                        overlapping_index.add((interval2, interval))
                     else:
                         interval = interval2
 
             for ent_index in ent_index_list:
                 index_list.append(ent_index[0])
                 index_list.append(ent_index[1])
+            print(overlapping_index)
             self.assertTrue(all(index_list[i] < index_list[i+1] for i in range(len(index_list)-1)))
 
     def base_category_test(self, category: str, word_list: list):

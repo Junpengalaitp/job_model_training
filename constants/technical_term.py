@@ -8,6 +8,8 @@ pl_collection = {
     "Java": ("Java", "java", "Java8", "Java11"),
     "Python": ("Python", "python", "python3", "Python3"),
     "Ruby": ("Ruby", "ruby"),
+    "CRuby": ("CRuby", "C-ruby"),
+    "JRuby": ("JRuby", "C-ruby", "Jruby"),
     "PHP": ("PHP", "php", "PHP7"),
     "C": ("C", "c"),
     "C++": ("C++", "c++", "cpp"),
@@ -30,6 +32,7 @@ pl_collection = {
     "DSLs": ("DSLs", "dsls"),
     "VB.NET": ("VB.NET", "vb.net"),
     "R": ("R", "r"),
+    "JSX": ("JSX", "Jsx"),
 }
 ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
@@ -75,7 +78,8 @@ lb_collection = {
     "Axios": ("Axios", "axios"),
     "Leaflet.js": ("Leaflet.js", "leaflet.js"),
     "leaflet-google.js": ("leaflet-google.js", "leaflet-google", "leaflet google"),
-    "SQLAlchemy": ("SQLAlchemy", "SqlAlchemy")
+    "SQLAlchemy": ("SQLAlchemy", "SqlAlchemy"),
+    "SockJS": ("SockJS", "Sockjs")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -104,10 +108,11 @@ fw_collection = {
     "Express.js": ("Express.js", "Express"),
     "Hadoop": ("Hadoop", "hadoop"),
     "Ext.js": ("Ext.js", "Extjs", "ExtJS"),
-    "Foundation": ("Foundation", ),
+    "Foundation": ("Foundation", "Foundation 5"),
     "Drupal": ("Drupal", "drupal", "drupal-8"),
     "knockout": ("knockout", "knockout.js", "KnockoutJS"),
-    "Pyramid": ("Pyramid", "pyramid")
+    "Pyramid": ("Pyramid", "pyramid"),
+    "Vert.x": ("Vert.x", "Vertx")
 }
 ds_collection = {
     "Relational Database": ("Relational Database", "relational database", "Relational database"),
@@ -157,11 +162,12 @@ os_collection = {
     "LXC": ("LXC", "lxc")
 }
 sv_collection = {
-    "Nginx": ("Nginx", "nginx"),
+    "Nginx": ("Nginx", "nginx", "NGINX"),
     "Node.js": ("Node.js", "node.js", "NodeJS", "Node", "node", "Nodejs", "Node.JS"),
     "Jetty": ("Jetty", "jetty"),
     "CDN": ("CDN", "cdn"),
-    "Cluster": ("Cluster", "cluster", "clusters")
+    "Cluster": ("Cluster", "cluster", "clusters"),
+    "HAProxy": ("HAProxy", "HaProxy")
 }
 tl_collection = {
     "Jenkins": ("Jenkins", "jenkins"),
@@ -210,7 +216,8 @@ tl_collection = {
     "Vagrant": ("Vagrant", "vagrant"),
     "Puppet": ("Puppet", "puppet"),
     "Marionette": ("Marionette", "marionette"),
-    "Gmail": ("Gmail", "gmail")
+    "Gmail": ("Gmail", "gmail"),
+    "Okta": ("Okta", "okta")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -342,6 +349,7 @@ pf_collection = {
     "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services"),
     "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud", "google-cloud-platform", "Google cloud infra"),
     "Azure": ("Azure", "Microsoft Azure", "azure", ),
+    "Salesforce": ("Salesforce", "salesforce"),
     "Heroku": ("Heroku", "heroku"),
     "DigitalOcean": ("DigitalOcean", "Digitalocean"),
     "GitHub": ("GitHub", "github", "Github"),
@@ -482,7 +490,8 @@ ps_collection = {
     "Lead DevOps Engineer": ("Lead DevOps Engineer", "Lead DevOps engineer", ),
     "System Administrator": ("System Administrator", "system administrator", "sysadmin"),
     "Team Lead": ("Team Lead", "Team lead"),
-    "Project Lead": ("Project Lead", "Project lead")
+    "Project Lead": ("Project Lead", "Project lead"),
+    "Salesforce Developer": ("Salesforce Developer", "Salesforce Developers"),
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science", ),
@@ -578,7 +587,7 @@ pd_collection = {
     "Large-scale Systems": ("Large-scale Systems", "Large-scale systems", "large-scale systems", ),
     "Third Party Technologies": ("Third Party Technologies", "third party technologies", "Third party technologies",
                                  "third-party checkout", "third-party APIs", "third-party billing services", "3rd party APIs",
-                                 "3rd party apps"),
+                                 "3rd party apps", "3rd party system"),
     "High Traffic Applications": ("High Traffic Applications", "high traffic applications", "High traffic applications",),
     "Analysis Engines": ("Analysis Engines", "analysis engines", "Analysis engines",),
     "Data Driven Application": ("Data Driven Application", "data driven application", "data driven applications",

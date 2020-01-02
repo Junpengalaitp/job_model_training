@@ -4,8 +4,8 @@ from model_training_algo.entity_finder import entity_finder, print_entities
 from model_training_data.training_text.job_desc_06 import \
     _e5940376daee8f1fb20214f55d73eab6614d1dc41b6b5e39f0510802281dca7c as D1, \
     _063e170581e747c183b3b59638892084aae5bb57b52ea00d18bf3e63987843d7 as D2, \
-    _cbff4c37f44754e517f4206c7dc83d67ce672e9d19c4e3dbda59e548ba91f3d5 as D3
-# _ae5f6f5c56847e54f10a1a6ba2fa3420744e630f7e6ce76c1f60bf3b4f128ce9 as D4, \
+    _cbff4c37f44754e517f4206c7dc83d67ce672e9d19c4e3dbda59e548ba91f3d5 as D3, \
+    _342049c6504576d0f397ff5a5227f10d8b041c3e49184eefbd9d642e5e16a07e as D4
 # _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5, \
 # _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6, \
 # _516a36ab2091b8e70b7c6f638f1830cd0cf49a5e1d4ea93fc6c8b4840d678010 as D7, \
@@ -74,7 +74,24 @@ TRAIN_DATA = [
         (1793, 1807, lb), (1876, 1883, ql), (1885, 1897, ql),
 
     ]}),
-    # (D4, {"entities": []}),
+    (D4, {"entities": [
+        (1949, 1950, 'CARDINAL'), (2013, 2033, 'TIME'),  (2142, 2163, 'TIME'),
+
+        (403, 412, ps), (862, 865, pt), (901, 913, se), (923, 928, tl),
+        (1018, 1020, 'GPE'), (1089, 1104, ps), (1468, 1484, ps), (1979, 1996, of), (2501, 2505, pl),
+        (2530, 2533, ol), (2534, 2538, ol), (2571, 2580, lb),
+        (2628, 2638, pl), (2643, 2653, pl), (2673, 2678, lb), (2680, 2686, lb), (2688, 2700, pl),
+        (2728, 2732, os_), (2733, 2738, os_), (2739, 2743, ol), (2748, 2753, ds),
+        (2769, 2774, ds), (2790, 2803, lb), (2996, 3004, at),
+        (3175, 3195, ps),
+
+        (854, 857, pd), (930, 940, pf), (2487, 2500, fw), (2507, 2513, pl), (2523, 2528, pl), (2557, 2569, fw),
+        (2596, 2608, fw), (2705, 2708, pl), (2744, 2747, pt), (2962, 2965, pt), (2967, 2972, sv), (3210, 3215, lb),
+        (3216, 3221, pl), (3222, 3227, fw), (3228, 3234, lb), (3235, 3241, pl),
+
+        (537, 543, dv), (884, 900, pd), (942, 946, tl), (1495, 1515, sf), (1911, 1922, of), (1893, 1907, sf),
+        (2939, 2946, sv), (3043, 3058, ge), (3063, 3081, sf),
+    ]}),
     # (D5, {"entities": []}),
     # (D6, {"entities": []}),
     # (D7, {"entities": []}),
@@ -84,8 +101,8 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "SQLAlchemy"
+    word = "good communication"
 
     print_entities(TRAIN_DATA)
 
-    entity_finder(word, D3)
+    entity_finder(word, D4)
