@@ -16,7 +16,7 @@ pl_collection = {
     "C#": ("C#", "c#"),
     "Objective-C": ("Objective-C", "Objective C", "objective-c", "Obj-C"),
     "Swift": ("Swift", "swift"),
-    "Kotlin": ("Kotlin", "kotlin"),
+    "Kotlin": ("Kotlin", "kotlin", ),
     "Go": ("Go", "go", "Golang", "GoLang"),
     "Rust": ("Rust", "rust"),
     "Perl": ("Perl", "perl"),
@@ -160,7 +160,8 @@ os_collection = {
     "macOS": ("macOS", "MacOS", "OS X"),
     "Unix": ("Unix", "unix"),
     "Virtual Machine": ("Virtual Machine", "virtual machine", "virtual machines", "VM"),
-    "LXC": ("LXC", "lxc")
+    "LXC": ("LXC", "lxc"),
+    "watchOS": ("watchOS", "watch-os")
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx", "NGINX"),
@@ -402,7 +403,7 @@ dv_collection = {
     "3D Animation": ("3D Animation", "3D animation"),
     "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
-    "Data Science": ("Data Science", "data science", "Data science"),
+    "Data Science": ("Data Science", "data science", "Data science", "data-science"),
     "Site Reliability": ("Site Reliability", "site reliability", ),
     "Data Infrastructure": ("Data Infrastructure", "data infrastructure"),
     "Network Infrastructure": ("Network Infrastructure", "network infrastructure", "Network infrastructure",),
@@ -467,6 +468,7 @@ ps_collection = {
     "Senior Software Engineer": ("Senior Software Engineer", "senior software engineer", "Sr. Software Engineer",
                                  "Senior Engineer", "senior engineer", "Senior Software Engineers", "Senior Engineers"),
     "Senior DevOps Engineer": ("Senior DevOps Engineer", "Sr. DevOps Engineer"),
+    "Senior Data Scientist": ("Senior Data Scientist", "Senior Data Scientists"),
     "Quality Engineering Manager": ("Quality Engineering Manager", "Quality Engineering Managers"),
     "Software Support Engineer": ("Software Support Engineer", "Software Support Engineers"),
     "Technical Leader": ("Technical Leader", "technical leader"),

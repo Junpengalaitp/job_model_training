@@ -6,8 +6,8 @@ from model_training_data.training_text.job_desc_06 import \
     _063e170581e747c183b3b59638892084aae5bb57b52ea00d18bf3e63987843d7 as D2, \
     _cbff4c37f44754e517f4206c7dc83d67ce672e9d19c4e3dbda59e548ba91f3d5 as D3, \
     _342049c6504576d0f397ff5a5227f10d8b041c3e49184eefbd9d642e5e16a07e as D4, \
-    _42768d7b38b9a784a79f445a17a51957d3284fdaff307b9e75268c1b2776137d as D5
-# _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6, \
+    _42768d7b38b9a784a79f445a17a51957d3284fdaff307b9e75268c1b2776137d as D5, \
+    _b6b0c1c0efdee8ce55c6d972713a08648eb23ed1e93df2295d4e0a364311754a as D6
 # _516a36ab2091b8e70b7c6f638f1830cd0cf49a5e1d4ea93fc6c8b4840d678010 as D7, \
 # _1dd6b08b6221b5ebebcf086304b3f2c846eae4a71d833d26d53b250955de811a as D8, \
 # _ec4eec423b2b46859324e6f8df6bc44f635d51415a224fc13b36b9eacdf5c223 as D9, \
@@ -107,7 +107,16 @@ TRAIN_DATA = [
 
         (837, 853, tm),  (65, 69, 'MONEY'), (1112, 1114, dv), (1715, 1724, at), (1742, 1751, lb), (1759, 1770, sf),
         (1776, 1806, sf), ]}),
-    # (D6, {"entities": []}),
+    (D6, {"entities": [
+        (280, 286, 'GPE'), (425, 431, 'GPE'),
+
+        (63, 84, ps), (87, 104, ps), (105, 111, 'ORG'), (116, 131, 'ORG'), (133, 140, 'GPE'), (148, 167, pf),
+        (168, 180, dv), (181, 197, ai), (205, 211, pl), (255, 268, ps), (269, 275, 'ORG'), (315, 318, os_),
+        (396, 413, ps), (414, 420, 'ORG'), (460, 467, os_), (475, 479, pl), (526, 532, 'ORG'),
+
+        (468, 474, pd),
+
+        (198, 204, pl), (480, 486, pl), (319, 330, pl), (331, 336, pl), (337, 345, os_), ]}),
     # (D7, {"entities": []}),
     # (D8, {"entities": []}),
     # (D9, {"entities": []}),
@@ -115,8 +124,8 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "excellent communication skills"
+    word = "mobile"
 
     print_entities(TRAIN_DATA)
 
-    entity_finder(word, D5)
+    entity_finder(word, D6)
