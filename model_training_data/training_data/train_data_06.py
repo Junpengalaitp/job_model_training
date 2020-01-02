@@ -5,8 +5,8 @@ from model_training_data.training_text.job_desc_06 import \
     _e5940376daee8f1fb20214f55d73eab6614d1dc41b6b5e39f0510802281dca7c as D1, \
     _063e170581e747c183b3b59638892084aae5bb57b52ea00d18bf3e63987843d7 as D2, \
     _cbff4c37f44754e517f4206c7dc83d67ce672e9d19c4e3dbda59e548ba91f3d5 as D3, \
-    _342049c6504576d0f397ff5a5227f10d8b041c3e49184eefbd9d642e5e16a07e as D4
-# _9cb6da0cffb3173ef81c4fa03e3beda44459c5c0bf616acf3a043aaa9cba2329 as D5, \
+    _342049c6504576d0f397ff5a5227f10d8b041c3e49184eefbd9d642e5e16a07e as D4, \
+    _42768d7b38b9a784a79f445a17a51957d3284fdaff307b9e75268c1b2776137d as D5
 # _30ca4245355909d1dc9f89809c4d7158d6dce8c5f8ff36da555320db3aa80aff as D6, \
 # _516a36ab2091b8e70b7c6f638f1830cd0cf49a5e1d4ea93fc6c8b4840d678010 as D7, \
 # _1dd6b08b6221b5ebebcf086304b3f2c846eae4a71d833d26d53b250955de811a as D8, \
@@ -92,7 +92,21 @@ TRAIN_DATA = [
         (537, 543, dv), (884, 900, pd), (942, 946, tl), (1495, 1515, sf), (1911, 1922, of), (1893, 1907, sf),
         (2939, 2946, sv), (3043, 3058, ge), (3063, 3081, sf),
     ]}),
-    # (D5, {"entities": []}),
+    (D5, {"entities": [
+        (895, 899, 'PERCENT'), (1116, 1127, 'ORG'), (1894, 1905, 'ORG'), (197, 203, 'GPE'),
+
+        (25, 40, pd), (84, 86, 'GPE'), (187, 193, 'GPE'), (346, 351, 'DATE'),
+        (429, 437, 'ORG'), (451, 456, 'ORG'), (489, 500, 'ORG'), (545, 562, 'ORG'), (1011, 1026, pd),
+        (1052, 1059, os_), (1212, 1219, os_), (1229, 1238, 'CARDINAL'),
+        (1335, 1342, os_), (1545, 1553, 'DATE'), (1617, 1621, pl),
+        (1665, 1672, os_),
+
+        (172, 185, 'GPE'), (415, 421, 'ORG'), (423, 427, 'ORG'), (439, 445, 'ORG'), (502, 528, 'ORG'), (530, 535, 'ORG'),
+        (537, 543, 'ORG'), (568, 578, 'PERSON'), (594, 605, tm), (1130, 1141, tm), (1315, 1327, at), (1557, 1601, we),
+        (1626, 1632, pl),
+
+        (837, 853, tm),  (65, 69, 'MONEY'), (1112, 1114, dv), (1715, 1724, at), (1742, 1751, lb), (1759, 1770, sf),
+        (1776, 1806, sf), ]}),
     # (D6, {"entities": []}),
     # (D7, {"entities": []}),
     # (D8, {"entities": []}),
@@ -101,8 +115,8 @@ TRAIN_DATA = [
 ]
 
 if __name__ == '__main__':
-    word = "good communication"
+    word = "excellent communication skills"
 
     print_entities(TRAIN_DATA)
 
-    entity_finder(word, D4)
+    entity_finder(word, D5)

@@ -79,7 +79,8 @@ lb_collection = {
     "Leaflet.js": ("Leaflet.js", "leaflet.js"),
     "leaflet-google.js": ("leaflet-google.js", "leaflet-google", "leaflet google"),
     "SQLAlchemy": ("SQLAlchemy", "SqlAlchemy"),
-    "SockJS": ("SockJS", "Sockjs")
+    "SockJS": ("SockJS", "Sockjs"),
+    "ReactiveX": ("ReactiveX", "reactiveX")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),

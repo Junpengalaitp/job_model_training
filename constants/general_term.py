@@ -29,7 +29,9 @@ tm_collection = {
     "Development Team": ("Development Team", "Development team"),
     "Client Services Team": ("Client Services Team", "Client Services team"),
     "Engineering Team": ("Engineering Team", "engineering team"),
-    "sales and marketing team": ("sales and marketing team", "sales and marketing teams")
+    "mobile team": ("mobile team", "mobile teams"),
+    "sales and marketing team": ("sales and marketing team", "sales and marketing teams"),
+    "fast-moving team": ("fast-moving team", "fast-moving teams")
 }
 
 cp_collection = {
@@ -97,7 +99,7 @@ sf_collection = {
     "Communication Skills": ("Communication Skills", "Communication skills", "excellent communicator",
                              "strong communications skills", "communication skills", "communication",
                              "communicating effectively", "clear communicator", "active communicator",
-                             "Communication", "good communicator", "good communication"),
+                             "Communication", "good communicator", "good communication", "excellent communication skills"),
     "interpersonal skills": ("interpersonal skills",),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
@@ -158,9 +160,10 @@ we_collection = {
     "Software Development Experience": ("Software Development Experience", "Development Experience", "development experience",
                                         "software development experience",),
     "QA Experience": ("QA Experience", "QA experience"),
-    "Professional Experience": ("Professional Experience", "professional experience"),
+    "Professional Experience": ("Professional Experience", "professional experience", "professional software development experience"),
     "Industry experience": ("Industry experience", "industry experience"),
     "Coding experience": ("Coding experience", "coding experience"),
     "Full years experience": ("Full years experience", "full years experience"),
-    "Related experience": ("Related experience", "related experience", "relevant experience")
+    "Related experience": ("Related experience", "related experience", "relevant experience"),
+
 }
