@@ -2,7 +2,7 @@ import unittest
 from collections import defaultdict
 
 from constants.constants import *
-from model_training_data.training_data.train_data_01 import TRAIN_DATA
+from model_training_data.training_data.train_data_06 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
@@ -39,7 +39,6 @@ class TestAnnotations(unittest.TestCase):
                 index_list.append(ent_index[0])
                 index_list.append(ent_index[1])
             self.assertTrue(all(index_list[i] < index_list[i+1] for i in range(len(index_list)-1)))
-
 
     def base_category_test(self, category: str, word_list: list):
         if category in self.ent_dict:

@@ -4,6 +4,7 @@ tm_collection = {
     "feature team": ("feature team",),
     "distributed team": ("distributed team",),
     "fast-paced environment": ("fast-paced environment", "fast paced environments"),
+    "rapidly changing environment": ("rapidly changing environment", "rapidly changing environments"),
     "diverse group": ("diverse group",),
     "small and talented team": ("small and talented team",),
     "remote team": ("remote team", "remote teams"),
@@ -27,7 +28,8 @@ tm_collection = {
     "Operations Team": ("Operations Team", "Operations team"),
     "Development Team": ("Development Team", "Development team"),
     "Client Services Team": ("Client Services Team", "Client Services team"),
-    "Engineering Team": ("Engineering Team", "engineering team")
+    "Engineering Team": ("Engineering Team", "engineering team"),
+    "sales and marketing team": ("sales and marketing team", "sales and marketing teams")
 }
 
 cp_collection = {
@@ -59,7 +61,7 @@ cp_collection = {
 ge_collection = {
     "English": ("English", "english"),
     "problem-solving skills": ("problem-solving skills", "problem solver", "problem-solving capabilities",
-                               "Problem-solving mindset"),
+                               "Problem-solving mindset", "problem solving skills"),
     "customer-focused thinking": ("customer-focused thinking", "Customer-focused thinking",),
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
@@ -94,7 +96,7 @@ sf_collection = {
     "Communication Skills": ("Communication Skills", "Communication skills", "excellent communicator",
                              "strong communications skills", "communication skills", "communication",
                              "communicating effectively", "clear communicator", "active communicator",
-                             "Communication"),
+                             "Communication", "good communicator"),
     "interpersonal skills": ("interpersonal skills",),
     "mentorship": ("mentorship", "mentor", "mentoring"),
     "leadership": ("leadership", "technical leadership", "team leadership"),

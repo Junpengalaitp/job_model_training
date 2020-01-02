@@ -6,7 +6,7 @@ pl_collection = {
     "CoffeeScript": ("CoffeeScript", "Coffeescript"),
     "Babel": ("Babel", "babel"),
     "Java": ("Java", "java", "Java8", "Java11"),
-    "Python": ("Python", "python"),
+    "Python": ("Python", "python", "python3", "Python3"),
     "Ruby": ("Ruby", "ruby"),
     "PHP": ("PHP", "php", "PHP7"),
     "C": ("C", "c"),
@@ -62,7 +62,7 @@ lb_collection = {
     "Bootstrap": ("Bootstrap", "bootstrap"),
     "React-Bootstrap": ("React-Bootstrap", "React-bootstrap"),
     "Material UI": ("Material UI", "Material-UI", ),
-    "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch"),
+    "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch", "elastic search"),
     "iText": ("iText", "itext", ),
     "Dask": ("Dask", "dask"),
     "Immutable.js": ("Immutable.js", "immutable.js",),
@@ -74,7 +74,8 @@ lb_collection = {
     "Socket.IO": ("Socket.IO", "socket.IO",),
     "Axios": ("Axios", "axios"),
     "Leaflet.js": ("Leaflet.js", "leaflet.js"),
-    "leaflet-google.js": ("leaflet-google.js", "leaflet-google", "leaflet google")
+    "leaflet-google.js": ("leaflet-google.js", "leaflet-google", "leaflet google"),
+    "SQLAlchemy": ("SQLAlchemy", "SqlAlchemy")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -82,7 +83,7 @@ fw_collection = {
     "Django Rest Framework": ("Django Rest Framework", "DRF"),
     "Angular": ("Angular", "AngularJS", "Angular.js", "angular", ),
     "Ruby on Rails": ("Ruby on Rails", "Rails", "RoR", "ruby-on-rails"),
-    "Laravel": ("Laravel", "Laravel 5"),
+    "Laravel": ("Laravel", "Laravel 5", "Laravel 5.4"),
     "Vue.js": ("Vue.js", "VueJS", "Vue"),
     "Vuetify": ("Vuetify", "vuetify",),
     "ASP.NET": ("ASP.NET", ".NET", ".net", ".Net"),
@@ -208,7 +209,8 @@ tl_collection = {
     "productivity tools": ("productivity tools", "Productivity tools",),
     "Vagrant": ("Vagrant", "vagrant"),
     "Puppet": ("Puppet", "puppet"),
-    "Marionette": ("Marionette", "marionette")
+    "Marionette": ("Marionette", "marionette"),
+    "Gmail": ("Gmail", "gmail")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -338,7 +340,7 @@ pf_collection = {
     "cloud-based systems": ("cloud-based systems", "cloud-based systems"),
     "cloud services": ("cloud services", "Cloud services", "Cloud Servers", "cloud"),
     "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services"),
-    "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud", "google-cloud-platform"),
+    "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud", "google-cloud-platform", "Google cloud infra"),
     "Azure": ("Azure", "Microsoft Azure", "azure", ),
     "Heroku": ("Heroku", "heroku"),
     "DigitalOcean": ("DigitalOcean", "Digitalocean"),
@@ -387,6 +389,7 @@ dv_collection = {
     "Design": ("Design", "design"),
     "DevOps": ("DevOps", "Devops", "devops", "dev ops"),
     "Big Data": ("Big Data", "Big data", "large-scale data", "Large-scale data", "large datasets", "Large datasets"),
+    "Data Engineering": ("Data Engineering", "data engineering"),
     "3D Animation": ("3D Animation", "3D animation"),
     "Image Processing": ("Image Processing", ),
     "Data Analytics": ("Data Analytics", "data analytics"),
@@ -397,7 +400,7 @@ dv_collection = {
     "Large-scale network": ("Large-scale network", "large-scale network"),
     "Infrastructure Engineering": ("Infrastructure Engineering", "infrastructure engineering"),
     "Automation": ("Automation", "automation",),
-    "Cloud-security": ("Cloud-security", "cloud-security", "Cloud Platform Security", "Cloud Platform security")
+    "Cloud-security": ("Cloud-security", "cloud-security", "Cloud Platform Security", "Cloud Platform security"),
 }
 ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
@@ -566,7 +569,7 @@ pd_collection = {
                         "web-services", "web apps", "web services", "webapp"),
     "Single-page Application": ("Single-page Application", "single-page application", "single-page-application",
                                 "single page application", "SPA", "single-page web application"),
-    "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology"),
+    "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology", "SaaS apps"),
     "Enterprise Applications": ("Enterprise Applications", "enterprise applications", "enterprise class applications",),
     "Open-source Software": ("Open-source Software", "Open-source software", "open source", "open-source", "Open source"),
     "Mobile App": ("Mobile App", "Mobile app", "Mobile", "mobile", "mobile platform", "mobile applications", "mobile app"),
@@ -574,14 +577,16 @@ pd_collection = {
     "Small and Medium Scale Systems": ("Small and Medium Scale Systems", "Small and medium scale systems",),
     "Large-scale Systems": ("Large-scale Systems", "Large-scale systems", "large-scale systems", ),
     "Third Party Technologies": ("Third Party Technologies", "third party technologies", "Third party technologies",
-                                 "third-party checkout", "third-party APIs", "third-party billing services"),
+                                 "third-party checkout", "third-party APIs", "third-party billing services", "3rd party APIs",
+                                 "3rd party apps"),
     "High Traffic Applications": ("High Traffic Applications", "high traffic applications", "High traffic applications",),
     "Analysis Engines": ("Analysis Engines", "analysis engines", "Analysis engines",),
     "Data Driven Application": ("Data Driven Application", "data driven application", "data driven applications",
                                 "data-oriented products"),
     "Profitable Project": ("Profitable Project", "profitable project", "profitable projects"),
     "Legacy System": ("Legacy System", "legacy system"),
-    "Video Games": ("Video Games", "video games")
+    "Video Games": ("Video Games", "video games"),
+    "Chrome Extension": ("Chrome Extension", "chrome extensions")
 }
 
 ql_collection = {
@@ -592,7 +597,7 @@ ql_collection = {
     "High Performance": ("High Performance", "high-performance", "high performance code", "performance"),
     "Supportability": ("Supportability", "supportability"),
     "Maintainability": ("Maintainability", "maintainability"),
-    "Modularity": ("Modularity", "modularity"),
+    "Modularity": ("Modularity", "modularity", "modular code"),
     "Ambiguity": ("Ambiguity", "ambiguity"),
     "Data Integrity": ("Data Integrity", "data integrity"),
     "Code Quality": ("Code Quality", "code quality"),
@@ -609,5 +614,9 @@ ql_collection = {
     "Efficient Processes": ("Efficient Processes", "efficient processes", "Efficient processes",),
     "High-quality Software": ("High-quality Software", "high-quality software", "High-quality software"),
     "Scalable development workflow": ("Scalable development workflow", "scalable development workflow"),
-    "Scalable Backend Systems": ("Scalable Backend Systems", "scalable backend systems")
+    "Scalable Backend Systems": ("Scalable Backend Systems", "scalable backend systems"),
+    "Accuracy": ("Accuracy", "accuracy"),
+    "Latency": ("Latency", "latency"),
+    "Complexity": ("Complexity", "complexitiy", "complexities"),
+
 }
