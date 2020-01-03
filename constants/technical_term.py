@@ -45,10 +45,13 @@ ol_collection = {
     "SQL": ("SQL", "sql"),
     "Jinja": ("Jinja", "Jinja2"),
     "DOM": ("DOM", "dom"),
-    "PowerShell": ("PowerShell", "powershell")
+    "PowerShell": ("PowerShell", "powershell"),
+    "WebAssembly": ("WebAssembly", "Wasm", "wasm"),
+    "TOML": ("TOML", "toml")
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
+    "React-Native": ("React-Native", "React Native"),
     "Redux": ("Redux", "redux"),
     "React-Redux": ("React-Redux", "react-redux"),
     "jQuery": ("jQuery", "jquery", "JQuery", "Jquery"),
@@ -70,6 +73,7 @@ lb_collection = {
     "Dask": ("Dask", "dask"),
     "Immutable.js": ("Immutable.js", "immutable.js",),
     "RxJS": ("RxJS", "rxJS",),
+    "RxJava": ("RxJava", "Rxjava"),
     "Stanford CoreNLP": ("Stanford CoreNLP", "Stanford coreNLP",),
     "OpenNLP": ("OpenNLP", "openNLP",),
     "NLTK": ("NLTK", "nltk",),
@@ -80,7 +84,8 @@ lb_collection = {
     "leaflet-google.js": ("leaflet-google.js", "leaflet-google", "leaflet google"),
     "SQLAlchemy": ("SQLAlchemy", "SqlAlchemy"),
     "SockJS": ("SockJS", "Sockjs"),
-    "ReactiveX": ("ReactiveX", "reactiveX")
+    "ReactiveX": ("ReactiveX", "reactiveX"),
+    "LibAdblockPlus": ("LibAdblockPlus", "libadblockplus")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -113,12 +118,14 @@ fw_collection = {
     "Drupal": ("Drupal", "drupal", "drupal-8"),
     "knockout": ("knockout", "knockout.js", "KnockoutJS"),
     "Pyramid": ("Pyramid", "pyramid"),
-    "Vert.x": ("Vert.x", "Vertx")
+    "Vert.x": ("Vert.x", "Vertx"),
+    "Substrate": ("Substrate", "substrate"),
+    "ZK": ("ZK", "zk")
 }
 ds_collection = {
     "Relational Database": ("Relational Database", "relational database", "Relational database"),
     "Non-relational Database": ("Non-relational Database", "non-relational database", "Non-relational database"),
-    "NoSQL": ("NoSQL", "nosql", "NoSql"),
+    "NoSQL": ("NoSQL", "nosql", "NoSql", "NOSQL"),
     "MySQL": ("MySQL", "mysql", "Mysql"),
     "InnoDB": ("InnoDB", "innodb"),
     "PostgreSQL": ("PostgreSQL", "Postgresql", "Postgres", "postgresql"),
@@ -139,6 +146,7 @@ ds_collection = {
     "RTDB": ("RTDB", "rtdb"),
     "Varnish": ("Varnish", "VARNISH"),
     "SQL Server": ("SQL Server", "sql-server"),
+    "RDMS": ("RDMS", "rdms")
 }
 dt_collection = {
     "JSON": ("JSON", "json"),
@@ -161,7 +169,9 @@ os_collection = {
     "Unix": ("Unix", "unix"),
     "Virtual Machine": ("Virtual Machine", "virtual machine", "virtual machines", "VM"),
     "LXC": ("LXC", "lxc"),
-    "watchOS": ("watchOS", "watch-os")
+    "watchOS": ("watchOS", "watch-os"),
+    "GNU": ("GNU", "gnu"),
+    "Openwrt": ("Openwrt", "openwrt")
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx", "NGINX"),
@@ -172,6 +182,7 @@ sv_collection = {
     "HAProxy": ("HAProxy", "HaProxy")
 }
 tl_collection = {
+    "Building System": ("Building System", "Building Systems"),
     "Jenkins": ("Jenkins", "jenkins"),
     "Gradle": ("Gradle", "gradle"),
     "npm": ("npm", "NPM"),
@@ -219,7 +230,14 @@ tl_collection = {
     "Puppet": ("Puppet", "puppet"),
     "Marionette": ("Marionette", "marionette"),
     "Gmail": ("Gmail", "gmail"),
-    "Okta": ("Okta", "okta")
+    "Okta": ("Okta", "okta"),
+    "Adblock Plus": ("Adblock Plus", "Adblock plus", "ABP"),
+    "Adblock Browser": ("Adblock Browser", "Adblock browser"),
+    "Flattr": ("Flattr", "flattr"),
+    "SDK": ("SDK", "SDKs", "sdk"),
+    "Chromium": ("Chromium", "chromium"),
+    "OpenBadges": ("OpenBadges", "openBadges"),
+    "Blockcerts": ("Blockcerts", "blockcerts")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -236,9 +254,10 @@ at_collection = {
     "Flux": ("Flux", "flux", ),
     "LAMP": ("LAMP", "Lamp"),
     "Middleware": ("Middleware", "middleware"),
-    "Architecture": ("Architecture", "architecture"),
+    "Architecture": ("Architecture", "architecture", "architecture solutions", "architecture definition"),
     "Architecture Diagrams": ("Architecture Diagrams", "architecture diagrams",),
     "Architecture Review": ("Architecture Review", "architecture review", "architecture reviews"),
+    "System Design": ("System Design", "system design")
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -257,7 +276,8 @@ ap_collection = {
     "test automation": ("test automation", "Test automation"),
     "E2E testing": ("E2E testing", "End-to-End testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
-    "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test"),
+    "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test",
+                     "Unit-testing"),
     "Integration Testing": ("Integration Testing",),
     "Automated Configuration": ("Automated Configuration", "Automated configuration"),
     "Automatic Backups": ("Automatic Backups", ),
@@ -297,7 +317,7 @@ se_collection = {
     "planning": ("planning", "plan"),
     "designing": ("designing", "Designing"),
     "Modular Design": ("Modular Design", "modular design"),
-    "Developing": ("Developing", "developing", "develop"),
+    "Development": ("Development", "Developing", "developing", "development", "software development"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "performance analysis": ("performance analysis", "Performance analysis",),
     "optimisation": ("optimisation", "optimisations", "optimize"),
@@ -342,7 +362,8 @@ se_collection = {
     "Performance Tweaking": ("Performance Tweaking", "performance tweaking"),
     "Infrastructure Design": ("Infrastructure Design", "infrastructure design"),
     "Data Modelling": ("Data Modelling", "data modelling"),
-    "User Experience": ("User Experience", "User Experiences",),
+    "User Experience": ("User Experience", "User Experiences", "user experience"),
+    "Functional Programming": ("Functional Programming", "functional programming")
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms", "Cloud platforms"),
@@ -355,7 +376,7 @@ pf_collection = {
     "Heroku": ("Heroku", "heroku"),
     "DigitalOcean": ("DigitalOcean", "Digitalocean"),
     "GitHub": ("GitHub", "github", "Github"),
-    "GitLab": ("GitLab", "gitLab", "gitlab"),
+    "GitLab": ("GitLab", "gitLab", "gitlab", "Gitlab"),
     "Docker": ("Docker", "docker"),
     "Kubernetes": ("Kubernetes", "kubernetes"),
     "Unity": ("Unity", "unity"),
@@ -384,7 +405,13 @@ pf_collection = {
     "AWS Elastic Beansalk": ("AWS Elastic Beansalk", "Elastic Beansalk",),
     "AWS API Gateway": ("AWS API Gateway", "aws-api-gateway"),
     "Packer": ("Packer", "packer"),
-    "OpenShift": ("OpenShift", "Openshift")
+    "OpenShift": ("OpenShift", "Openshift"),
+    "OpenCerts": ("OpenCerts", "openCerts"),
+    "DFinity": ("DFinity", "dFinity"),
+    "Ethereum": ("Ethereum", "ethereum"),
+    "Polkadot": ("Polkadot", "polkadot"),
+    "ECC": ("ECC", "Ecc"),
+    "Dapp": ("Dapp", "dApp")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -411,6 +438,7 @@ dv_collection = {
     "Infrastructure Engineering": ("Infrastructure Engineering", "infrastructure engineering"),
     "Automation": ("Automation", "automation",),
     "Cloud-security": ("Cloud-security", "cloud-security", "Cloud Platform Security", "Cloud Platform security"),
+    "Hardware Engineering": ("Hardware Engineering", "hardware engineering"),
 }
 ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
@@ -426,8 +454,9 @@ ps_collection = {
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers",
                              "Full Stack Developers", "full-stack developers", "Full Stack developer",
                              "Full Stack Web Developers"),
-    "Software Developer": ("Software Developer", "software developer"),
-    "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer", "software engineers"),
+    "Software Developer": ("Software Developer", "software developer", "Developer", "Developers", "developer", "developers"),
+    "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer", "software engineers", "engineers",
+                          "engineer", "Engineer"),
     "Software Architect": ("Software Architect", "Architect", "architect", "architects", ),
     "Senior Software Architect": ("Senior Software Architect", "Senior Software Architects"),
     "Web Developer": ("Web Developer", "web developer"),
@@ -457,7 +486,6 @@ ps_collection = {
     "Mobile Engineer": ("Mobile Engineer", "mobile engineer"),
     "React Developer": ("React Developer", "ReactJS Developer"),
     "Desktop Engineer": ("Desktop Engineer", "Desktop engineers"),
-    "Developer": ("Developer", "Developers", "developer", "developers"),
     "Senior Back-end Developer": ("Senior Back-end Developer", "Senior Backend Developer", "Senior Backend Developers"),
     "Senior Back-end Engineer": ("Senior Back-end Engineer", "Senior Backend Engineer", "Senior Backend Engineers"),
     "Senior Front-end Developer": ("Senior Front-end Developer", "Senior Frontend Developer", "Senior Frontend Developers"),
@@ -500,9 +528,11 @@ cs_collection = {
     "Computer Science": ("Computer Science", "computer science", ),
     "Data Structure": ("Data Structure", "data structure"),
     "Algorithms": ("Algorithms", "algorithms"),
+    "Data Structures": ("Data Structures", "data structures"),
     "Mathematics": ("Mathematics", "mathematics"),
     "Statistics": ("Statistics", "statistics"),
     "Concurrency": ("Concurrency", "concurrency", "concurrent programming"),
+    "Multithreading": ("Multithreading", "multithreaded"),
     "Parallelism": ("Parallelism", "parallelism"),
     "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP",
                                     "object-oriented view"),
@@ -521,7 +551,9 @@ cs_collection = {
     "switches": ("switches", "Switches"),
     "PoP": ("PoP", "POP"),
     "Virtual LAN": ("Virtual LAN", "VLANs"),
-    "Computational Complexity": ("Computational Complexity", "computational complexity")
+    "Computational Complexity": ("Computational Complexity", "computational complexity"),
+    "Consensus": ("Consensus", "consensus"),
+    "BLS": ("BLS", "BLS signature scheme", "Boneh–Lynn–Shacham")
 }
 ai_collection = {
     "AI": ("AI", "Artificial Intelligence", "artificial intelligence"),
@@ -583,7 +615,8 @@ pd_collection = {
                                 "single page application", "SPA", "single-page web application"),
     "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology", "SaaS apps"),
     "Enterprise Applications": ("Enterprise Applications", "enterprise applications", "enterprise class applications",),
-    "Open-source Software": ("Open-source Software", "Open-source software", "open source", "open-source", "Open source"),
+    "Open-source Software": ("Open-source Software", "Open-source software", "open source", "open-source", "Open source",
+                             "open source software"),
     "Mobile App": ("Mobile App", "Mobile app", "Mobile", "mobile", "mobile platform", "mobile applications", "mobile app"),
     "Desktop Application": ("Desktop Application", "desktop", "Desktop"),
     "Small and Medium Scale Systems": ("Small and Medium Scale Systems", "Small and medium scale systems",),
@@ -598,12 +631,16 @@ pd_collection = {
     "Profitable Project": ("Profitable Project", "profitable project", "profitable projects"),
     "Legacy System": ("Legacy System", "legacy system"),
     "Video Games": ("Video Games", "video games"),
-    "Chrome Extension": ("Chrome Extension", "chrome extensions")
+    "Chrome Extension": ("Chrome Extension", "chrome extensions"),
+    "Decentralized solution": ("Decentralized solution", "decentralized solution"),
+    "Enterprise-grade messaging infrastructure": ("Enterprise-grade messaging infrastructure", "enterprise-grade messaging infrastructure")
 }
 
 ql_collection = {
-    "Scalability": ("Scalability", "scalability", ),
+    "Scalability": ("Scalability", "scalability", "Scalable development workflow", "scalable development workflow",
+                    "Scalable Backend Systems", "scalable backend systems", "scalable systems"),
     "Testability": ("Testability", "testability"),
+    "Stability": ("Stability", "stability"),
     "high-quality code": ("high-quality code",),
     "Reliability": ("Reliability", "reliability", "reliable code",),
     "High Performance": ("High Performance", "high-performance", "high performance code", "performance"),
@@ -625,10 +662,8 @@ ql_collection = {
     "Cross-device Compatibility": ("Cross-device Compatibility", "cross-device compatibility", "Cross-device compatibility",),
     "Efficient Processes": ("Efficient Processes", "efficient processes", "Efficient processes",),
     "High-quality Software": ("High-quality Software", "high-quality software", "High-quality software"),
-    "Scalable development workflow": ("Scalable development workflow", "scalable development workflow"),
-    "Scalable Backend Systems": ("Scalable Backend Systems", "scalable backend systems"),
     "Accuracy": ("Accuracy", "accuracy"),
-    "Latency": ("Latency", "latency"),
+    "Latency": ("Latency", "latency", "low latency",),
     "Complexity": ("Complexity", "complexitiy", "complexities"),
 
 }

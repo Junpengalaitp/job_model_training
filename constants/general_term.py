@@ -31,7 +31,8 @@ tm_collection = {
     "Engineering Team": ("Engineering Team", "engineering team"),
     "mobile team": ("mobile team", "mobile teams"),
     "sales and marketing team": ("sales and marketing team", "sales and marketing teams"),
-    "fast-moving team": ("fast-moving team", "fast-moving teams")
+    "fast-moving team": ("fast-moving team", "fast-moving teams"),
+    "Dynamic Environment": ("Dynamic Environment", "dynamic environment")
 }
 
 cp_collection = {
@@ -40,16 +41,16 @@ cp_collection = {
     "Nonprofit organization": ("Nonprofit organization", "non-profit"),
     "E-commerce": ("E-commerce", "e-commerce", "ecommerce", "online commerce", "eCommerce", "Ecommerce"),
     "Finance": ("financial sector", "financial markets", "Banking", "banking", "trading", "rental industry",
-                "billing services"),
+                "billing services", "financial data", "personal finance management"),
     "Education": ("Education", "education", "e-learning"),
     "Startup": ("Startup", "startup", "startups", "bootstrapped startup", "boot-strapped start-up"),
-    "Cryptocurrency": ("Cryptocurrency", "cryptocurrency", "crypto", "bitcoin"),
+    "Cryptocurrency": ("Cryptocurrency", "cryptocurrency", "crypto", "bitcoin", "Crypto", "Tokenomics"),
     "Games": ("Games",),
     "Social Network": ("Social Network", "social network"),
     "Fitness": ("Fitness", "fitness"),
     "Textile": ("Textile", "textile"),
     "digital printing": ("digital printing",),
-    "Small Business": ("Small Business", "small businesses", "small organization"),
+    "Small Business": ("Small Business", "small businesses", "small organization", "emerging businesses", "regional business"),
     "Large Enterprises": ("Large Enterprises", "large enterprises"),
     "independent businesses": ("independent businesses",),
     "Energy": ("Energy", "energy", "consumer energy services", "energy markets", "consumer energy consumption",
@@ -63,19 +64,20 @@ cp_collection = {
 ge_collection = {
     "English": ("English", "english"),
     "problem-solving skills": ("problem-solving skills", "problem solver", "problem-solving capabilities",
-                               "Problem-solving mindset", "problem solving skills"),
+                               "Problem-solving mindset", "problem solving skills", "problem-solving abilities",
+                               "problem-solvers"),
     "customer-focused thinking": ("customer-focused thinking", "Customer-focused thinking",),
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
         "passion for learning", "willingness to learn", "continuously learning", "self-directed learner",
-        "constantly learning"
+        "constantly learning", "continuous learner", "Continuously learn"
     ),
     "strategic and creative thinker": ("strategic and creative thinker", "think outside of the box"),
     "organizational skills": ("organizational skills",),
     "Passion": ("Passion", "passion",),
     "Empathy": ("Empathy", "empathy",),
     "adapting to change": ("adapting to change", "adapting to changes",),
-    "do the hard work": ("do the hard work", "do the hard works",),
+    "hard-workers": ("do the hard work", "do the hard works", "hard-workers"),
     "attention to details": ("attention to details", "attention to detail"),
     "Productivity": ("productivity", "Productivity",),
     "critical thinking": ("critical thinking", "Critical thinking",),
@@ -91,7 +93,8 @@ ge_collection = {
     "Imagination": ("Imagination", "imagination"),
     "Enthusiasm": ("Enthusiasm", "enthusiasm"),
     "Self-motivation": ("Self-motivation", "self-motivation"),
-    "Self-management": ("Self-management", "self-management")
+    "Self-management": ("Self-management", "self-management"),
+    "Attitude": ("Attitude", "good attitude")
 }
 
 sf_collection = {
@@ -99,8 +102,9 @@ sf_collection = {
     "Communication Skills": ("Communication Skills", "Communication skills", "excellent communicator",
                              "strong communications skills", "communication skills", "communication",
                              "communicating effectively", "clear communicator", "active communicator",
-                             "Communication", "good communicator", "good communication", "excellent communication skills"),
-    "interpersonal skills": ("interpersonal skills",),
+                             "Communication", "good communicator", "good communication", "excellent communication skills",
+                             "excellent written and oral communication"),
+    "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
     "coaching": ("coaching", "Coaching",),
@@ -165,5 +169,5 @@ we_collection = {
     "Coding experience": ("Coding experience", "coding experience"),
     "Full years experience": ("Full years experience", "full years experience"),
     "Related experience": ("Related experience", "related experience", "relevant experience"),
-
+    "Hands-on experience": ("Hands-on experience", "hands-on experience")
 }

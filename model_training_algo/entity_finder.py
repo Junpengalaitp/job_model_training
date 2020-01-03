@@ -25,11 +25,14 @@ def get_noun_list(text):
 
 
 def print_entities(TRAIN_DATA):
-    ent_dict = defaultdict(list)
-    for data in TRAIN_DATA:
+
+    for index, data in enumerate(TRAIN_DATA):
+        ent_dict = defaultdict(list)
         for entity in data[1]["entities"]:
             entity_type = entity[-1]
             entity_name = data[0][entity[0]: entity[1]]
             ent_dict[entity_type].append(entity_name)
-    for key in ent_dict:
-        print(key + ':', set(ent_dict[key]))
+        print(f"---------- {index+1} start ----------")
+        for key in ent_dict:
+            print(key + ':', set(ent_dict[key]))
+        print(f"---------- {index+1} end ----------")
