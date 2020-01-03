@@ -12,7 +12,7 @@ from constants.constants import LABELS
 from model_training_data.training_data.train_data_01 import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-path = os.path.join(BASE_DIR, "job_model")
+path = os.path.join(BASE_DIR, "job_model_sm")
 
 
 @plac.annotations(
@@ -21,7 +21,7 @@ path = os.path.join(BASE_DIR, "job_model")
     output_dir=("Optional output directory", "option", "o", Path),
     n_iter=("Number of training iterations", "option", "n", int),
 )
-def main(model="en_core_web_lg", new_model_name="job_model", output_dir=path, n_iter=300):
+def main(model="en_core_web_sm", new_model_name="job_model_sm", output_dir=path, n_iter=350):
     """Set up the pipeline and entity recognizer, and train the new entity."""
     random.seed(0)
     if model is not None:
