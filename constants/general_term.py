@@ -28,11 +28,12 @@ tm_collection = {
     "Operations Team": ("Operations Team", "Operations team"),
     "Development Team": ("Development Team", "Development team"),
     "Client Services Team": ("Client Services Team", "Client Services team"),
-    "Engineering Team": ("Engineering Team", "engineering team"),
+    "Engineering Team": ("Engineering Team", "engineering team", "teams of engineers"),
     "mobile team": ("mobile team", "mobile teams"),
     "sales and marketing team": ("sales and marketing team", "sales and marketing teams"),
     "fast-moving team": ("fast-moving team", "fast-moving teams"),
-    "Dynamic Environment": ("Dynamic Environment", "dynamic environment")
+    "Dynamic Environment": ("Dynamic Environment", "dynamic environment"),
+    "Developer Team": ("Developer Team", "developer team", "developer teams", "team of developers")
 }
 
 cp_collection = {
