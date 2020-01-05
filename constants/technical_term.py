@@ -171,7 +171,8 @@ os_collection = {
     "LXC": ("LXC", "lxc"),
     "watchOS": ("watchOS", "watch-os"),
     "GNU": ("GNU", "gnu"),
-    "Openwrt": ("Openwrt", "openwrt")
+    "Openwrt": ("Openwrt", "openwrt"),
+    "RTOS": ("RTOS", "Real-time operating system"),
 }
 sv_collection = {
     "Nginx": ("Nginx", "nginx", "NGINX"),
@@ -179,7 +180,8 @@ sv_collection = {
     "Jetty": ("Jetty", "jetty"),
     "CDN": ("CDN", "cdn"),
     "Cluster": ("Cluster", "cluster", "clusters"),
-    "HAProxy": ("HAProxy", "HaProxy")
+    "HAProxy": ("HAProxy", "HaProxy"),
+    "Bare Metal": ("Bare Metal", "Bare-metal server")
 }
 tl_collection = {
     "Building System": ("Building System", "Building Systems"),
@@ -539,7 +541,13 @@ cs_collection = {
     "Virtual LAN": ("Virtual LAN", "VLANs"),
     "Computational Complexity": ("Computational Complexity", "computational complexity"),
     "Consensus": ("Consensus", "consensus"),
-    "BLS": ("BLS", "BLS signature scheme", "Boneh–Lynn–Shacham")
+    "BLS": ("BLS", "BLS signature scheme", "Boneh–Lynn–Shacham"),
+    "Firmware": ("Firmware", "firmware"),
+    "Embedded Controller": ("Embedded Controller", "Embedded Controllers"),
+    "SSD": ("SSD", "Solid-state drive"),
+    "Flash Memory": ("Flash Memory", "Flash memory"),
+    "NAND": ("NAND", "NAND gate"),
+    "Semiconductor": ("Semiconductor", "Semi- Conductors")
 }
 ai_collection = {
     "AI": ("AI", "Artificial Intelligence", "artificial intelligence"),
