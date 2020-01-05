@@ -15,7 +15,7 @@ pl_collection = {
     "C++": ("C++", "c++", "cpp"),
     "C#": ("C#", "c#"),
     "Objective-C": ("Objective-C", "Objective C", "objective-c", "Obj-C"),
-    "Swift": ("Swift", "swift"),
+    "Swift": ("Swift", "swift", "SWIFT"),
     "Kotlin": ("Kotlin", "kotlin", ),
     "Go": ("Go", "go", "Golang", "GoLang"),
     "Rust": ("Rust", "rust"),
@@ -160,7 +160,7 @@ os_collection = {
     "Linux": ("Linux", "linux"),
     "Ubuntu": ("Ubuntu", "ubuntu"),
     "Android": ("Android", "android"),
-    "iOS": ("iOS", "ios"),
+    "iOS": ("iOS", "ios", "IOS"),
     "Windows": ("Windows", "windows"),
     "Windows Server": ("Windows Server", "windows server"),
     "CentOS": ("CentOS", "centOS"),
@@ -239,7 +239,8 @@ tl_collection = {
     "SDK": ("SDK", "SDKs", "sdk"),
     "Chromium": ("Chromium", "chromium"),
     "OpenBadges": ("OpenBadges", "openBadges"),
-    "Blockcerts": ("Blockcerts", "blockcerts")
+    "Blockcerts": ("Blockcerts", "blockcerts"),
+    "Healthkit": ("Healthkit", "healthkit")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -259,7 +260,8 @@ at_collection = {
     "Architecture": ("Architecture", "architecture", "architecture solutions", "architecture definition"),
     "Architecture Diagrams": ("Architecture Diagrams", "architecture diagrams",),
     "Architecture Review": ("Architecture Review", "architecture review", "architecture reviews"),
-    "System Design": ("System Design", "system design")
+    "System Design": ("System Design", "system design"),
+    "Client/Server architecture": ("Client/Server architecture", "Client-Server architecture")
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -413,13 +415,15 @@ pf_collection = {
     "Ethereum": ("Ethereum", "ethereum"),
     "Polkadot": ("Polkadot", "polkadot"),
     "ECC": ("ECC", "Ecc"),
-    "Dapp": ("Dapp", "dApp")
+    "Dapp": ("Dapp", "dApp"),
+    "Google Fit": ("Google Fit", "Google fit")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
     "Back-end": ("Back-end", "Backend", "backend", "back-end", "backends", "back end"),
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
     "Security": ("Security", "security"),
+    "Cyber Security": ("Cyber Security", "cyber security"),
     "QA": ("QA", "qa"),
     "Product Management": ("Product Management", "product management"),
     "UI": ("UI", "UIs", "UI designs"),
@@ -481,6 +485,7 @@ ps_collection = {
     "Business Analyst": ("Business Analyst", "business analysts"),
     "Software Consultant": ("Software Consultant", "software consultant"),
     "Mobile Engineer": ("Mobile Engineer", "mobile engineer"),
+    "Mobile Developer": ("Mobile Developer", "Mobile Developers"),
     "Desktop Engineer": ("Desktop Engineer", "Desktop engineers"),
     "Senior Back-end Developer": ("Senior Back-end Developer", "Senior Backend Developer", "Senior Backend Developers"),
     "Senior Back-end Engineer": ("Senior Back-end Engineer", "Senior Backend Engineer", "Senior Backend Engineers"),
@@ -515,7 +520,7 @@ ps_collection = {
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science", ),
     "Data Structure": ("Data Structure", "data structure"),
-    "Algorithms": ("Algorithms", "algorithms"),
+    "Algorithms": ("Algorithms", "algorithms", "Algorithm", "Algorithmic"),
     "Data Structures": ("Data Structures", "data structures"),
     "Mathematics": ("Mathematics", "mathematics"),
     "Statistics": ("Statistics", "statistics"),

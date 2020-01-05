@@ -59,7 +59,8 @@ cp_collection = {
     "Medical": ("Medical", "medical", "medical data"),
     "Transportation": ("Transportation", "transportation"),
     "profitable company": ("profitable company",),
-    "Marketing": ("Marketing", "marketing", "email marketing",)
+    "Marketing": ("Marketing", "marketing", "email marketing",),
+    "Highly Regulated Industry": ("Highly Regulated Industry", "highly regulated industry")
 }
 
 ge_collection = {
