@@ -1,11 +1,11 @@
 pl_collection = {
-    "JavaScript": ("JavaScript", "Javascript", "javascript", "JS"),
+    "JavaScript": ("JavaScript", "Javascript", "javascript", "JS", "Javascrpt"),
     "ECMAScript": ("ECMAScript", "ecmascript", "ES2015", "ES2016", "ES2017", "ES2018", "ES5", "ES6", "ES7", "ES8",
                    "EcmaScript"),
     "TypeScript": ("TypeScript", "Typescript", "typescript"),
     "CoffeeScript": ("CoffeeScript", "Coffeescript"),
     "Babel": ("Babel", "babel"),
-    "Java": ("Java", "java", "Java8", "Java11"),
+    "Java": ("Java", "java", "Java8", "Java 8", "Java11"),
     "Python": ("Python", "python", "python3", "Python3"),
     "Ruby": ("Ruby", "ruby"),
     "CRuby": ("CRuby", "C-ruby"),
@@ -36,7 +36,7 @@ pl_collection = {
 }
 ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
-    "CSS": ("CSS", "css", "CSS3"),
+    "CSS": ("CSS", "css", "CSS3", "Cascade Styling Sheets"),
     "XML": ("XML", "xml"),
     "Bash": ("Bash", "bash", "Bash Shell", "BASH", "shell"),
     "SCSS": ("SCSS", "scss"),
@@ -47,7 +47,8 @@ ol_collection = {
     "DOM": ("DOM", "dom"),
     "PowerShell": ("PowerShell", "powershell"),
     "WebAssembly": ("WebAssembly", "Wasm", "wasm"),
-    "TOML": ("TOML", "toml")
+    "TOML": ("TOML", "toml"),
+    "Less.js": ("Less", "less")
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
@@ -63,8 +64,6 @@ lb_collection = {
     "Pytorch": ("Pytorch", "pytorch", "torch"),
     "Scrapy": ("Scrapy", "scrapy"),
     "PySpark": ("PySpark", "Pyspark"),
-    "Spring": ("Spring", "spring"),
-    "Spring Boot": ("Spring Boot", "Spring boot"),
     "Bootstrap": ("Bootstrap", "bootstrap"),
     "React-Bootstrap": ("React-Bootstrap", "React-bootstrap"),
     "Material UI": ("Material UI", "Material-UI", ),
@@ -85,7 +84,8 @@ lb_collection = {
     "SQLAlchemy": ("SQLAlchemy", "SqlAlchemy"),
     "SockJS": ("SockJS", "Sockjs"),
     "ReactiveX": ("ReactiveX", "reactiveX"),
-    "LibAdblockPlus": ("LibAdblockPlus", "libadblockplus")
+    "LibAdblockPlus": ("LibAdblockPlus", "libadblockplus"),
+    "Backbone.js": ("Backbone.js", "Backbone")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
@@ -120,7 +120,12 @@ fw_collection = {
     "Pyramid": ("Pyramid", "pyramid"),
     "Vert.x": ("Vert.x", "Vertx"),
     "Substrate": ("Substrate", "substrate"),
-    "ZK": ("ZK", "zk")
+    "ZK": ("ZK", "zk"),
+    "Jasmine": ("Jasmine", "jasmine"),
+    "Protractor": ("Protractor", "protractor"),
+    "JUnit": ("JUnit", "JUnit4", "JUnit5"),
+    "Spring": ("Spring", "spring"),
+    "Spring Boot": ("Spring Boot", "Spring boot"),
 }
 ds_collection = {
     "Relational Database": ("Relational Database", "relational database", "Relational database"),
@@ -240,7 +245,10 @@ tl_collection = {
     "Chromium": ("Chromium", "chromium"),
     "OpenBadges": ("OpenBadges", "openBadges"),
     "Blockcerts": ("Blockcerts", "blockcerts"),
-    "Healthkit": ("Healthkit", "healthkit")
+    "Healthkit": ("Healthkit", "healthkit"),
+    "Bower": ("Bower", "bower"),
+    "gulp.js": ("gulp.js", "gulp"),
+    "Build Tool": ("Build Tool", "build tools")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -276,9 +284,9 @@ ap_collection = {
     "Sprint": ("Sprint", "sprint", "sprints"),
     "CI/CD": ("CI/CD", "CD/CI"),
     "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
-    "automated testing": ("automated testing", "automated tests", "automated-tests", "automated test"),
+    "automated testing": ("automated testing", "automated tests", "automated-tests", "automated test", "automation testing"),
     "test automation": ("test automation", "Test automation"),
-    "E2E testing": ("E2E testing", "End-to-End testing"),
+    "E2E testing": ("E2E testing", "End-to-End testing", "end-to-end testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
     "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test",
                      "Unit-testing"),
@@ -293,7 +301,7 @@ ap_collection = {
     "code-review": ("code-review", "code-reviews", "code reviews", "code review"),
     "SOLID": ("SOLID", "SOLID principle", ),
     "DRY": ("DRY", "DRY principle"),
-    "DDD": ("DDD", "DDD principle"),
+    "DDD": ("DDD", "DDD principle", "Domain Driven Design"),
     "KISS": ("KISS", "KISS principle"),
     "Technical Principles": ("Technical Principles", "technical principles", "Technical principles", ),
     "development techniques": ("development techniques", "Development techniques",),
@@ -321,7 +329,8 @@ se_collection = {
     "planning": ("planning", "plan"),
     "designing": ("designing", "Designing"),
     "Modular Design": ("Modular Design", "modular design"),
-    "Development": ("Development", "Developing", "developing", "development", "software development", "software engineering"),
+    "Development": ("Development", "Developing", "developing", "development", "software development", "software engineering",
+                    "Software Engineering"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "performance analysis": ("performance analysis", "Performance analysis",),
     "optimisation": ("optimisation", "optimisations", "optimize"),
@@ -367,7 +376,9 @@ se_collection = {
     "Infrastructure Design": ("Infrastructure Design", "infrastructure design"),
     "Data Modelling": ("Data Modelling", "data modelling"),
     "User Experience": ("User Experience", "User Experiences", "user experience"),
-    "Functional Programming": ("Functional Programming", "functional programming")
+    "Functional Programming": ("Functional Programming", "functional programming"),
+    "Requirement Document": ("Requirement Document", "requirement documents"),
+    "Dependency Management": ("Dependency Management", "dependency management")
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms", "Cloud platforms"),
@@ -426,10 +437,10 @@ dv_collection = {
     "Cyber Security": ("Cyber Security", "cyber security"),
     "QA": ("QA", "qa"),
     "Product Management": ("Product Management", "product management"),
-    "UI": ("UI", "UIs", "UI designs"),
+    "UI": ("UI", "UIs", "UI designs", "user interface"),
     "UX": ("UX", "UXs"),
     "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design", "UX/UI"),
-    "Design": ("Design", "design"),
+    "Design": ("Design", "design", "designs"),
     "DevOps": ("DevOps", "Devops", "devops", "dev ops"),
     "Big Data": ("Big Data", "Big data", "large-scale data", "Large-scale data", "large datasets", "Large datasets"),
     "Data Engineering": ("Data Engineering", "data engineering"),
@@ -450,7 +461,8 @@ ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
                            "Front-End Engineer"),
     "Front-end Developer": ("Front-end Developer", "front-End Developer", "front end developer", "Frontend Developers",
-                            "front-end developers", "FRONT END WEB DEVELOPER", "Front End Developer"),
+                            "front-end developers", "FRONT END WEB DEVELOPER", "Front End Developer",
+                            "Front-End Developer"),
     "Back-end Engineer": ("Back-end Engineer", "back-end Engineers", "Back End Engineers", "Backend Software Engineer",
                           "back-end engineer", "Back-End Software Engineer"),
     "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer",
@@ -460,7 +472,8 @@ ps_collection = {
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers",
                              "Full Stack Developers", "full-stack developers", "Full Stack developer",
                              "Full Stack Web Developers"),
-    "Software Developer": ("Software Developer", "software developer", "Developer", "Developers", "developer", "developers"),
+    "Software Developer": ("Software Developer", "software developer", "Developer", "Developers", "developer", "developers",
+                           "software developers"),
     "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer", "software engineers", "engineers",
                           "engineer", "Engineer", "Engineers"),
     "Software Architect": ("Software Architect", "Architect", "architect", "architects", ),
@@ -477,7 +490,7 @@ ps_collection = {
     "Product Designer": ("Product Designer", "Product Designers", "product designers"),
     "Designer": ("Designer", "Designers", "designers", "designer"),
     "UI/UX Designer": ("UI/UX Designer", "UI/UX designer"),
-    "UX Engineer": ("UX Engineer", "UX Engineers"),
+    "UX Engineer": ("UX Engineer", "UX Engineers", "UX designer"),
     "QA Tester": ("QA Tester", "QA tester"),
     "QA Engineer": ("QA Engineer", "QA engineer", "QA engineers"),
     "QA Specialist": ("QA Specialist", "QA specialists"),
@@ -508,7 +521,7 @@ ps_collection = {
     "code reviewers": ("code reviewers", "Code reviewers",),
     "Junior Developers": ("Junior Developers", "junior developers", "Jr. Software Developer", "entry-level software developer"),
     "Junior Engineers": ("junior engineers", "junior engineers"),
-    "Lead Developer": ("Lead Developer", "lead developer", "Lead Application Developer"),
+    "Lead Developer": ("Lead Developer", "lead developer", "Lead Application Developer", "Lead Application Developer", "Lead Application Developers"),
     "Director of Operations": ("Director of Operations", "director of operations"),
     "Senior Systems Developer": ("Senior Systems Developer", "Senior Systems Developers"),
     "Professional Services Consultant": ("Professional Services Consultant", "Professional Services Consultants"),
@@ -632,7 +645,9 @@ pd_collection = {
     "Video Games": ("Video Games", "video games"),
     "Chrome Extension": ("Chrome Extension", "chrome extensions"),
     "Decentralized solution": ("Decentralized solution", "decentralized solution"),
-    "Enterprise-grade messaging infrastructure": ("Enterprise-grade messaging infrastructure", "enterprise-grade messaging infrastructure")
+    "Enterprise-grade messaging infrastructure": ("Enterprise-grade messaging infrastructure", "enterprise-grade messaging infrastructure"),
+    "Prototype": ("Prototype", "prototypes"),
+    "Distributed Message System": ("Distributed Message System", "distributed message systems")
 }
 
 ql_collection = {
@@ -664,5 +679,4 @@ ql_collection = {
     "Accuracy": ("Accuracy", "accuracy"),
     "Latency": ("Latency", "latency", "low latency",),
     "Complexity": ("Complexity", "complexitiy", "complexities"),
-
 }

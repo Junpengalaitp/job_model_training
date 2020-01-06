@@ -31,7 +31,7 @@ class TestAnnotations(unittest.TestCase):
                 interval, l = ent_index_list[0], len(ent_index_list)
                 for i in range(1, l):
                     interval2 = ent_index_list[i]
-                    if interval2[0] < interval[-1]:
+                    if interval2[0] <= interval[-1]:
                         overlapping_index.add((interval2, interval))
                     else:
                         interval = interval2
