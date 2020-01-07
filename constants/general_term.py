@@ -26,14 +26,15 @@ tm_collection = {
     "gelled team": ("gelled team", "gelled teams"),
     "Creative Team": ("Creative Team", "Creative team"),
     "Operations Team": ("Operations Team", "Operations team"),
-    "Development Team": ("Development Team", "Development team"),
+    "Development Team": ("Development Team", "Development team", "development team"),
     "Client Services Team": ("Client Services Team", "Client Services team"),
     "Engineering Team": ("Engineering Team", "engineering team", "teams of engineers"),
     "mobile team": ("mobile team", "mobile teams"),
     "sales and marketing team": ("sales and marketing team", "sales and marketing teams"),
     "fast-moving team": ("fast-moving team", "fast-moving teams"),
     "Dynamic Environment": ("Dynamic Environment", "dynamic environment"),
-    "Developer Team": ("Developer Team", "developer team", "developer teams", "team of developers")
+    "Developer Team": ("Developer Team", "developer team", "developer teams", "team of developers"),
+    "Test Team": ("Test Team", "test team")
 }
 
 cp_collection = {
@@ -67,7 +68,7 @@ ge_collection = {
     "English": ("English", "english"),
     "problem-solving skills": ("problem-solving skills", "problem solver", "problem-solving capabilities",
                                "Problem-solving mindset", "problem solving skills", "problem-solving abilities",
-                               "problem-solvers"),
+                               "problem-solvers", "problem solving"),
     "customer-focused thinking": ("customer-focused thinking", "Customer-focused thinking",),
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
@@ -105,7 +106,8 @@ sf_collection = {
                              "strong communications skills", "communication skills", "communication",
                              "communicating effectively", "clear communicator", "active communicator",
                              "Communication", "good communicator", "good communication", "excellent communication skills",
-                             "excellent written and oral communication", "communications skills"),
+                             "excellent written and oral communication", "communications skills", "verbal and written communications skills",
+                             "verbal and written communication"),
     "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
@@ -156,7 +158,7 @@ of_collection = {
     "option to continue": ("option to continue",),
     "Paid relocation": ("Paid relocation", "paid relocation"),
     "Learning opportunities": ("Learning opportunities", "learning opportunities", "opportunities to learn"),
-    "Health Benefits": ("Health Benefits", "Health benefits"),
+    "Health Benefits": ("Health Benefits", "Health benefits", "Health and Wellness programs"),
     "Contractor": ("Contractor", "Contractors")
 }
 
@@ -173,5 +175,6 @@ we_collection = {
     "Coding experience": ("Coding experience", "coding experience"),
     "Full years experience": ("Full years experience", "full years experience"),
     "Related experience": ("Related experience", "related experience", "relevant experience"),
-    "Hands-on experience": ("Hands-on experience", "hands-on experience")
+    "Hands-on experience": ("Hands-on experience", "hands-on experience"),
+    "Working Experience": ("Working Experience", "working experience")
 }

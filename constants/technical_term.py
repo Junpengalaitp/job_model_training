@@ -48,7 +48,8 @@ ol_collection = {
     "PowerShell": ("PowerShell", "powershell"),
     "WebAssembly": ("WebAssembly", "Wasm", "wasm"),
     "TOML": ("TOML", "toml"),
-    "Less.js": ("Less", "less")
+    "Less.js": ("Less", "less"),
+    "LINQ": ("LINQ", "Language Integrated Query")
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
@@ -85,13 +86,14 @@ lb_collection = {
     "SockJS": ("SockJS", "Sockjs"),
     "ReactiveX": ("ReactiveX", "reactiveX"),
     "LibAdblockPlus": ("LibAdblockPlus", "libadblockplus"),
-    "Backbone.js": ("Backbone.js", "Backbone")
+    "Backbone.js": ("Backbone.js", "Backbone"),
+    "Lightweight": ("Lightweight", "Lightweight Java Game Library")
 }
 fw_collection = {
     "Flask": ("Flask", "flask"),
     "Django": ("Django", "django"),
     "Django Rest Framework": ("Django Rest Framework", "DRF"),
-    "Angular": ("Angular", "AngularJS", "Angular.js", "angular", ),
+    "Angular": ("Angular", "AngularJS", "Angular.js", "angular", "Angular 6"),
     "Ruby on Rails": ("Ruby on Rails", "Rails", "RoR", "ruby-on-rails"),
     "Laravel": ("Laravel", "Laravel 5", "Laravel 5.4"),
     "Vue.js": ("Vue.js", "VueJS", "Vue"),
@@ -126,9 +128,12 @@ fw_collection = {
     "JUnit": ("JUnit", "JUnit4", "JUnit5"),
     "Spring": ("Spring", "spring"),
     "Spring Boot": ("Spring Boot", "Spring boot"),
+    "WPF": ("WPF", "wpf"),
+    "Entity Framework": ("Entity Framework", "Entity framework")
 }
 ds_collection = {
-    "Relational Database": ("Relational Database", "relational database", "Relational database"),
+    "Relational Database": ("Relational Database", "relational database", "Relational database", "RDBMS",
+                            "relational databases"),
     "Non-relational Database": ("Non-relational Database", "non-relational database", "Non-relational database"),
     "NoSQL": ("NoSQL", "nosql", "NoSql", "NOSQL"),
     "MySQL": ("MySQL", "mysql", "Mysql"),
@@ -248,11 +253,12 @@ tl_collection = {
     "Healthkit": ("Healthkit", "healthkit"),
     "Bower": ("Bower", "bower"),
     "gulp.js": ("gulp.js", "gulp"),
-    "Build Tool": ("Build Tool", "build tools")
+    "Build Tool": ("Build Tool", "build tools"),
+    "Nexus Repository": ("Nexus Repository", "Nexus")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
-             "Representational state transfer"),
+             "Representational state transfer", "Restful"),
     "Microservices": ("Microservices", "microservices", "Microservice", "microservice"),
     "Message-based communication": ("Message-based communication", "message-based communication",),
     "Serverless": ("Serverless", "serverless", ),
@@ -273,7 +279,7 @@ at_collection = {
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
-    "Scrum": ("Scrum", "scrum", "SCRUM"),
+    "Scrum": ("Scrum", "scrum", "SCRUM", "scrums"),
     "Extreme Programming": ("Extreme Programming", "XP", ),
     "Kanban": ("Kanban", "kanban", "KANBAN"),
     "GitFlow": ("GitFlow", "Gitflow", "gitflow"),
@@ -314,6 +320,7 @@ ap_collection = {
     "Coding Standards": ("Coding Standards", "coding standards"),
     "Engineering Standards": ("Engineering Standards", "Engineering standards", "engineering standards"),
     "Development Standards": ("Development Standards", "development standards"),
+    "ALM": ("ALM", "Application lifecycle management")
 }
 se_collection = {
     "Design Patterns": ("Design Patterns", "design patterns"),
@@ -330,7 +337,7 @@ se_collection = {
     "designing": ("designing", "Designing"),
     "Modular Design": ("Modular Design", "modular design"),
     "Development": ("Development", "Developing", "developing", "development", "software development", "software engineering",
-                    "Software Engineering"),
+                    "Software Engineering", "Software Development"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "performance analysis": ("performance analysis", "Performance analysis",),
     "optimisation": ("optimisation", "optimisations", "optimize"),
@@ -495,7 +502,7 @@ ps_collection = {
     "QA Engineer": ("QA Engineer", "QA engineer", "QA engineers"),
     "QA Specialist": ("QA Specialist", "QA specialists"),
     "Scrum Master": ("Scrum Master", "Scrum Masters", "Scrum master", "Scrum masters"),
-    "Business Analyst": ("Business Analyst", "business analysts"),
+    "Business Analyst": ("Business Analyst", "business analysts", "Business Analysts"),
     "Software Consultant": ("Software Consultant", "software consultant"),
     "Mobile Engineer": ("Mobile Engineer", "mobile engineer"),
     "Mobile Developer": ("Mobile Developer", "Mobile Developers"),
@@ -541,7 +548,7 @@ cs_collection = {
     "Multithreading": ("Multithreading", "multithreaded"),
     "Parallelism": ("Parallelism", "parallelism"),
     "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP",
-                                    "object-oriented view"),
+                                    "object-oriented view", "OOPS"),
     "Asynchronous": ("Asynchronous", "asynchronous"),
     "Cryptography": ("Cryptography", "cryptography"),
     "Computability": ("Computability", "computability"),
@@ -565,7 +572,8 @@ cs_collection = {
     "SSD": ("SSD", "Solid-state drive"),
     "Flash Memory": ("Flash Memory", "Flash memory"),
     "NAND": ("NAND", "NAND gate"),
-    "Semiconductor": ("Semiconductor", "Semi- Conductors")
+    "Semiconductor": ("Semiconductor", "Semi- Conductors"),
+    "Information Technology": ("Information Technology", "information technology")
 }
 ai_collection = {
     "AI": ("AI", "Artificial Intelligence", "artificial intelligence"),
