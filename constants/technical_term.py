@@ -275,7 +275,8 @@ at_collection = {
     "Architecture Diagrams": ("Architecture Diagrams", "architecture diagrams",),
     "Architecture Review": ("Architecture Review", "architecture review", "architecture reviews"),
     "System Design": ("System Design", "system design"),
-    "Client/Server architecture": ("Client/Server architecture", "Client-Server architecture")
+    "Client/Server architecture": ("Client/Server architecture", "Client-Server architecture"),
+    "software Architecture": ("software Architecture", "software architecture")
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -320,7 +321,8 @@ ap_collection = {
     "Coding Standards": ("Coding Standards", "coding standards"),
     "Engineering Standards": ("Engineering Standards", "Engineering standards", "engineering standards"),
     "Development Standards": ("Development Standards", "development standards"),
-    "ALM": ("ALM", "Application lifecycle management")
+    "ALM": ("ALM", "Application lifecycle management"),
+    "CRM": ("CRM", )
 }
 se_collection = {
     "Design Patterns": ("Design Patterns", "design patterns"),
@@ -334,10 +336,10 @@ se_collection = {
     "scaling": ("scaling", "scaling"),
     "testing": ("testing", "Testing"),
     "planning": ("planning", "plan"),
-    "designing": ("designing", "Designing"),
+    "designing": ("designing", "Designing", "product design"),
     "Modular Design": ("Modular Design", "modular design"),
     "Development": ("Development", "Developing", "developing", "development", "software development", "software engineering",
-                    "Software Engineering", "Software Development"),
+                    "Software Engineering", "Software Development", "application development"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "performance analysis": ("performance analysis", "Performance analysis",),
     "optimisation": ("optimisation", "optimisations", "optimize"),
@@ -364,7 +366,7 @@ se_collection = {
     "troubleshoot complex issues": ("troubleshoot complex issues", "Troubleshoot complex issues", ),
     "roadmap priorities": ("roadmap priorities", "Roadmap priorities",),
     "functional requirements": ("functional requirements", "Functional requirements", ),
-    "design specifications": ("design specifications", "Design specifications"),
+    "design specifications": ("design specifications", "Design specifications", "design guidelines"),
     "issue-tracking": ("issue-tracking", "Issue-tracking",),
     "Authentication": ("Authentication", "authentication"),
     "Internationalisation": ("Internationalisation", "internationalisation", "internationalization", "Internationalization",),
@@ -385,7 +387,8 @@ se_collection = {
     "User Experience": ("User Experience", "User Experiences", "user experience"),
     "Functional Programming": ("Functional Programming", "functional programming"),
     "Requirement Document": ("Requirement Document", "requirement documents"),
-    "Dependency Management": ("Dependency Management", "dependency management")
+    "Dependency Management": ("Dependency Management", "dependency management", "dependencies"),
+    "Database Design": ("Database Design", "database design")
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms", "Cloud platforms"),
@@ -434,16 +437,18 @@ pf_collection = {
     "Polkadot": ("Polkadot", "polkadot"),
     "ECC": ("ECC", "Ecc"),
     "Dapp": ("Dapp", "dApp"),
-    "Google Fit": ("Google Fit", "Google fit")
+    "Google Fit": ("Google Fit", "Google fit"),
+    "CUDA": ("CUDA", "cuda")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
-    "Back-end": ("Back-end", "Backend", "backend", "back-end", "backends", "back end"),
+    "Back-end": ("Back-end", "Backend", "backend", "back-end", "backends", "back end", "server-side"),
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
     "Security": ("Security", "security"),
     "Cyber Security": ("Cyber Security", "cyber security"),
     "QA": ("QA", "qa"),
     "Product Management": ("Product Management", "product management"),
+    "Project Management": ("Project Management", "project management"),
     "UI": ("UI", "UIs", "UI designs", "user interface"),
     "UX": ("UX", "UXs"),
     "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design", "UX/UI"),
@@ -475,7 +480,7 @@ ps_collection = {
     "Back-end Developer": ("Back-end Developers", "Back End Developers", "back-end developers", "Back-End Developer",
                            "back-end developer", "Backend Developer"),
     "Full Stack Engineer": ("Full Stack Engineer", "Full-Stack Engineer", "full stack engineer", "full-stack engineer",
-                            "Full Stack Software Engineers"),
+                            "Full Stack Software Engineers", "Full-stack Software Engineer"),
     "Full Stack Developer": ("Full Stack Developer", "full stack software developer", "full stack developers",
                              "Full Stack Developers", "full-stack developers", "Full Stack developer",
                              "Full Stack Web Developers"),
@@ -573,7 +578,8 @@ cs_collection = {
     "Flash Memory": ("Flash Memory", "Flash memory"),
     "NAND": ("NAND", "NAND gate"),
     "Semiconductor": ("Semiconductor", "Semi- Conductors"),
-    "Information Technology": ("Information Technology", "information technology")
+    "Information Technology": ("Information Technology", "information technology"),
+    "Multi-threading": ("Multi-threading", "multi-threading")
 }
 ai_collection = {
     "AI": ("AI", "Artificial Intelligence", "artificial intelligence"),
@@ -624,7 +630,10 @@ pt_collection = {
     "LDP": ("LDP", "ldp"),
     "APN": ("APN", "apn"),
     "SNMP": ("SNMP", "snmp"),
-    "Modbus": ("Modbus", "modbus")
+    "Modbus": ("Modbus", "modbus"),
+    "IPv4": ("IPv4", "IPV4"),
+    "IPv6": ("IPv6", "IPv6"),
+    "DisplayPort protocol": ("DisplayPort protocol", "DP")
 }
 
 pd_collection = {
@@ -655,7 +664,9 @@ pd_collection = {
     "Decentralized solution": ("Decentralized solution", "decentralized solution"),
     "Enterprise-grade messaging infrastructure": ("Enterprise-grade messaging infrastructure", "enterprise-grade messaging infrastructure"),
     "Prototype": ("Prototype", "prototypes"),
-    "Distributed Message System": ("Distributed Message System", "distributed message systems")
+    "Distributed Message System": ("Distributed Message System", "distributed message systems"),
+    "High-end Systems Engineering": ("High-end Systems Engineering", "high-end systems engineering"),
+    "Embedded System": ("Embedded System", "embedded systems")
 }
 
 ql_collection = {
@@ -667,7 +678,7 @@ ql_collection = {
     "Reliability": ("Reliability", "reliability", "reliable code",),
     "High Performance": ("High Performance", "high-performance", "high performance code", "performance"),
     "Supportability": ("Supportability", "supportability"),
-    "Maintainability": ("Maintainability", "maintainability"),
+    "Maintainability": ("Maintainability", "maintainability", "code maintainability"),
     "Modularity": ("Modularity", "modularity", "modular code"),
     "Ambiguity": ("Ambiguity", "ambiguity"),
     "Data Integrity": ("Data Integrity", "data integrity"),

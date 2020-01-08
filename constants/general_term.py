@@ -34,7 +34,8 @@ tm_collection = {
     "fast-moving team": ("fast-moving team", "fast-moving teams"),
     "Dynamic Environment": ("Dynamic Environment", "dynamic environment"),
     "Developer Team": ("Developer Team", "developer team", "developer teams", "team of developers"),
-    "Test Team": ("Test Team", "test team")
+    "Test Team": ("Test Team", "test team"),
+    "Enterprise Business Systems Team": ("Enterprise Business Systems Team",)
 }
 
 cp_collection = {
@@ -43,7 +44,7 @@ cp_collection = {
     "Nonprofit organization": ("Nonprofit organization", "non-profit"),
     "E-commerce": ("E-commerce", "e-commerce", "ecommerce", "online commerce", "eCommerce", "Ecommerce"),
     "Finance": ("financial sector", "financial markets", "Banking", "banking", "trading", "rental industry",
-                "billing services", "financial data", "personal finance management"),
+                "billing services", "financial data", "personal finance management", "Financials"),
     "Education": ("Education", "education", "e-learning"),
     "Startup": ("Startup", "startup", "startups", "bootstrapped startup", "boot-strapped start-up"),
     "Cryptocurrency": ("Cryptocurrency", "cryptocurrency", "crypto", "bitcoin", "Crypto", "Tokenomics"),
@@ -61,14 +62,15 @@ cp_collection = {
     "Transportation": ("Transportation", "transportation"),
     "profitable company": ("profitable company",),
     "Marketing": ("Marketing", "marketing", "email marketing",),
-    "Highly Regulated Industry": ("Highly Regulated Industry", "highly regulated industry")
+    "Highly Regulated Industry": ("Highly Regulated Industry", "highly regulated industry"),
+    "Privately-held Company": ("Privately-held Company", "privately-held company")
 }
 
 ge_collection = {
     "English": ("English", "english"),
     "problem-solving skills": ("problem-solving skills", "problem solver", "problem-solving capabilities",
                                "Problem-solving mindset", "problem solving skills", "problem-solving abilities",
-                               "problem-solvers", "problem solving"),
+                               "problem-solvers", "problem solving", "problem-solving"),
     "customer-focused thinking": ("customer-focused thinking", "Customer-focused thinking",),
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
@@ -121,7 +123,8 @@ sf_collection = {
     "Discussion": ("Discussion", "discussion"),
     "Presentation": ("Presentation", "presentation"),
     "Leadership": ("Leadership", "leadership"),
-    "Responsibility": ("Responsibility", "responsibility")
+    "Responsibility": ("Responsibility", "responsibility"),
+    "teamwork": ("teamwork", "teamwork")
 }
 
 of_collection = {
@@ -158,12 +161,12 @@ of_collection = {
     "option to continue": ("option to continue",),
     "Paid relocation": ("Paid relocation", "paid relocation"),
     "Learning opportunities": ("Learning opportunities", "learning opportunities", "opportunities to learn"),
-    "Health Benefits": ("Health Benefits", "Health benefits", "Health and Wellness programs"),
+    "Health Benefits": ("Health Benefits", "Health benefits", "Health and Wellness programs", "medical program"),
     "Contractor": ("Contractor", "Contractors")
 }
 
 we_collection = {
-    "Work Experience": ("Work Experience", "experience", "work experience"),
+    "Work Experience": ("Work Experience", "experience", "work experience", "Experience", "Working Experience", "working experience"),
     "Full-Stack experience": ("Full-Stack experience", "full-stack experience", "full stack experience"),
     "Web App building experience": ("Web App building experience", "web app building experience"),
     "Real-World Development Experience": ("Real-World Development Experience", "Real World Development Experience"),
@@ -176,5 +179,4 @@ we_collection = {
     "Full years experience": ("Full years experience", "full years experience"),
     "Related experience": ("Related experience", "related experience", "relevant experience"),
     "Hands-on experience": ("Hands-on experience", "hands-on experience"),
-    "Working Experience": ("Working Experience", "working experience")
 }
