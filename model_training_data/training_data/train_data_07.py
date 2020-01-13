@@ -9,9 +9,9 @@ from model_training_data.training_text.job_desc_07 import \
     D5_b38ba1e9410d66ad5d319c95830df8a0b95f8f1c99fc0379eac64d23b76e2c5f as D5, \
     D6_e39e9acedbeee1989286214de6376e6add12920bb71aa216ec9a0d152418cab3 as D6, \
     D7_4b88acb756e278709f5446e812c07372d980cba57c430bc8bb7845d2889b0a4c as D7, \
-    D8_776b7037ae44e192c68d5376b89a60cc43ad66098b3335aa39ff909cd78613cb as D8
-    # _05d843a7745a3e837193f2e1b712551d60e45289aae6f7e1fabec68f223109f5 as D9, \
-    # _bda4774869819607aa33a891448c2ac94ca1db76360f6a957e4599ed4df795ad as D10
+    D8_776b7037ae44e192c68d5376b89a60cc43ad66098b3335aa39ff909cd78613cb as D8, \
+    D9_addfefcf16726353df203b8986c0aeee755de44601f1f689fe667d7b5ecab919 as D9, \
+    D10_063aab55e3fb9742d2f2259d2deb8aa0342c30bc51a5727d17200f2253f3f305 as D10
 
 """
     Entity order, separated by an empty line
@@ -164,17 +164,30 @@ TRAIN_DATA = [
         (1983, 1993, we), (2105, 2115, we), (1863, 1867, pl), (2034, 2039, fw), (2181, 2197, cs), (3547, 3562, of),
         (3594, 3597, of), (3673, 3679, of), (2121, 2125, at),  (2026, 2032, lb),
     ]}),
-    # (D9, {"entities": [
-    #
-    # ]}),
-    # (D10, {"entities": [
-    #     (1495, 1513, ge), (475, 481, pd), (1763, 1769, pd), (1770, 1785, se), (1850, 1852, ap), (1853, 1855, ap),
-    # ]})
+    (D9, {"entities": [
+        (11, 15, pl), (16, 25, ps), (36, 38, 'GPE'), (40, 42, 'GPE'), (44, 46, 'GPE'), (85, 89, pl), (152, 156, pl),
+        (178, 181, pt), (192, 196, pl), (249, 264, pd), (377, 386, dv),
+        (410, 419, at), (426, 448, ge),
+
+        (90, 104, at), (105, 111, fw), (221, 227, fw), (157, 161, pf), (197, 201, pf), (163, 176, at), (265, 275, we),
+        (277, 300, we), (313, 326, at), (457, 474, ge), (141, 151, we), (328, 338, we),
+    ]}),
+    (D10, {"entities": [
+        (252, 257, 'DATE'), (1227, 1230, 'ORDINAL'), (1250, 1253, 'ORDINAL'), (1277, 1280, 'ORDINAL'),
+        (7, 16, ps), (42, 44, 'DATE'), (70, 76, fw), (84, 90, ds),
+        (92, 97, fw), (99, 105, pl), (119, 126, tl), (137, 140, tl), (189, 195, fw), (208, 213, fw), (232, 239, tl),
+        (248, 251, tl), (290, 299, 'DATE'), (423, 428, 'DATE'), (545, 553, 'WORK_OF_ART'),
+        (1237, 1249, 'CARDINAL'),
+
+        (0, 6, fw), (17, 27, 'GPE'), (28, 30, 'GPE'), (51, 61, we), (269, 279, we), (656, 666, we), (78, 82, ds),
+        (196, 200, ds), (201, 207, ds), (128, 135, tl), (240, 247, tl), (214, 220, pl), (360, 369, ap), (385, 390, ap),
+        (584, 600, cs), (671, 693, cp), (694, 712, dv), (716, 726, sf), (812, 817, ap), (1304, 1309, tl),
+    ]})
 ]
 
 if __name__ == '__main__':
-    word = "401\(k\)"
+    word = "skype"
 
     print_entities(TRAIN_DATA)
 
-    entity_finder(word, D8)
+    entity_finder(word, D10)

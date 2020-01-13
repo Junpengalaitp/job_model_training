@@ -129,7 +129,8 @@ fw_collection = {
     "Spring": ("Spring", "spring"),
     "Spring Boot": ("Spring Boot", "Spring boot"),
     "WPF": ("WPF", "wpf"),
-    "Entity Framework": ("Entity Framework", "Entity framework")
+    "Entity Framework": ("Entity Framework", "Entity framework"),
+    "Apache Hadoop": ("Apache Hadoop", "Hadoop")
 }
 ds_collection = {
     "Relational Database": ("Relational Database", "relational database", "Relational database", "RDBMS",
@@ -156,7 +157,9 @@ ds_collection = {
     "RTDB": ("RTDB", "rtdb"),
     "Varnish": ("Varnish", "VARNISH"),
     "SQL Server": ("SQL Server", "sql-server"),
-    "RDMS": ("RDMS", "rdms")
+    "RDMS": ("RDMS", "rdms"),
+    "Apache Hive": ("Apache Hive", "Hive"),
+    "Apache Impala": ("Apache Impala", "Impala"),
 }
 dt_collection = {
     "JSON": ("JSON", "json"),
@@ -200,7 +203,7 @@ tl_collection = {
     "npm": ("npm", "NPM"),
     "Maven": ("Maven", "maven"),
     "RubyGems": ("RubyGems", "rubygems"),
-    "Git": ("Git", "git"),
+    "Git": ("Git", "git", "GIT"),
     "Subversion": ("Subversion", "subversion",),
     "Grunt": ("Grunt", "grunt"),
     "Slack": ("Slack", "slack"),
@@ -254,12 +257,13 @@ tl_collection = {
     "Bower": ("Bower", "bower"),
     "gulp.js": ("gulp.js", "gulp"),
     "Build Tool": ("Build Tool", "build tools"),
-    "Nexus Repository": ("Nexus Repository", "Nexus")
+    "Nexus Repository": ("Nexus Repository", "Nexus"),
+    "Udeploy": ("Udeploy", "udeploy")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
              "Representational state transfer", "Restful"),
-    "Microservices": ("Microservices", "microservices", "Microservice", "microservice"),
+    "Microservices": ("Microservices", "microservices", "Microservice", "microservice", "Micro-Services"),
     "Message-based communication": ("Message-based communication", "message-based communication",),
     "Serverless": ("Serverless", "serverless", ),
     "Distributed Systems": ("Distributed Systems", "distributed systems", "Distributed systems", "distributed-system"),
@@ -276,7 +280,8 @@ at_collection = {
     "Architecture Review": ("Architecture Review", "architecture review", "architecture reviews"),
     "System Design": ("System Design", "system design"),
     "Client/Server architecture": ("Client/Server architecture", "Client-Server architecture"),
-    "software Architecture": ("software Architecture", "software architecture")
+    "software Architecture": ("software Architecture", "software architecture"),
+
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -438,7 +443,8 @@ pf_collection = {
     "ECC": ("ECC", "Ecc"),
     "Dapp": ("Dapp", "dApp"),
     "Google Fit": ("Google Fit", "Google fit"),
-    "CUDA": ("CUDA", "cuda")
+    "CUDA": ("CUDA", "cuda"),
+    "J2EE": ("J2EE", "j2ee"),
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -448,7 +454,7 @@ dv_collection = {
     "Cyber Security": ("Cyber Security", "cyber security"),
     "QA": ("QA", "qa"),
     "Product Management": ("Product Management", "product management"),
-    "Project Management": ("Project Management", "project management"),
+    "Project Management": ("Project Management", "project management", "Project management"),
     "UI": ("UI", "UIs", "UI designs", "user interface"),
     "UX": ("UX", "UXs"),
     "UI/UX": ("UI/UX", "UI/UX Design", "UI/UX design", "UX/UI"),

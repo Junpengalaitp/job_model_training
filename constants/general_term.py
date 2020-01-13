@@ -44,7 +44,8 @@ cp_collection = {
     "Nonprofit organization": ("Nonprofit organization", "non-profit"),
     "E-commerce": ("E-commerce", "e-commerce", "ecommerce", "online commerce", "eCommerce", "Ecommerce"),
     "Finance": ("financial sector", "financial markets", "Banking", "banking", "trading", "rental industry",
-                "billing services", "financial data", "personal finance management", "Financials"),
+                "billing services", "financial data", "personal finance management", "Financials",
+                "financial institutions"),
     "Education": ("Education", "education", "e-learning"),
     "Startup": ("Startup", "startup", "startups", "bootstrapped startup", "boot-strapped start-up"),
     "Cryptocurrency": ("Cryptocurrency", "cryptocurrency", "crypto", "bitcoin", "Crypto", "Tokenomics"),
@@ -63,7 +64,8 @@ cp_collection = {
     "profitable company": ("profitable company",),
     "Marketing": ("Marketing", "marketing", "email marketing",),
     "Highly Regulated Industry": ("Highly Regulated Industry", "highly regulated industry"),
-    "Privately-held Company": ("Privately-held Company", "privately-held company")
+    "Privately-held Company": ("Privately-held Company", "privately-held company"),
+
 }
 
 ge_collection = {
@@ -99,7 +101,8 @@ ge_collection = {
     "Enthusiasm": ("Enthusiasm", "enthusiasm"),
     "Self-motivation": ("Self-motivation", "self-motivation"),
     "Self-management": ("Self-management", "self-management"),
-    "Attitude": ("Attitude", "good attitude")
+    "Attitude": ("Attitude", "good attitude"),
+    "Analytical Skills": ("Analytical Skills", "analytical skills")
 }
 
 sf_collection = {
@@ -178,5 +181,5 @@ we_collection = {
     "Coding experience": ("Coding experience", "coding experience"),
     "Full years experience": ("Full years experience", "full years experience"),
     "Related experience": ("Related experience", "related experience", "relevant experience"),
-    "Hands-on experience": ("Hands-on experience", "hands-on experience"),
+    "Hands-on experience": ("Hands-on experience", "hands-on experience", "Demonstrated experience"),
 }
