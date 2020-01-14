@@ -22,4 +22,14 @@ class MongoManager:
         job_list = [job for job in jobs]
         return job_list
 
+    def find_one_by_id(self, job_id):
+        db = self.client.tech_job
+        job = db.dice.find_one({'job_id': job_id}, {'_id': False})
+        return job
+
+    def find_distinct_dice_ids(self, field):
+        db = self.client.tech_job
+        fields = db.dice.distinct(field)
+        return [f for f in fields]
+
 
