@@ -38,6 +38,7 @@ ol_collection = {
     "HTML": ("HTML", "html", "HTML5"),
     "CSS": ("CSS", "css", "CSS3", "Cascade Styling Sheets"),
     "XML": ("XML", "xml"),
+    "XSLT": ("XSLT", "xslt"),
     "Bash": ("Bash", "bash", "Bash Shell", "BASH", "shell"),
     "SCSS": ("SCSS", "scss"),
     "SASS": ("SASS", "sass", "Sass"),
@@ -49,7 +50,10 @@ ol_collection = {
     "WebAssembly": ("WebAssembly", "Wasm", "wasm"),
     "TOML": ("TOML", "toml"),
     "Less.js": ("Less", "less"),
-    "LINQ": ("LINQ", "Language Integrated Query")
+    "LINQ": ("LINQ", "Language Integrated Query"),
+    "RAML": ("RAML", "raml"),
+    "WSDLs": ("WSDLs", "WSDLS"),
+    "Dataweave": ("Dataweave", "dataweave")
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
@@ -130,7 +134,8 @@ fw_collection = {
     "Spring Boot": ("Spring Boot", "Spring boot"),
     "WPF": ("WPF", "wpf"),
     "Entity Framework": ("Entity Framework", "Entity framework"),
-    "Apache Hadoop": ("Apache Hadoop", "Hadoop")
+    "Apache Hadoop": ("Apache Hadoop", "Hadoop"),
+    "Swagger": ("Swagger", "swagger")
 }
 ds_collection = {
     "Relational Database": ("Relational Database", "relational database", "Relational database", "RDBMS",
@@ -149,7 +154,7 @@ ds_collection = {
     "Microsoft SQL Server": ("Microsoft SQL Server", "MS SQL", "MSSQL", "mssql"),
     "Apache Phoenix": ("Apache Phoenix", "Phoenix"),
     "Memcached": ("Memcached", "memcached"),
-    "Apache HBase": ("Apache HBase", "HBase"),
+    "Apache HBase": ("Apache HBase", "HBase", "HBASE"),
     "Apache Cassandra": ("Apache Cassandra", "Cassandra"),
     "Firebase": ("Firebase", "firebase"),
     "Firestore": ("Firestore", "firestore"),
@@ -158,16 +163,21 @@ ds_collection = {
     "Varnish": ("Varnish", "VARNISH"),
     "SQL Server": ("SQL Server", "sql-server"),
     "RDMS": ("RDMS", "rdms"),
-    "Apache Hive": ("Apache Hive", "Hive"),
+    "Apache Hive": ("Apache Hive", "Hive", "HIVE"),
     "Apache Impala": ("Apache Impala", "Impala"),
+    "DB2": ("DB2", "db2"),
+    "Data Warehouse": ("Data Warehouse", "Data warehouse")
 }
 dt_collection = {
     "JSON": ("JSON", "json"),
     "RabbitMQ": ("RabbitMQ", "rabbitMQ"),
     "Kafka": ("Kafka", "kafka"),
     "Data Pipeline": ("Data Pipeline", "data pipelines", "Data pipelines"),
-    "Message Queueing": ("Message Queueing", "message queueing", "Message queueing"),
+    "Message Queueing": ("Message Queueing", "message queueing", "Message queueing", ),
     "Database Migration": ("Database Migration", "database migrations", "Database migrations"),
+    "Sqoop": ("Sqoop", "sqoop"),
+    "Messaging Services": ("Messaging Services", "Messaging Service"),
+    "JMS": ("JMS", "jms", "Java Messaging Services")
 }
 os_collection = {
     "Linux": ("Linux", "linux"),
@@ -258,7 +268,9 @@ tl_collection = {
     "gulp.js": ("gulp.js", "gulp"),
     "Build Tool": ("Build Tool", "build tools"),
     "Nexus Repository": ("Nexus Repository", "Nexus"),
-    "Udeploy": ("Udeploy", "udeploy")
+    "Udeploy": ("Udeploy", "udeploy"),
+    "Apigee": ("Apigee", "apigee"),
+    "SOAPUI": ("SOAPUI", "SoapUI")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -302,7 +314,7 @@ ap_collection = {
     "continuous testing": ("continuous testing", "Continuous testing"),
     "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test",
                      "Unit-testing"),
-    "Integration Testing": ("Integration Testing",),
+    "Integration Testing": ("Integration Testing", "integration testing"),
     "Automated Configuration": ("Automated Configuration", "Automated configuration"),
     "Automatic Backups": ("Automatic Backups", ),
     "build automation": ("build automation", "Build automation"),
@@ -327,13 +339,17 @@ ap_collection = {
     "Engineering Standards": ("Engineering Standards", "Engineering standards", "engineering standards"),
     "Development Standards": ("Development Standards", "development standards"),
     "ALM": ("ALM", "Application lifecycle management"),
-    "CRM": ("CRM", )
+    "CRM": ("CRM", ),
+    "User Acceptance Testing": ("User Acceptance Testing", "UAT"),
+    "Production Acceptance Testing": ("Production Acceptance Testing", "PAT"),
+    "Feature Testing": ("Feature Testing", "Feature Test"),
+    "Testing Methodology": ("Testing Methodology", "testing methodology")
 }
 se_collection = {
     "Design Patterns": ("Design Patterns", "design patterns"),
     "logging": ("logging", "Logging"),
     "profiling": ("profiling", "Profiling"),
-    "integration": ("integration", "integrations", "integrate", ),
+    "integration": ("integration", "integrations", "integrate", "Integration"),
     "refactoring": ("refactoring", "Refactoring"),
     "documentation": ("documentation", "Documentation"),
     "caching": ("caching", "Caching"),
@@ -344,7 +360,8 @@ se_collection = {
     "designing": ("designing", "Designing", "product design"),
     "Modular Design": ("Modular Design", "modular design"),
     "Development": ("Development", "Developing", "developing", "development", "software development", "software engineering",
-                    "Software Engineering", "Software Development", "application development"),
+                    "Software Engineering", "Software Development", "application development", "Application Development",
+                    "Application Management", "project development"),
     "maintaining": ("maintaining", "Maintaining", "maintain"),
     "performance analysis": ("performance analysis", "Performance analysis",),
     "optimisation": ("optimisation", "optimisations", "optimize"),
@@ -393,7 +410,8 @@ se_collection = {
     "Functional Programming": ("Functional Programming", "functional programming"),
     "Requirement Document": ("Requirement Document", "requirement documents"),
     "Dependency Management": ("Dependency Management", "dependency management", "dependencies"),
-    "Database Design": ("Database Design", "database design")
+    "Database Design": ("Database Design", "database design"),
+    "Systems development life cycle": ("Systems development life cycle", "SDLC")
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms", "Cloud platforms"),
@@ -445,6 +463,7 @@ pf_collection = {
     "Google Fit": ("Google Fit", "Google fit"),
     "CUDA": ("CUDA", "cuda"),
     "J2EE": ("J2EE", "j2ee"),
+    "MuleSoft": ("MuleSoft", "Mulesoft", "mulesoft")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -452,7 +471,7 @@ dv_collection = {
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
     "Security": ("Security", "security"),
     "Cyber Security": ("Cyber Security", "cyber security"),
-    "QA": ("QA", "qa"),
+    "QA": ("QA", "qa", "Quality Management"),
     "Product Management": ("Product Management", "product management"),
     "Project Management": ("Project Management", "project management", "Project management"),
     "UI": ("UI", "UIs", "UI designs", "user interface"),
@@ -494,7 +513,7 @@ ps_collection = {
                            "software developers"),
     "Software Engineer": ("Software Engineer", "Software Engineers", "software engineer", "software engineers", "engineers",
                           "engineer", "Engineer", "Engineers"),
-    "Software Architect": ("Software Architect", "Architect", "architect", "architects", ),
+    "Software Architect": ("Software Architect", "Architect", "architect", "architects", "Architects"),
     "Senior Software Architect": ("Senior Software Architect", "Senior Software Architects"),
     "Web Developer": ("Web Developer", "web developer"),
     "DevOps Engineer": ("DevOps Engineer", "DevOps Engineers", "DevOps engineers"),
@@ -503,6 +522,7 @@ ps_collection = {
     "Data Developer": ("Data Developer", "Data Developers"),
     "Data Scientist": ("Data Scientist", "data scientist", "data scientists"),
     "Data Analyst": ("Data Analyst", "Data Analysts"),
+    "Big Data Developer": ("Big Data Developer", "Big Data developer"),
     "Product Manager": ("Product Manager", "product manager", "product managers", "PM", "Product Managers"),
     "Project Manager": ("Project Manager", "project manager", "Technical Project Manager"),
     "Product Designer": ("Product Designer", "Product Designers", "product designers"),
@@ -547,6 +567,7 @@ ps_collection = {
     "System Administrator": ("System Administrator", "system administrator", "sysadmin"),
     "Team Lead": ("Team Lead", "Team lead"),
     "Project Lead": ("Project Lead", "Project lead"),
+    "Analyst": ("Analyst", "Analysts")
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science", ),
@@ -611,7 +632,7 @@ pt_collection = {
     "TCP/IP": ("TCP/IP", "tcp/ip"),
     "IP": ("IP", "ip"),
     "UDP": ("UDP", "udp"),
-    "HTTP": ("HTTP", "http"),
+    "HTTP": ("HTTP", "http", "Http"),
     "HTTPs": ("HTTPs", "https"),
     "WebSocket": ("WebSocket", "WebSockets"),
     "API": ("API", "APIs", "api"),
@@ -645,10 +666,10 @@ pt_collection = {
 pd_collection = {
     "Web Application": ("Web Application", "Web application", "web application", "web applications", "web-app",
                         "web technology", "web technologies", "website", "websites", "web", "Web", "web-technology",
-                        "web-services", "web apps", "web services", "webapp"),
+                        "web-services", "web apps", "web services", "webapp", "Web Services"),
     "Single-page Application": ("Single-page Application", "single-page application", "single-page-application",
                                 "single page application", "SPA", "single-page web application"),
-    "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology", "SaaS apps"),
+    "Software as a service": ("Software as a service", "SaaS", "SAAS", "SaaS technology", "SaaS apps", "saas"),
     "Enterprise Applications": ("Enterprise Applications", "enterprise applications", "enterprise class applications",),
     "Open-source Software": ("Open-source Software", "Open-source software", "open source", "open-source", "Open source",
                              "open source software"),

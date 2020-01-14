@@ -65,14 +65,14 @@ cp_collection = {
     "Marketing": ("Marketing", "marketing", "email marketing",),
     "Highly Regulated Industry": ("Highly Regulated Industry", "highly regulated industry"),
     "Privately-held Company": ("Privately-held Company", "privately-held company"),
-
+    "Advisory Consulting": ("Advisory Consulting", "Advisory consulting")
 }
 
 ge_collection = {
     "English": ("English", "english"),
     "problem-solving skills": ("problem-solving skills", "problem solver", "problem-solving capabilities",
                                "Problem-solving mindset", "problem solving skills", "problem-solving abilities",
-                               "problem-solvers", "problem solving", "problem-solving"),
+                               "problem-solvers", "problem solving", "problem-solving", "problem solvers"),
     "customer-focused thinking": ("customer-focused thinking", "Customer-focused thinking",),
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
@@ -112,7 +112,7 @@ sf_collection = {
                              "communicating effectively", "clear communicator", "active communicator",
                              "Communication", "good communicator", "good communication", "excellent communication skills",
                              "excellent written and oral communication", "communications skills", "verbal and written communications skills",
-                             "verbal and written communication"),
+                             "verbal and written communication", "Excellent communication skills"),
     "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
