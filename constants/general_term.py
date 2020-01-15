@@ -35,7 +35,8 @@ tm_collection = {
     "Dynamic Environment": ("Dynamic Environment", "dynamic environment"),
     "Developer Team": ("Developer Team", "developer team", "developer teams", "team of developers"),
     "Test Team": ("Test Team", "test team"),
-    "Enterprise Business Systems Team": ("Enterprise Business Systems Team",)
+    "Enterprise Business Systems Team": ("Enterprise Business Systems Team",),
+    "accountable team environment": ("accountable team environment",)
 }
 
 cp_collection = {
@@ -65,7 +66,8 @@ cp_collection = {
     "Marketing": ("Marketing", "marketing", "email marketing",),
     "Highly Regulated Industry": ("Highly Regulated Industry", "highly regulated industry"),
     "Privately-held Company": ("Privately-held Company", "privately-held company"),
-    "Advisory Consulting": ("Advisory Consulting", "Advisory consulting")
+    "Advisory Consulting": ("Advisory Consulting", "Advisory consulting"),
+    "Healthcare Industry": ("Healthcare Industry", "Healthcare industry")
 }
 
 ge_collection = {
@@ -77,7 +79,7 @@ ge_collection = {
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
         "passion for learning", "willingness to learn", "continuously learning", "self-directed learner",
-        "constantly learning", "continuous learner", "Continuously learn"
+        "constantly learning", "continuous learner", "Continuously learn", "continuous improvement"
     ),
     "strategic and creative thinker": ("strategic and creative thinker", "think outside of the box"),
     "organizational skills": ("organizational skills",),
@@ -114,7 +116,7 @@ sf_collection = {
                              "excellent written and oral communication", "communications skills", "verbal and written communications skills",
                              "verbal and written communication", "Excellent communication skills"),
     "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
-    "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors"),
+    "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors", "Mentor"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
     "coaching": ("coaching", "Coaching",),
     "team-player": ("team-player", "team player"),
