@@ -104,7 +104,7 @@ fw_collection = {
     "Laravel": ("Laravel", "Laravel 5", "Laravel 5.4"),
     "Vue.js": ("Vue.js", "VueJS", "Vue"),
     "Vuetify": ("Vuetify", "vuetify",),
-    "ASP.NET": ("ASP.NET", ".NET", ".net", ".Net"),
+    "ASP.NET": ("ASP.NET", ".NET", ".net", ".Net", "asp.net"),
     "React Native": ("React Native", "React native"),
     "PHPUnit": ("PHPUnit", "PHPunit"),
     "Ember.js": ("Ember.js", "Ember", "ember", "EmberJs", "ember.js"),
@@ -141,7 +141,7 @@ fw_collection = {
 }
 ds_collection = {
     "Relational Database": ("Relational Database", "relational database", "Relational database", "RDBMS",
-                            "relational databases"),
+                            "relational databases", "sql database"),
     "Non-relational Database": ("Non-relational Database", "non-relational database", "Non-relational database"),
     "NoSQL": ("NoSQL", "nosql", "NoSql", "NOSQL"),
     "MySQL": ("MySQL", "mysql", "Mysql"),
@@ -192,7 +192,7 @@ os_collection = {
     "CentOS": ("CentOS", "centOS"),
     "Redhat": ("Redhat", "redhat"),
     "macOS": ("macOS", "MacOS", "OS X"),
-    "Unix": ("Unix", "unix"),
+    "Unix": ("Unix", "unix", "UNIX"),
     "Virtual Machine": ("Virtual Machine", "virtual machine", "virtual machines", "VM"),
     "LXC": ("LXC", "lxc"),
     "watchOS": ("watchOS", "watch-os"),
@@ -274,7 +274,8 @@ tl_collection = {
     "Nexus Repository": ("Nexus Repository", "Nexus"),
     "Udeploy": ("Udeploy", "udeploy"),
     "Apigee": ("Apigee", "apigee"),
-    "SOAPUI": ("SOAPUI", "SoapUI")
+    "SOAPUI": ("SOAPUI", "SoapUI"),
+    "Splunk": ("Splunk", "splunk")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -297,7 +298,8 @@ at_collection = {
     "System Design": ("System Design", "system design"),
     "Client/Server architecture": ("Client/Server architecture", "Client-Server architecture"),
     "software Architecture": ("software Architecture", "software architecture"),
-    "SOA": ("SOA", "soa")
+    "SOA": ("SOA", "soa"),
+    "Mean Stack": ("Mean Stack", "mean stack")
 }
 ap_collection = {
     "Agile": ("Agile", "agile"),
@@ -314,7 +316,7 @@ ap_collection = {
     "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
     "automated testing": ("automated testing", "automated tests", "automated-tests", "automated test", "automation testing",
                           "Automated testing"),
-    "test automation": ("test automation", "Test automation"),
+    "test automation": ("test automation", "Test automation", ),
     "E2E testing": ("E2E testing", "End-to-End testing", "end-to-end testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
     "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test",
@@ -363,6 +365,7 @@ se_collection = {
     "scaling": ("scaling", "scaling"),
     "testing": ("testing", "Testing"),
     "planning": ("planning", "plan"),
+    "test planning": ("test planning", "test plan"),
     "designing": ("designing", "Designing", "product design"),
     "Modular Design": ("Modular Design", "modular design"),
     "Development": ("Development", "Developing", "developing", "development", "software development", "software engineering",
@@ -421,10 +424,10 @@ se_collection = {
     "App Releases": ("App Releases", "app releases")
 }
 pf_collection = {
-    "Cloud Platforms": ("Cloud Platforms", "Cloud platforms", "cloud technologies"),
+    "Cloud Platforms": ("Cloud Platforms", "Cloud platforms", "cloud technologies", "cloud platforms", "Cloud"),
     "cloud-based systems": ("cloud-based systems", "cloud-based systems"),
     "cloud services": ("cloud services", "Cloud services", "Cloud Servers", "cloud"),
-    "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services"),
+    "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services", "Amazon"),
     "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud", "google-cloud-platform", "Google cloud infra"),
     "Azure": ("Azure", "Microsoft Azure", "azure", ),
     "Salesforce": ("Salesforce", "salesforce"),
@@ -443,7 +446,7 @@ pf_collection = {
     "AWS Pipeline": ("AWS Pipeline", "AWS pipeline"),
     "Amazon EC2": ("Amazon EC2", "EC2", "ec2"),
     "Amazon RDS": ("Amazon RDS", "RDS", "AWS RDS"),
-    "BrowserStack": ("BrowserStack", "browserstack"),
+    "BrowserStack": ("BrowserStack", "browserstack", "browser stack"),
     "Google APIs": ("Google APIs", "Google API", ),
     "Athena": ("Athena", "Athena",),
     "Ionic": ("Ionic", ),
@@ -472,7 +475,10 @@ pf_collection = {
     "J2EE": ("J2EE", "j2ee"),
     "MuleSoft": ("MuleSoft", "Mulesoft", "mulesoft"),
     "iTunes": ("iTunes", "itunes"),
-    "Google Play": ("Google Play", "Google play")
+    "Google Play": ("Google Play", "Google play"),
+    "Perfecto Mobile": ("Perfecto Mobile", "Perfecto mobile"),
+    "Sauce Labs": ("Sauce Labs", "Sauce labs"),
+    "Experitest": ("Experitest", "experitest")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -538,8 +544,9 @@ ps_collection = {
     "Designer": ("Designer", "Designers", "designers", "designer"),
     "UI/UX Designer": ("UI/UX Designer", "UI/UX designer"),
     "UX Engineer": ("UX Engineer", "UX Engineers", "UX designer"),
+    "Test Engineers": ("Test Engineers", "test engineers"),
     "QA Tester": ("QA Tester", "QA tester"),
-    "QA Engineer": ("QA Engineer", "QA engineer", "QA engineers"),
+    "QA Engineer": ("QA Engineer", "QA engineer", "QA engineers", "QA Automation Engineer"),
     "QA Specialist": ("QA Specialist", "QA specialists"),
     "Scrum Master": ("Scrum Master", "Scrum Masters", "Scrum master", "Scrum masters"),
     "Business Analyst": ("Business Analyst", "business analysts", "Business Analysts"),
@@ -690,7 +697,7 @@ pd_collection = {
     "Large-scale Systems": ("Large-scale Systems", "Large-scale systems", "large-scale systems", ),
     "Third Party Technologies": ("Third Party Technologies", "third party technologies", "Third party technologies",
                                  "third-party checkout", "third-party APIs", "third-party billing services", "3rd party APIs",
-                                 "3rd party apps", "3rd party system"),
+                                 "3rd party apps", "3rd party system", "Third Party systems"),
     "High Traffic Applications": ("High Traffic Applications", "high traffic applications", "High traffic applications",),
     "Analysis Engines": ("Analysis Engines", "analysis engines", "Analysis engines",),
     "Data Driven Application": ("Data Driven Application", "data driven application", "data driven applications",
@@ -726,7 +733,7 @@ ql_collection = {
     "Consistency": ("Consistency", "consistency"),
     "Accessibility": ("Accessibility", "accessibility"),
     "High Availability": ("High Availability", "High availability", "highly-available"),
-    "Reusable Code": ("Reusable Code", "reusable code", "Reusable code", ),
+    "Reusable Code": ("Reusable Code", "reusable code", "Reusable code", "reusable components"),
     "Maintainable Systems": ("Maintainable Systems", "maintainable systems", "Maintainable systems",),
     "System Performance": ("System Performance", "system performance", "System performance",),
     "Cross-browser Compatibility": ("Cross-browser Compatibility", "cross-browser compatibility", "Cross-browser compatibility",),
@@ -739,5 +746,6 @@ ql_collection = {
     "Monolithic Code": ("Monolithic Code", "monolithic code"),
     "Highly-cohesive": ("Highly-cohesive", "highly-cohesive"),
     "Loosely-coupled": ("Loosely-coupled", "loosely-coupled"),
-    "Performance Bottlenecks": ("Performance Bottlenecks", "performance bottlenecks")
+    "Performance Bottlenecks": ("Performance Bottlenecks", "performance bottlenecks"),
+    "Highly Available Service": ("Highly Available Service", )
 }

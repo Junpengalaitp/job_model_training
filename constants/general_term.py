@@ -67,7 +67,8 @@ cp_collection = {
     "Highly Regulated Industry": ("Highly Regulated Industry", "highly regulated industry"),
     "Privately-held Company": ("Privately-held Company", "privately-held company"),
     "Advisory Consulting": ("Advisory Consulting", "Advisory consulting"),
-    "Healthcare Industry": ("Healthcare Industry", "Healthcare industry")
+    "Healthcare Industry": ("Healthcare Industry", "Healthcare industry"),
+    "IT": ("IT", "it")
 }
 
 ge_collection = {
@@ -75,6 +76,7 @@ ge_collection = {
     "problem-solving skills": ("problem-solving skills", "problem solver", "problem-solving capabilities",
                                "Problem-solving mindset", "problem solving skills", "problem-solving abilities",
                                "problem-solvers", "problem solving", "problem-solving", "problem solvers"),
+    "decision-making skills": ("decision-making skills", "decision-making skill"),
     "customer-focused thinking": ("customer-focused thinking", "Customer-focused thinking",),
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
@@ -119,8 +121,8 @@ sf_collection = {
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors", "Mentor"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
     "coaching": ("coaching", "Coaching",),
-    "team-player": ("team-player", "team player"),
-    "collaboration": ("collaboration", "Collaboration"),
+    "team-player": ("team-player", "team player", "Team player"),
+    "collaboration": ("collaboration", "Collaboration", "collaborative attitude"),
     "constructive feedback": ("constructive feedback",),
     "accountability": ("accountability", "Accountability",),
     "co-working": ("co-working", "coworking"),
@@ -129,7 +131,8 @@ sf_collection = {
     "Presentation": ("Presentation", "presentation"),
     "Leadership": ("Leadership", "leadership"),
     "Responsibility": ("Responsibility", "responsibility"),
-    "teamwork": ("teamwork", "teamwork")
+    "teamwork": ("teamwork", "teamwork"),
+    "coordination skills:": ("coordination skills", "coordination skill")
 }
 
 of_collection = {
