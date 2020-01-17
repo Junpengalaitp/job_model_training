@@ -1,3 +1,4 @@
+import time
 from datetime import datetime
 
 import pandas as pd
@@ -56,6 +57,19 @@ def select_job_by_id(_job_id):
     return pd.read_sql_query(query, conn)
 
 
+def form_job_keyword_sql_params(job_df, df):
+    if df is None:
+        return
+    result_list = []
+
+    for index, row in df.iterrows():
+        param_dict = {'keyword_name': row['keyword'], 'job_id': str(job_df['job_id']),
+                      'created_time': time.strftime("%Y-%m-%d %H:%M:%S"), 'count': row['count'],
+                      'source': 'dice', 'keyword_type': row['type'], "job_title": job_df["job_title"]}
+        result_list.append(param_dict)
+    return result_list
+
+
 def insert_job(job: dict):
     df = pd.DataFrame([job])
     df.to_sql("dice_jobs", if_exists='append', index=False, con=conn, dtype={
@@ -75,6 +89,12 @@ def insert_job(job: dict):
         'remote_available': sqlalchemy.types.VARCHAR(length=255),
         'job_date': sqlalchemy.types.VARCHAR(length=255),
         'crawled_time': sqlalchemy.types.DateTime(),
-
     })
     logger.info(f"insert success, id: {job['job_id']}")
+
+
+def select_all_dice_jobs():
+    query = f"""
+                SELECT job_id, title, job_desc FROM dice_jobs
+             """
+    return pd.read_sql_query(query, conn)
