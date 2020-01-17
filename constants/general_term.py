@@ -3,7 +3,7 @@ tm_collection = {
     "cross-functional product-oriented squads": ("cross-functional product-oriented squads",),
     "feature team": ("feature team",),
     "distributed team": ("distributed team",),
-    "fast-paced environment": ("fast-paced environment", "fast paced environments"),
+    "fast-paced environment": ("fast-paced environment", "fast paced environments", "fast-paced"),
     "rapidly changing environment": ("rapidly changing environment", "rapidly changing environments"),
     "diverse group": ("diverse group",),
     "small and talented team": ("small and talented team",),
@@ -36,7 +36,8 @@ tm_collection = {
     "Developer Team": ("Developer Team", "developer team", "developer teams", "team of developers"),
     "Test Team": ("Test Team", "test team"),
     "Enterprise Business Systems Team": ("Enterprise Business Systems Team",),
-    "accountable team environment": ("accountable team environment",)
+    "accountable team environment": ("accountable team environment",),
+    "Ambiguous environment": ("Ambiguous environment", "ambiguous environment")
 }
 
 cp_collection = {
@@ -116,7 +117,7 @@ sf_collection = {
                              "communicating effectively", "clear communicator", "active communicator",
                              "Communication", "good communicator", "good communication", "excellent communication skills",
                              "excellent written and oral communication", "communications skills", "verbal and written communications skills",
-                             "verbal and written communication", "Excellent communication skills"),
+                             "verbal and written communication", "Excellent communication skills", "Good communication"),
     "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors", "Mentor"),
     "leadership": ("leadership", "technical leadership", "team leadership"),
@@ -128,7 +129,7 @@ sf_collection = {
     "co-working": ("co-working", "coworking"),
     "interface with clients": ("interface with clients", "Interface with clients",),
     "Discussion": ("Discussion", "discussion"),
-    "Presentation": ("Presentation", "presentation"),
+    "Presentation": ("Presentation", "presentation", "presentation skills"),
     "Leadership": ("Leadership", "leadership"),
     "Responsibility": ("Responsibility", "responsibility"),
     "teamwork": ("teamwork", "teamwork"),
@@ -170,7 +171,8 @@ of_collection = {
     "Paid relocation": ("Paid relocation", "paid relocation"),
     "Learning opportunities": ("Learning opportunities", "learning opportunities", "opportunities to learn"),
     "Health Benefits": ("Health Benefits", "Health benefits", "Health and Wellness programs", "medical program"),
-    "Contractor": ("Contractor", "Contractors")
+    "Contractor": ("Contractor", "Contractors"),
+    "Generous bonuses": ("Generous bonuses", "generous bonuses")
 }
 
 we_collection = {
@@ -186,5 +188,6 @@ we_collection = {
     "Coding experience": ("Coding experience", "coding experience"),
     "Full years experience": ("Full years experience", "full years experience"),
     "Related experience": ("Related experience", "related experience", "relevant experience"),
-    "Hands-on experience": ("Hands-on experience", "hands-on experience", "Demonstrated experience"),
+    "Hands-on experience": ("Hands-on experience", "hands-on experience", "Demonstrated experience", "hands on experience"),
+    "Equivalent Experience": ("Equivalent Experience", "equivalent experience")
 }
