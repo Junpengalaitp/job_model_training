@@ -15,11 +15,12 @@ def insert_mysql(job_id):
 
 if __name__ == '__main__':
     ids = get_distinct_ids()
-    for job_id in ids:
-        try:
-            record = select_job_by_id(job_id)
-            if len(record) != 0:
-                continue
-            insert_mysql(job_id)
-        except:
-            continue
+    # for job_id in ids:
+    #     try:
+    #         record = select_job_by_id(job_id)
+    #         if len(record) != 0:
+    #             continue
+    #         insert_mysql(job_id)
+    #     except:
+    #         continue
+    print(len(ids))

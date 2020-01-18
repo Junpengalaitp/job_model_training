@@ -98,3 +98,17 @@ def select_all_dice_jobs():
                 SELECT job_id, title, job_desc FROM dice_jobs
              """
     return pd.read_sql_query(query, conn)
+
+
+def insert_model_keywords(job_df: pd.DataFrame):
+    job_df.to_sql("keywords_job_model", if_exists='append', index=False, con=conn, dtype={
+        'keyword_name': sqlalchemy.types.VARCHAR(length=255),
+        'keyword_type': sqlalchemy.types.VARCHAR(length=255),
+        'count': sqlalchemy.types.Integer(),
+        'job_title': sqlalchemy.types.VARCHAR(length=255),
+        'job_id': sqlalchemy.types.VARCHAR(length=255),
+        'created_time': sqlalchemy.types.DateTime(),
+        'source': sqlalchemy.types.VARCHAR(length=255),
+
+    })
+    logger.info(f"insert success, id: {job_df['job_id']}")
