@@ -93,7 +93,7 @@ def insert_job(job: dict):
     logger.info(f"insert success, id: {job['job_id']}")
 
 
-def select_all_dice_jobs():
+def select_all_dice_jobs() -> pd.DataFrame:
     query = f"""
                 SELECT job_id, title, job_desc FROM dice_jobs
              """
@@ -112,3 +112,21 @@ def insert_model_keywords(job_df: pd.DataFrame):
 
     })
     logger.info(f"insert success, id: {job_df['job_id']}")
+
+
+def select_all_model_keywords() -> pd.DataFrame:
+    query = """
+            SELECT DISTINCT keyword_name FROM keywords_job_model
+            WHERE standard_word IS NULL 
+            """
+    return pd.read_sql_query(query, conn)
+
+
+def insert_model_standard_word(standard_word: str, word: str):
+    query = f"""
+                UPDATE keywords_job_model 
+                SET standard_word = "{standard_word}"
+                WHERE keyword_name = "{word}"
+             """
+    conn.execute(query)
+    logger.info(f"update success, {word}: {standard_word}")

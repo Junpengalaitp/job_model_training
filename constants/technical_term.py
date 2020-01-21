@@ -5,7 +5,7 @@ pl_collection = {
     "TypeScript": ("TypeScript", "Typescript", "typescript"),
     "CoffeeScript": ("CoffeeScript", "Coffeescript"),
     "Babel": ("Babel", "babel"),
-    "Java": ("Java", "java", "Java8", "Java 8", "Java11"),
+    "Java": ("Java", "java", "Java8", "Java 8", "Java11", "Java 7"),
     "Python": ("Python", "python", "python3", "Python3"),
     "Ruby": ("Ruby", "ruby"),
     "CRuby": ("CRuby", "C-ruby"),

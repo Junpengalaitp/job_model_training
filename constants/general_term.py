@@ -182,7 +182,6 @@ we_collection = {
     "Real-World Development Experience": ("Real-World Development Experience", "Real World Development Experience"),
     "Software Development Experience": ("Software Development Experience", "Development Experience", "development experience",
                                         "software development experience",),
-    "QA Experience": ("QA Experience", "QA experience"),
     "Professional Experience": ("Professional Experience", "professional experience", "professional software development experience"),
     "Industry experience": ("Industry experience", "industry experience"),
     "Coding experience": ("Coding experience", "coding experience"),
