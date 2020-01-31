@@ -108,7 +108,7 @@ ge_collection = {
     "Self-motivation": ("Self-motivation", "self-motivation"),
     "Self-management": ("Self-management", "self-management"),
     "Attitude": ("Attitude", "good attitude"),
-    "Analytical Skills": ("Analytical Skills", "analytical skills")
+    "Analytical Skills": ("Analytical Skills", "analytical skills", "Analytical skills")
 }
 
 sf_collection = {
@@ -118,7 +118,8 @@ sf_collection = {
                              "communicating effectively", "clear communicator", "active communicator",
                              "Communication", "good communicator", "good communication", "excellent communication skills",
                              "excellent written and oral communication", "communications skills", "verbal and written communications skills",
-                             "verbal and written communication", "Excellent communication skills", "Good communication"),
+                             "verbal and written communication", "Excellent communication skills", "Good communication",
+                             "Good communication skills"),
     "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors", "Mentor"),
     "coaching": ("coaching", "Coaching",),
@@ -130,7 +131,7 @@ sf_collection = {
     "interface with clients": ("interface with clients", "Interface with clients",),
     "Discussion": ("Discussion", "discussion"),
     "Presentation": ("Presentation", "presentation", "presentation skills"),
-    "Leadership": ("Leadership", "leadership", "leadership", "technical leadership", "team leadership"),
+    "Leadership": ("Leadership", "leadership", "leadership", "technical leadership", "team leadership", "Good leadership"),
     "Responsibility": ("Responsibility", "responsibility"),
     "teamwork": ("teamwork", "teamwork", "team skills"),
     "coordination skills:": ("coordination skills", "coordination skill")

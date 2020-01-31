@@ -55,10 +55,12 @@ ol_collection = {
     "RAML": ("RAML", "raml"),
     "WSDLs": ("WSDLs", "WSDLS"),
     "Dataweave": ("Dataweave", "dataweave"),
-    "Stylus": ("Stylus", "stylus")
+    "Stylus": ("Stylus", "stylus"),
+    "SAML": ("SAML", "Security Assertion Markup Language")
 }
 lb_collection = {
     "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks"),
+    "React-router": ("React-router",),
     "React-Native": ("React-Native", "React Native"),
     "Redux": ("Redux", "redux"),
     "React-Redux": ("React-Redux", "react-redux"),
@@ -177,6 +179,7 @@ ds_collection = {
     "DB2": ("DB2", "db2"),
     "Data Warehouse": ("Data Warehouse", "Data warehouse"),
     "MapReduce": ("MapReduce", "mapReduce"),
+    "Ehcache": ("Ehcache", "EHCache")
 }
 dt_collection = {
     "JSON": ("JSON", "json"),
@@ -286,7 +289,8 @@ tl_collection = {
     "Apigee": ("Apigee", "apigee"),
     "SOAPUI": ("SOAPUI", "SoapUI"),
     "Splunk": ("Splunk", "splunk"),
-    "CruiseControl": ("CruiseControl", "cruiseControl")
+    "CruiseControl": ("CruiseControl", "cruiseControl"),
+    "WebSphere": ("WebSphere", "IBM WebSphere")
 }
 at_collection = {
     "REST": ("REST", "RESTful API", "RESTful APIs", "REST API", "REST APIs", "RESTful", "Restful APIs",
@@ -441,7 +445,7 @@ se_collection = {
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms", "Cloud platforms", "cloud technologies", "cloud platforms", "Cloud", "cloud development"),
-    "cloud-based systems": ("cloud-based systems", "cloud-based systems"),
+    "cloud-based systems": ("cloud-based systems", "cloud-based systems", "cloud-based technologies"),
     "cloud services": ("cloud services", "Cloud services", "Cloud Servers", "cloud"),
     "AWS": ("AWS", "aws", "Amazon Web Services", "amazon-web-services", "Amazon"),
     "GCP": ("GCP", "Google Cloud Platform", "GOOGLE CLOUD", "Google Cloud", "google-cloud-platform", "Google cloud infra"),
@@ -449,6 +453,7 @@ pf_collection = {
     "Salesforce": ("Salesforce", "salesforce"),
     "Heroku": ("Heroku", "heroku"),
     "DigitalOcean": ("DigitalOcean", "Digitalocean"),
+    "Pivotal Cloud Foundry": ("Pivotal Cloud Foundry", "PCF"),
     "GitHub": ("GitHub", "github", "Github"),
     "GitLab": ("GitLab", "gitLab", "gitlab", "Gitlab"),
     "Docker": ("Docker", "docker"),
@@ -494,7 +499,8 @@ pf_collection = {
     "Google Play": ("Google Play", "Google play"),
     "Perfecto Mobile": ("Perfecto Mobile", "Perfecto mobile"),
     "Sauce Labs": ("Sauce Labs", "Sauce labs"),
-    "Experitest": ("Experitest", "experitest")
+    "Experitest": ("Experitest", "experitest"),
+    "Magento": ("Magento", "magento")
 }
 dv_collection = {
     "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
@@ -700,7 +706,9 @@ pt_collection = {
     "IPv4": ("IPv4", "IPV4"),
     "IPv6": ("IPv6", "IPv6"),
     "DisplayPort protocol": ("DisplayPort protocol", "DP"),
-    "OAuth": ("OAuth", "oauth")
+    "OAuth": ("OAuth", "oauth"),
+    "Kerberos": ("Kerberos",),
+    "JWT": ("JWT", "jwt"),
 }
 
 pd_collection = {
