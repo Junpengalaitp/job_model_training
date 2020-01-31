@@ -37,7 +37,8 @@ tm_collection = {
     "Test Team": ("Test Team", "test team"),
     "Enterprise Business Systems Team": ("Enterprise Business Systems Team",),
     "accountable team environment": ("accountable team environment",),
-    "Ambiguous environment": ("Ambiguous environment", "ambiguous environment")
+    "Ambiguous environment": ("Ambiguous environment", "ambiguous environment"),
+    "project team": ("project team",)
 }
 
 cp_collection = {
@@ -120,7 +121,6 @@ sf_collection = {
                              "verbal and written communication", "Excellent communication skills", "Good communication"),
     "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors", "Mentor"),
-    "leadership": ("leadership", "technical leadership", "team leadership"),
     "coaching": ("coaching", "Coaching",),
     "team-player": ("team-player", "team player", "Team player"),
     "collaboration": ("collaboration", "Collaboration", "collaborative attitude"),
@@ -130,9 +130,9 @@ sf_collection = {
     "interface with clients": ("interface with clients", "Interface with clients",),
     "Discussion": ("Discussion", "discussion"),
     "Presentation": ("Presentation", "presentation", "presentation skills"),
-    "Leadership": ("Leadership", "leadership"),
+    "Leadership": ("Leadership", "leadership", "leadership", "technical leadership", "team leadership"),
     "Responsibility": ("Responsibility", "responsibility"),
-    "teamwork": ("teamwork", "teamwork"),
+    "teamwork": ("teamwork", "teamwork", "team skills"),
     "coordination skills:": ("coordination skills", "coordination skill")
 }
 

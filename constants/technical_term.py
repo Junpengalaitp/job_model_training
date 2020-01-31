@@ -146,6 +146,7 @@ fw_collection = {
     "Sails.js": ("Sails.js", "Sails")
 }
 ds_collection = {
+    "Database": ("Database", "database"),
     "Relational Database": ("Relational Database", "relational database", "Relational database", "RDBMS",
                             "relational databases", "sql database"),
     "Non-relational Database": ("Non-relational Database", "non-relational database", "Non-relational database"),
@@ -209,6 +210,7 @@ os_collection = {
     "RTOS": ("RTOS", "Real-time operating system"),
 }
 sv_collection = {
+    "Sever": ("Server", "server"),
     "Nginx": ("Nginx", "nginx", "NGINX"),
     "Node.js": ("Node.js", "node.js", "NodeJS", "Node", "node", "Nodejs", "Node.JS"),
     "Jetty": ("Jetty", "jetty"),
@@ -323,7 +325,7 @@ ap_collection = {
     "Continuous Deployment": ("Continuous Deployment", "Continuous Deployments", "continuous deployment"),
     "Sprint": ("Sprint", "sprint", "sprints"),
     "CI/CD": ("CI/CD", "CD/CI"),
-    "Test-driven development": ("Test-driven development", "TDD", "test-driven development"),
+    "Test-driven development": ("Test-driven development", "TDD", "test-driven development", "Test Driven Development"),
     "automated testing": ("automated testing", "automated tests", "automated-tests", "automated test", "automation testing",
                           "Automated testing"),
     "test automation": ("test automation", "Test automation", ),
@@ -338,8 +340,7 @@ ap_collection = {
     "object-oriented design": ("object-oriented design", "object-oriented software development"),
     "Waterfall model": ("Waterfall", "waterfall"),
     "pair-programming": ("pair-programming", "Pair-programming"),
-    "peer review": ("peer review", "peer reviews", ),
-    "code-review": ("code-review", "code-reviews", "code reviews", "code review", "Review code"),
+    "code-review": ("code-review", "code-reviews", "code reviews", "code review", "Review code", "Review", "peer review", "peer reviews",),
     "SOLID": ("SOLID", "SOLID principle", "SOLID principles"),
     "DRY": ("DRY", "DRY principle"),
     "DDD": ("DDD", "DDD principle", "Domain Driven Design"),
@@ -361,10 +362,12 @@ ap_collection = {
     "Production Acceptance Testing": ("Production Acceptance Testing", "PAT"),
     "Feature Testing": ("Feature Testing", "Feature Test"),
     "Testing Methodology": ("Testing Methodology", "testing methodology"),
-    "Reactive Coding Principles": ("Reactive Coding Principles", "reactive coding principles")
+    "Reactive Coding Principles": ("Reactive Coding Principles", "reactive coding principles"),
+    "team meetings": ("team meetings", "meetings")
 }
 se_collection = {
-    "Design Patterns": ("Design Patterns", "design patterns"),
+    "Design Patterns": ("Design Patterns", "design patterns", "Design patterns"),
+    "Requirement": ("Requirement", "requirements"),
     "logging": ("logging", "Logging"),
     "profiling": ("profiling", "Profiling"),
     "integration": ("integration", "integrations", "integrate", "Integration"),
@@ -373,10 +376,10 @@ se_collection = {
     "caching": ("caching", "Caching"),
     "debugging": ("debugging", "Debugging"),
     "scaling": ("scaling", "scaling"),
-    "testing": ("testing", "Testing"),
+    "testing": ("testing", "Testing", "test"),
     "planning": ("planning", "plan"),
     "test planning": ("test planning", "test plan"),
-    "designing": ("designing", "Designing", "product design"),
+    "designing": ("designing", "Designing", "product design", "technical design"),
     "Modular Design": ("Modular Design", "modular design"),
     "Development": ("Development", "Developing", "developing", "development", "software development", "software engineering",
                     "Software Engineering", "Software Development", "application development", "Application Development",
@@ -386,10 +389,10 @@ se_collection = {
     "optimisation": ("optimisation", "optimisations", "optimize"),
     "performance optimization": ("performance optimization", "performance optimisation", "Performance Optimization",
                                  "performance improvement", "performance improvements"),
-    "Deployment": ("Deployment", "deployment", "deployments"),
+    "Deployment": ("Deployment", "deployment", "deployments", "deploy"),
     "Version Control": ("Version Control", "version control", "VCS", "Source Control", "Source control",
                         "source control", "Source Code Control", "Source Code Management",),
-    "Troubleshooting": ("Troubleshooting", "troubleshooting"),
+    "Troubleshooting": ("Troubleshooting", "troubleshooting", "troubleshoot"),
     "monitoring": ("monitoring", "Monitoring"),
     "maintenance": ("maintenance", "Maintenance"),
     "Support": ("Support", "support"),
@@ -431,9 +434,10 @@ se_collection = {
     "Requirement Document": ("Requirement Document", "requirement documents"),
     "Dependency Management": ("Dependency Management", "dependency management", "dependencies"),
     "Database Design": ("Database Design", "database design"),
-    "Systems development life cycle": ("Systems development life cycle", "SDLC"),
+    "System Development Life Cycle": ("System Development Life Cycle", "Systems development life cycle", "SDLC"),
     "App Releases": ("App Releases", "app releases"),
-    "algorithmic design": ("algorithmic design", )
+    "algorithmic design": ("algorithmic design", ),
+    "iteration": ("iteration",)
 }
 pf_collection = {
     "Cloud Platforms": ("Cloud Platforms", "Cloud platforms", "cloud technologies", "cloud platforms", "Cloud", "cloud development"),
@@ -520,6 +524,7 @@ dv_collection = {
     "Automation": ("Automation", "automation",),
     "Cloud-security": ("Cloud-security", "cloud-security", "Cloud Platform Security", "Cloud Platform security"),
     "Hardware Engineering": ("Hardware Engineering", "hardware engineering"),
+    "System Administration": ("System Administration", "System Admin")
 }
 ps_collection = {
     "Front-end Engineer": ("Front-end Engineer", "Front-end Engineer", "frontend engineers", "Frontend Engineers",
@@ -600,7 +605,8 @@ ps_collection = {
     "Team Lead": ("Team Lead", "Team lead"),
     "Project Lead": ("Project Lead", "Project lead"),
     "Analyst": ("Analyst", "Analysts"),
-    "Release Engineer": ("Release Engineer", "Release Engineers")
+    "Release Engineer": ("Release Engineer", "Release Engineers"),
+    "Programmer": ("Programmer", "programmer")
 }
 cs_collection = {
     "Computer Science": ("Computer Science", "computer science", "computer engineering"),
@@ -613,7 +619,7 @@ cs_collection = {
     "Multithreading": ("Multithreading", "multithreaded"),
     "Parallelism": ("Parallelism", "parallelism"),
     "Object-oriented Programming": ("Object-oriented Programming", "object-oriented programming", "OOP",
-                                    "object-oriented view", "OOPS"),
+                                    "object-oriented view", "OOPS", "Object oriented programming"),
     "Asynchronous": ("Asynchronous", "asynchronous"),
     "Cryptography": ("Cryptography", "cryptography"),
     "Computability": ("Computability", "computability"),
@@ -728,7 +734,8 @@ pd_collection = {
     "Prototype": ("Prototype", "prototypes"),
     "Distributed Message System": ("Distributed Message System", "distributed message systems"),
     "High-end Systems Engineering": ("High-end Systems Engineering", "high-end systems engineering"),
-    "Embedded System": ("Embedded System", "embedded systems")
+    "Embedded System": ("Embedded System", "embedded systems"),
+    "customized technology solutions": ("customized technology solutions", )
 }
 
 ql_collection = {
