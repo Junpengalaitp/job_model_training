@@ -20,7 +20,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training_data.training_data.train_data_08 import TRAIN_DATA
+from model_training_data.training_data.train_data_09 import TRAIN_DATA
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
