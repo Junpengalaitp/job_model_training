@@ -1,3 +1,5 @@
+import traceback
+
 from database.mongodb_manager import MongoManager
 from database.sql_operation.standard_word import insert_job, select_job_by_id
 
@@ -7,7 +9,7 @@ def get_distinct_ids() -> list:
     return ids
 
 
-def insert_mysql(job_id):
+def insert_to_sql(job_id):
     job = MongoManager().find_one_by_id(job_id)
     job['salary'] = ''.join(job['salary']) if job['salary'] else None
     insert_job(job)
@@ -15,12 +17,12 @@ def insert_mysql(job_id):
 
 if __name__ == '__main__':
     ids = get_distinct_ids()
-    # for job_id in ids:
-    #     try:
-    #         record = select_job_by_id(job_id)
-    #         if len(record) != 0:
-    #             continue
-    #         insert_mysql(job_id)
-    #     except:
-    #         continue
-    print(len(ids))
+    for job_id in ids:
+        try:
+            record = select_job_by_id(job_id)
+            if len(record) != 0:
+                continue
+            insert_to_sql(job_id)
+        except:
+            print(traceback.format_exc())
+            continue

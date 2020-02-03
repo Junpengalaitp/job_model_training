@@ -8,3 +8,4 @@ spacy==2.2.2
 jupyter==1.0.0
 pymongo==3.9.0
 pandas==0.25.3
+psycopg2

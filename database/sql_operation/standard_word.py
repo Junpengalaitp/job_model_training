@@ -74,17 +74,17 @@ def insert_job(job: dict):
     df = pd.DataFrame([job])
     df.to_sql("dice_jobs", if_exists='append', index=False, con=conn, dtype={
         'job_id': sqlalchemy.types.VARCHAR(length=255),
-        'title': sqlalchemy.types.VARCHAR(length=255),
+        'title': sqlalchemy.types.TEXT(),
         'company': sqlalchemy.types.VARCHAR(length=255),
         'location': sqlalchemy.types.VARCHAR(length=255),
-        'tags': sqlalchemy.types.VARCHAR(length=255),
+        'tags': sqlalchemy.types.TEXT(),
         'category': sqlalchemy.types.VARCHAR(length=255),
         'job_desc': sqlalchemy.types.TEXT(),
         'raw_desc': sqlalchemy.types.TEXT(),
-        'link': sqlalchemy.types.VARCHAR(length=255),
+        'link': sqlalchemy.types.TEXT(),
         'source': sqlalchemy.types.VARCHAR(length=255),
         'state': sqlalchemy.types.VARCHAR(length=255),
-        'salary': sqlalchemy.types.VARCHAR(length=255),
+        'salary': sqlalchemy.types.TEXT(),
         'employment_type': sqlalchemy.types.VARCHAR(length=255),
         'remote_available': sqlalchemy.types.VARCHAR(length=255),
         'job_date': sqlalchemy.types.VARCHAR(length=255),
@@ -130,3 +130,4 @@ def insert_model_standard_word(standard_word: str, word: str):
              """
     conn.execute(query)
     logger.info(f"update success, {word}: {standard_word}")
+
