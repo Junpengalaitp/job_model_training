@@ -105,6 +105,7 @@ def select_all_dice_jobs() -> pd.DataFrame:
 def insert_model_keywords(job_df: pd.DataFrame):
     job_df.to_sql("keywords_job_model", if_exists='append', index=False, con=conn, dtype={
         'keyword_name': sqlalchemy.types.VARCHAR(length=255),
+        'standard_word': sqlalchemy.types.VARCHAR(length=255),
         'keyword_type': sqlalchemy.types.VARCHAR(length=255),
         'count': sqlalchemy.types.Integer(),
         'job_title': sqlalchemy.types.VARCHAR(length=255),
