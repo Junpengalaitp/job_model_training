@@ -10,7 +10,7 @@ from logger.logger import log
 
 def insert_standard_words(standard_word: str, other_words: str, category: str):
     query = f"""
-                INSERT INTO standard_words (standard_word, other_words, category, modification_time) VALUES (
+                INSERT INTO standard_word (standard_word, other_words, category, modification_time) VALUES (
                 '{standard_word}', '{other_words}', '{category}', '{datetime.now()}')
                 ON CONFLICT (standard_word)
                 DO UPDATE SET other_words = '{other_words}', modification_time = '{datetime.now()}';
@@ -21,7 +21,7 @@ def insert_standard_words(standard_word: str, other_words: str, category: str):
 
 def update_stand_words(standard_word, other_words, category):
     query = f"""
-                UPDATE standard_words 
+                UPDATE standard_word
                 SET other_words = '{other_words}', modification_time = '{datetime.now()}' , category = '{category}'
                 WHERE standard_word = '{standard_word}'
              """
@@ -31,7 +31,7 @@ def update_stand_words(standard_word, other_words, category):
 
 def delete_stand_word(standard_word):
     query = f"""
-                DELETE FROM standard_words 
+                DELETE FROM standard_word
                 WHERE standard_word = '{standard_word}'
              """
     conn.execute(query)
@@ -40,21 +40,21 @@ def delete_stand_word(standard_word):
 
 def select_standard_words(standard_word):
     query = f"""
-                SELECT * FROM standard_words WHERE standard_word = '{standard_word}'
+                SELECT * FROM standard_word WHERE standard_word = '{standard_word}'
              """
     return pd.read_sql_query(query, conn)
 
 
 def select_all_standard_words():
     query = f"""
-                SELECT * FROM standard_words
+                SELECT * FROM standard_word
              """
     return pd.read_sql_query(query, conn)
 
 
 def select_job_by_id(_job_id):
     query = f"""
-                SELECT * FROM dice_jobs where job_id = '{_job_id}'
+                SELECT * FROM dice_job where job_id = '{_job_id}'
              """
     return pd.read_sql_query(query, conn)
 
@@ -74,7 +74,7 @@ def form_job_keyword_sql_params(job_df, df):
 
 def insert_job(job: dict):
     df = pd.DataFrame([job])
-    df.to_sql("dice_jobs", if_exists='append', index=False, con=conn, dtype={
+    df.to_sql("dice_job", if_exists='append', index=False, con=conn, dtype={
         'job_id': sqlalchemy.types.VARCHAR(length=255),
         'title': sqlalchemy.types.TEXT(),
         'company': sqlalchemy.types.VARCHAR(length=255),
@@ -97,7 +97,7 @@ def insert_job(job: dict):
 
 def select_all_dice_jobs() -> pd.DataFrame:
     query = f"""
-                SELECT job_id, title, job_desc FROM dice_jobs
+                SELECT job_id, title, job_desc FROM dice_job
              """
     return pd.read_sql_query(query, conn)
 
