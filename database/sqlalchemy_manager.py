@@ -8,7 +8,6 @@ DB_NAME = get_config('SQL_SERVER', 'dbname')
 username = get_config('SQL_SERVER', 'user')
 password = get_config('SQL_SERVER', 'password')
 
-conn = create_engine(
-    f'postgresql://{username}:{password}@{SERVER_IP}:{PORT}/{DB_NAME}', pool_recycle=3600)
+conn = create_engine(f'postgresql://{username}:{password}@{SERVER_IP}:{PORT}/{DB_NAME}', pool_recycle=3600)
 
 

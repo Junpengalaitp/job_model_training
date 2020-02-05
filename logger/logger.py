@@ -4,8 +4,8 @@ import platform
 
 import yaml
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-default_path = os.path.join(ROOT_DIR, 'config/logging.yaml')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+default_path = os.path.join(BASE_DIR, 'config', 'logging.yaml')
 
 
 def init_dir(env_key='LOG_CFG'):
@@ -15,8 +15,8 @@ def init_dir(env_key='LOG_CFG'):
         path = value
     if os.path.exists(path):
         with open(path, "r") as f:
-            dictionary = yaml.load(f)
-            handlers = dictionary['handlers']
+            _dict = yaml.load(f, Loader=yaml.FullLoader)
+            handlers = _dict['handlers']
             for key in handlers:
                 handler = handlers[key]
                 handler.setdefault('filename', None)
@@ -31,7 +31,7 @@ def init_dir(env_key='LOG_CFG'):
                                 os.mkdir(dir_path[0])
                             # os.mkdir(dir_path[0] + os.path.sep + dir_path[1])
                             open(log_path, 'w+').close()
-                        if 'Linux' == system or 'Darwin' == system:
+                        if 'Linux' == system:
                             # os.path.altsep
                             if not os.path.exists(dir_path[0]):
                                 os.mkdir(dir_path[0])
@@ -45,9 +45,8 @@ def setup_logging(default_level=logging.INFO, env_key='LOG_CFG'):
         path = value
     if os.path.exists(path):
         with open(path, "r") as f:
-            logging.config.dictConfig(yaml.load(f))
+            logging.config.dictConfig(yaml.load(f, Loader=yaml.FullLoader))
     else:
-        # logging.basicConfig(level=default_level, filename='application-info.log')
         logging.basicConfig(level=default_level)
 
 
