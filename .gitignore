@@ -3,3 +3,5 @@ venv
 /.idea/dictionaries/
 /notebook/.ipynb_checkpoints/
 /job_model/
+*.log
+/log/

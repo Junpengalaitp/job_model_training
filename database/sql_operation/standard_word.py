@@ -52,9 +52,9 @@ def select_all_standard_words():
     return pd.read_sql_query(query, conn)
 
 
-def select_job_by_id(_job_id):
+def select_by_job_id(db: str, job_id: str):
     query = f"""
-                SELECT * FROM dice_job where job_id = '{_job_id}'
+                SELECT * FROM {db} where job_id = '{job_id}'
              """
     return pd.read_sql_query(query, conn)
 
@@ -72,7 +72,7 @@ def form_job_keyword_sql_params(job_df, df):
     return result_list
 
 
-def insert_job(job: dict):
+def insert_dice_job(job: dict):
     df = pd.DataFrame([job])
     df.to_sql("dice_job", if_exists='append', index=False, con=conn, dtype={
         'job_id': sqlalchemy.types.VARCHAR(length=255),
@@ -90,6 +90,26 @@ def insert_job(job: dict):
         'employment_type': sqlalchemy.types.VARCHAR(length=255),
         'remote_available': sqlalchemy.types.VARCHAR(length=255),
         'job_date': sqlalchemy.types.VARCHAR(length=255),
+        'crawled_time': sqlalchemy.types.DateTime(),
+    })
+    log.info(f"insert success, id: {job['job_id']}")
+
+
+def insert_remote_job(job: dict):
+    df = pd.DataFrame([job])
+    df.to_sql("remote_job", if_exists='append', index=False, con=conn, dtype={
+        'job_id': sqlalchemy.types.VARCHAR(length=255),
+        'title': sqlalchemy.types.TEXT(),
+        'company': sqlalchemy.types.VARCHAR(length=255),
+        'location': sqlalchemy.types.VARCHAR(length=255),
+        'tags': sqlalchemy.types.TEXT(),
+        'category': sqlalchemy.types.VARCHAR(length=255),
+        'job_desc': sqlalchemy.types.TEXT(),
+        'raw_desc': sqlalchemy.types.TEXT(),
+        'link': sqlalchemy.types.TEXT(),
+        'source': sqlalchemy.types.VARCHAR(length=255),
+        'job_type': sqlalchemy.types.VARCHAR(length=255),
+        'job_date': sqlalchemy.types.DateTime(),
         'crawled_time': sqlalchemy.types.DateTime(),
     })
     log.info(f"insert success, id: {job['job_id']}")

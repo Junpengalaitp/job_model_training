@@ -1,4 +1,5 @@
 import logging
+
 from pymongo import MongoClient
 
 from logger.logger import setup_logging
@@ -23,14 +24,23 @@ class MongoManager:
         job_list = [job for job in jobs]
         return job_list
 
-    def find_one_by_id(self, job_id):
-        db = self.client.tech_job
-        job = db.dice.find_one({'job_id': job_id}, {'_id': False})
+    def find_one_by_id(self, database, job_id):
+        if database == 'dice_job':
+            db = self.client.tech_job
+            job = db.dice.find_one({'job_id': job_id}, {'_id': False})
+        if database == 'remote_job':
+            db = self.client.remote_jobs
+            job = db.software_dev.find_one({'job_id': job_id}, {'_id': False})
         return job
 
-    def find_distinct_dice_ids(self, field):
+    def find_distinct_dice_field(self, field):
         db = self.client.tech_job
         fields = db.dice.distinct(field)
+        return [f for f in fields]
+
+    def find_distinct_remote_field(self, field):
+        db = self.client.remote_jobs
+        fields = db.software_dev.distinct(field)
         return [f for f in fields]
 
 

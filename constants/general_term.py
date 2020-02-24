@@ -119,7 +119,7 @@ sf_collection = {
                              "Communication", "good communicator", "good communication", "excellent communication skills",
                              "excellent written and oral communication", "communications skills", "verbal and written communications skills",
                              "verbal and written communication", "Excellent communication skills", "Good communication",
-                             "Good communication skills", "verbal communication skills"),
+                             "Good communication skills", "verbal communication skills", "good communication skill"),
     "interpersonal skills": ("interpersonal skills", "interpersonal skill"),
     "mentorship": ("mentorship", "mentor", "mentoring", "approachable mentors", "Mentor"),
     "coaching": ("coaching", "Coaching",),

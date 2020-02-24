@@ -20,7 +20,14 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-from model_training_data.training_data.train_data_09 import TRAIN_DATA
+from model_training_data.training_data.train_data_02 import TRAIN_DATA as data2
+from model_training_data.training_data.train_data_03 import TRAIN_DATA as data3
+from model_training_data.training_data.train_data_04 import TRAIN_DATA as data4
+from model_training_data.training_data.train_data_05 import TRAIN_DATA as data5
+from model_training_data.training_data.train_data_06 import TRAIN_DATA as data6
+from model_training_data.training_data.train_data_07 import TRAIN_DATA as data7
+from model_training_data.training_data.train_data_08 import TRAIN_DATA as data8
+from model_training_data.training_data.train_data_09 import TRAIN_DATA as data9
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
@@ -102,6 +109,6 @@ def main(model="job_model_sm", output_dir=model_path, n_iter=350, train_data=Non
 
 
 if __name__ == "__main__":
-    train_data_list = [TRAIN_DATA]
+    train_data_list = [data2, data3, data4, data5, data6, data7, data8, data9]
     for TRAIN_DATA in train_data_list:
         main(train_data=TRAIN_DATA)
