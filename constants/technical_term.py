@@ -154,7 +154,7 @@ fw_collection = {
     "REST Assured": ("REST Assured", "RestAssured")
 }
 ds_collection = {
-    "Database": ("Database", "database", "databases"),
+    "Database": ("Database", "database", "databases", "Databases"),
     "Relational Database": ("Relational Database", "relational database", "Relational database", "RDBMS",
                             "relational databases", "sql database"),
     "Non-relational Database": ("Non-relational Database", "non-relational database", "Non-relational database"),
@@ -347,12 +347,13 @@ ap_collection = {
     "Continuous Deployment": ("Continuous Deployment", "Continuous Deployments", "continuous deployment"),
     "Sprint": ("Sprint", "sprint", "sprints"),
     "CI/CD": ("CI/CD", "CD/CI"),
-    "Test-driven development": ("Test-driven development", "TDD", "test-driven development", "Test Driven Development"),
+    "Test-Driven Development": ("Test-Driven Development", "Test-driven development", "TDD", "test-driven development",
+                                "Test-Driven Development", "test driven development"),
     "Behavior-driven development": ("Behavior-driven development", "BDD", ),
     "Business Driven Development": ("Business Driven Development",),
     "automated testing": ("automated testing", "automated tests", "automated-tests", "automated test", "automation testing",
                           "Automated testing"),
-    "test automation": ("test automation", "Test automation", ),
+    "Test Automation": ("Test Automation", "test automation", "Test automation", "automated testing"),
     "E2E testing": ("E2E testing", "End-to-End testing", "end-to-end testing"),
     "continuous testing": ("continuous testing", "Continuous testing"),
     "Unit testing": ("Unit testing", "unit testing", "Unit Testing", "unit tests", "Unit Tests", "unit test",
