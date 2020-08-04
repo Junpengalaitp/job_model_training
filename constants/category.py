@@ -29,3 +29,6 @@ category_map = {pl: "pl", ol: "ol", lb: "lb", fw: "fw", cs: "cs", ai: "ai", pt: 
                 ps: "ps", we: "we", os_: "os", sv: "sv", ap: "ap", se: "se", pf: "pf", ge: "ge", sf: "sf", tl: "tl",
                 at: "at", pd: "pd", ql: "ql", of: "of", tm: "tm", cp: "cp",
                 }
+
+if __name__ == '__main__':
+    print(category_map.values())

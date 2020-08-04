@@ -527,7 +527,7 @@ pf_collection = {
     "Magento": ("Magento", "magento"),
 }
 dv_collection = {
-    "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend"),
+    "Front-end": ("Front-end", "frontend", "front-end development", "front-end", "Frontend", "front end"),
     "Back-end": ("Back-end", "Backend", "backend", "back-end", "backends", "back end", "server-side"),
     "Full Stack": ("Full Stack", "full stack", "Full-stack"),
     "Security": ("Security", "security"),
