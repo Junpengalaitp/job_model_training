@@ -1,3 +1,6 @@
+"""store standard word and other word to database"""
+
+
 from constants.constants import CATEGORY_MAP
 from database.sql_operation.standard_word import insert_standard_words, update_stand_words, select_standard_words, \
     select_all_standard_words, delete_stand_word

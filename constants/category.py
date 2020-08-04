@@ -1,3 +1,5 @@
+"""entity categories"""
+
 pl = "PROGRAMMING_LANGUAGE"  # programming language,  e.g. Java, Python
 ol = "OTHER_LANGUAGE"  # non-programming language, e.g. 'CSS', 'HTML'
 lb = "LIBRARY"  # library, e.g. React, Bootstrap

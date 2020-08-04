@@ -1,3 +1,5 @@
+"""Annotation util, get a spaCy format annotation for a custom entity"""
+
 import re
 from collections import defaultdict
 

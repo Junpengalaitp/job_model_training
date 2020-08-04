@@ -1,3 +1,6 @@
+"""Key: the standard word, Value: collection of other format of standard word"""
+
+
 pl_collection = {
     "JavaScript": ("JavaScript", "Javascript", "javascript", "JS", "Javascrpt"),
     "ECMAScript": ("ECMAScript", "ecmascript", "ES2015", "ES2016", "ES2017", "ES2018", "ES5", "ES6", "ES7", "ES8",

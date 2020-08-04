@@ -1,3 +1,5 @@
+"""Key: the standard word, Value: collection of other format of standard word"""
+
 tm_collection = {
     "cross-functional team": ("cross-functional team", "cross-functional teams", "cross-functional project team"),
     "cross-functional product-oriented squads": ("cross-functional product-oriented squads",),

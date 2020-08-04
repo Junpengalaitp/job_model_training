@@ -7,9 +7,6 @@ class MongoManager:
     def __init__(self):
         mongo_ip = MONGO_IP
         mongo_port = MONGO_PORT
-        # username = read_config.get_config('mongodb', 'username')
-        # password = read_config.get_config('mongodb', 'password')
-        # self.client = MongoClient(f'mongodb://{username}:{password}@{mongo_ip}', mongo_port)
         self.client = MongoClient(f'mongodb://{mongo_ip}', mongo_port)
 
     def find_all(self):
