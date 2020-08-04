@@ -1,0 +1,8 @@
+MONGO_IP = "127.0.0.1"
+MONGO_PORT = 27017
+
+SQL_IP = "127.0.0.1"
+DB_NAME = "alaitp"
+DB_PORT = 5432
+USERNAME = "hejunpeng"
+PASSWORD = ""

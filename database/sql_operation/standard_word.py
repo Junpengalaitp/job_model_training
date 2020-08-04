@@ -3,9 +3,9 @@ from datetime import datetime
 
 import pandas as pd
 import sqlalchemy
+from loguru import logger
 
 from database.sqlalchemy_manager import conn
-from logger.logger import log
 
 
 def insert_standard_words(standard_word: str, other_words: str, category: str):
@@ -16,7 +16,7 @@ def insert_standard_words(standard_word: str, other_words: str, category: str):
                 DO UPDATE SET other_words = '{other_words}', modification_time = '{datetime.now()}';
              """
     conn.execute(query)
-    log.info(f"insert success, standard_word: {standard_word}, other_words: {other_words}")
+    logger.info(f"insert success, standard_word: {standard_word}, other_words: {other_words}")
 
 
 def update_stand_words(standard_word, other_words, category):
@@ -26,7 +26,7 @@ def update_stand_words(standard_word, other_words, category):
                 WHERE standard_word = '{standard_word}'
              """
     conn.execute(query)
-    log.info(f"update success, standard_word: {standard_word}, other_words: {other_words}")
+    logger.info(f"update success, standard_word: {standard_word}, other_words: {other_words}")
 
 
 def delete_stand_word(standard_word):
@@ -35,7 +35,7 @@ def delete_stand_word(standard_word):
                 WHERE standard_word = '{standard_word}'
              """
     conn.execute(query)
-    log.info(f"delete success, standard_word: {standard_word}")
+    logger.info(f"delete success, standard_word: {standard_word}")
 
 
 def select_standard_words(standard_word):
@@ -92,7 +92,7 @@ def insert_dice_job(job: dict):
         'job_date': sqlalchemy.types.VARCHAR(length=255),
         'crawled_time': sqlalchemy.types.DateTime(),
     })
-    log.info(f"insert success, id: {job['job_id']}")
+    logger.info(f"insert success, id: {job['job_id']}")
 
 
 def insert_remote_job(job: dict):
@@ -112,7 +112,7 @@ def insert_remote_job(job: dict):
         'job_date': sqlalchemy.types.DateTime(),
         'crawled_time': sqlalchemy.types.DateTime(),
     })
-    log.info(f"insert success, id: {job['job_id']}")
+    logger.info(f"insert success, id: {job['job_id']}")
 
 
 def select_all_dice_jobs() -> pd.DataFrame:
@@ -134,7 +134,7 @@ def insert_model_keywords(job_df: pd.DataFrame):
         'source': sqlalchemy.types.VARCHAR(length=255),
 
     })
-    log.info(f"insert success, id: {job_df['job_id']}")
+    # log.info(f"insert success, id: {job_df['job_id']}")
 
 
 def select_all_model_keywords() -> pd.DataFrame:
@@ -152,5 +152,5 @@ def insert_model_standard_word(standard_word: str, word: str):
                 WHERE keyword_name = "{word}"
              """
     conn.execute(query)
-    log.info(f"update success, {word}: {standard_word}")
+    logger.info(f"update success, {word}: {standard_word}")
 

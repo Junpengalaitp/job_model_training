@@ -10,7 +10,8 @@ import spacy
 # nlp = spacy.load('en_core_web_lg')
 from database.sql_operation.standard_word import select_all_dice_jobs, \
     insert_model_keywords
-from scripts.standardize_model_keyword import request_standard_word
+from logger.logger import log
+from scripts.standardize_model_keyword import request_standard_word, request_standard_category
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
@@ -67,6 +68,10 @@ def generate_job_key_words(job_df):
     for row in result_df.itertuples():
         standard_word = request_standard_word(row.keyword_name)
         result_df.at[row.Index, 'standard_word'] = standard_word
+        standard_category = request_standard_category(standard_word)
+        if standard_category != "None" and standard_category != row.keyword_type:
+            result_df.at[row.Index, 'keyword_type'] = standard_category
+            log.debug(f"standardized category of word: {row.keyword_name} from {row.keyword_type} to {standard_category}")
 
     result_df['job_title'] = job_df.title
     result_df['job_id'] = job_df.job_id

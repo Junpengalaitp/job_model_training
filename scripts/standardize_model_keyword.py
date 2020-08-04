@@ -14,10 +14,16 @@ def store_model_standard_word():
 
 
 def request_standard_word(word: str) -> str:
-    r = requests.get(f"http://127.0.0.1:8812/standardize-word/{word}")
+    r = requests.get(f"http://127.0.0.1:5000/standardize-word/{word}")
+    if r and r.status_code == 200:
+        return r.text
+
+
+def request_standard_category(word):
+    r = requests.get(f"http://127.0.0.1:5000/standardize-category/{word}")
     if r and r.status_code == 200:
         return r.text
 
 
 if __name__ == '__main__':
-    store_model_standard_word()
+    print(request_standard_word("java"))
