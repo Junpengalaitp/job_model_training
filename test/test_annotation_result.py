@@ -26,9 +26,7 @@ class TestAnnotations(unittest.TestCase):
         """test no overlapping indices in annotation entity indices"""
         overlapping_index = set()
         for data in TRAIN_DATA:
-            # add all entities start/end index to a list
-            entity_indices = data[1]["entities"]
-            ent_index_list = [(entity[0], entity[1]) for entity in entity_indices]
+            ent_index_list = data[1]["entities"]
             # first test all entity have start index smaller than end index
             self.assertTrue(all(entity[0] < entity[1] for entity in ent_index_list))
             # sort the list by start index, for testing overlapping indices
