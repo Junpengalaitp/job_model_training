@@ -351,7 +351,7 @@ ap_collection = {
     "Sprint": ("Sprint", "sprint", "sprints"),
     "CI/CD": ("CI/CD", "CD/CI"),
     "Test-Driven Development": ("Test-Driven Development", "Test-driven development", "TDD", "test-driven development",
-                                "Test-Driven Development", "test driven development"),
+                                "Test Driven Development", "test driven development"),
     "Behavior-driven development": ("Behavior-driven development", "BDD", ),
     "Business Driven Development": ("Business Driven Development",),
     "automated testing": ("automated testing", "automated tests", "automated-tests", "automated test", "automation testing",

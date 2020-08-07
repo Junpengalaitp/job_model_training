@@ -2,47 +2,52 @@ import unittest
 from collections import defaultdict
 
 from constants.constants import *
-from model_training_data.training_data.train_data_09 import TRAIN_DATA
+from model_training_data.training_data.train_data_08 import TRAIN_DATA
 
 
 class TestAnnotations(unittest.TestCase):
 
     def setUp(self) -> None:
+        """change TRAIN_DATA to a dict[dict]
+           outer key: category
+           inner key : article number + ":" + entity start index + "," + entity end index
+           inner value: entity word
+        """
         super().setUp()
         self.ent_dict = defaultdict(defaultdict)
-        self.ent_index_list = []
         for i in range(len(TRAIN_DATA)):
             for entity in TRAIN_DATA[i][1]["entities"]:
-                entity_type = entity[-1]
+                entity_category = entity[-1]
                 entity_name = TRAIN_DATA[i][0][entity[0]: entity[1]]
                 entity_index = str(i+1) + ': ' + str(entity[0]) + ', ' + str(entity[1])
-                self.ent_dict[entity_type][entity_index] = entity_name
+                self.ent_dict[entity_category][entity_index] = entity_name
 
     def test_overlapping_indices(self):
+        """test no overlapping indices in annotation entity indices"""
         overlapping_index = set()
         for data in TRAIN_DATA:
+            # add all entities start/end index to a list
             entity_indices = data[1]["entities"]
-            index_list = []
-            ent_index_list = []
-            for entity in entity_indices:
-                start_index, end_index = entity[0], entity[1]
-                ent_index_list.append((start_index, end_index))
-                ent_index_list = sorted(ent_index_list, key=lambda interval: interval[0])
-                interval, l = ent_index_list[0], len(ent_index_list)
-                for i in range(1, l):
-                    interval2 = ent_index_list[i]
-                    if interval2[0] <= interval[-1]:
-                        overlapping_index.add((interval2, interval))
-                    else:
-                        interval = interval2
-
-            for ent_index in ent_index_list:
-                index_list.append(ent_index[0])
-                index_list.append(ent_index[1])
+            ent_index_list = [(entity[0], entity[1]) for entity in entity_indices]
+            # first test all entity have start index smaller than end index
+            self.assertTrue(all(entity[0] < entity[1] for entity in ent_index_list))
+            # sort the list by start index, for testing overlapping indices
+            ent_index_list.sort(key=lambda x: x[0])
+            # check if there are overlapping indices, start with the first interval
+            # if there is no overlap, update prev_interval to curr_interval
+            # if overlap exist, record the overlapping index, and extend current searching(do not update prev_interval),
+            # because there might be multiple overlap exist
+            prev_interval = ent_index_list[0]
+            for curr_interval in ent_index_list[1:]:
+                if curr_interval[0] <= prev_interval[1]:
+                    overlapping_index.add((prev_interval, curr_interval))
+                else:
+                    prev_interval = curr_interval
+            # output overlapping index, and correct them accordingly
             print(overlapping_index)
-            self.assertTrue(all(index_list[i] < index_list[i+1] for i in range(len(index_list)-1)))
 
     def base_category_test(self, category: str, word_list: list):
+        """test annotation word in correct category"""
         if category in self.ent_dict:
             words = set(self.ent_dict[category].values())
             print(category, words)
