@@ -9,6 +9,9 @@ from database.sql_operation.standard_word import insert_standard_words, update_s
 def store_standard_words(collection: dict, category: str):
     for standard_word, other_words in collection.items():
         df = select_standard_words(standard_word)
+        other_words = set(other_words)
+        for word in other_words:
+            other_words = other_words.union({word.upper(), word.lower(), word.capitalize()})
         other_words = ','.join(other_words) + ","
         if df.empty:
             insert_standard_words(standard_word, other_words, category)

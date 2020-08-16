@@ -132,9 +132,7 @@ def insert_model_keywords(job_df: pd.DataFrame):
         'job_id': sqlalchemy.types.VARCHAR(length=255),
         'created_time': sqlalchemy.types.DateTime(),
         'source': sqlalchemy.types.VARCHAR(length=255),
-
     })
-    # log.info(f"insert success, id: {job_df['job_id']}")
 
 
 def select_all_model_keywords() -> pd.DataFrame:
@@ -148,9 +146,49 @@ def select_all_model_keywords() -> pd.DataFrame:
 def insert_model_standard_word(standard_word: str, word: str):
     query = f"""
                 UPDATE keywords_job_model 
-                SET standard_word = "{standard_word}"
-                WHERE keyword_name = "{word}"
+                SET standard_word = '{standard_word}'
+                WHERE keyword_name = '{word}'
              """
     conn.execute(query)
     logger.info(f"update success, {word}: {standard_word}")
 
+
+def select_standard_word(other_word: str) -> str:
+    if '%' in other_word:
+        other_word += '%'
+    query = f"""
+                SELECT standard_word
+                FROM standard_word 
+                WHERE standard_word = '{other_word}'
+             """
+    res = conn.execute(query)
+    if res.rowcount != 0:
+        return res.fetchone()[0]
+    else:
+        return select_standard_word_by_other_word(other_word)
+
+
+def select_standard_word_by_other_word(other_word: str) -> str:
+    query = f"""
+                SELECT standard_word
+                FROM standard_word 
+                WHERE other_words LIKE '%%,{other_word},%%'
+             """
+    res = conn.execute(query)
+    if res.rowcount != 0:
+        return res.fetchone()[0]
+    else:
+        return other_word
+
+
+def select_standard_category(word: str) -> str:
+    query = f"""
+                SELECT category
+                FROM standard_word 
+                WHERE standard_word = '{word}'
+             """
+    res = conn.execute(query)
+    if res.rowcount != 0:
+        return res.fetchone()[0]
+    else:
+        return ""

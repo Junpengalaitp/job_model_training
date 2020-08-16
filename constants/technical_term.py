@@ -2,7 +2,7 @@
 
 
 pl_collection = {
-    "JavaScript": ("JavaScript", "Javascript", "javascript", "JS", "Javascrpt"),
+    "JavaScript": ("JavaScript", "Javascript", "javascript", "JS", "JAVASCRIPT", "Javascrpt"),
     "ECMAScript": ("ECMAScript", "ecmascript", "ES2015", "ES2016", "ES2017", "ES2018", "ES5", "ES6", "ES7", "ES8",
                    "EcmaScript"),
     "TypeScript": ("TypeScript", "Typescript", "typescript"),
@@ -20,9 +20,9 @@ pl_collection = {
     "Objective-C": ("Objective-C", "Objective C", "objective-c", "Obj-C"),
     "Swift": ("Swift", "swift", "SWIFT"),
     "Kotlin": ("Kotlin", "kotlin", ),
-    "Go": ("Go", "go", "Golang", "GoLang"),
-    "Rust": ("Rust", "rust"),
-    "Perl": ("Perl", "perl"),
+    "Go": ("Go", "go", "Golang", "GoLang", "GO"),
+    "Rust": ("Rust", "rust", "RUST"),
+    "Perl": ("Perl", "perl", "PERL"),
     "Erlang": ("Erlang", "erlang"),
     "Groovy": ("Groovy", "groovy"),
     "JVM": ("JVM", "jvm"),
@@ -39,7 +39,7 @@ pl_collection = {
     "Dart": ("Dart", "dart")
 }
 ol_collection = {
-    "HTML": ("HTML", "html", "HTML5"),
+    "HTML": ("HTML", "html", "HTML5", "HTML4"),
     "CSS": ("CSS", "css", "CSS3", "Cascade Styling Sheets", "flexbox"),
     "XML": ("XML", "xml", "XSD", "XSL"),
     "XSLT": ("XSLT", "xslt"),
@@ -62,7 +62,7 @@ ol_collection = {
     "SAML": ("SAML", "Security Assertion Markup Language")
 }
 lb_collection = {
-    "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks", "REACT"),
+    "React": ("React", "react", "React.js", "react.js", "React JS", "ReactJS", "React Hooks", "REACT", "Reactjs", "ReactJs"),
     "React-router": ("React-router",),
     "React-Native": ("React-Native", "React Native"),
     "Redux": ("Redux", "redux"),
@@ -76,9 +76,9 @@ lb_collection = {
     "Pytorch": ("Pytorch", "pytorch", "torch"),
     "Scrapy": ("Scrapy", "scrapy"),
     "PySpark": ("PySpark", "Pyspark"),
-    "Bootstrap": ("Bootstrap", "bootstrap"),
+    "Bootstrap": ("Bootstrap", "bootstrap", "Bootstrap 3", "Bootstrap 4", "Bootstrap 5"),
     "React-Bootstrap": ("React-Bootstrap", "React-bootstrap"),
-    "Material UI": ("Material UI", "Material-UI", "Material"),
+    "Material UI": ("Material UI", "Material-UI", "Material", "material"),
     "Elasticsearch": ("Elasticsearch", "ElasticSearch", "elasticsearch", "elastic search"),
     "iText": ("iText", "itext", ),
     "Dask": ("Dask", "dask"),
@@ -139,7 +139,7 @@ fw_collection = {
     "Jasmine": ("Jasmine", "jasmine"),
     "Protractor": ("Protractor", "protractor"),
     "JUnit": ("JUnit", "JUnit4", "JUnit5"),
-    "Spring": ("Spring", "spring", "Spring Framework"),
+    "Spring": ("Spring", "spring", "Spring Framework", "Spring framework"),
     "Spring Boot": ("Spring Boot", "Spring boot"),
     "Spring Cloud": ("Spring Cloud", "Spring cloud"),
     "Spring Security": ("Spring Security", "Spring security"),
@@ -171,7 +171,7 @@ ds_collection = {
     "MongoDB": ("MongoDB", "mongodb", "mongo", "Mongo"),
     "DynamoDB": ("DynamoDB", "Dynamo"),
     "Redis": ("Redis", "redis"),
-    "Microsoft SQL Server": ("Microsoft SQL Server", "MS SQL", "MSSQL", "mssql"),
+    "Microsoft SQL Server": ("Microsoft SQL Server", "MS SQL", "MSSQL", "mssql", "SQLServer"),
     "Apache Phoenix": ("Apache Phoenix", "Phoenix"),
     "Memcached": ("Memcached", "memcached"),
     "Apache HBase": ("Apache HBase", "HBase", "HBASE"),
