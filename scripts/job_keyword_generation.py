@@ -8,7 +8,6 @@ from loguru import logger
 
 from concurrency.CountDownLatch import CountDownLatch
 from concurrency.JobKeywordGenerationProcess import JobKeywordGenerationProcess
-from concurrency.JobKeywordGenerationThread import JobKeywordGenerationThread
 from database.sql_operation.standard_word import select_all_dice_jobs
 from util.timer import timeit
 
