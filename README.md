@@ -4,7 +4,7 @@ job-model-training
 
 ## Author
 
-* **Junpeng He** - *Initial work* - [alaitp.com](https://junpengalaitp.github.io/alaitp-frontend/)
+* **Junpeng He** - *Initial work* - [junpenghe.com](https://junpenghe.com)
 
 ## Main Feature
 * Job description annotation and training custom job model
