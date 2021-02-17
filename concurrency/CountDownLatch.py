@@ -13,7 +13,7 @@ class CountDownLatch:
             self.lock.notifyAll()
         self.lock.release()
 
-    def await(self):
+    def _await(self):
         self.lock.acquire()
         while self.count > 0:
             self.lock.wait()

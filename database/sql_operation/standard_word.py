@@ -12,8 +12,6 @@ def insert_standard_words(standard_word: str, other_words: str, category: str):
     query = f"""
                 INSERT INTO standard_word (standard_word, other_words, category, modification_time) VALUES (
                 '{standard_word}', '{other_words}', '{category}', '{datetime.now()}')
-                ON CONFLICT (standard_word)
-                DO UPDATE SET other_words = '{other_words}', modification_time = '{datetime.now()}';
              """
     conn.execute(query)
     logger.info(f"insert success, standard_word: {standard_word}, other_words: {other_words}")

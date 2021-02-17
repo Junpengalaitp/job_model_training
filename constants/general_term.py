@@ -79,8 +79,8 @@ ge_collection = {
     "English": ("English", "english"),
     "problem-solving skills": ("problem-solving skills", "problem solver", "problem-solving capabilities",
                                "Problem-solving mindset", "problem solving skills", "problem-solving abilities",
-                               "problem-solvers", "problem solving", "problem-solving", "problem solvers"),
-    "decision-making skills": ("decision-making skills", "decision-making skill", "Decision Making", "Problem Solving"),
+                               "problem-solvers", "problem solving", "problem-solving", "problem solvers", "Problem Solving"),
+    "decision-making skills": ("decision-making skills", "decision-making skill", "Decision Making",),
     "customer-focused thinking": ("customer-focused thinking", "Customer-focused thinking",),
     "forward thinking": ("forward thinking", "Forward thinking",),
     "passion for learning": (
